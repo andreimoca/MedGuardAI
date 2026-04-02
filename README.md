@@ -2,7 +2,7 @@
 
 ## Description of the Architecture
 
-MedGuardAI is an AI-driven medical assistant powered by Agentic RAG. It utilizes a FastAPI Python backend to handle retrieving context and communicating with LLMs (inference via Groq API) while maintaining strict guardrails and evaluating patient context (age, weight, conditions, allergies). The frontend is built as a Single Page Application (SPA) using React, Vite, and Framer Motion for a fluid Chat UX. The architecture ensures an absolute focus on safety and clinical accuracy by validating semantic queries against an internal Vector Database built from official drug leaflets.
+MedGuardAI is an AI-driven medical assistant powered by Agentic RAG. It utilizes a FastAPI Python backend to handle retrieving context and communicating with LLMs (using a local Google Gemma-3-4b model via LM Studio) while maintaining strict guardrails and evaluating patient context (age, weight, conditions, allergies). The frontend is built as a Single Page Application (SPA) using React, Vite, and Framer Motion for a fluid Chat UX. The architecture ensures an absolute focus on safety and clinical accuracy by validating semantic queries against an internal Vector Database built from official drug leaflets.
 
 ## Project Structure
 

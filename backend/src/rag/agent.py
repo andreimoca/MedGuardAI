@@ -3,8 +3,7 @@ from typing import Dict, Any
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
-
-from langchain_groq import ChatGroq
+from langchain_openai import ChatOpenAI
 
 VECTOR_DB_DIR = os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'processed', 'chroma_db')
 
@@ -31,13 +30,21 @@ Always act with caution, but remain helpful and conversant."""
             print(f"Failed to load Vector DB: {e}. Ensure build_vector_db.py ran successfully.")
             self.retriever = None
             
-        # Initialize the LLM (Using Llama-3-8b via Groq API for rapid prototyping)
-        api_key = os.environ.get("GROQ_API_KEY")
-        if not api_key:
-            print("WARNING: GROQ_API_KEY environment variable not set. Agent will not run.")
+        # Initialize the LLM (Using Google Gemma-3-4b via LM Studio local server)
+        local_llm_url = os.environ.get("LOCAL_LLM_URL", "http://127.0.0.1:1234/v1")
+        model_name = os.environ.get("LOCAL_LLM_MODEL", "gemma-3-4b")
+        
+        try:
+            self.llm = ChatOpenAI(
+                base_url=local_llm_url,
+                api_key="not-needed",
+                model=model_name,
+                temperature=0.0
+            )
+            print(f"✓ LLM initialized: {model_name} at {local_llm_url}")
+        except Exception as e:
+            print(f"WARNING: Failed to initialize local LLM: {e}")
             self.llm = None
-        else:
-            self.llm = ChatGroq(temperature=0.0, model_name="llama-3.1-8b-instant", groq_api_key=api_key)
 
     def format_patient_context(self, context: Dict[str, Any]) -> str:
         """Format the patient's parameters into a strict context string."""
