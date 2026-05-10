@@ -1,0 +1,29 @@
+{
+    "drug_name": "Atropine sulfate",
+    "generic_name": [
+        "ATROPINE SULFATE"
+    ],
+    "active_ingredients": [],
+    "indications_and_usage": [
+        "1 INDICATIONS & USAGE Atropine Sulfate Injection, USP, is indicated for temporary blockade of severe or life threatening muscarinic effects, e.g., as an antisialagogue, an antivagal agent, an antidote for organophosphorus or muscarinic mushroom poisoning, and to treat bradyasystolic cardiac arrest."
+    ],
+    "contraindications": [
+        "4 CONTRAINDICATIONS None."
+    ],
+    "boxed_warning": [],
+    "warnings_and_cautions": [
+        "5 WARINGS AND PRECAUTIONS 5.1 Tachycardia When the recurrent use of atropine is essential in patients with coronary artery disease, the total dose should be restricted to 2 to 3 mg (maximum 0.03 to 0.04 mg/kg) to avoid the detrimental effects of atropine-induced tachycardia on myocardial oxygen demand. 5.2 Acute Glaucoma Atropine may precipitate acute glaucoma. 5.3 Pyloric Obstruction Atropine may convert partial organic pyloric stenosis into complete obstruction. 5.4 Complete Urinary Retention Atropine may lead to complete urinary retention in patients with prostatic hypertrophy. 5.5 Viscid Plugs Atropine may cause inspissation of bronchial secretions and formation of viscid plugs in patients with chronic lung disease."
+    ],
+    "adverse_reactions": [
+        "6 ADVERSE REACTIONS SECTIONS The following adverse reactions have been identified during post-approval use of atropine sulfate. Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure. Most of the side effects of atropine are directly related to its antimuscarinic action. Dryness of the mouth, blurred vision, photophobia and tachycardia commonly occur. Anhidrosis can produce heat intolerance. Constipation and difficulty in micturition may occur in elderly patients. Occasional hypersensitivity reactions have been observed, especially skin rashes which in some instances progressed to exfoliation."
+    ],
+    "drug_interactions": [
+        "7 DRUG INTERACTIONS 7.1 Mexiletine Atropine Sulfate Injection decreased the rate of mexiletine absorption without altering the relative oral bioavailability; this delay in mexiletine absorption was reversed by the combination of atropine and intravenous metoclopramide during pretreatment for anesthesia."
+    ],
+    "dosage_and_administration": [
+        "2 DOSAGE & ADMINISTRATION SECTION 2.1 General Administration Parenteral drug products should be inspected visually for particulate matter and discoloration prior to administration, whenever solution and container permit. Do not administer unless solution is clear and seal is intact. Each vial is intended for single dose only. Discard unused portion. For Intravenous administration. Titrate based on heart rate, PR interval, blood pressure and symptoms. 2.2 Adult Dosage 2.3 Pediatric Dosage Dosing in pediatric populations has not been well studied. Usual initial dose is 0.01 to 0.03 mg/kg. 2.4 Dosing in Patients with Coronary Artery Disease Limit the total dose of atropine sulfate to 0.03 to 0.04 mg/kg [see WARNINGS AND PRECAUTIONS (5.1) ]. dOSAGE"
+    ],
+    "overdosage": [
+        "10 OVERDOSAGE Excessive dosing may cause palpitation, dilated pupils, difficulty in swallowing, hot dry skin, thirst, dizziness, restlessness, tremor, fatigue and ataxia. Toxic doses lead to restlessness and excitement, hallucinations, delirium and coma. Depression and circulatory collapse occur only with severe intoxication. In such cases, blood pressure declines and death due to respiratory failure may ensue following paralysis and coma. The fatal adult dose of atropine is not known. In pediatric populations, 10 mg or less may be fatal. In the event of toxic overdosage, a short acting barbiturate or diazepam may be given as needed to control marked excitement and convulsions. Large doses for sedation should be avoided because central depressant action may coincide with the depression occurring late in atropine poisoning. Central stimulants are not recommended. Physostigmine, given as an atropine antidote by slow intravenous injection of 1 to 4 mg (0.5 to 1 mg in pediatric populations), rapidly abolishes delirium and coma caused by large doses of atropine. Since physostigmine is rapidly destroyed, the patient may again lapse into coma after one to two hours, and repeated doses may be required. Artificial respiration with oxygen may be necessary. Ice bags and alcohol sponges help to reduce fever, especially in pediatric populations. Atropine is not removed by dialysis."
+    ]
+}

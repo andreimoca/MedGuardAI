@@ -47,6 +47,13 @@ backend/data/embeddings/*
 *.chroma
 *.sqlite3
 
+# Phase 2 training artifacts (datasets and adapters can be 50 MB - 3 GB each)
+backend/training/data/
+backend/training/adapters/
+backend/training/outputs/
+*.gguf
+*.safetensors
+
 # IDEs and OS files
 .vscode/
 .idea/

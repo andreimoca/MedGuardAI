@@ -1,0 +1,27 @@
+{
+    "drug_name": "IOPIDINE 1%",
+    "generic_name": [
+        "APRACLONIDINE HYDROCHLORIDE OPHTHALMIC SOLUTION"
+    ],
+    "active_ingredients": [],
+    "indications_and_usage": [
+        "INDICATIONS AND USAGE IOPIDINE 1% Ophthalmic Solution is indicated to control or prevent post-surgical elevations in IOP that occur in patients after argon laser trabeculoplasty, argon laser iridotomy or Nd:YAG posterior capsulotomy."
+    ],
+    "contraindications": [
+        "CONTRAINDICATIONS IOPIDINE 1% Ophthalmic Solution is contraindicated for patients receiving monoamine oxidase inhibitor therapy and for patients with hypersensitivity to any component of this medication or to clonidine."
+    ],
+    "boxed_warning": [],
+    "warnings_and_cautions": [],
+    "adverse_reactions": [
+        "ADVERSE REACTIONS The following adverse events, occurring in less than 2% of patients, were reported in association with the use of IOPIDINE 1% Ophthalmic Solution in laser surgery: ocular injection, upper lid elevation, irregular heart rate, nasal decongestion, ocular inflammation, conjunctival blanching, and mydriasis. The following adverse events were observed in investigational studies dosing IOPIDINE 1% Ophthalmic Solution once or twice daily for up to 28 days in non‑laser studies: Ocular Conjunctival blanching, upper lid elevation, mydriasis, burning, discomfort, foreign body sensation, dryness, itching, hypotony, blurred or dimmed vision, allergic response, conjunctival microhemorrhage. Gastrointestinal Abdominal pain, diarrhea, stomach discomfort, emesis Cardiovascular Bradycardia, vasovagal attack, palpitations, orthostatic episode Central Nervous System Insomnia, dream disturbances, irritability, decreased libido. Other Taste abnormalities, dry mouth, nasal burning or dryness, headache, head cold sensation, chest heaviness or burning, clammy or sweaty palms, body heat sensation, shortness of breath, increased pharyngeal secretion, extremity pain or numbness, fatigue, paresthesia, pruritus not associated with rash. Clinical Practice The following events have been identified during postmarketing use of IOPIDINE 1% Ophthalmic Solution in clinical practice. Because they are reported voluntarily from a population of unknown size, estimates of frequency cannot be made. The events, which have been chosen for inclusion due to either their seriousness, frequency of reporting, possible causal connection to IOPIDINE 1% Ophthalmic Solution, or a combination of these factors, include hypersensitivity."
+    ],
+    "drug_interactions": [
+        "DRUG INTERACTIONS Interactions with other agents have not been investigated."
+    ],
+    "dosage_and_administration": [
+        "DOSAGE AND ADMINISTRATION One drop of IOPIDINE* 1% Ophthalmic Solution should be instilled in the scheduled operative eye one hour before initiating anterior segment laser surgery and a second drop should be instilled to the same eye immediately upon completion of the laser surgical procedure. Use a separate container for each single‑drop dose and discard each container after use."
+    ],
+    "overdosage": [
+        "OVERDOSAGE Ingestion of IOPIDINE* 0.5% Ophthalmic Solution has been reported to cause bradycardia, drowsiness, and hypothermia. Accidental or intentional ingestion of oral clonidine has been reported to cause apnea, arrhythmias, asthenia, bradycardia, conduction defects, diminished or absent reflexes, dryness of the mouth, hypotension, hypothermia, hypoventilation, irritability, lethargy, miosis, pallor, respiratory depression, sedation or coma, seizure, somnolence, transient hypertension, and vomiting. Treatment of an oral overdose includes supportive and symptomatic therapy; a patent airway should be maintained. Hemodialysis is of limited value since a maximum of 5% of circulating drug is removed."
+    ]
+}

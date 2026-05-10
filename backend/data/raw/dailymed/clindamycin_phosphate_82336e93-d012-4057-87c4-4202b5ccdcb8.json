@@ -1,0 +1,27 @@
+{
+    "drug_name": "Clindamycin Phosphate",
+    "generic_name": [
+        "CLINDAMYCIN PHOSPHATE"
+    ],
+    "active_ingredients": [],
+    "indications_and_usage": [
+        "INDICATIONS AND USAGE Clindamycin phosphate topical lotion is indicated in the treatment of acne vulgaris. In view of the potential for diarrhea, bloody diarrhea and pseudomembranous colitis, the physician should consider whether other agents are more appropriate (see CONTRAINDICATIONS , WARNINGS and ADVERSE REACTIONS )."
+    ],
+    "contraindications": [
+        "CONTRAINDICATIONS Clindamycin phosphate topical lotion is contraindicated in individuals with a history of hypersensitivity to preparations containing clindamycin or lincomycin, a history of regional enteritis or ulcerative colitis, or a history of antibiotic-associated colitis."
+    ],
+    "boxed_warning": [],
+    "warnings_and_cautions": [],
+    "adverse_reactions": [
+        "ADVERSE REACTIONS In 18 clinical studies of various formulations of clindamycin phosphate using placebo vehicle and/or active comparator drugs as controls, patients experienced a number of treatment emergent adverse dermatologic events [see table below]. Number of Patients Reporting Events Treatment Emergent Adverse Event Solution n=553(%) Gel n=148(%) Lotion n=160(%) Burning 62 (11) 15 (10) 17 (11) Itching 36 ( 7) 15 (10) 17 (11) Burning/Itching 60 (11) # ( – ) # ( – ) Dryness 105 (19) 34 (23) 29 (18) Erythema 86 (16) 10 ( 7) 22 (14) Oiliness/Oily Skin 8 ( 1) 26 (18) 12* (10) Peeling 61 (11) # ( – ) 11 ( 7) # not recorded * of 126 subjects Orally and parenterally administered clindamycin has been associated with severe colitis which may end fatally. Cases of diarrhea, bloody diarrhea and colitis (including pseudomembranous colitis) have been reported as adverse reactions in patients treated with oral and parenteral formulations of clindamycin and rarely with topical clindamycin (see WARNINGS ). Abdominal pain, gastrointestinal disturbances, gram-negative folliculitis, eye pain and contact dermatitis have also been reported in association with the use of topical formulations of clindamycin. To report SUSPECTED ADVERSE REACTIONS, contact Perrigo at 1-866-634-9120 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch ."
+    ],
+    "drug_interactions": [
+        "Drug Interactions Clindamycin has been shown to have neuromuscular blocking properties that may enhance the action of other neuromuscular blocking agents. Therefore, it should be used with caution in patients receiving such agents."
+    ],
+    "dosage_and_administration": [
+        "DOSAGE AND ADMINISTRATION Apply a thin film of clindamycin phosphate topical lotion twice daily to affected area. Lotion: Shake well immediately before using. Keep all liquid dosage forms in containers tightly closed."
+    ],
+    "overdosage": [
+        "OVERDOSAGE Topically applied clindamycin phosphate can be absorbed in sufficient amounts to produce systemic effects (see WARNINGS )."
+    ]
+}

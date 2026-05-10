@@ -1,0 +1,25 @@
+{
+    "drug_name": "BACLOFEN",
+    "generic_name": [
+        "BACLOFEN"
+    ],
+    "active_ingredients": [],
+    "indications_and_usage": [
+        "INDICATIONS AND USAGE Baclofen tablets, USP are useful for the alleviation of signs and symptoms of spasticity resulting from multiple sclerosis, particularly for the relief of flexor spasms and concomitant pain, clonus, and muscular rigidity. Patients should have reversible spasticity so that baclofen treatment will aid in restoring residual function. Baclofen tablets, USP may also be of some value in patients with spinal cord injuries and other spinal cord diseases. Baclofen tablets, USP are not indicated in the treatment of skeletal muscle spasm resulting from rheumatic disorders. The efficacy of baclofen in stroke, cerebral palsy, and Parkinson's disease has not been established and, therefore, it is not recommended for these conditions."
+    ],
+    "contraindications": [
+        "CONTRAINDICATIONS Hypersensitivity to baclofen."
+    ],
+    "boxed_warning": [],
+    "warnings_and_cautions": [],
+    "adverse_reactions": [
+        "ADVERSE REACTIONS The most common is transient drowsiness (10 to 63%). In one controlled study of 175 patients, transient drowsiness was observed in 63% of those receiving baclofen compared to 36% of those in the placebo group. Other common adverse reactions are dizziness (5 to 15%), weakness (5 to 15%) and fatigue (2 to 4%). Others reported: Neuropsychiatric: Confusion (1 to 11%), headache (4 to 8%), insomnia (2 to 7%); and, rarely, euphoria, excitement, depression, hallucinations, paresthesia, muscle pain, tinnitus, slurred speech, coordination disorder, tremor, rigidity, dystonia, ataxia, blurred vision, nystagmus, strabismus, miosis, mydriasis, diplopia, dysarthria, epileptic seizure. Cardiovascular: Hypotension (0 to 9%). Rare instances of dyspnea, palpitation, chest pain, syncope. Gastrointestinal: Nausea (4 to 12%), constipation (2 to 6%); and rarely, dry mouth, anorexia, taste disorder, abdominal pain, vomiting, diarrhea, and positive test for occult blood in stool. Genitourinary: Urinary frequency (2 to 6%); and rarely, enuresis, urinary retention, dysuria, impotence, inability to ejaculate, nocturia, hematuria. Other: Instances of rash, pruritus, ankle edema, excessive perspiration, weight gain, nasal congestion. Some of the CNS and genitourinary symptoms may be related to the underlying disease rather than to drug therapy. The following laboratory tests have been found to be abnormal in a few patients receiving baclofen: increased SGOT, elevated alkaline phosphatase, and elevation of blood sugar."
+    ],
+    "drug_interactions": [],
+    "dosage_and_administration": [
+        "DOSAGE AND ADMINISTRATION The determination of optimal dosage requires individual titration. Start therapy at a low dosage and increase gradually until optimum effect is achieved (usually between 40-80 mg daily). The following dosage titration schedule is suggested: 5 mg t.i.d. for 3 days 10 mg t.i.d. for 3 days 15 mg t.i.d. for 3 days 20 mg t.i.d. for 3 days Thereafter additional increases may be necessary but the total daily dose should not exceed a maximum of 80 mg daily (20 mg q.i.d.). The lowest dose compatible with an optimal response is recommended. If benefits are not evident after a reasonable trial period, patients should be slowly withdrawn from the drug (See WARNINGS , Abrupt Drug Withdrawal )."
+    ],
+    "overdosage": [
+        "OVERDOSAGE Signs and Symptoms: Vomiting, muscular hypotonia, drowsiness, accommodation disorders, coma, respiratory depression and seizures. Treatment: In the alert patient, empty the stomach promptly by induced emesis followed by lavage. In the obtunded patient, secure the airway with a cuffed endotracheal tube before beginning lavage (do not induce emesis). Maintain adequate respiratory exchange, do not use respiratory stimulants."
+    ]
+}

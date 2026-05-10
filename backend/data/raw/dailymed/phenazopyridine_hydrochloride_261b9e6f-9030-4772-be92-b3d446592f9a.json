@@ -1,0 +1,25 @@
+{
+    "drug_name": "Phenazopyridine Hydrochloride",
+    "generic_name": [
+        "PHENAZOPYRIDINE"
+    ],
+    "active_ingredients": [],
+    "indications_and_usage": [
+        "INDICATIONS AND USAGE Phenazopyridine HCl is indicated for the symptomatic relief of pain, burning, urgency, frequency, and other discomforts arising from irritation of the lower urinary tract mucosa caused by infection, trauma, surgery, endoscopic procedures, or the passage of sounds or catheters. The use of Phenazopyridine HCl for relief of symptoms should not delay definitive diagnosis and treatment of causative conditions. Because it provides only symptomatic relief, prompt appropriate treatment of the cause of pain must be instituted and Phenazopyridine HCl should be discontinued when symptoms are controlled. The analgesic action may reduce or eliminate the need for systemic analgesics or narcotics. It is, however, compatible with antibacterial therapy and can help to relieve pain and discomfort during the interval before antibacterial therapy controls the infection. Treatment of a urinary tract infection with Phenazopyridine HCl should not exceed 2 days because there is a lack of evidence that the combined administration of Phenazopyridine HCl and an antibacterial provides greater benefit than administration of the antibacterial alone after 2 days. (See DOSAGE AND ADMINISTRATION section.)"
+    ],
+    "contraindications": [
+        "CONTRAINDICATIONS Phenazopyridine HCl should not be used in patients who have previously exhibited hypersensitivity to it. The use of Phenazopyridine HCl is contraindicated in patients with renal insufficiency."
+    ],
+    "boxed_warning": [],
+    "warnings_and_cautions": [],
+    "adverse_reactions": [
+        "ADVERSE REACTIONS Headache, rash, pruritus and occasional gastrointestinal disturbance. An anaphylactoid-like reaction has been described. Methemoglobinemia, hemolytic anemia, renal and hepatic toxicity have been reported, usually at overdosage levels (see OVERDOSAGE Section )."
+    ],
+    "drug_interactions": [],
+    "dosage_and_administration": [
+        "DOSAGE AND ADMINISTRATION 100 mg Tablets: Average adult dosage is two tablets 3 times a day after meals. 200 mg Tablets: Average adult dosage is one tablet 3 times a day after meals. When used concomitantly with an antibacterial agent for the treatment of a urinary tract infection, the administration of Phenazopyridine HCl should not exceed 2 days."
+    ],
+    "overdosage": [
+        "OVERDOSAGE Exceeding the recommended dose in patients with good renal function or administering the usual dose to patients with impaired renal function (common in elderly patients) may lead to increased serum levels and toxic reactions. Methemoglobinemia generally follows a massive, acute overdose. Methylene blue, 1 to 2 mg/kg/body weight intravenously or ascorbic acid 100 to 200 mg given orally should cause prompt reduction of the methemoglobinemia and disappearance of the cyanosis which is an aid in diagnosis. Oxidative Heinz body hemolytic anemia may also occur, and “bite cells” (degmacytes) may be present in a chronic overdosage situation. Red blood cell G-6-PD deficiency may predispose to hemolysis. Renal and hepatic impairment and occasional failure, usually due to hypersensitivity, may also occur."
+    ]
+}

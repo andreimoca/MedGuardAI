@@ -1,0 +1,25 @@
+{
+    "drug_name": "Trilona",
+    "generic_name": [
+        "TRIAMCINOLONE ACETONIDE"
+    ],
+    "active_ingredients": [],
+    "indications_and_usage": [
+        "INDICATIONS & USAGE Topical corticosteroids are indicated for the relief of the inflammatory and pruritic manifestations of corticosteroid-responsive dermatoses."
+    ],
+    "contraindications": [
+        "CONTRAINDICATIONS Topical corticosteroids are contraindicated in those patients with a history of hypersensitivity to any of the components of the preparation."
+    ],
+    "boxed_warning": [],
+    "warnings_and_cautions": [],
+    "adverse_reactions": [
+        "ADVERSE REACTIONS The following local adverse reactions are reported infrequently with topical corticosteroids, but may occur more frequently with the use of occlusive dressings. These reactions are listed in an approximate decreasing order of occurrence: burning, itching, irritation, dryness, folliculitis, hypertrichosis, acneiform eruptions, hypopigmentation, perioral dermatitis, allergic contact dermatitis, maceration of the skin, secondary infection, skin atrophy, striae, and miliaria."
+    ],
+    "drug_interactions": [],
+    "dosage_and_administration": [
+        "DOSAGE & ADMINISTRATION Topical corticosteroids are generally applied to the affected area as a thin film two to four times daily for the 0.025% strength and two or three times daily for the 0.1% and 0.5% strength depending on the severity of the condition. Occlusive dressings may be used for the management of psoriasis or recalcitrant conditions. If an infection develops, the use of occlusive dressings should be discontinued and appropriate antimicrobial therapy instituted."
+    ],
+    "overdosage": [
+        "OVERDOSAGE Topically applied corticosteroids can be absorbed in sufficient amounts to produce systemic effects (See PRECAUTIONS )."
+    ]
+}
