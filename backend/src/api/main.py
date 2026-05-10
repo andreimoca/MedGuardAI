@@ -29,17 +29,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Initialize the RAG Agent system at startup
+# Eagerly initialize the agent at module import. This ensures the agent is
+# available regardless of how the app is mounted (uvicorn, sync TestClient,
+# lifespan context manager).
 agent = None
-
-@app.on_event("startup")
-async def startup_event():
-    global agent
-    try:
-        agent = ClinicalAgent()
-        logger.info("ClinicalAgent initialized successfully.")
-    except Exception as e:
-        logger.error(f"Failed to initialize ClinicalAgent: {e}")
+try:
+    agent = ClinicalAgent()
+    logger.info("ClinicalAgent initialized successfully.")
+except Exception as e:
+    logger.error(f"Failed to initialize ClinicalAgent: {e}")
 
 class PatientContext(BaseModel):
     age: int = Field(..., description="Patient age in years")

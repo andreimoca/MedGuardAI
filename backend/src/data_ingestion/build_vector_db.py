@@ -74,19 +74,32 @@ def build_vector_database():
     chunks = text_splitter.split_documents(documents)
     print(f"Split into {len(chunks)} chunks.")
     
-    # We use CPU-friendly lightweight sentence transformers to build the local DB fast
-    print("Initializing embedding model (all-MiniLM-L6-v2)...")
-    embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+    # Use GPU when available; embedding ~50k chunks of MiniLM-L6-v2 takes ~30
+    # min on CPU vs ~1-3 min on a modest CUDA GPU.
+    import torch
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"Initializing embedding model (all-MiniLM-L6-v2) on {device}...")
+    embeddings = HuggingFaceEmbeddings(
+        model_name="all-MiniLM-L6-v2",
+        model_kwargs={"device": device},
+        encode_kwargs={"batch_size": 64, "normalize_embeddings": False},
+    )
     
     print("Building Chroma vector store...")
     os.makedirs(os.path.dirname(VECTOR_DB_DIR), exist_ok=True)
-    
-    vectorstore = Chroma.from_documents(
-        documents=chunks,
-        embedding=embeddings,
-        persist_directory=VECTOR_DB_DIR
+
+    # Chroma caps batch inserts at 5461 records. With ~100k+ chunks we have to
+    # add them in chunks ourselves.
+    BATCH = 5000
+    vectorstore = Chroma(
+        persist_directory=VECTOR_DB_DIR, embedding_function=embeddings
     )
-    
+    total = len(chunks)
+    for start in range(0, total, BATCH):
+        batch = chunks[start:start + BATCH]
+        vectorstore.add_documents(batch)
+        print(f"  inserted {min(start + BATCH, total)}/{total} chunks")
+
     print(f"Vector store successfully saved to {VECTOR_DB_DIR}")
 
 if __name__ == "__main__":
