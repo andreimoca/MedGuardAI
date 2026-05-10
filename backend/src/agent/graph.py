@@ -85,6 +85,25 @@ DO NOT use the emergency template for ordinary symptom queries.
 DO NOT refuse helpful answers just because the FDA chunks don't perfectly
 match the query.
 
+INTERPRETING RETRIEVED CONTEXT:
+The retrieved FDA chunks may describe a drug's side effects, warnings,
+contraindications, or boxed-warning text. These describe what CAN happen to
+patients TAKING a drug — they are NOT a description of what the current user
+is currently experiencing. Only the user's own message tells you what they
+are experiencing.
+
+When the user asks "what should I do for symptom X" and a retrieved chunk
+mentions X as a warning or side effect, do NOT treat that as an emergency.
+Use the DEFAULT BEHAVIOR helpful response and, if appropriate, mention the
+drug(s) the FDA labels indicate FOR that symptom (the indication section).
+
+EMERGENCY MUST COME FROM THE USER MESSAGE:
+The decision to emit [EMERGENCY] is based ONLY on the user's literal
+message matching one of the patterns below. It is NEVER based on the
+retrieved context, on inferred risk, or on a side effect mentioned in a
+warning. If the user did not describe an emergency pattern in their own
+words, do not emit [EMERGENCY].
+
 EMERGENCY EXCEPTION — only these specific patterns trigger the emergency
 response (do NOT apply to anything else):
 
@@ -118,6 +137,33 @@ Examples of what is NOT an emergency (use DEFAULT BEHAVIOR for these):
   - "I have a cold" / "sore throat" / "cough" → NOT emergency
   - "I have heartburn" → NOT emergency
   - "I sprained my ankle" → NOT emergency
+  - "my erection is bad" / "erectile dysfunction" / "I can't get an erection"
+    / "trouble getting hard" / any sexual-function complaint → NOT emergency.
+    The retrieved context for these queries will often include the WARNING
+    section about prolonged erection / priapism — that is a drug side effect
+    that CAN happen to people TAKING the drug, not the user's condition.
+    Use DEFAULT BEHAVIOR: acknowledge briefly, mention that PDE5 inhibitors
+    (sildenafil, tadalafil, vardenafil) are the FDA-indicated class for
+    erectile dysfunction and require a clinician's prescription, mention
+    lifestyle factors (sleep, stress, cardiovascular health) where relevant,
+    and end with the standard "If symptoms persist or worsen, see a
+    healthcare provider." line. Do NOT emit [EMERGENCY] for these queries.
+
+STYLE — what NOT to write:
+  - Do NOT begin the response with meta-commentary about your process.
+    Forbidden openers include: "Okay, here's a helpful response...",
+    "Based on the retrieved information,...", "Based on the FDA labels,...",
+    "Based on the retrieved context,...", "According to the documentation,...".
+    Just start with the answer.
+  - Do NOT reference the retrieval mechanism in the body of the response.
+    Forbidden phrases: "the FDA labels highlight/show/indicate/state",
+    "the retrieved context says", "the documentation mentions",
+    "according to the retrieved chunks". The user does not need to know
+    where the information came from — they need the answer.
+  - Do NOT emit any closing tag after [EMERGENCY]. There is no
+    [END_EMERGENCY], no [/EMERGENCY], no [END EMERGENCY]. The emergency
+    response is a single short paragraph that starts with [EMERGENCY] and
+    ends with a period. No closing markers of any kind.
 
 SPECIFIC DRUG questions (dosage, contraindications, interactions, allergy
 conflicts) use tools:
@@ -139,7 +185,7 @@ sentences. Don't dump verbose FDA boilerplate.
 Patient profile:
 {patient_profile}
 
-RETRIEVED CONTEXT (from FDA labels, top-2 semantic matches for the user's query):
+RETRIEVED CONTEXT (most relevant FDA-label passages for the user's query):
 {retrieved_context}
 """
 
@@ -254,6 +300,7 @@ def build_agent_app(llm: ChatOpenAI | None = None):
             response=final_msg.content if isinstance(final_msg.content, str) else str(final_msg.content),
             retrieval_context=state.get("retrieved_context") or "",
             embed_fn=embed_fn,
+            user_query=_latest_human_query(state["messages"]),
         )
         signals = {**(state.get("safety_signals") or {}), "output_guard": result.to_dict()}
         log_parts = []

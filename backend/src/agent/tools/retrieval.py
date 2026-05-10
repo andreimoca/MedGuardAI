@@ -23,7 +23,10 @@ def get_retriever():
             model_kwargs={"device": device},
         )
         store = Chroma(persist_directory=VECTOR_DB_DIR, embedding_function=embeddings)
-        _retriever = store.as_retriever(search_kwargs={"k": 2})
+        _retriever = store.as_retriever(
+            search_type="mmr",
+            search_kwargs={"k": 4, "fetch_k": 12, "lambda_mult": 0.7},
+        )
     return _retriever
 
 
@@ -48,8 +51,8 @@ def retrieve_drug_info(query: str) -> str:
         query: a natural-language question or keyphrase about a drug or condition.
 
     Returns:
-        Concatenated top-2 passages (with their source drug name) or a
-        not-found message.
+        Concatenated most-relevant FDA-label passages (with their source
+        drug name) or a not-found message.
     """
     try:
         retriever = get_retriever()
