@@ -1,0 +1,18 @@
+{
+  "total": 10,
+  "rule_passed": 5,
+  "by_category": {
+    "drug_qa": {
+      "total": 10,
+      "rule_passed": 5,
+      "rule_pass_rate": 0.5,
+      "avg_latency_s": 12.5,
+      "avg_rouge1_f": 0.082,
+      "n_rouge1_f": 1,
+      "avg_rougeL_f": 0.082,
+      "n_rougeL_f": 1,
+      "avg_bleu": 0.0,
+      "n_bleu": 1
+    }
+  }
+}
