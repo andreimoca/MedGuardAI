@@ -42,21 +42,39 @@ _CLOSING_TAG_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Apostrophe variants small models emit: ASCII ', right single quote ’,
+# modifier-letter apostrophe ʼ. Used so "here’s" matches as well as "here's".
+_APOS = r"['’ʼ]"
+
 # Meta-preambles the model emits before the actual answer. These leak the
 # prompt machinery to the user — strip them. Anchored to the start of the
 # response (after optional whitespace).
 _META_PREAMBLE_RE = re.compile(
-    r"^\s*(?:okay[,!.]?\s+)?(?:here(?:'s| is)\s+(?:a\s+)?(?:helpful\s+)?(?:response|answer)\s+)?"
+    r"^\s*(?:okay[,!.…]?\s+)?"
+    r"(?:here(?:" + _APOS + r"s| is)\s+(?:a\s+)?(?:helpful\s+)?(?:response|answer)\s+)?"
     r"(?:based\s+on|according\s+to)\s+"
-    r"(?:the\s+)?(?:retrieved\s+(?:information|context|chunks|documentation|data|labels?)|"
-    r"FDA\s+labels?|FDA\s+documentation|documentation|context)\s*[,:.\-]?\s*",
+    r"(?:the\s+)?(?:retrieved\s+(?:FDA\s+)?(?:information|context|chunks|documentation|data|labels?)|"
+    r"(?:retrieved\s+)?FDA\s+(?:labels?|documentation|data)|documentation|context)\s*[,:.\-]?\s*",
     re.IGNORECASE,
 )
-# Also catch the bare "Okay, here's a helpful response:" variant with no
-# "based on" tail.
+# Also catch the bare "Okay, here's a helpful response:" family with no
+# "based on" tail — and its many phrasings ("Sure, here is my answer -",
+# "Alright, here's the response:", curly-apostrophe variants, etc.).
 _META_PREAMBLE_BARE_RE = re.compile(
-    r"^\s*okay[,!.]?\s+here(?:'s| is)\s+(?:a\s+)?(?:helpful\s+)?"
-    r"(?:response|answer)\s*[,:.\-]?\s*",
+    r"^\s*"
+    r"(?:(?:okay|ok|sure|alright|all\s+right|right|got\s+it|understood|"
+    r"of\s+course|no\s+problem)[,!.…\s]+)?"
+    r"here(?:" + _APOS + r"s|\s+is)\s+(?:a|the|my|your)\s+"
+    r"(?:helpful\s+|quick\s+|brief\s+|short\s+|simple\s+)*"
+    r"(?:response|answer|reply)\b\s*[,:.—\-]?\s*",
+    re.IGNORECASE,
+)
+# Robotic paraphrase-back openers ("My understanding is that you're..."):
+# strip the lead-in, the symptom acknowledgment that follows is fine.
+_META_PARAPHRASE_RE = re.compile(
+    r"^\s*(?:my\s+understanding\s+is\s+that\s+|"
+    r"as\s+(?:i|we)\s+understand\s+it[,]?\s+|"
+    r"to\s+summarize\s+your\s+(?:question|query)[,:]?\s+)",
     re.IGNORECASE,
 )
 
@@ -100,14 +118,17 @@ def _sanitize_response(text: str) -> tuple[str, dict[str, bool]]:
         cleaned = _CLOSING_TAG_RE.sub(" ", cleaned)
         flags["stripped_closing_tag"] = True
 
-    new = _META_PREAMBLE_RE.sub("", cleaned, count=1)
-    if new != cleaned:
-        flags["stripped_preamble"] = True
-        cleaned = new
-    new = _META_PREAMBLE_BARE_RE.sub("", cleaned, count=1)
-    if new != cleaned:
-        flags["stripped_preamble"] = True
-        cleaned = new
+    # Models sometimes stack preambles ("Okay, here's a helpful response:
+    # Based on the FDA labels, ..."), so peel them in a loop until stable.
+    for _ in range(4):
+        before = cleaned
+        for rx in (_META_PREAMBLE_RE, _META_PREAMBLE_BARE_RE, _META_PARAPHRASE_RE):
+            new = rx.sub("", cleaned, count=1)
+            if new != cleaned:
+                flags["stripped_preamble"] = True
+                cleaned = new.lstrip()
+        if cleaned == before:
+            break
 
     new = _META_SENTENCE_START_RE.sub("", cleaned, count=1)
     if new != cleaned:
@@ -283,9 +304,9 @@ def check_output(
 
         if not g.is_well_grounded and g.n_claims > 0:
             final = final.rstrip() + (
-                "\n\n*Note: some claims in this response have low confidence "
-                "against the FDA documentation retrieved for your query. "
-                "Please verify with a healthcare professional.*"
+                "\n\n*Note: some details here may not be fully supported by "
+                "official FDA labeling — please verify with a healthcare "
+                "professional.*"
             )
             appended_warning = True
     else:

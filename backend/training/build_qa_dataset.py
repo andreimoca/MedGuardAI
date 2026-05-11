@@ -1,44 +1,53 @@
-"""Generate a synthetic Q&A SFT dataset for MedGuardAI.
+"""Build the SFT dataset for MedGuardAI from MedQuAD + curated safety-triage themes.
 
-Two task types feed the same JSONL output:
+The supervised fine-tuning data has two parts, both written to the same JSONL:
 
-  1. **drug-labels** — for each FDA drug label section, ask the LLM to invent
-     question/answer pairs grounded in that section, then validate them with a
-     judge prompt.
+  1. **medquad** — MedQuAD (the Medical Question Answering Dataset, a published
+     collection of consumer-health Q&A curated from U.S. National Institutes of
+     Health websites). We pull it from Kaggle with `kagglehub`
+     (`pythonafroz/medquad-medical-question-answer-for-ai-research`) and, for
+     each Q&A pair, ask the builder LLM to *rewrite the existing answer* into
+     MedGuardAI's safety-first voice (concise, "consult a healthcare provider",
+     `[EMERGENCY]` only for true emergencies, no invented dosing or drug names).
+     A judge pass checks the rewrite is faithful to the original MedQuAD answer
+     — the LLM reformats, it does not introduce new clinical facts.
 
-  2. **symptoms** — for each entry in a curated symptom list (e.g. "my head
-     hurts", "I'm dizzy", "chest pain"), generate user-style queries with
-     safety-aware responses. Emergency-tier symptoms produce strict
-     "[EMERGENCY] ..." responses; lower tiers may recommend OTC drugs grounded
-     in our local FDA labels; medium-tier defers to a clinician.
+  2. **symptoms** — for each entry in a hand-curated symptom-triage list
+     (`SYMPTOM_THEMES`), we render a safety-aware answer from a *deterministic
+     template* keyed on the triage tier (low / medium / high_emergency). No LLM
+     is involved for this slice.
 
-Calls run **asynchronously with bounded concurrency** so a frontier API like
-DeepSeek finishes ~12k calls in ~10–20 min instead of ~5 hours.
+Only the `medquad` part touches the network. `--task symptoms` runs fully offline.
 
-Backend selection (env vars, in priority order):
+Backend selection for the rewriter/judge (env vars, in priority order):
     DATASET_LLM_URL / DATASET_LLM_KEY / DATASET_LLM_MODEL  (e.g. DeepSeek)
     LOCAL_LLM_URL / "not-needed" / LOCAL_LLM_MODEL         (LM Studio fallback)
+`kagglehub` downloads the public dataset; if Kaggle asks for credentials, set
+KAGGLE_USERNAME / KAGGLE_KEY (or drop ~/.kaggle/kaggle.json in place).
 
 Usage examples:
-    # Smoke test (5 drug labels + a few symptoms), DeepSeek if key set
-    python build_qa_dataset.py --max-drugs 5 --concurrency 5
+    # Smoke test: ~30 MedQuAD rows + all the deterministic symptom themes
+    python build_qa_dataset.py --task all --max-rows 30 --concurrency 10
 
-    # Full run for SFT training (~3-5k pairs)
-    python build_qa_dataset.py --max-drugs 1000 --concurrency 20
+    # Full run for SFT training (resumable; ~a few $ on DeepSeek)
+    python build_qa_dataset.py --task all --max-rows 4000 --concurrency 20
 
-    # Drug labels only (skip symptoms)
-    python build_qa_dataset.py --task drug-labels --max-drugs 1000
-
-    # Symptoms only
+    # Just the deterministic symptom-triage rows (offline, no API key needed)
     python build_qa_dataset.py --task symptoms
 
-    # Skip the validator (~2x faster, lower quality)
-    python build_qa_dataset.py --max-drugs 1000 --no-judge
+    # Skip the faithfulness judge on the MedQuAD rewrites (faster, lower quality)
+    python build_qa_dataset.py --task medquad --max-rows 4000 --no-judge
+
+Output: training/data/sft_pairs.jsonl. Resumable — re-run after a crash and it
+skips `(task_type, drug, section, source_id)` tuples already in the file.
 """
 from __future__ import annotations
 
 import argparse
 import asyncio
+import csv
+import glob
+import hashlib
 import json
 import os
 import random
@@ -48,16 +57,12 @@ import time
 from dataclasses import dataclass, field
 from typing import Any, Iterator
 
-sys.path.insert(0, os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "src")))
-
 from dotenv import load_dotenv
 from openai import AsyncOpenAI
 
 load_dotenv(os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", ".env")))
 
-RAW_DATA_DIR = os.path.normpath(
-    os.path.join(os.path.dirname(__file__), "..", "data", "raw", "dailymed")
-)
+MEDQUAD_DATASET_ID = "pythonafroz/medquad-medical-question-answer-for-ai-research"
 OUTPUT_PATH = os.path.normpath(
     os.path.join(os.path.dirname(__file__), "data", "sft_pairs.jsonl")
 )
@@ -84,199 +89,60 @@ def make_client_and_model() -> tuple[AsyncOpenAI, str]:
 
 # -------------------------- prompts -------------------------- #
 
-GEN_PROMPT_DRUG = """You are creating a clinical Q&A training dataset.
+GEN_PROMPT_MEDQUAD = """You are preparing a training item for MedGuardAI, a
+safety-first medical assistant, from an entry in the MedQuAD dataset (consumer
+health Q&A curated from U.S. National Institutes of Health websites).
 
-Below is an excerpt from the FDA label of {drug} (section: {section_name}).
-Generate {n} distinct, clinically useful question/answer pairs that:
-- can be answered ENTIRELY from the excerpt below (no outside knowledge),
-- read like a patient or clinician would ask them,
-- have answers that are concise, factual, and quote relevant phrasing from the source,
-- avoid trivia (no "what is the brand color of the box").
+Rewrite the ANSWER below into MedGuardAI's voice, following these rules:
+- Use ONLY the information in the provided answer. Do NOT add facts, dosages,
+  drug names, contraindications, or interactions that are not in it. If the
+  answer is thin, keep your rewrite short rather than padding it.
+- Be concise and well-structured (a few short paragraphs or a short list, not an
+  essay). Plain language a patient can follow.
+- If the topic concerns a true medical emergency (e.g. stroke signs, heart
+  attack, anaphylaxis, suspected overdose, suicidal intent), begin by briefly
+  acknowledging it, say you are not equipped to handle emergencies, then output
+  exactly: "[EMERGENCY] Please call your local emergency number (911 in the US)
+  or get to an emergency room immediately." and do NOT give other medical advice.
+- Otherwise, end with a brief line encouraging the reader to consult a
+  healthcare professional for personal medical advice or diagnosis.
+- Never recommend a prescription-only medication by name; defer to a clinician.
 
-Return ONLY a JSON array, no markdown, no commentary, like:
-[
-  {{"question": "...", "answer": "..."}},
-  {{"question": "...", "answer": "..."}}
-]
+Output ONLY the rewritten answer text — no preamble, no labels, no markdown
+headers, no surrounding quotes.
 
-DRUG: {drug}
-SECTION: {section_name}
-EXCERPT:
-{source}
+QUESTION:
+{question}
+
+ANSWER (MedQuAD; source: {source}; focus: {focus_area}):
+{answer}
 """
 
-JUDGE_PROMPT_DRUG = """You are validating a clinical Q&A pair.
+JUDGE_PROMPT_MEDQUAD = """You are checking a rewritten medical answer for
+faithfulness to its source.
 
 Question: {question}
-Proposed answer: {answer}
 
-Source excerpt (from FDA label of {drug}, section {section_name}):
-{source}
+Rewritten answer:
+{rewritten}
 
-Is the proposed answer fully supported by the source excerpt? Reply with EXACTLY
-one word: YES or NO.
-"""
+Original source answer (MedQuAD):
+{answer}
 
-GEN_PROMPT_SYMPTOM = """You are creating a clinical Q&A training dataset focused
-on USER SYMPTOM QUERIES — natural, colloquial phrasings that real users send to
-a medical chatbot.
-
-Symptom theme: "{symptom_label}"
-Triage tier: {triage}
-Notes: {notes}
-
-Grounding — FDA-label excerpts for the OTC medications relevant to this symptom
-(use ONLY these for any dosing advice; never invent doses):
-{drug_excerpts}
-
-Generate {n} distinct realistic user queries about this symptom. Vary the
-wording: short ("my head hurts"), context-heavy ("I'm 65 and have been having
-back pain for 4 days"), worried ("is this an emergency?"), specific ("can I
-take ibuprofen for my headache?"), terse ("dizzy"), red-flag-laden ("worst
-headache of my life"), etc.
-
-CRITICAL — COMBINATIONS:
-If the theme name describes a combination (e.g. "headache with stiff neck,
-fever, or photophobia", "back pain with leg weakness or numbness", "dizziness
-with chest pain or palpitations"), AT LEAST {n_minus_one} of the {n} queries
-MUST explicitly use the combination phrasing, NOT just the headline symptom.
-
-Good combination phrasings (use varied colloquial wording):
-- "my head hurts AND my neck is stiff"
-- "headache plus fever of 102"
-- "my head hurts and bright light is unbearable"
-- "headache and I'm really confused"
-- "back hurts AND my leg is numb"
-- "lower back pain and I can't really feel my foot"
-- "back pain and I lost control of my bladder"
-- "dizzy AND my chest hurts"
-- "I'm dizzy and my speech is slurred"
-- "vertigo plus weakness on one side"
-
-The goal: train the model to recognize that the COMBINATION (not the
-individual symptom) elevates triage tier.
-
-CRITICAL — STAY ON THEME:
-Every query you generate MUST be centered on the theme symptom and stay within
-the triage tier. DO NOT invent additional red-flag combinations that would
-elevate the triage tier (e.g. for an insomnia/low theme, don't generate a
-query with blurry vision and severe headache — that would be emergency, not
-low). Stick to the tier.
-
-For each query, generate a safety-aware assistant response. The format
-depends on the tier:
-
-==========================  LOW tier  ==========================
-- ANSWER THE QUESTION. Don't dump emergency boilerplate.
-- If the query is VAGUE (just "my head hurts" / "my back hurts" / etc.),
-  begin with 1-2 short clarifying questions (duration, severity, associated
-  symptoms), then give a brief safe baseline (non-drug measures + OTC option
-  if grounded in the FDA excerpts above).
-- If the query is SPECIFIC ("is ibuprofen ok for my mild headache?"), give a
-  direct answer with the OTC option grounded in the FDA excerpts, citing the
-  source drug name and quoting relevant dosing wording.
-- ALWAYS include first-line non-drug guidance where useful (rest, heat/ice,
-  hydration, sleep hygiene, RICE).
-- End with: "If symptoms persist or worsen, see a healthcare provider."
-- Do NOT mention "emergency", "[EMERGENCY]", or "call 911" anywhere.
-
-==========================  MEDIUM tier  ==========================
-- ANSWER THE QUESTION first — be helpful and concrete, not dismissive. Briefly
-  acknowledge what the symptom might be, give non-drug guidance (rest,
-  hydration, monitoring, RICE, posture, etc.).
-- If the FDA excerpts above include a relevant safe OTC option, OFFER IT —
-  cite the source drug name and any quoted dosing wording. The user wanted a
-  helpful answer, not just a referral.
-- THEN explicitly direct the user to see a clinician for proper evaluation.
-  Use phrases like "I'd recommend seeing your doctor within [timeframe]" with
-  a specific window: "today" for things that could escalate, "this week" for
-  things that just need a checkup, "right away" if there's a chance of
-  deterioration but the situation isn't ER-grade.
-- Also list 2-3 specific red flags that would upgrade to an emergency (e.g.
-  "If you develop X, Y, or Z, go to the ER").
-- Do NOT use the "[EMERGENCY]" tag.
-
-==========================  HIGH_EMERGENCY tier  ==========================
-- Open with a brief honest acknowledgment of the symptom (1 short sentence)
-  AND a clear disclaimer that you are NOT equipped to handle emergencies and
-  the user should not rely on this chatbot for this situation.
-- Then output exactly: "[EMERGENCY] Please call your local emergency number
-  (911 in the US) or get to an emergency room immediately."
-- Optionally one short clinical reason why (e.g. "These symptoms can indicate
-  a stroke; treatment is time-sensitive.").
-- Do NOT recommend any medication.
-- Do NOT pretend you can advise on next steps beyond seeking emergency care.
-
-Example structure for a high_emergency answer:
-"I hear that you're having [symptom]. I'm an AI assistant and I am not the
-right source for handling acute medical emergencies. [EMERGENCY] Please call
-911 or get to an emergency room immediately. [Optional one-line reason]"
-
-UNIVERSAL RULES (apply to all tiers):
-- NEVER recommend prescription-only medications by name. If a class is
-  relevant (e.g. muscle relaxant, antibiotic, opioid), mention the class and
-  say "your clinician can prescribe an appropriate one". Common prescription-
-  only examples to NEVER recommend: methocarbamol, cyclobenzaprine, tramadol,
-  ondansetron (Rx form), sumatriptan, all antibiotics, all opioids.
-- NEVER hallucinate dosages, contraindications, or interactions. If a piece
-  of info is not in the FDA excerpts above, say "see a healthcare provider".
-- For vague queries about non-emergency symptoms, ALWAYS ask the clarifying
-  questions BEFORE recommending any drug.
-
-Return ONLY a JSON array, no markdown, no commentary:
-[
-  {{"question": "...", "answer": "..."}},
-  ...
-]
-"""
-
-JUDGE_PROMPT_SYMPTOM = """You are validating a clinical symptom-triage Q&A pair.
-
-User query: {question}
-Proposed assistant answer: {answer}
-
-Symptom theme: "{symptom_label}"
-Triage tier: {triage}
-FDA-label excerpts available:
-{drug_excerpts}
+Does the rewritten answer stay faithful to the original — i.e. it does NOT add
+any clinical fact, dosage, drug name, contraindication, or interaction that is
+not present in (or directly implied by) the original? Generic safety framing
+("see a healthcare provider", an [EMERGENCY] directive for a true emergency
+topic) is allowed and does not count as an added fact.
 
 Reply with EXACTLY one word: YES or NO.
-
-Reply YES only if ALL of the following are true:
-
-1. THEME MATCH: the user query stays centered on the theme symptom. It does
-   NOT introduce additional red-flag combinations that would elevate the
-   triage tier (e.g. for a "low" insomnia theme, a query about insomnia +
-   blurry vision + severe headache is off-theme — reply NO).
-
-2. TIER FORMAT MATCH:
-   - For "low": the answer ANSWERS the question, gives advice/OTC where
-     appropriate, includes "see a healthcare provider if persists" wording,
-     and does NOT contain "[EMERGENCY]" or "911" or "call emergency".
-   - For "medium": the answer answers the question briefly AND explicitly
-     directs the user to see a clinician (within a timeframe). Does NOT
-     contain "[EMERGENCY]" tag.
-   - For "high_emergency": the answer contains "[EMERGENCY]" AND a disclaimer
-     that the assistant is NOT equipped to handle emergencies, AND tells the
-     user to seek immediate emergency care (911 / ER / emergency number).
-     Does NOT recommend any specific medication.
-
-3. FACTUAL GROUNDING: any medication mentioned appears in the FDA excerpts
-   above. No invented dosages, contraindications, or interactions. Generic
-   advice (rest, hydration, heat/ice) is fine without grounding.
-
-4. NO PRESCRIPTION-ONLY DRUG RECOMMENDATIONS by name (methocarbamol,
-   cyclobenzaprine, tramadol, sumatriptan, antibiotics, opioids). Class-level
-   mentions are OK if deferred to clinician.
-
-Otherwise reply NO.
 """
 
 
 # -------------------------- curated symptoms -------------------------- #
 
-# Each entry: theme label + list of trigger drug names (we look these up in
-# our local FDA corpus to provide grounding excerpts), triage tier, notes.
+# Each entry: theme label + list of relevant OTC drug names (used only to name a
+# generic OTC option in the deterministic answer template), triage tier, notes.
 SYMPTOM_THEMES: list[dict[str, Any]] = [
     {
         "label": "headache (mild/typical)",
@@ -1181,19 +1047,14 @@ SYMPTOM_THEMES: list[dict[str, Any]] = [
 ]
 
 
-# -------------------------- I/O helpers -------------------------- #
+# -------------------------- shared text helpers -------------------------- #
+# (also imported by build_dpo_dataset.py so the seeded preference pairs use the
+# exact same "good answer" templates as the SFT symptom rows)
 
-def load_label(filepath: str) -> dict[str, Any] | None:
-    try:
-        with open(filepath, encoding="utf-8") as f:
-            return json.load(f)
-    except (OSError, json.JSONDecodeError):
-        return None
-
-
-def join_section(label: dict[str, Any], key: str) -> str:
-    parts = label.get(key) or []
-    return "\n".join(str(p) for p in parts).strip()
+EMERGENCY_TAG = (
+    "[EMERGENCY] Please call your local emergency number (911 in the US) or get "
+    "to an emergency room immediately."
+)
 
 
 def chunk_long_text(text: str, max_chars: int = 2400) -> str:
@@ -1202,12 +1063,126 @@ def chunk_long_text(text: str, max_chars: int = 2400) -> str:
     return text[:max_chars] + " ... [truncated]"
 
 
-def iter_drug_label_files() -> Iterator[str]:
-    if not os.path.isdir(RAW_DATA_DIR):
-        return
-    for name in sorted(os.listdir(RAW_DATA_DIR)):
-        if name.endswith(".json"):
-            yield os.path.join(RAW_DATA_DIR, name)
+def theme_slug(label: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "_", label.lower()).strip("_")
+
+
+def theme_otc(theme: dict[str, Any]) -> str | None:
+    """First OTC option named for a theme, or None for emergency / no-drug themes."""
+    drugs = theme.get("drugs") or []
+    return drugs[0] if drugs else None
+
+
+def theme_queries(label: str, limit: int = 3) -> list[str]:
+    """Natural-ish user phrasings derived from a theme label (deterministic)."""
+    core = re.sub(r"\s*\(.*?\)\s*", " ", label).strip()
+    core = re.sub(r"\s+", " ", core) or label
+    paren = None
+    m = re.search(r"\(([^)]+)\)", label)
+    if m:
+        paren = re.sub(r"\s+", " ", m.group(1)).strip()
+    qs = [
+        f"I have {core}.",
+        f"{core[:1].upper()}{core[1:]} — what should I do?",
+        f"What can I do about {core}?",
+    ]
+    if paren and len(paren) < 90 and not paren.lower().startswith("fast"):
+        qs.insert(1, f"I'm experiencing {paren}")
+    seen: set[str] = set()
+    uniq: list[str] = []
+    for q in qs:
+        k = q.lower()
+        if k not in seen:
+            seen.add(k)
+            uniq.append(q)
+    return uniq[: max(1, limit)]
+
+
+def chosen_answer_for_theme(theme: dict[str, Any]) -> str:
+    """Deterministic safety-aware answer for a symptom theme, keyed on triage tier.
+
+    Used as the SFT target for symptom rows and as the 'chosen' side of the
+    seeded DPO preference pairs (so both stay perfectly consistent)."""
+    label = str(theme.get("label", ""))
+    triage = str(theme.get("triage", "low"))
+    core = re.sub(r"\s*\(.*?\)\s*", " ", label).strip() or label
+    otc = theme_otc(theme)
+
+    if triage == "high_emergency":
+        return (
+            f"I hear that you're dealing with {core.lower()}, and I'm sorry — that sounds frightening. "
+            f"I'm an AI assistant and I am not the right tool for an acute medical emergency. "
+            f"{EMERGENCY_TAG} These situations can be time-critical, so please don't wait or rely on a chatbot for this."
+        )
+    if triage == "medium":
+        relief = (
+            f"For symptom relief in the meantime, a standard over-the-counter option like {otc} can help — follow the dose on the package. "
+            if otc else
+            "In the meantime, basic self-care (rest, fluids, heat or ice as appropriate) can help. "
+        )
+        return (
+            "This could be a few different things, and the safe move is to get it checked. "
+            f"{relief}"
+            "I'd recommend that you see a doctor within the next day or so for a proper evaluation. "
+            "Go to the ER right away if you develop trouble breathing, confusion, fainting, sudden severe pain, or it suddenly gets much worse."
+        )
+    # low tier
+    relief = (
+        f"In the meantime, rest, fluids, and a standard over-the-counter option like {otc} (follow the package dose) usually help. "
+        if otc else
+        "In the meantime, rest, fluids, and basic self-care (heat or ice as appropriate) usually help. "
+    )
+    return (
+        "A couple of quick questions to point you in the right direction: how long has this been going on, "
+        f"how bad is it, and is anything else happening alongside it? {relief}"
+        "If it persists beyond a few days or gets worse, please see a healthcare provider."
+    )
+
+
+# -------------------------- MedQuAD source -------------------------- #
+
+def _resolve_medquad_csv() -> str:
+    """Download the MedQuAD Kaggle dataset (cached by kagglehub) and return its CSV path."""
+    try:
+        import kagglehub
+    except ImportError as exc:  # pragma: no cover - dependency hint
+        raise SystemExit(
+            "kagglehub is required for the MedQuAD source. Install it: pip install kagglehub"
+        ) from exc
+    path = kagglehub.dataset_download(MEDQUAD_DATASET_ID)
+    csvs = sorted(
+        glob.glob(os.path.join(path, "**", "*.csv"), recursive=True),
+        key=os.path.getsize, reverse=True,
+    )
+    if not csvs:
+        raise SystemExit(f"no CSV found under the downloaded MedQuAD dataset at {path}")
+    return csvs[0]
+
+
+def iter_medquad_rows(csv_path: str | None = None) -> Iterator[dict[str, str]]:
+    """Yield normalised {'question','answer','source','focus_area'} from the MedQuAD CSV."""
+    csv_path = csv_path or _resolve_medquad_csv()
+    print(f"MedQuAD CSV: {csv_path}")
+    with open(csv_path, encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        for raw in reader:
+            row = {(k or "").strip().lower(): (v or "").strip() for k, v in raw.items()}
+            q = row.get("question", "")
+            a = row.get("answer", "")
+            if not q or not a:
+                continue
+            yield {
+                "question": q,
+                "answer": a,
+                "source": row.get("source", "") or "MedQuAD",
+                "focus_area": row.get("focus_area", "") or row.get("focus", ""),
+            }
+
+
+# -------------------------- I/O helpers -------------------------- #
+
+def row_key(row: dict[str, Any]) -> str:
+    return f"{row.get('task_type')}|{row.get('drug')}|{row.get('section')}|{row.get('source_id')}"
 
 
 def already_processed_keys(output_path: str) -> set[str]:
@@ -1217,170 +1192,102 @@ def already_processed_keys(output_path: str) -> set[str]:
     with open(output_path, encoding="utf-8") as f:
         for line in f:
             try:
-                row = json.loads(line)
-                seen.add(f"{row.get('task_type')}|{row.get('drug')}|{row.get('section')}|{row.get('source_id')}")
+                seen.add(row_key(json.loads(line)))
             except json.JSONDecodeError:
                 continue
     return seen
-
-
-def parse_json_array(raw: str) -> list[dict[str, str]]:
-    raw = raw.strip()
-    raw = re.sub(r"^```(?:json)?\s*", "", raw)
-    raw = re.sub(r"\s*```$", "", raw)
-    start = raw.find("[")
-    end = raw.rfind("]")
-    if start == -1 or end == -1 or end <= start:
-        return []
-    try:
-        parsed = json.loads(raw[start : end + 1])
-        if isinstance(parsed, list):
-            return [
-                p for p in parsed
-                if isinstance(p, dict) and "question" in p and "answer" in p
-            ]
-    except json.JSONDecodeError:
-        pass
-    return []
 
 
 # -------------------------- task definitions -------------------------- #
 
 @dataclass
 class Task:
-    """One unit of dataset-generation work."""
-    task_type: str  # "drug_label" | "symptom"
-    drug: str       # for drug_label: actual drug name; for symptom: comma-separated context drugs
-    section: str    # for drug_label: FDA section; for symptom: triage tier
-    source: str     # text passed to the gen prompt
-    source_id: str  # unique id for resume tracking
+    """One MedQuAD row whose answer needs the LLM rewrite + faithfulness judge."""
+    question: str
+    source_answer: str   # the original MedQuAD answer (ground truth for the judge)
+    drug: str            # the MedQuAD focus_area, or "n/a"
+    section: str         # MedQuAD category bucket / "informational"
+    source_id: str       # "medquad::<sha1(question)[:16]>"
     extras: dict[str, Any] = field(default_factory=dict)
+    task_type: str = "medquad_qa"
 
-    def gen_prompt(self, n: int) -> str:
-        if self.task_type == "drug_label":
-            return GEN_PROMPT_DRUG.format(
-                drug=self.drug, section_name=self.section,
-                source=chunk_long_text(self.source), n=n,
-            )
-        else:
-            return GEN_PROMPT_SYMPTOM.format(
-                symptom_label=self.extras["label"],
-                triage=self.extras["triage"],
-                notes=self.extras["notes"],
-                drug_excerpts=chunk_long_text(self.source, 3000),
-                n=n,
-                n_minus_one=max(1, n - 1),
-            )
+    def gen_prompt(self) -> str:
+        return GEN_PROMPT_MEDQUAD.format(
+            question=self.question,
+            answer=chunk_long_text(self.source_answer, 5000),
+            source=self.extras.get("origin_source") or "MedQuAD",
+            focus_area=self.drug,
+        )
 
-    def judge_prompt(self, question: str, answer: str) -> str:
-        if self.task_type == "drug_label":
-            return JUDGE_PROMPT_DRUG.format(
-                drug=self.drug, section_name=self.section,
-                source=chunk_long_text(self.source),
-                question=question, answer=answer,
-            )
-        else:
-            return JUDGE_PROMPT_SYMPTOM.format(
-                symptom_label=self.extras["label"],
-                triage=self.extras["triage"],
-                drug_excerpts=chunk_long_text(self.source, 3000),
-                question=question, answer=answer,
-            )
+    def judge_prompt(self, rewritten: str) -> str:
+        return JUDGE_PROMPT_MEDQUAD.format(
+            question=self.question,
+            rewritten=rewritten,
+            answer=chunk_long_text(self.source_answer, 5000),
+        )
 
 
-# -------------------------- task builders -------------------------- #
+# -------------------------- task / row builders -------------------------- #
 
-DRUG_LABEL_SECTIONS = [
-    ("dosage_and_administration", "dosage", 3),
-    ("contraindications", "contraindications", 3),
-    ("drug_interactions", "interactions", 3),
-    ("warnings_and_cautions", "warnings", 2),
-    ("indications_and_usage", "indications", 2),
-    ("adverse_reactions", "adverse_reactions", 1),
-    ("overdosage", "overdose", 1),
-]
+def _medquad_source_id(question: str) -> str:
+    return "medquad::" + hashlib.sha1(question.strip().encode("utf-8")).hexdigest()[:16]
 
 
-def pick_sections_for_drug(label: dict[str, Any], k: int) -> list[tuple[str, str, str]]:
-    """Weighted-sample up to k populated sections from a drug label."""
-    populated: list[tuple[str, str, int, str]] = []
-    for key, name, weight in DRUG_LABEL_SECTIONS:
-        text = join_section(label, key)
-        if len(text) >= 200:
-            populated.append((key, name, weight, text))
-
-    chosen: list[tuple[str, str, str]] = []
-    pool = list(populated)
-    while pool and len(chosen) < k:
-        weights = [w for _, _, w, _ in pool]
-        total = sum(weights)
-        r = random.random() * total
-        upto = 0
-        idx = len(pool) - 1
-        for i, (_, _, w, _) in enumerate(pool):
-            upto += w
-            if upto >= r:
-                idx = i
-                break
-        key, name, _, text = pool.pop(idx)
-        chosen.append((key, name, text))
-    return chosen
-
-
-def build_drug_label_tasks(max_drugs: int, sections_per_drug: int) -> list[Task]:
-    tasks: list[Task] = []
-    files = list(iter_drug_label_files())[:max_drugs]
-    for filepath in files:
-        label = load_label(filepath)
-        if not label:
+def build_medquad_tasks(max_rows: int, seed: int, csv_path: str | None = None) -> list[Task]:
+    seen_pairs: set[tuple[str, str]] = set()
+    uniq: list[dict[str, str]] = []
+    for r in iter_medquad_rows(csv_path):
+        k = (r["question"], r["answer"])
+        if k in seen_pairs:
             continue
-        drug = str(label.get("drug_name") or os.path.basename(filepath))
-        for _section_key, section_name, source in pick_sections_for_drug(label, k=sections_per_drug):
-            tasks.append(Task(
-                task_type="drug_label",
-                drug=drug,
-                section=section_name,
-                source=source,
-                source_id=os.path.basename(filepath),
-            ))
-    return tasks
-
-
-def build_symptom_tasks() -> list[Task]:
-    """Look up FDA excerpts for each theme's drugs and build a Task per theme."""
-    # Reuse the agent's find_label so we benefit from its scoring.
-    from agent.tools._data import find_label, join_section as agent_join
-
+        seen_pairs.add(k)
+        uniq.append(r)
+    random.Random(seed).shuffle(uniq)
+    if max_rows and max_rows > 0:
+        uniq = uniq[:max_rows]
     tasks: list[Task] = []
-    for theme in SYMPTOM_THEMES:
-        excerpts: list[str] = []
-        for d in theme["drugs"]:
-            label = find_label(d, prefer_section="dosage_and_administration")
-            if not label:
-                continue
-            dose_text = agent_join(label, "dosage_and_administration")
-            contra_text = agent_join(label, "contraindications")
-            block_parts = [f"## {label.get('drug_name', d).upper()}"]
-            if dose_text:
-                block_parts.append(f"DOSAGE: {chunk_long_text(dose_text, 700)}")
-            if contra_text:
-                block_parts.append(f"CONTRAINDICATIONS: {chunk_long_text(contra_text, 500)}")
-            excerpts.append("\n".join(block_parts))
-        source = "\n\n".join(excerpts) if excerpts else "(no FDA excerpts available — emergency-tier or no OTC relevant)"
-        slug = re.sub(r"[^a-z0-9]+", "_", theme["label"].lower()).strip("_")
+    for r in uniq:
         tasks.append(Task(
-            task_type="symptom",
-            drug=", ".join(theme["drugs"]) or "n/a",
-            section=theme["triage"],
-            source=source,
-            source_id=f"symptom::{slug}",
+            question=r["question"],
+            source_answer=r["answer"],
+            drug=r["focus_area"] or "n/a",
+            section="informational",
+            source_id=_medquad_source_id(r["question"]),
             extras={
-                "label": theme["label"],
-                "triage": theme["triage"],
-                "notes": theme["notes"],
+                "source_dataset": f"MedQuAD (Kaggle: {MEDQUAD_DATASET_ID})",
+                "origin_source": r["source"],
+                "focus_area": r["focus_area"],
             },
         ))
     return tasks
+
+
+def build_symptom_rows(questions_per_theme: int = 3) -> list[dict[str, Any]]:
+    """Deterministic SFT rows for the curated safety-triage themes — no LLM, offline."""
+    rows: list[dict[str, Any]] = []
+    for theme in SYMPTOM_THEMES:
+        label = str(theme.get("label", ""))
+        triage = str(theme.get("triage", "low"))
+        answer = chosen_answer_for_theme(theme)
+        slug = theme_slug(label)
+        drugs = theme.get("drugs") or []
+        for i, q in enumerate(theme_queries(label, limit=questions_per_theme)):
+            rows.append({
+                "task_type": "symptom",
+                "drug": ", ".join(drugs) or "n/a",
+                "section": triage,
+                "question": q,
+                "answer": answer,
+                "source": "(deterministic safety-triage template)",
+                "source_id": f"symptom::{slug}" if i == 0 else f"symptom::{slug}::{i}",
+                "meta": {
+                    "source_dataset": "MedGuardAI curated safety-triage themes (deterministic)",
+                    "label": label,
+                    "triage": triage,
+                    "notes": str(theme.get("notes", "")),
+                },
+            })
+    return rows
 
 
 # -------------------------- async execution -------------------------- #
@@ -1425,92 +1332,79 @@ async def call_chat(client: AsyncOpenAI, model: str, prompt: str, temperature: f
         return f"__ERROR__: {exc}"
 
 
-async def run_task(
-    task: Task,
-    client: AsyncOpenAI,
-    model: str,
-    n_pairs: int,
-    judge: bool,
-) -> tuple[list[dict[str, Any]], int]:
-    """Returns (validated_rows, rejected_count)."""
-    raw = await call_chat(client, model, task.gen_prompt(n_pairs), temperature=0.4)
-    if raw.startswith("__ERROR__"):
-        return [], 0
-    pairs = parse_json_array(raw)
-
-    rows: list[dict[str, Any]] = []
-    rejected = 0
-    for pair in pairs:
-        q, a = pair.get("question", "").strip(), pair.get("answer", "").strip()
-        if not q or not a:
-            continue
-        if judge:
-            verdict = await call_chat(client, model, task.judge_prompt(q, a), temperature=0.0)
-            if not verdict.upper().startswith("YES"):
-                rejected += 1
-                continue
-        row = {
-            "task_type": task.task_type,
-            "drug": task.drug,
-            "section": task.section,
-            "question": q,
-            "answer": a,
-            "source": task.source,
-            "source_id": task.source_id,
-        }
-        if task.extras:
-            row["meta"] = task.extras
-        rows.append(row)
-    return rows, rejected
+def _clean_rewrite(raw: str) -> str:
+    text = raw.strip()
+    text = re.sub(r"^```[a-zA-Z]*\s*", "", text)
+    text = re.sub(r"\s*```$", "", text).strip()
+    # strip a single layer of surrounding quotes if the model added them
+    if len(text) >= 2 and text[0] == text[-1] == '"':
+        text = text[1:-1].strip()
+    return text
 
 
-async def execute_all(
-    tasks: list[Task],
-    args: argparse.Namespace,
-    output_path: str,
-) -> None:
+async def run_task(task: Task, client: AsyncOpenAI, model: str, judge: bool) -> dict[str, Any] | None:
+    """Rewrite one MedQuAD answer; return the output row or None if dropped."""
+    raw = await call_chat(client, model, task.gen_prompt(), temperature=0.3)
+    if not raw or raw.startswith("__ERROR__") or raw == "__ABORTED__":
+        return None
+    rewritten = _clean_rewrite(raw)
+    if len(rewritten) < 15:
+        return None
+    if judge:
+        verdict = await call_chat(client, model, task.judge_prompt(rewritten), temperature=0.0)
+        if verdict.startswith("__") or not verdict.strip().upper().startswith("YES"):
+            return None
+    return {
+        "task_type": task.task_type,
+        "drug": task.drug,
+        "section": task.section,
+        "question": task.question,
+        "answer": rewritten,
+        "source": task.source_answer,
+        "source_id": task.source_id,
+        "meta": dict(task.extras),
+    }
+
+
+async def execute_all(tasks: list[Task], args: argparse.Namespace, output_path: str) -> None:
     client, model = make_client_and_model()
-    print(f"using model={model!r} via base_url={client.base_url}")
-    print(f"dispatching {len(tasks)} tasks with concurrency={args.concurrency}")
+    print(f"rewriter/judge model={model!r} via base_url={client.base_url}")
+    print(f"dispatching {len(tasks)} MedQuAD rows with concurrency={args.concurrency}")
 
     sem = asyncio.Semaphore(args.concurrency)
     out_lock = asyncio.Lock()
     f = open(output_path, "a", encoding="utf-8")
-    written = rejected = 0
+    written = dropped = 0
     started = time.time()
 
     async def worker(idx: int, task: Task) -> None:
-        nonlocal written, rejected
+        nonlocal written, dropped
         if _state["aborted"]:
             return
         async with sem:
             if _state["aborted"]:
                 return
-            rows, rej = await run_task(
-                task, client, model,
-                n_pairs=args.questions_per_section,
-                judge=not args.no_judge,
-            )
+            row = await run_task(task, client, model, judge=not args.no_judge)
         async with out_lock:
-            for row in rows:
+            if row is not None:
                 f.write(json.dumps(row, ensure_ascii=False) + "\n")
-            f.flush()
-            written += len(rows)
-            rejected += rej
-            if (idx + 1) % 10 == 0 or (idx + 1) == len(tasks):
+                f.flush()
+                written += 1
+            else:
+                dropped += 1
+            done = idx + 1
+            if done % 25 == 0 or done == len(tasks):
                 elapsed = time.time() - started
                 rate = written / elapsed if elapsed > 0 else 0
-                print(
-                    f"  [{idx + 1}/{len(tasks)}] task={task.task_type} "
-                    f"key={task.source_id[:60]!r} | written={written} "
-                    f"rejected={rejected} rate={rate:.2f} pair/s "
-                    f"elapsed={elapsed:.0f}s"
-                )
+                print(f"  [{done}/{len(tasks)}] written={written} dropped={dropped} "
+                      f"rate={rate:.2f} row/s elapsed={elapsed:.0f}s")
 
     await asyncio.gather(*(worker(i, t) for i, t in enumerate(tasks)))
     f.close()
     elapsed = time.time() - started
-    print(f"\ndone. wrote {written} pairs, rejected {rejected} in {elapsed:.0f}s. output: {output_path}")
+    if _state["aborted"]:
+        print(f"\n!! aborted: {_state['abort_reason']}\n!! output is intact and resumable.")
+    print(f"\ndone. wrote {written} MedQuAD rows, dropped {dropped} in {elapsed:.0f}s. output: {output_path}")
 
 
 # -------------------------- main -------------------------- #
@@ -1518,45 +1412,55 @@ async def execute_all(
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--task", choices=["drug-labels", "symptoms", "all"], default="all")
-    parser.add_argument("--max-drugs", type=int, default=1000)
-    parser.add_argument("--sections-per-drug", type=int, default=2)
+    parser.add_argument("--task", choices=["medquad", "symptoms", "all"], default="all")
+    parser.add_argument("--max-rows", type=int, default=4000,
+                        help="cap on MedQuAD rows to process (0 = all ~16k)")
+    parser.add_argument("--max-drugs", type=int, default=None, help=argparse.SUPPRESS)  # deprecated alias
     parser.add_argument("--questions-per-section", type=int, default=3,
-                        help="also used as questions-per-symptom-theme")
+                        help="phrasings generated per curated symptom theme")
     parser.add_argument("--concurrency", type=int, default=20,
-                        help="parallel API calls (DeepSeek allows 30+)")
+                        help="parallel rewrite/judge calls")
     parser.add_argument("--no-judge", action="store_true",
-                        help="skip the validation pass (faster, lower quality)")
+                        help="skip the faithfulness judge on MedQuAD rewrites (faster, lower quality)")
     parser.add_argument("--output", default=OUTPUT_PATH)
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
+    if args.max_drugs is not None:
+        args.max_rows = args.max_drugs
 
     random.seed(args.seed)
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
     seen = already_processed_keys(args.output)
-    print(f"resuming: {len(seen)} task keys already in {args.output}")
+    print(f"resuming: {len(seen)} rows already in {args.output}")
 
-    # Symptoms FIRST so the highest-value safety-triage data is captured even
-    # if drug-label generation gets cut off (budget exhaustion, interrupt).
-    tasks: list[Task] = []
+    # 1. Deterministic symptom rows first — offline, highest-value safety data, so
+    #    they land even if the MedQuAD rewrite pass gets cut off.
     if args.task in ("symptoms", "all"):
-        tasks.extend(build_symptom_tasks())
-    if args.task in ("drug-labels", "all"):
-        tasks.extend(build_drug_label_tasks(args.max_drugs, args.sections_per_drug))
+        sym_rows = build_symptom_rows(args.questions_per_section)
+        new_rows = [r for r in sym_rows if row_key(r) not in seen]
+        if new_rows:
+            with open(args.output, "a", encoding="utf-8") as f:
+                for r in new_rows:
+                    f.write(json.dumps(r, ensure_ascii=False) + "\n")
+            print(f"symptom themes: wrote {len(new_rows)} deterministic rows "
+                  f"({len(sym_rows) - len(new_rows)} already present)")
+        else:
+            print(f"symptom themes: all {len(sym_rows)} rows already present")
+        for r in sym_rows:
+            seen.add(row_key(r))
 
-    # Filter out already-processed
-    before = len(tasks)
-    tasks = [
-        t for t in tasks
-        if f"{t.task_type}|{t.drug}|{t.section}|{t.source_id}" not in seen
-    ]
-    print(f"tasks: {before} total, {len(tasks)} remaining after dedup")
+    # 2. MedQuAD rows — LLM rewrite into our voice + faithfulness judge.
+    if args.task in ("medquad", "all"):
+        tasks = build_medquad_tasks(args.max_rows, args.seed)
+        before = len(tasks)
+        tasks = [t for t in tasks
+                 if f"{t.task_type}|{t.drug}|{t.section}|{t.source_id}" not in seen]
+        print(f"MedQuAD: {before} candidate rows, {len(tasks)} remaining after dedup")
+        if tasks:
+            asyncio.run(execute_all(tasks, args, args.output))
+        else:
+            print("MedQuAD: nothing to do.")
 
-    if not tasks:
-        print("nothing to do.")
-        return 0
-
-    asyncio.run(execute_all(tasks, args, args.output))
     return 0
 
 

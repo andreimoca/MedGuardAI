@@ -4,22 +4,33 @@ Two-stage workflow. Stage 1 happens locally (uses LM Studio for inference, no
 heavy training). Stage 2 happens on a free Colab/Kaggle T4 (16 GB VRAM is
 plenty; your 6 GB laptop GPU isn't).
 
-## Stage 1 — Generate the synthetic SFT dataset
+## Stage 1 — Build the SFT dataset (MedQuAD + curated safety-triage themes)
 
-Two task types feed the same JSONL output:
+`build_qa_dataset.py` writes one JSONL with two kinds of rows:
 
-1. **drug-labels** — for each FDA label section, generate Q&A pairs grounded in
-   the section text, then validate them with a judge prompt.
-2. **symptoms** — for each entry in a curated symptom triage list (headache,
-   back pain, dizziness, chest pain, anaphylaxis, overdose, etc.), generate
-   user-style queries with safety-aware responses. Emergency-tier symptoms
-   produce strict `[EMERGENCY] ...` responses; lower-tier may recommend OTC
-   drugs from our FDA corpus; medium-tier defers to a clinician.
+1. **medquad** — [MedQuAD](https://github.com/abachaa/MedQuAD), the Medical
+   Question Answering Dataset (consumer-health Q&A curated from U.S. National
+   Institutes of Health websites), pulled from Kaggle with `kagglehub`
+   (`pythonafroz/medquad-medical-question-answer-for-ai-research`). For each
+   Q&A pair the builder LLM **rewrites the existing answer** into MedGuardAI's
+   safety-first voice (concise, "consult a healthcare provider", `[EMERGENCY]`
+   only for true emergencies, never invents a dose or a drug name). A second
+   call judges the rewrite for **faithfulness to the original MedQuAD answer** —
+   the LLM reformats, it does not introduce new clinical facts. Rows that fail
+   the judge are dropped. (`task_type: "medquad_qa"`.)
+2. **symptoms** — for each entry in `SYMPTOM_THEMES` (a hand-curated list of
+   ~140 symptom-triage scenarios: headache, back pain, dizziness, chest pain,
+   anaphylaxis, overdose, …) the safety-aware answer is rendered from a
+   **deterministic template** keyed on the triage tier — emergency tiers get a
+   strict `[EMERGENCY] …` response and recommend no medication; medium tier
+   gives brief OTC guidance and defers to a clinician within a timeframe; low
+   tier asks a clarifying question first. **No LLM is used for this slice.**
+   (`task_type: "symptom"`, `section` = `low` / `medium` / `high_emergency`.)
 
-### Backend selection
+### Backend selection (only the MedQuAD rows touch the network)
 
-The dataset builder picks its LLM separately from the runtime agent. Set these
-in `.env`:
+`--task symptoms` runs fully offline. For the MedQuAD rewrite/judge, the
+builder picks its LLM separately from the runtime agent — set in `.env`:
 
 ```
 DATASET_LLM_URL=https://api.deepseek.com/v1
@@ -27,53 +38,56 @@ DATASET_LLM_KEY=sk-...
 DATASET_LLM_MODEL=deepseek-chat
 ```
 
-If `DATASET_LLM_KEY` is empty, the script falls back to your local LM Studio
-(`LOCAL_LLM_URL`). DeepSeek is **~10–30× faster** thanks to async concurrency
-(local LM Studio serializes requests) and costs ~$5–10 USD for the full
-~12k-call run. The fine-tuned model still runs locally — only the *training
-data generation* uses the remote API, which is the standard pattern for
-SLM fine-tuning (Alpaca, Vicuna, Orca, Phi, etc.).
+If `DATASET_LLM_KEY` is empty it falls back to your local LM Studio
+(`LOCAL_LLM_URL`). DeepSeek is far faster here thanks to async concurrency
+(local LM Studio serializes requests); reformatting ~4k MedQuAD answers with
+the faithfulness judge costs roughly a couple of USD. `kagglehub` downloads the
+public dataset; if Kaggle asks for credentials set `KAGGLE_USERNAME` /
+`KAGGLE_KEY` (or drop `~/.kaggle/kaggle.json` in place).
 
 ### Running
 
 ```bash
 cd backend
-# Quick smoke run (~5 drugs + 30 symptom themes, ~3-5 min on DeepSeek)
-python training/build_qa_dataset.py --max-drugs 5 --concurrency 10
+pip install kagglehub
 
-# Real run for SFT training (~3-5k pairs, ~10-20 min on DeepSeek)
-python training/build_qa_dataset.py --max-drugs 1000 --concurrency 20
+# Smoke run: ~30 MedQuAD rows reformatted + all the deterministic symptom themes
+python training/build_qa_dataset.py --task all --max-rows 30 --concurrency 10
 
-# Drug labels only (skip symptoms)
-python training/build_qa_dataset.py --task drug-labels --max-drugs 1000
+# Real run for SFT training (resumable; ~a couple $ on DeepSeek)
+python training/build_qa_dataset.py --task all --max-rows 4000 --concurrency 20
 
-# Symptoms only
+# Deterministic symptom-triage rows only (offline, no API key needed)
 python training/build_qa_dataset.py --task symptoms
 
-# Skip the validator (~2x faster, lower quality)
-python training/build_qa_dataset.py --max-drugs 1000 --no-judge
+# MedQuAD rows only, skipping the faithfulness judge (~2x faster, lower quality)
+python training/build_qa_dataset.py --task medquad --max-rows 4000 --no-judge
 ```
 
 Output: `training/data/sft_pairs.jsonl`. The script is **resumable** — re-run
 it after a crash and it picks up where it left off (skips any
 `(task_type, drug, section, source_id)` tuples already in the file).
 
-Each row:
+A MedQuAD row:
 ```json
 {
-  "task_type": "drug_label",
-  "drug": "Naproxen",
-  "section": "drug_interactions",
-  "question": "Can I take naproxen with warfarin?",
-  "answer": "Naproxen and warfarin have a synergistic effect on bleeding...",
-  "source": "<the FDA section text>",
-  "source_id": "naproxen_8c45ef1f-....json"
+  "task_type": "medquad_qa",
+  "drug": "Glaucoma",
+  "section": "informational",
+  "question": "What are the treatments for Glaucoma?",
+  "answer": "<the MedQuAD answer, rewritten into MedGuardAI's voice>",
+  "source": "<the original MedQuAD answer text — ground truth for the judge>",
+  "source_id": "medquad::1a2b3c4d5e6f7a8b",
+  "meta": {
+    "source_dataset": "MedQuAD (Kaggle: pythonafroz/medquad-medical-question-answer-for-ai-research)",
+    "origin_source": "NIHSeniorHealth",
+    "focus_area": "Glaucoma"
+  }
 }
 ```
 
-For `task_type: "symptom"` rows, `section` is the triage tier
-(`low` / `medium` / `high_emergency`) and an extra `meta` field carries the
-theme label and notes.
+A symptom row carries `section` = the triage tier and `meta` with the theme
+label, triage tier, and clinical notes.
 
 ## Stage 2 — Train QLoRA on Colab/Kaggle (cloud)
 
@@ -141,11 +155,11 @@ DPO continues from the **SFT LoRA adapter** (`medguard-sft/`, kept from Stage 2 
 
 ```bash
 cd backend
-# 1. build the preference dataset
-#    sources: seeded safety hard-negatives (deterministic) + degraded SFT answers (DeepSeek + position-swap-consistent judge) + collected human feedback
-python training/build_dpo_dataset.py --candidate-mode none                       # seeded negatives only (zero API cost)
-python training/build_dpo_dataset.py --prompts-from sft --n-prompts 300 --concurrency 15
-python training/build_dpo_dataset.py --prompts-from feedback --include-seeded     # fold in UI thumbs-down + corrections
+# 1. build the preference dataset (no LLM involved — fully deterministic + real human feedback)
+#    sources: hand-authored safety hard-negatives + thumbs-down/correction pairs from the app
+python training/build_dpo_dataset.py                # seeded negatives + human-feedback pairs
+python training/build_dpo_dataset.py --no-feedback  # seeded negatives only
+python training/build_dpo_dataset.py --no-seeded    # only the human-feedback pairs
 # -> training/data/dpo_pairs.jsonl   (resumable; human-feedback pairs are weighted up)
 ```
 
@@ -158,15 +172,15 @@ Then open [`finetune_gemma_dpo.ipynb`](finetune_gemma_dpo.ipynb) in Colab (T4), 
 
 Deploy as in Stage 3 (`export_to_lmstudio.py copy --gguf …`), set `LOCAL_LLM_MODEL=medguard/medguard-gemma-3-4b-dpo`, restart the backend, then run the eval comparison: `backend/evaluation/run_eval.py --label {base,sft,dpo} --model-override …` × 3, then `backend/evaluation/compare_runs.py --runs base sft dpo --per-case`.
 
-Human feedback feeds back in: the running app appends thumbs-up/down (and optional corrections) to `backend/data/feedback/feedback.jsonl` via `POST /api/v1/feedback`; `build_dpo_dataset.py --prompts-from feedback` turns the thumbs-down items into preference pairs.
+Human feedback feeds back in: the running app appends thumbs-up/down (and optional corrections) to `backend/data/feedback/feedback.jsonl` via `POST /api/v1/feedback`; `build_dpo_dataset.py` turns each thumbs-down item *that came with a user correction* into a preference pair (correction = `chosen`, downvoted answer = `rejected`).
 
 ## Files
 
-- `build_qa_dataset.py` — synthetic Q&A generator with judge-based validation (Phase 2 SFT data)
+- `build_qa_dataset.py` — SFT data builder: rewrites MedQuAD Q&A into our voice (with a faithfulness judge) + renders the curated safety-triage themes deterministically
 - `finetune_gemma_lora.ipynb` — Colab/Kaggle QLoRA SFT notebook
-- `build_dpo_dataset.py` — preference-dataset builder (seeded negatives + degraded SFT answers + human feedback)
+- `build_dpo_dataset.py` — preference-dataset builder (hand-authored safety hard-negatives + human-correction pairs; no LLM)
 - `finetune_gemma_dpo.ipynb` — Colab/Kaggle DPO notebook (continues from the SFT adapter)
 - `export_to_lmstudio.py` — copy GGUF locally / push to HF Hub
-- `rebalance_dataset.py` — rebalance `sft_pairs.jsonl` across task types / triage tiers
+- `rebalance_dataset.py` — trim over-represented symptom triage tiers in `sft_pairs.jsonl`
 - `data/sft_pairs.jsonl`, `data/dpo_pairs.jsonl` — generated datasets (gitignored)
 - `adapters/` — local copies of trained adapters (gitignored)

@@ -16,24 +16,24 @@ MedGuardAI is an AI-driven medical assistant powered by Agentic RAG. It utilizes
 ### The full pipeline (one diagram)
 
 ```
-                    FDA DailyMed labels (OpenFDA)
-                              │
-              ┌───────────────┴───────────────┐
-        chunk + embed                   synthetic Q&A gen (DeepSeek)
-        (all-MiniLM-L6-v2)              build_qa_dataset.py
-              │                                │
-        ChromaDB vector store            sft_pairs.jsonl
-              │                                │
-              │                         QLoRA SFT  (finetune_gemma_lora.ipynb, T4)
-              │                                │
-              │                         DPO / RLHF (finetune_gemma_dpo.ipynb, T4)
-              │                          ▲      │   ▲
-              │                          │      ▼   │
-   ┌──────────┴───────────┐    dpo_pairs.jsonl   medguard-…-dpo.gguf  (LM Studio)
-   │   RAG retrieval (MMR) │    (build_dpo_dataset.py)        │
-   └──────────┬───────────┘     ▲                            │
-              │                 │ thumbs-down + corrections  │
-              ▼                 │                            ▼
+   FDA DailyMed labels (OpenFDA)        MedQuAD (Kaggle: NIH consumer-health Q&A)   curated safety-triage themes
+              │                                    │                                       │
+        chunk + embed              reformat answers → MedGuardAI voice            deterministic templates
+        (all-MiniLM-L6-v2)         + faithfulness judge (DeepSeek)                (no LLM)
+              │                                    └──────────────────┬────────────────────┘
+        ChromaDB vector store                                    sft_pairs.jsonl   (build_qa_dataset.py)
+              │                                                       │
+              │                              QLoRA SFT  (finetune_gemma_lora.ipynb, T4)
+              │                                                       │
+              │                              DPO / RLHF (finetune_gemma_dpo.ipynb, T4)
+              │                               ▲                       │   ▲
+              │                               │                       ▼   │
+   ┌──────────┴───────────┐    dpo_pairs.jsonl  (seeded safety       medguard-…-dpo.gguf  (LM Studio)
+   │   RAG retrieval (MMR) │    hard-negatives + human corrections,           │
+   └──────────┬───────────┘    no LLM — build_dpo_dataset.py)                 │
+              │                 ▲                                            │
+              │                 │ thumbs-down + corrections                  │
+              ▼                 │                                            ▼
    input guard → LangGraph agent (6 tools) → output guard / groundedness → answer
                                                               │
                                                        React UI + 👍/👎 ──► feedback.jsonl
@@ -286,12 +286,11 @@ This will:
 
 The runtime model is **not stock Gemma-3-4b** — it's a QLoRA supervised fine-tune followed by a DPO (Direct Preference Optimization) pass, both run on a free Colab/Kaggle T4. See [`backend/training/README.md`](backend/training/README.md) for the full workflow.
 
-**Phase 2 — SFT.** `backend/training/build_qa_dataset.py` generates a synthetic clinical Q&A dataset (`sft_pairs.jsonl`) — drug-label Q&A grounded in the FDA corpus plus 100+ curated symptom-triage themes — using a remote builder LLM (DeepSeek) with judge validation. `finetune_gemma_lora.ipynb` trains the LoRA adapter and exports `medguard-gemma-3-4b-q4_k_m.gguf`.
+**Phase 2 — SFT.** `backend/training/build_qa_dataset.py` builds the SFT dataset (`sft_pairs.jsonl`) from two sources: (1) **MedQuAD** — the Medical Question Answering Dataset (consumer-health Q&A curated from U.S. NIH websites), pulled from Kaggle via `kagglehub`, with the builder LLM (DeepSeek) **rewriting each answer into MedGuardAI's safety-first voice** and a faithfulness judge confirming the rewrite adds no clinical fact not in the original MedQuAD answer; (2) ~140 hand-curated symptom-triage themes whose answers are rendered from **deterministic templates** (no LLM). `finetune_gemma_lora.ipynb` trains the LoRA adapter and exports `medguard-gemma-3-4b-q4_k_m.gguf`.
 
-**Phase 3 — DPO / RLHF.** `backend/training/build_dpo_dataset.py` builds a preference dataset (`dpo_pairs.jsonl`) from three sources:
-- **seeded safety hard-negatives** — deterministic `(chosen, rejected)` pairs templated from the symptom themes, where the rejected answer breaks exactly one safety rule (drops the `[EMERGENCY]` tag, over-triages a routine symptom, invents an overconfident dose, names a prescription-only drug);
-- **degraded SFT answers** — the (judge-validated) SFT answer is `chosen`; DeepSeek rewrites it into a subtly worse `rejected`; a preference judge (run with a position-swap consistency check) confirms;
-- **human feedback** — thumbs-down events from the UI: the downvoted answer is `rejected`, the user correction (or a regenerated-and-judged answer) is `chosen`; these are weighted up.
+**Phase 3 — DPO / RLHF.** `backend/training/build_dpo_dataset.py` builds a preference dataset (`dpo_pairs.jsonl`) from two real, reproducible sources — no LLM is used to generate it:
+- **seeded safety hard-negatives** — deterministic `(chosen, rejected)` pairs templated from the symptom themes (reusing the same "chosen" answers as the SFT symptom rows), where the rejected answer breaks exactly one safety rule (drops the `[EMERGENCY]` tag, over-triages a routine symptom, invents an overconfident dose, names a prescription-only drug);
+- **human feedback** — thumbs-down events from the UI that came with a user correction: the downvoted answer is `rejected`, the user's correction is `chosen`; these are weighted up.
 
 `finetune_gemma_dpo.ipynb` continues from the SFT adapter (or base Gemma as a fallback) with `trl.DPOTrainer` (T4-tuned: batch 1 ×8 grad-accum, `lr=5e-6`, `beta=0.1`, 1 epoch, `ref_model=None`) and exports `medguard-gemma-3-4b-dpo-q4_k_m.gguf`. `export_to_lmstudio.py` copies it into LM Studio; point `.env`'s `LOCAL_LLM_MODEL` at it and restart the backend — no application code changes.
 
@@ -349,10 +348,10 @@ This project is under active development. For milestone deliverables and progres
 ## Project status (vs. the course rubric)
 
 - ✅ Agent architecture with multiple tools (LangGraph + 6 clinical tools)
-- ✅ Data ingestion of new datasets (OpenFDA pipeline; second loaders pluggable)
+- ✅ Data ingestion of new datasets (OpenFDA label pipeline + MedQuAD via `kagglehub`)
 - ✅ RAG (ChromaDB + MMR, all-MiniLM-L6-v2 embeddings, hierarchical chunking)
-- ✅ Task-specific fine-tuning (QLoRA SFT on synthetic clinical Q&A) — **the runtime SLM is fine-tuned**
-- ✅ RLHF (DPO on a preference dataset: seeded safety negatives + degraded SFT answers + a live human-feedback loop)
+- ✅ Task-specific fine-tuning (QLoRA SFT on MedQuAD reformatted to our style + curated safety-triage themes) — **the runtime SLM is fine-tuned**
+- ✅ RLHF (DPO on a preference dataset: hand-authored safety hard-negatives + a live human-feedback loop)
 - ✅ Toxicity / hallucination handling (input + output guards, groundedness check)
 - ✅ Evaluation (held-out hand-curated set, rule checks + DeepEval metrics + classical NLP, base→SFT→DPO comparison)
 
