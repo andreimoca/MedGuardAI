@@ -25,7 +25,7 @@ def get_retriever():
         store = Chroma(persist_directory=VECTOR_DB_DIR, embedding_function=embeddings)
         _retriever = store.as_retriever(
             search_type="mmr",
-            search_kwargs={"k": 4, "fetch_k": 12, "lambda_mult": 0.7},
+            search_kwargs={"k": 3, "fetch_k": 12, "lambda_mult": 0.7},
         )
     return _retriever
 

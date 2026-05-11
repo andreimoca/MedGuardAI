@@ -1,8 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Send, User, Bot, AlertTriangle, Activity, Plus, X, RefreshCw } from 'lucide-react';
+import { Send, User, Bot, AlertTriangle, Activity, Plus, X, RefreshCw, ThumbsUp, ThumbsDown } from 'lucide-react';
 import axios from 'axios';
 import './index.css';
+
+const API_BASE = 'http://localhost:8000';
 
 const WELCOME_MESSAGE = {
   role: 'assistant',
@@ -74,12 +76,15 @@ export default function App() {
         }
       };
 
-      const res = await axios.post('http://localhost:8000/api/v1/ask', payload);
+      const res = await axios.post(`${API_BASE}/api/v1/ask`, payload);
 
       setMessages(prev => [...prev, {
         role: 'assistant',
         content: res.data.answer,
-        status: res.data.status // 'success' or 'emergency'
+        status: res.data.status, // 'success' or 'emergency'
+        forQuery: userMsg,
+        forContext: payload.patient_context,
+        feedback: null // null | 'sent'
       }]);
     } catch (err) {
       setMessages(prev => [...prev, {
@@ -89,6 +94,24 @@ export default function App() {
       }]);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const sendFeedback = async (idx, rating) => {
+    const m = messages[idx];
+    if (!m || m.role !== 'assistant') return;
+    try {
+      await axios.post(`${API_BASE}/api/v1/feedback`, {
+        query: m.forQuery,
+        patient_context: m.forContext,
+        answer: m.content,
+        rating,
+        status: m.status
+      });
+      setMessages(prev => prev.map((x, i) => (i === idx ? { ...x, feedback: 'sent' } : x)));
+    } catch (err) {
+      // Non-fatal: just log; the chat keeps working without feedback persistence.
+      console.warn('Could not save feedback:', err.message);
     }
   };
 
@@ -208,6 +231,36 @@ export default function App() {
                 </div>
                 <div className="message-bubble">
                   {m.content}
+
+                  {m.role === 'assistant' && m.feedback !== undefined && m.status === 'success' && (
+                    <div className="feedback-row">
+                      {m.feedback === 'sent' ? (
+                        <span className="feedback-thanks">Thanks for the feedback ✓</span>
+                      ) : (
+                        <>
+                          <span className="feedback-label">Was this helpful?</span>
+                          <button
+                            type="button"
+                            className="feedback-btn"
+                            onClick={() => sendFeedback(idx, 'up')}
+                            aria-label="Helpful"
+                            title="Helpful"
+                          >
+                            <ThumbsUp size={14} />
+                          </button>
+                          <button
+                            type="button"
+                            className="feedback-btn"
+                            onClick={() => sendFeedback(idx, 'down')}
+                            aria-label="Not helpful"
+                            title="Not helpful"
+                          >
+                            <ThumbsDown size={14} />
+                          </button>
+                        </>
+                      )}
+                    </div>
+                  )}
                 </div>
               </motion.div>
             ))}

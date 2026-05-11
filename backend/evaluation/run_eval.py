@@ -114,9 +114,14 @@ def compute_classical_metrics(reference: str, prediction: str) -> dict[str, Any]
 def check_rule_based(case: dict[str, Any], response: str) -> dict[str, Any]:
     response_lower = response.lower()
     must_contain = case.get("must_contain") or []
+    must_contain_any = case.get("must_contain_any") or []
     must_not_contain = case.get("must_not_contain") or []
 
     contains_misses = [s for s in must_contain if s.lower() not in response_lower]
+    # must_contain_any: pass if the list is empty OR at least one substring is present.
+    any_satisfied = (not must_contain_any) or any(
+        s.lower() in response_lower for s in must_contain_any
+    )
     contains_violations = [s for s in must_not_contain if s.lower() in response_lower]
 
     # Tier check: if expected_tier is set, does the response match the expected tier?
@@ -131,12 +136,14 @@ def check_rule_based(case: dict[str, Any], response: str) -> dict[str, Any]:
 
     rule_passed = (
         not contains_misses
+        and any_satisfied
         and not contains_violations
         and (tier_match is None or tier_match)
     )
 
     return {
         "must_contain_misses": contains_misses,
+        "must_contain_any_satisfied": any_satisfied,
         "must_not_contain_violations": contains_violations,
         "tier_expected": expected_tier,
         "tier_match": tier_match,
@@ -333,8 +340,15 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=None, help="limit number of cases (smoke run)")
     parser.add_argument("--skip-deepeval", action="store_true",
                         help="skip LLM-judge metrics (rule-based only, no API cost)")
+    parser.add_argument("--model-override", default=None,
+                        help="override LOCAL_LLM_MODEL for this run (must already be loaded in LM Studio). "
+                             "Lets you run base/sft/dpo back-to-back without editing .env.")
     parser.add_argument("--eval-set", default=EVAL_SET_PATH)
     args = parser.parse_args()
+
+    if args.model_override:
+        os.environ["LOCAL_LLM_MODEL"] = args.model_override
+        print(f"model override: LOCAL_LLM_MODEL={args.model_override}")
 
     if not os.path.exists(args.eval_set):
         print(f"eval set not found at {args.eval_set} — run build_eval_set.py first")

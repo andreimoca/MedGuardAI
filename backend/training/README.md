@@ -135,10 +135,38 @@ License note: Gemma-3 is distributed under the
 permitted; pass the terms along to your teammates and don't use the model for
 the prohibited harmful purposes.
 
+## Stage 4 — Phase 3: DPO (preference / RLHF)
+
+DPO continues from the **SFT LoRA adapter** (`medguard-sft/`, kept from Stage 2 — on Colab/Drive/HF; if it's truly gone, re-run Stage 2 or DPO from base Gemma).
+
+```bash
+cd backend
+# 1. build the preference dataset
+#    sources: seeded safety hard-negatives (deterministic) + degraded SFT answers (DeepSeek + position-swap-consistent judge) + collected human feedback
+python training/build_dpo_dataset.py --candidate-mode none                       # seeded negatives only (zero API cost)
+python training/build_dpo_dataset.py --prompts-from sft --n-prompts 300 --concurrency 15
+python training/build_dpo_dataset.py --prompts-from feedback --include-seeded     # fold in UI thumbs-down + corrections
+# -> training/data/dpo_pairs.jsonl   (resumable; human-feedback pairs are weighted up)
+```
+
+Then open [`finetune_gemma_dpo.ipynb`](finetune_gemma_dpo.ipynb) in Colab (T4), upload `dpo_pairs.jsonl` and the `medguard-sft/` adapter folder, run top-to-bottom (~20–40 min):
+
+| Artifact | Purpose |
+|---|---|
+| `medguard-dpo/` | DPO LoRA adapter |
+| `medguard-dpo-gguf/medguard-gemma-3-4b-dpo-q4_k_m.gguf` | drop-in for LM Studio |
+
+Deploy as in Stage 3 (`export_to_lmstudio.py copy --gguf …`), set `LOCAL_LLM_MODEL=medguard/medguard-gemma-3-4b-dpo`, restart the backend, then run the eval comparison: `backend/evaluation/run_eval.py --label {base,sft,dpo} --model-override …` × 3, then `backend/evaluation/compare_runs.py --runs base sft dpo --per-case`.
+
+Human feedback feeds back in: the running app appends thumbs-up/down (and optional corrections) to `backend/data/feedback/feedback.jsonl` via `POST /api/v1/feedback`; `build_dpo_dataset.py --prompts-from feedback` turns the thumbs-down items into preference pairs.
+
 ## Files
 
-- `build_qa_dataset.py` — synthetic Q&A generator with judge-based validation
-- `finetune_gemma_lora.ipynb` — Colab/Kaggle QLoRA training notebook
+- `build_qa_dataset.py` — synthetic Q&A generator with judge-based validation (Phase 2 SFT data)
+- `finetune_gemma_lora.ipynb` — Colab/Kaggle QLoRA SFT notebook
+- `build_dpo_dataset.py` — preference-dataset builder (seeded negatives + degraded SFT answers + human feedback)
+- `finetune_gemma_dpo.ipynb` — Colab/Kaggle DPO notebook (continues from the SFT adapter)
 - `export_to_lmstudio.py` — copy GGUF locally / push to HF Hub
-- `data/sft_pairs.jsonl` — generated dataset (gitignored)
+- `rebalance_dataset.py` — rebalance `sft_pairs.jsonl` across task types / triage tiers
+- `data/sft_pairs.jsonl`, `data/dpo_pairs.jsonl` — generated datasets (gitignored)
 - `adapters/` — local copies of trained adapters (gitignored)

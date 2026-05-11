@@ -401,6 +401,47 @@ body {
   box-shadow: none;
 }
 
+/* Human-feedback row under assistant messages (RLHF data collection) */
+.feedback-row {
+  margin-top: 0.75rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--card-border);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feedback-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.feedback-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.feedback-btn:hover {
+  color: white;
+  border-color: var(--primary);
+  background: rgba(99, 102, 241, 0.15);
+}
+
+.feedback-thanks {
+  font-size: 0.78rem;
+  color: var(--secondary);
+}
+
 .typing-indicator {
   display: flex;
   gap: 0.3rem;

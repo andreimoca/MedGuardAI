@@ -10,7 +10,7 @@ Architecture: hybrid retrieval-augmented agent with safety guards.
 disallowed content, and toxicity. If blocked, it short-circuits with a
 refusal message.
 
-`retrieve` pulls top-2 RAG chunks for the user's query into
+`retrieve` pulls top-3 RAG chunks for the user's query into
 state.retrieved_context.
 
 `agent` is the LLM bound to all six clinical tools.
@@ -237,7 +237,7 @@ def build_agent_app(llm: ChatOpenAI | None = None):
         return {"input_blocked": False, "safety_signals": signals}
 
     def retrieve_node(state: AgentState) -> dict:
-        """Always-on RAG: pull top-2 chunks for the latest user query."""
+        """Always-on RAG: pull top-3 chunks for the latest user query."""
         # Skip re-retrieval if state already has context (e.g. follow-up turn).
         if state.get("retrieved_context"):
             return {}

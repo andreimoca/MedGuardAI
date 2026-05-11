@@ -11,7 +11,33 @@
 
 ## Description of the Architecture
 
-MedGuardAI is an AI-driven medical assistant powered by Agentic RAG. It utilizes a FastAPI Python backend to handle retrieving context and communicating with a local Small Language Model (using Google Gemma-3-4b via LM Studio) while maintaining strict guardrails and evaluating patient context (age, weight, conditions, allergies). The frontend is built as a Single Page Application (SPA) using React, Vite, and Framer Motion for a fluid Chat UX. The architecture ensures an absolute focus on safety and clinical accuracy by validating semantic queries against an internal Vector Database built from official drug leaflets.
+MedGuardAI is an AI-driven medical assistant powered by Agentic RAG. It utilizes a FastAPI Python backend to handle retrieving context and communicating with a **fine-tuned** Small Language Model (a QLoRA + DPO fine-tune of Google Gemma-3-4b, served locally via LM Studio) while maintaining strict guardrails and evaluating patient context (age, weight, conditions, allergies). The frontend is built as a Single Page Application (SPA) using React, Vite, and Framer Motion for a fluid Chat UX. The architecture ensures an absolute focus on safety and clinical accuracy by validating semantic queries against an internal Vector Database built from official drug leaflets, and it closes a **human-feedback flywheel**: thumbs-up/down + corrections collected in the UI feed the DPO preference dataset.
+
+### The full pipeline (one diagram)
+
+```
+                    FDA DailyMed labels (OpenFDA)
+                              │
+              ┌───────────────┴───────────────┐
+        chunk + embed                   synthetic Q&A gen (DeepSeek)
+        (all-MiniLM-L6-v2)              build_qa_dataset.py
+              │                                │
+        ChromaDB vector store            sft_pairs.jsonl
+              │                                │
+              │                         QLoRA SFT  (finetune_gemma_lora.ipynb, T4)
+              │                                │
+              │                         DPO / RLHF (finetune_gemma_dpo.ipynb, T4)
+              │                          ▲      │   ▲
+              │                          │      ▼   │
+   ┌──────────┴───────────┐    dpo_pairs.jsonl   medguard-…-dpo.gguf  (LM Studio)
+   │   RAG retrieval (MMR) │    (build_dpo_dataset.py)        │
+   └──────────┬───────────┘     ▲                            │
+              │                 │ thumbs-down + corrections  │
+              ▼                 │                            ▼
+   input guard → LangGraph agent (6 tools) → output guard / groundedness → answer
+                                                              │
+                                                       React UI + 👍/👎 ──► feedback.jsonl
+```
 
 ### Core Features
 
@@ -205,6 +231,29 @@ Health check endpoint for monitoring.
 }
 ```
 
+#### `POST /api/v1/feedback`
+
+Records a human feedback event (thumbs up/down, optional suggested correction) for the previous answer. Appended to `backend/data/feedback/feedback.jsonl` — this is the raw material for the DPO preference dataset.
+
+**Request body:**
+
+```json
+{
+  "query": "my head hurts",
+  "patient_context": { "age": 30, "weight": 70, "allergies": [], "conditions": [] },
+  "answer": "Take 800 mg ibuprofen every 4 hours.",
+  "rating": "down",
+  "correction": "Ask how long it's been going on first, then suggest OTC options at labeled doses.",
+  "status": "success"
+}
+```
+
+**Response:** `{ "ok": true, "stored": 42 }` (running count of feedback rows on disk).
+
+#### `GET /api/v1/feedback/export`
+
+Converts the collected thumbs-down feedback into DPO-pair stubs (`{prompt, rejected, chosen|null, meta}`) and writes `backend/data/feedback/feedback_dpo_stub.jsonl`. `training/build_dpo_dataset.py --prompts-from feedback` consumes these.
+
 ## Data Pipeline
 
 ### Building the Vector Database
@@ -230,6 +279,41 @@ This will:
 - Chunk documents using RecursiveCharacterTextSplitter
 - Generate embeddings using all-MiniLM-L6-v2
 - Store vectors in ChromaDB at `backend/data/processed/chroma_db/`
+
+> **Data note:** the structured tools (`dosage_calculator`, `check_drug_interactions`, `check_allergies`) load section-precise JSON from `backend/data/raw/dailymed/`. A bundle of 386 hand-picked FDA labels lives in `backend/data/raw/dailymed_fda_archive/` — copy them into `backend/data/raw/dailymed/` (or re-run `fetch_openfda.py`) so those tools have data to look up. The ChromaDB store used for RAG retrieval is already populated.
+
+## Fine-tuning & RLHF (Phases 2–3)
+
+The runtime model is **not stock Gemma-3-4b** — it's a QLoRA supervised fine-tune followed by a DPO (Direct Preference Optimization) pass, both run on a free Colab/Kaggle T4. See [`backend/training/README.md`](backend/training/README.md) for the full workflow.
+
+**Phase 2 — SFT.** `backend/training/build_qa_dataset.py` generates a synthetic clinical Q&A dataset (`sft_pairs.jsonl`) — drug-label Q&A grounded in the FDA corpus plus 100+ curated symptom-triage themes — using a remote builder LLM (DeepSeek) with judge validation. `finetune_gemma_lora.ipynb` trains the LoRA adapter and exports `medguard-gemma-3-4b-q4_k_m.gguf`.
+
+**Phase 3 — DPO / RLHF.** `backend/training/build_dpo_dataset.py` builds a preference dataset (`dpo_pairs.jsonl`) from three sources:
+- **seeded safety hard-negatives** — deterministic `(chosen, rejected)` pairs templated from the symptom themes, where the rejected answer breaks exactly one safety rule (drops the `[EMERGENCY]` tag, over-triages a routine symptom, invents an overconfident dose, names a prescription-only drug);
+- **degraded SFT answers** — the (judge-validated) SFT answer is `chosen`; DeepSeek rewrites it into a subtly worse `rejected`; a preference judge (run with a position-swap consistency check) confirms;
+- **human feedback** — thumbs-down events from the UI: the downvoted answer is `rejected`, the user correction (or a regenerated-and-judged answer) is `chosen`; these are weighted up.
+
+`finetune_gemma_dpo.ipynb` continues from the SFT adapter (or base Gemma as a fallback) with `trl.DPOTrainer` (T4-tuned: batch 1 ×8 grad-accum, `lr=5e-6`, `beta=0.1`, 1 epoch, `ref_model=None`) and exports `medguard-gemma-3-4b-dpo-q4_k_m.gguf`. `export_to_lmstudio.py` copies it into LM Studio; point `.env`'s `LOCAL_LLM_MODEL` at it and restart the backend — no application code changes.
+
+## Evaluation
+
+`backend/evaluation/` holds a hand-curated held-out test set (`data/eval_set.jsonl`, ~110 cases across `drug_qa`, `symptom_triage`, `adversarial`, `hallucination`) — intentionally NOT LLM-generated. `run_eval.py` scores each case with:
+- **rule checks** — `must_contain` (all), `must_contain_any` (≥1), `must_not_contain` (none), expected triage tier — the deterministic headline metric;
+- **DeepEval LLM-judge metrics** — Faithfulness, Answer Relevancy, Hallucination (inverted), and a custom G-Eval "Medical Safety" rubric, judged by DeepSeek (never the model under test);
+- **classical NLP** — ROUGE-1/L and BLEU against the reference answer, for cases that ship an `expected_output`.
+
+Compare the base, SFT, and DPO models on the same set and judge:
+
+```bash
+cd backend
+python evaluation/build_eval_set.py                                   # regenerate eval_set.jsonl
+python evaluation/run_eval.py --label base --model-override gemma-3-4b
+python evaluation/run_eval.py --label sft  --model-override medguard/medguard-gemma-3-4b
+python evaluation/run_eval.py --label dpo  --model-override medguard/medguard-gemma-3-4b-dpo
+python evaluation/compare_runs.py --runs base sft dpo --per-case      # -> results/comparison.md
+```
+
+(Swap the loaded model in LM Studio between runs to match `--model-override`.) Per-run output lands in `evaluation/results/<label>/{cases.jsonl,summary.json,REPORT.md}`; `comparison.md` tabulates all metrics across runs plus the list of cases that flipped pass↔fail.
 
 ## Future Enhancements
 
@@ -262,9 +346,20 @@ This project is under active development. For milestone deliverables and progres
 
 **IMPORTANT:** MedGuardAI is a research prototype and should NOT be used as a substitute for professional medical advice, diagnosis, or treatment. Always consult qualified healthcare providers for medical decisions.
 
-## Next Steps
+## Project status (vs. the course rubric)
 
-- Implement and extend Guardrails.
-- Add comprehensive E2E tests for the frontend.
-- Optimize the embedding retrieval engine.
+- ✅ Agent architecture with multiple tools (LangGraph + 6 clinical tools)
+- ✅ Data ingestion of new datasets (OpenFDA pipeline; second loaders pluggable)
+- ✅ RAG (ChromaDB + MMR, all-MiniLM-L6-v2 embeddings, hierarchical chunking)
+- ✅ Task-specific fine-tuning (QLoRA SFT on synthetic clinical Q&A) — **the runtime SLM is fine-tuned**
+- ✅ RLHF (DPO on a preference dataset: seeded safety negatives + degraded SFT answers + a live human-feedback loop)
+- ✅ Toxicity / hallucination handling (input + output guards, groundedness check)
+- ✅ Evaluation (held-out hand-curated set, rule checks + DeepEval metrics + classical NLP, base→SFT→DPO comparison)
+
+### Remaining / stretch
+
+- Frontend E2E tests (Playwright).
+- Hybrid retrieval (semantic + BM25) and a cross-encoder re-ranker.
+- A second ingested dataset (e.g. DrugBank interactions) to broaden "data ingestion".
+- Re-fetch / refresh the FDA corpus into `backend/data/raw/dailymed/` (see Data note above).
 
