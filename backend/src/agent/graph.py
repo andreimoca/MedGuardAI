@@ -255,6 +255,12 @@ def build_agent_app(llm: ChatOpenAI | None = None):
             f"⟳ RAG PREFETCH for query={query[:80]!r} → "
             f"{len(context)} chars of context"
         )
+        logger.info(
+            "⟳ RAG PREFETCH context injected into prompt:\n"
+            "---------------- RAG CONTEXT BEGIN ----------------\n"
+            f"{context}\n"
+            "----------------- RAG CONTEXT END -----------------"
+        )
         return {"retrieved_context": context}
 
     def agent_node(state: AgentState) -> dict[str, list[BaseMessage]]:
