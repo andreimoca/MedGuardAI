@@ -54,6 +54,10 @@ backend/training/outputs/
 *.gguf
 *.safetensors
 
+# Runtime-collected human feedback (RLHF data) — keep the .sample.jsonl committed
+backend/data/feedback/feedback.jsonl
+backend/data/feedback/feedback_dpo_stub.jsonl
+
 # IDEs and OS files
 .vscode/
 .idea/
