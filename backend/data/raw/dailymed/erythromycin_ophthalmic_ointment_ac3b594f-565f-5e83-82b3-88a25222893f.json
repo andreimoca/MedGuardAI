@@ -1,0 +1,31 @@
+{
+  "drug_name": "ERYTHROMYCIN OPHTHALMIC OINTMENT",
+  "generic_name": [
+    "ERYTHROMYCIN"
+  ],
+  "active_ingredients": [
+    "Erythromycin 0.5% ophthalmic ointment (sterile) - prescription only; also used in newborns to prevent gonococcal eye infection"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of superficial ocular infections involving the conjunctiva and/or cornea caused by erythromycin-susceptible organisms (bacterial conjunctivitis - 'pink eye' of bacterial origin) and for the prophylaxis of ophthalmia neonatorum (eye infection in newborns) due to Neisseria gonorrhoeae or Chlamydia trachomatis. It is a prescription topical antibiotic for the eye; viral and allergic conjunctivitis do not respond to it, so a clinician should confirm the cause."
+  ],
+  "contraindications": [
+    "Hypersensitivity to erythromycin or any component of the preparation."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For ophthalmic (topical eye) use only - not for injection and not to be taken by mouth. Prolonged use may result in overgrowth of non-susceptible organisms, including fungi; if a new infection appears, discontinue and start appropriate therapy. The ointment may cause temporary blurring of vision - do not drive or operate machinery until vision clears. Discontinue and seek care if a sensitivity reaction occurs (itching, swelling, redness of the eyelids, worsening irritation). Do not touch the tube tip to the eye or any surface. For neonatal prophylaxis, apply once into each eye shortly after birth and do not flush the eyes afterward."
+  ],
+  "adverse_reactions": [
+    "Minor ocular irritation, redness, or itching; temporary blurred vision; rarely hypersensitivity reactions of the conjunctiva/eyelids."
+  ],
+  "drug_interactions": [
+    "No clinically significant systemic interactions with the ophthalmic ointment; avoid using other eye preparations at the same time unless directed (separate by at least 10 minutes)."
+  ],
+  "dosage_and_administration": [
+    "Conjunctivitis/keratitis: apply approximately a 1 cm (1/2-inch) ribbon of ointment directly to the infected eye(s) up to 6 times daily, depending on the severity of the infection, for the course your doctor prescribes (often about 5-7 days). Ophthalmia neonatorum prophylaxis: apply a 1 cm ribbon into each lower conjunctival sac once, shortly after delivery. Wash hands before and after use."
+  ],
+  "overdosage": [
+    "No information on ophthalmic overdose; clinical overdosage is unlikely with topical eye use. If swallowed, contact Poison Control (1-800-222-1222)."
+  ]
+}

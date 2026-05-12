@@ -1,0 +1,34 @@
+{
+  "drug_name": "CLOPIDOGREL BISULFATE",
+  "generic_name": [
+    "CLOPIDOGREL",
+    "CLOPIDOGREL BISULFATE"
+  ],
+  "active_ingredients": [
+    "Clopidogrel bisulfate 75 mg and 300 mg tablets (e.g., Plavix) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated to reduce the rate of myocardial infarction and stroke in patients with non-ST-elevation acute coronary syndrome (managed medically or with stenting), in patients with ST-elevation MI (with aspirin), and in patients with recent MI, recent stroke, or established peripheral arterial disease. It is a P2Y12 antiplatelet pro-drug that prevents platelets from clumping together. Prescription only."
+  ],
+  "contraindications": [
+    "Active pathological bleeding (e.g., peptic ulcer with bleeding, intracranial hemorrhage); known hypersensitivity to clopidogrel."
+  ],
+  "boxed_warning": [
+    "The effectiveness of clopidogrel depends on its conversion to an active metabolite by the CYP2C19 enzyme. Patients who are CYP2C19 poor metabolizers (about 2-14% of the population, more common in Asian descent) form less active metabolite and may have a higher rate of cardiovascular events after acute coronary syndrome or percutaneous coronary intervention. Genotyping or platelet-function testing can identify such patients, and alternative antiplatelet therapy may be considered. Avoid concomitant use of strong or moderate CYP2C19 inhibitors (e.g., omeprazole, esomeprazole) - they may reduce clopidogrel's activation; pantoprazole or famotidine are preferred acid-suppressing alternatives."
+  ],
+  "warnings_and_cautions": [
+    "Bleeding (which can be fatal); discontinuation - premature discontinuation increases the risk of cardiovascular events, especially after a recent stent; thrombotic thrombocytopenic purpura (TTP) has rarely occurred. Cross-reactivity among thienopyridines (clopidogrel, prasugrel, ticlopidine) - serious hypersensitivity reactions are possible. CYP2C19 status and certain interacting drugs (PPIs, especially omeprazole) can reduce effectiveness."
+  ],
+  "adverse_reactions": [
+    "Bruising, hematoma, epistaxis, GI bleeding, hematuria; rash, pruritus; rare TTP, severe neutropenia, hypersensitivity reactions."
+  ],
+  "drug_interactions": [
+    "CYP2C19 inhibitors - omeprazole and esomeprazole (avoid; clinical impact on cardiovascular outcomes is debated but the FDA recommends avoiding the combination - pantoprazole or famotidine are preferred); other antiplatelet/anticoagulant drugs (additive bleeding); NSAIDs/SSRIs (bleeding); opioids may reduce/delay clopidogrel absorption in acute settings; rifampin (induces CYP2C19 - effect on clopidogrel)."
+  ],
+  "dosage_and_administration": [
+    "Acute coronary syndrome: 300-600 mg loading dose, then 75 mg once daily (with aspirin 75-100 mg). Recent MI, recent stroke, or established peripheral arterial disease: 75 mg once daily. Take at the same time each day, with or without food. Continue for the duration the prescriber specifies (often 6-12 months after a stent, then per cardiology). Do not stop without checking with the prescriber - especially after a stent (stent thrombosis risk)."
+  ],
+  "overdosage": [
+    "Overdose may cause prolonged bleeding; platelet transfusion may be considered for serious bleeding. Hemodialysis does not effectively remove clopidogrel. Seek emergency care; call Poison Control (1-800-222-1222)."
+  ]
+}

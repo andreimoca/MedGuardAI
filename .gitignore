@@ -47,6 +47,17 @@ backend/data/embeddings/*
 *.chroma
 *.sqlite3
 
+# Phase 2 training artifacts (datasets and adapters can be 50 MB - 3 GB each)
+backend/training/data/
+backend/training/adapters/
+backend/training/outputs/
+*.gguf
+*.safetensors
+
+# Runtime-collected human feedback (RLHF data) — keep the .sample.jsonl committed
+backend/data/feedback/feedback.jsonl
+backend/data/feedback/feedback_dpo_stub.jsonl
+
 # IDEs and OS files
 .vscode/
 .idea/

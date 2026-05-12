@@ -1,0 +1,31 @@
+{
+  "drug_name": "CALCIUM CARBONATE ANTACID",
+  "generic_name": [
+    "CALCIUM CARBONATE"
+  ],
+  "active_ingredients": [
+    "Calcium carbonate 500 mg to 1000 mg per chewable tablet (e.g., Tums); also a calcium supplement"
+  ],
+  "indications_and_usage": [
+    "Uses: relieves heartburn, acid indigestion, sour stomach, and upset stomach associated with these symptoms. It is a fast-acting antacid that neutralizes stomach acid within minutes. Also used as a dietary calcium supplement."
+  ],
+  "contraindications": [
+    "Do not use if you have very high blood calcium or certain kidney stones; ask a doctor if you have kidney disease."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Ask a doctor before use if you are on a sodium- or calcium-restricted diet or have kidney disease. Do not take the maximum dose for more than 2 weeks except under a doctor's advice. Persistent heartburn can be a sign of a more serious condition - see a doctor if symptoms last more than 2 weeks. Taking more than directed can cause constipation and, rarely, milk-alkali syndrome (high calcium, kidney problems)."
+  ],
+  "adverse_reactions": [
+    "Constipation, belching, gas; with excessive use - high blood calcium, kidney stones."
+  ],
+  "drug_interactions": [
+    "Antacids can reduce absorption of many drugs (e.g., tetracyclines, fluoroquinolones such as ciprofloxacin, iron, levothyroxine, certain HIV drugs) - separate dosing by 2-4 hours. May raise levels of some drugs by changing stomach pH."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: chew 2-4 tablets as symptoms occur; do not take more than the number of tablets stated on the product label (often 7-10 of the 750-1000 mg tablets) in 24 hours, and not for more than 2 weeks unless directed by a doctor. As a calcium supplement, follow the supplement-facts dosing. Children under 12: ask a doctor."
+  ],
+  "overdosage": [
+    "Large overdoses can cause hypercalcemia, nausea, vomiting, confusion, and kidney injury. Contact Poison Control (1-800-222-1222)."
+  ]
+}

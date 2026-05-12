@@ -1,0 +1,33 @@
+{
+  "drug_name": "AMOXICILLIN AND CLAVULANATE POTASSIUM",
+  "generic_name": [
+    "AMOXICILLIN",
+    "CLAVULANATE POTASSIUM",
+    "AMOXICILLIN AND CLAVULANATE POTASSIUM"
+  ],
+  "active_ingredients": [
+    "Amoxicillin/clavulanate 250/125, 500/125, 875/125 mg tablets; 600/42.9 mg/5 mL and other oral suspensions; chewable tablets (e.g., Augmentin, Augmentin ES, Augmentin XR) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of lower respiratory tract infections, otitis media, sinusitis, skin and skin-structure infections, urinary tract infections, and selected animal/human bite wounds caused by beta-lactamase-producing strains of susceptible organisms. Clavulanate extends amoxicillin's coverage to include some beta-lactamase-producing bacteria such as many strains of H. influenzae, Moraxella, and S. aureus (not MRSA). Prescription only."
+  ],
+  "contraindications": [
+    "History of serious hypersensitivity reactions to amoxicillin, clavulanate, or any other beta-lactam; history of cholestatic jaundice/hepatic dysfunction associated with prior amoxicillin/clavulanate use; severe renal impairment for some strengths."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Anaphylaxis and serious hypersensitivity; hepatic dysfunction including cholestatic hepatitis (more common than with amoxicillin alone, may be delayed up to 6 weeks after treatment); Clostridioides difficile-associated diarrhea; diarrhea is more frequent than with plain amoxicillin (the clavulanate component). Phenylketonuria warning for chewables/suspensions. Adjust dose in renal impairment; the higher-clavulanate formulations are not interchangeable. Mononucleosis - high rash risk."
+  ],
+  "adverse_reactions": [
+    "Diarrhea (frequent), nausea, vomiting, abdominal pain, rash, vaginal yeast infection; rarely anaphylaxis, severe skin reactions, hepatic injury (cholestatic), C. difficile colitis."
+  ],
+  "drug_interactions": [
+    "Same as amoxicillin: allopurinol (rash), probenecid, methotrexate (raised levels), oral typhoid/BCG vaccines, warfarin (variable INR), oral contraceptives (theoretical, back-up sometimes recommended)."
+  ],
+  "dosage_and_administration": [
+    "Adults and children >=40 kg: typical 875/125 mg every 12 hours or 500/125 mg every 8 hours; severe infections may use higher-strength formulations as specified. Children <40 kg: 25-45 mg/kg/day of amoxicillin component in divided doses (twice daily). High-dose ES suspension is used for resistant otitis media at 90 mg/kg/day. Renal impairment - reduce dose or interval; avoid the 875/125 strength if CrCl <30. Take at the start of a meal to lower GI side effects. Complete the full course."
+  ],
+  "overdosage": [
+    "GI symptoms predominate; crystalluria at very high doses. Supportive care and hydration; hemodialysis can remove both components. Contact Poison Control (1-800-222-1222)."
+  ]
+}

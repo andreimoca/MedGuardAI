@@ -1,0 +1,32 @@
+{
+  "drug_name": "PANTOPRAZOLE SODIUM",
+  "generic_name": [
+    "PANTOPRAZOLE",
+    "PANTOPRAZOLE SODIUM"
+  ],
+  "active_ingredients": [
+    "Pantoprazole sodium 20 mg and 40 mg delayed-release tablets; powder for oral suspension; IV form (prescription only)"
+  ],
+  "indications_and_usage": [
+    "Indicated for short-term treatment of erosive esophagitis associated with GERD and to maintain healing of erosive esophagitis; also for pathological hypersecretory conditions including Zollinger-Ellison syndrome. A proton pump inhibitor; often chosen for patients on clopidogrel because it has the least effect on clopidogrel activation among PPIs. Not available over the counter in the US."
+  ],
+  "contraindications": [
+    "Known hypersensitivity to pantoprazole or other substituted benzimidazoles; do not use with rilpivirine-containing products."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Acute interstitial nephritis; Clostridioides difficile-associated diarrhea; bone fractures with long-term, high-dose use; cutaneous and systemic lupus erythematosus; cyanocobalamin (B12) deficiency and hypomagnesemia with prolonged use; possible masking of gastric malignancy symptoms - investigate alarm features."
+  ],
+  "adverse_reactions": [
+    "Headache, diarrhea, nausea, abdominal pain, vomiting, flatulence, dizziness, arthralgia; in children - upper respiratory infection, fever, rash."
+  ],
+  "drug_interactions": [
+    "Reduced absorption of acid-dependent drugs (ketoconazole, itraconazole, atazanavir, nilotinib, erlotinib, iron salts, mycophenolate); may increase methotrexate levels; warfarin (monitor INR); affects atazanavir/nelfinavir; contraindicated with rilpivirine; least clinically significant interaction with clopidogrel among the PPIs."
+  ],
+  "dosage_and_administration": [
+    "Adults: erosive esophagitis - 40 mg once daily for up to 8 weeks (an additional 8 weeks if not healed); maintenance - 40 mg once daily. Hypersecretory conditions - 40 mg twice daily, titrated. Children 5 years and older (>=15 kg): 20-40 mg once daily for up to 8 weeks for erosive esophagitis. Swallow tablets whole; take 30 minutes before a meal; exactly as prescribed."
+  ],
+  "overdosage": [
+    "Experience with overdose is limited; symptoms have been consistent with known adverse effects; supportive care, not removed by dialysis. Contact Poison Control (1-800-222-1222)."
+  ]
+}

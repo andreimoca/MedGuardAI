@@ -1,0 +1,31 @@
+{
+  "drug_name": "SALICYLIC ACID TOPICAL",
+  "generic_name": [
+    "SALICYLIC ACID"
+  ],
+  "active_ingredients": [
+    "Salicylic acid 0.5%-2% for acne (cleansers, gels, pads); 12%-40% for wart, corn, and callus removers (e.g., Compound W, Dr. Scholl's)"
+  ],
+  "indications_and_usage": [
+    "Uses: at low strength (0.5-2%), for the treatment of acne - it helps unclog pores and clear and prevent acne blemishes (blackheads, whiteheads, pimples) by exfoliating inside the follicle; at high strength (12-40%), for the removal of common warts and plantar warts (verruca) and of corns and calluses, by softening and gradually peeling away the thickened skin. It is a keratolytic (peeling) agent."
+  ],
+  "contraindications": [
+    "Wart/corn removers: do not use on irritated, infected, or reddened skin, on moles, birthmarks, warts with hair growing from them, genital warts, or warts on the face; do not use if you have diabetes or poor blood circulation (foot wounds can become serious). Hypersensitivity to salicylates."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only. With acne products, dryness, peeling, and irritation can occur - reduce frequency if so; increased sun sensitivity is possible. With wart/corn removers, apply only to the wart/corn and protect the surrounding healthy skin (e.g., with petroleum jelly); do not use on the face or mucous membranes. People with diabetes or peripheral vascular disease should not self-treat foot warts/corns - see a doctor. Large-area use of high-strength products, especially in children, can rarely cause salicylate toxicity (ringing in the ears, nausea, rapid breathing). Stop use and ask a doctor if discomfort persists, the wart/corn does not improve after the labeled time, or signs of infection appear."
+  ],
+  "adverse_reactions": [
+    "Local stinging, burning, redness, peeling, dryness; with extensive high-strength use - salicylate toxicity; allergic reactions."
+  ],
+  "drug_interactions": [
+    "Other topical acne treatments (retinoids, benzoyl peroxide) increase irritation if combined; extensive high-strength use could theoretically add to systemic salicylate effects with oral aspirin."
+  ],
+  "dosage_and_administration": [
+    "Acne: cleanse the skin; apply a thin layer of the 0.5-2% product to the affected area 1 to 3 times daily; if dryness occurs, reduce to once daily or every other day. Warts/corns/calluses: soak the area in warm water for 5 minutes, dry, apply the high-strength product only to the lesion as directed (e.g., a drop or a medicated pad/plaster), usually once or twice daily; may take several days to weeks; file away softened tissue gently. Do not use the wart remover for more than the time stated on the label without seeing a doctor."
+  ],
+  "overdosage": [
+    "Swallowing wart-remover products or extensive skin overuse can cause salicylate poisoning (tinnitus, vomiting, hyperventilation, confusion) - potentially serious in children. Seek medical help; contact Poison Control (1-800-222-1222)."
+  ]
+}

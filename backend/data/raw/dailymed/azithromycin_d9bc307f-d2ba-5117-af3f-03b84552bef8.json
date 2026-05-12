@@ -1,0 +1,31 @@
+{
+  "drug_name": "AZITHROMYCIN",
+  "generic_name": [
+    "AZITHROMYCIN"
+  ],
+  "active_ingredients": [
+    "Azithromycin 250 mg, 500 mg, 600 mg tablets; 100 mg/5 mL and 200 mg/5 mL suspensions; 1 g single-dose packet; IV form (e.g., Zithromax Z-Pak) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of mild-to-moderate infections caused by susceptible organisms - acute bacterial exacerbations of chronic bronchitis, community-acquired pneumonia, pharyngitis/tonsillitis (alternative to first-line penicillin in penicillin-allergic patients), uncomplicated skin/skin-structure infections, urethritis and cervicitis (Chlamydia trachomatis), genital ulcer disease (chancroid), and prevention or treatment of disseminated Mycobacterium avium complex in advanced HIV disease. It is a macrolide antibiotic with a long tissue half-life that allows short, once-daily courses (e.g., the 5-day 'Z-Pak'). Prescription only."
+  ],
+  "contraindications": [
+    "History of cholestatic jaundice or hepatic dysfunction associated with prior azithromycin use; known hypersensitivity to azithromycin, erythromycin, or any other macrolide or ketolide."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Hepatotoxicity, sometimes severe - stop for liver-related symptoms. QT-interval prolongation and torsades de pointes (rarely fatal arrhythmias) - avoid or use caution in patients with known QT prolongation, hypokalemia/hypomagnesemia, bradycardia, or concomitant QT-prolonging drugs, and in the elderly. Allergic reactions, including angioedema, Stevens-Johnson syndrome, toxic epidermal necrolysis, DRESS - serious. Infantile hypertrophic pyloric stenosis when used in neonates. Clostridioides difficile-associated diarrhea. Exacerbation of myasthenia gravis. Like other macrolides, it can prolong the QT interval - be cautious in patients on other QT-prolonging drugs (some antiarrhythmics, fluoroquinolones, certain antipsychotics, ondansetron)."
+  ],
+  "adverse_reactions": [
+    "Diarrhea, nausea, abdominal pain, vomiting, headache; rare but serious - QT prolongation, hepatotoxicity, severe skin reactions, hearing loss with high-dose long-term use."
+  ],
+  "drug_interactions": [
+    "QT-prolonging drugs (some antiarrhythmics like amiodarone, sotalol; some antipsychotics; fluoroquinolones; ondansetron) - avoid combinations when possible; warfarin (variable INR effect - monitor); nelfinavir (raises azithromycin levels); aluminum/magnesium antacids reduce peak levels (separate by 2 hours for the oral suspension/tablets); digoxin and ergot alkaloids - the broader macrolide class (especially erythromycin and clarithromycin) raises their levels; azithromycin has fewer CYP3A4 interactions than other macrolides."
+  ],
+  "dosage_and_administration": [
+    "Adults: most respiratory and skin infections - 500 mg on day 1, then 250 mg once daily on days 2-5 (the 5-day 'Z-Pak'), or 500 mg once daily for 3 days. Chlamydia or chancroid: 1 g (one packet) as a single dose. Community-acquired pneumonia in hospitalized patients: 500 mg once daily IV for at least 2 days, then 500 mg orally to complete a 7-10 day course. Pediatric dosing is weight-based per indication. Take tablets with or without food; the suspension preferably 1 hour before or 2 hours after a meal. Complete the full course."
+  ],
+  "overdosage": [
+    "Symptoms typical of antibiotic overdose - nausea, vomiting, diarrhea, reversible hearing loss; supportive care. Activated charcoal if recent. Seek medical care; call Poison Control (1-800-222-1222)."
+  ]
+}

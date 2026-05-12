@@ -1,0 +1,31 @@
+{
+  "drug_name": "SIMVASTATIN",
+  "generic_name": [
+    "SIMVASTATIN"
+  ],
+  "active_ingredients": [
+    "Simvastatin 5 mg, 10 mg, 20 mg, 40 mg, 80 mg tablets (e.g., Zocor) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated as adjunct therapy to diet to reduce elevated cholesterol/lipids and to reduce the risk of cardiovascular events in adults at risk, and for adolescents 10-17 with heterozygous familial hypercholesterolemia. It is a statin. Prescription only."
+  ],
+  "contraindications": [
+    "Acute liver failure or decompensated cirrhosis; concomitant use of strong CYP3A4 inhibitors (itraconazole, ketoconazole, posaconazole, voriconazole, HIV protease inhibitors, boceprevir, telaprevir, erythromycin, clarithromycin, telithromycin, cobicistat, nefazodone), gemfibrozil, cyclosporine, or danazol; known hypersensitivity."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Myopathy/rhabdomyolysis - simvastatin has a higher risk than other statins, especially at the 80 mg dose, which should only be used in patients chronically (>12 months) tolerating that dose without muscle toxicity; with amlodipine or ranolazine, limit simvastatin to 20 mg/day; with diltiazem, verapamil, dronedarone, limit to 10 mg/day. Liver enzyme elevations; immune-mediated necrotizing myopathy; small increase in HbA1c. Stop in pregnancy unless the prescriber decides otherwise."
+  ],
+  "adverse_reactions": [
+    "Myalgia, arthralgia, dyspepsia, headache, upper respiratory infection; rarely myopathy/rhabdomyolysis, hepatic dysfunction, new-onset diabetes."
+  ],
+  "drug_interactions": [
+    "As listed in contraindications. Other interactions: niacin (high dose), colchicine, fibrates (other than gemfibrozil) - myopathy risk; warfarin (monitor INR); grapefruit juice - avoid large amounts (markedly raises levels); digoxin (slight rise)."
+  ],
+  "dosage_and_administration": [
+    "Adults: usual starting dose 10-20 mg once daily in the evening; range 5-40 mg/day; the 80 mg dose is restricted as above. Adolescents 10-17 with HeFH: start 10 mg/day, up to 40 mg/day. Take in the evening (cholesterol synthesis is higher overnight). Limit doses as required by interacting drugs."
+  ],
+  "overdosage": [
+    "No specific treatment; supportive care; monitor for hepatic and muscle effects. Contact Poison Control (1-800-222-1222)."
+  ]
+}

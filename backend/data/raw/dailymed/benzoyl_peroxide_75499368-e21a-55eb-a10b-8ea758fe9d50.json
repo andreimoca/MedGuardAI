@@ -1,0 +1,31 @@
+{
+  "drug_name": "BENZOYL PEROXIDE",
+  "generic_name": [
+    "BENZOYL PEROXIDE"
+  ],
+  "active_ingredients": [
+    "Benzoyl peroxide 2.5%, 5%, or 10% gel, cream, lotion, or wash (e.g., for acne)"
+  ],
+  "indications_and_usage": [
+    "Uses: for the treatment of acne; helps clear up acne pimples, blackheads, and whiteheads and helps prevent new acne blemishes from forming. It works by killing acne-causing bacteria (Cutibacterium acnes) and reducing excess oil and dead-skin buildup in pores; lower strengths (2.5-5%) are about as effective as 10% with less irritation."
+  ],
+  "contraindications": [
+    "Do not use if you have very sensitive skin or are sensitive to benzoyl peroxide; avoid the eyes, lips, mouth, and other mucous membranes."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only. Rare but serious hypersensitivity reactions (hives, itching, swelling of the face/eyes/lips/tongue, throat tightness, faintness, difficulty breathing) have occurred - if these happen, stop use and seek emergency help. Skin irritation (dryness, redness, peeling, burning) is common, especially at first - start with a lower strength and once-daily use. Increases sensitivity to sunlight - use sunscreen and avoid prolonged sun. It bleaches hair and fabric (towels, bedding, clothing) - let it dry and avoid contact. When first using, apply to a small area for 3 days to check for a reaction; if no discomfort, follow the directions. Stop use and ask a doctor if irritation becomes severe."
+  ],
+  "adverse_reactions": [
+    "Dryness, peeling, redness, burning or stinging, itching; bleaching of hair/fabric; photosensitivity; rare allergic reactions."
+  ],
+  "drug_interactions": [
+    "Other topical acne agents (retinoids such as adapalene/tretinoin, sulfur, salicylic acid, alcohol-based products) can be excessively drying/irritating if combined or layered - introduce gradually; benzoyl peroxide can degrade some topical antibiotics if applied at the same time (use at different times of day or use combination products formulated for it)."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: clean the skin gently and dry; cover the entire affected area with a thin layer 1 to 3 times daily; because it may dry the skin, start with one application per day and a lower strength, then gradually increase if needed and tolerated; for washes, apply, lather, leave on briefly, then rinse. Children under 12: ask a doctor. It can take several weeks of regular use to see results."
+  ],
+  "overdosage": [
+    "Topical overuse causes severe local irritation and peeling; ingestion may cause GI irritation. Contact Poison Control (1-800-222-1222) for large ingestions."
+  ]
+}

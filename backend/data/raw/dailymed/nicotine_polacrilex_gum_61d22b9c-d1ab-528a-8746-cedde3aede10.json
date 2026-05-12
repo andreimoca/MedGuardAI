@@ -1,0 +1,32 @@
+{
+  "drug_name": "NICOTINE POLACRILEX GUM",
+  "generic_name": [
+    "NICOTINE",
+    "NICOTINE POLACRILEX"
+  ],
+  "active_ingredients": [
+    "Nicotine polacrilex gum 2 mg (for smokers of fewer than 25 cigarettes/day) or 4 mg (for smokers of 25 or more cigarettes/day), in various flavors (e.g., Nicorette, OTC)"
+  ],
+  "indications_and_usage": [
+    "Uses: reduces withdrawal symptoms, including the urge to smoke, associated with quitting smoking; it is a nicotine replacement therapy used as part of a quit-smoking program that also includes behavioral support. Best results when used at the recommended schedule for the full course and combined with counseling or a quit-line."
+  ],
+  "contraindications": [
+    "Do not use if you continue to smoke, chew tobacco, use snuff, or use other nicotine-containing products; do not use if you are under 18 unless directed by a doctor; hypersensitivity to nicotine or to ingredients in the gum."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Ask a doctor before use if you have heart disease, recent heart attack or irregular heartbeat (nicotine can raise heart rate and blood pressure), high blood pressure not controlled with medicine, stomach ulcer or diabetes, or if you have a history of seizures. Ask a doctor or pharmacist before use if you take a prescription medicine for depression or asthma - your dose may need to be adjusted as you stop smoking. If you are pregnant or breastfeeding, only use this medicine on the advice of a doctor (it is far safer than smoking, but if you can stop without it that is best). Mouth, jaw, or stomach problems can occur with chewing (use the 'chew and park' technique). Stop use and ask a doctor if your heart begins to beat irregularly or racing, or if you develop symptoms of nicotine overdose such as nausea, vomiting, dizziness, weakness, and rapid heartbeat. Keep out of reach of children and pets - a single piece can poison a small child or pet."
+  ],
+  "adverse_reactions": [
+    "Mouth or throat soreness, jaw muscle ache, hiccups, dyspepsia, nausea, increased salivation; nicotine-related effects - palpitations, dizziness, insomnia, headache; rare allergic reactions."
+  ],
+  "drug_interactions": [
+    "Acidic beverages (coffee, soda, juice) reduce nicotine absorption from the gum - do not eat or drink anything except water for 15 minutes before and during chewing. Smoking cessation can reduce the metabolism of certain drugs (e.g., theophylline, caffeine, clozapine, olanzapine, fluvoxamine) - doses may need to be adjusted by the prescriber."
+  ],
+  "dosage_and_administration": [
+    "Stop smoking completely before starting. Choose 2 mg gum (<25 cig/day) or 4 mg gum (>=25 cig/day or smoke within 30 min of waking). Weeks 1-6: 1 piece every 1-2 hours. Weeks 7-9: 1 piece every 2-4 hours. Weeks 10-12: 1 piece every 4-8 hours. Do not exceed 24 pieces per day. Use the 'chew and park' technique - chew slowly until a peppery/tingling taste appears, then park between cheek and gum until taste fades, then chew again; for about 30 minutes per piece. Stop using at the end of 12 weeks; if you still feel the need, talk to a clinician. Children under 18: ask a doctor."
+  ],
+  "overdosage": [
+    "Symptoms of nicotine overdose: pale skin, cold sweat, nausea, drooling, vomiting, abdominal pain, diarrhea, headache, dizziness, hearing/vision disturbances, mental confusion, weakness, seizures, hypotension, irregular pulse. In children and pets, even small ingestions can be life-threatening. Seek emergency care and contact Poison Control (1-800-222-1222) right away."
+  ]
+}

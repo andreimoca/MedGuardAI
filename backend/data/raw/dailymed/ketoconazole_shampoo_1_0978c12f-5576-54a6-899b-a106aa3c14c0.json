@@ -1,0 +1,31 @@
+{
+  "drug_name": "KETOCONAZOLE SHAMPOO 1%",
+  "generic_name": [
+    "KETOCONAZOLE"
+  ],
+  "active_ingredients": [
+    "Ketoconazole 1% shampoo (OTC, e.g., Nizoral A-D); a 2% shampoo and 2% cream are available by prescription"
+  ],
+  "indications_and_usage": [
+    "Uses: controls flaking, scaling, and itching of the scalp associated with dandruff and seborrheic dermatitis; it is an azole antifungal that reduces the Malassezia yeast that contributes to these conditions. The 2% prescription strength is also used for tinea versicolor and seborrheic dermatitis of the face/body."
+  ],
+  "contraindications": [
+    "Do not use if you are allergic to ketoconazole or other azole antifungals; do not use on broken or inflamed skin of the scalp; the OTC shampoo is not for children under 12 except on a doctor's advice."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only; avoid contact with the eyes - if it gets in the eyes, rinse thoroughly with water. Some hair loss, abnormal hair texture, scalp itching/dryness/oiliness, or skin irritation can occur. Stop use and ask a doctor if the condition worsens or does not improve after regular use for the time on the label, or if you have an allergic reaction. (Note: oral ketoconazole tablets carry serious liver-toxicity and adrenal warnings and are no longer first-line; this entry is about the topical shampoo/cream, which are not associated with those systemic risks.)"
+  ],
+  "adverse_reactions": [
+    "Scalp/skin itching, dryness, oiliness, irritation; abnormal hair texture; mild hair loss; rarely allergic contact reactions."
+  ],
+  "drug_interactions": [
+    "Topical use - negligible. (Oral ketoconazole is a potent CYP3A4 inhibitor with many interactions, but that does not apply to the shampoo/cream.)"
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: wet the hair, apply the shampoo, lather, leave on the scalp for 3-5 minutes, then rinse thoroughly; use every 3-4 days for up to 8 weeks as needed to control dandruff, then occasionally as needed; the prescription 2% shampoo is typically used twice a week for 2-4 weeks for seborrheic dermatitis. Children under 12: ask a doctor."
+  ],
+  "overdosage": [
+    "Not expected to be harmful topically; ingestion of large amounts of the shampoo may cause GI upset. Contact Poison Control (1-800-222-1222) for large ingestions."
+  ]
+}

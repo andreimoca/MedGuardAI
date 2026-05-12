@@ -1,0 +1,31 @@
+{
+  "drug_name": "ACTIVATED CHARCOAL",
+  "generic_name": [
+    "ACTIVATED CHARCOAL"
+  ],
+  "active_ingredients": [
+    "Activated charcoal 25 g, 50 g aqueous suspension or sorbitol suspension - emergency-use product, typically given in hospital under poison-control guidance; lower-dose 'detox/digestive' OTC capsules also exist (not for poisoning)"
+  ],
+  "indications_and_usage": [
+    "Uses: for use in selected poisonings and drug overdoses, to adsorb the ingested toxin in the GI tract before it is absorbed into the body, when recommended by a Poison Control Center or clinician. It is most effective within 1 hour of ingestion of many common drugs and toxins (and longer for sustained-release products or those slowing GI transit). It is NOT effective for ingestions of iron, lithium, alcohols (methanol, ethanol, ethylene glycol), strong acids/alkalis, or hydrocarbons. Always call Poison Control (1-800-222-1222) or 911 first - do NOT give charcoal at home routinely without their advice."
+  ],
+  "contraindications": [
+    "Decreased level of consciousness without a protected airway (aspiration risk); GI obstruction, perforation, or recent GI surgery; ingestion of caustic substances (the charcoal won't help and impairs endoscopic assessment); ingestion of hydrocarbons (aspiration pneumonitis risk)."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Aspiration of charcoal can cause life-threatening chemical pneumonitis - protect the airway in obtunded patients. Do not administer to a vomiting patient or one whose mental status is declining unless an airway is secured. Constipation or, with sorbitol-containing forms, marked diarrhea and electrolyte loss (especially in small children and the elderly - some sorbitol products are not for repeated dosing). Stools will turn black. Charcoal does not work for everything (see indications) - poison-control guidance is essential. For OTC 'digestive/detox' use at low doses, separate from any medications by at least 2 hours - it adsorbs many drugs and can reduce their effect."
+  ],
+  "adverse_reactions": [
+    "Black stools, constipation, vomiting, nausea, aspiration (potentially fatal pneumonitis); with sorbitol forms - diarrhea, dehydration, electrolyte disturbance."
+  ],
+  "drug_interactions": [
+    "Activated charcoal can adsorb many oral medications and nutrients in the gut, reducing their absorption and effect - it should not be given within at least 2 hours of taking a prescribed oral medicine unless poison-control directs otherwise."
+  ],
+  "dosage_and_administration": [
+    "Acute poisoning (under medical or Poison-Control direction): adults - 25-100 g (often 50 g) as a single dose, given by mouth or via gastric tube. Children: 25-50 g for ages 1-12, 10-25 g for <1 year as advised. Repeat ('multi-dose') charcoal is sometimes used for specific overdoses (carbamazepine, dapsone, phenobarbital, quinine, theophylline) - typically 12.5 g every 2-4 hours under specialist guidance. Do not give if the patient cannot protect the airway. The first step in any poisoning is to call Poison Control (1-800-222-1222) and/or 911 for individualized advice - do not give charcoal at home unless they tell you to."
+  ],
+  "overdosage": [
+    "Activated charcoal is not systemically absorbed and has little direct toxicity, but excessive doses can cause severe constipation, bowel obstruction, or, with sorbitol-containing products, fluid and electrolyte loss. Treat symptomatically; the most serious risk is aspiration during administration. Contact Poison Control (1-800-222-1222)."
+  ]
+}

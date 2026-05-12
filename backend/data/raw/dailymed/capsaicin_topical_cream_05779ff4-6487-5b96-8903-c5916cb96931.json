@@ -1,0 +1,31 @@
+{
+  "drug_name": "CAPSAICIN TOPICAL CREAM",
+  "generic_name": [
+    "CAPSAICIN"
+  ],
+  "active_ingredients": [
+    "Capsaicin 0.025% to 0.1% topical cream"
+  ],
+  "indications_and_usage": [
+    "Uses: for the temporary relief of minor aches and pains of muscles and joints associated with arthritis, simple backache, strains, and sprains; also used for some types of nerve-related pain. Capsaicin works gradually over days to weeks by depleting a pain-signaling chemical (substance P) in nerve endings."
+  ],
+  "contraindications": [
+    "Do not use if allergic to capsaicin or chili peppers; do not use on broken or irritated skin."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only. A transient burning or stinging sensation is expected, especially with the first applications, and usually lessens with regular use; if it is severe or persists, discontinue. Wash hands thoroughly after applying (or wear gloves) and avoid contact with eyes, nose, mouth, and genitals. Do not bandage tightly or apply heat. Do not use with a heating pad. Stop use and ask a doctor if condition worsens or does not improve after 7-14 days of regular use."
+  ],
+  "adverse_reactions": [
+    "Burning, stinging, redness at the application site; coughing or sneezing if the cream is aerosolized; rarely blistering."
+  ],
+  "drug_interactions": [
+    "No significant systemic drug interactions."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 18 years and over: apply a thin film to the affected area not more than 3 to 4 times daily; consistent use for several days to weeks is needed for full effect. Children under 18: ask a doctor."
+  ],
+  "overdosage": [
+    "Topical overuse causes intense local burning; ingestion can cause mouth and GI burning and vomiting. Contact Poison Control (1-800-222-1222)."
+  ]
+}

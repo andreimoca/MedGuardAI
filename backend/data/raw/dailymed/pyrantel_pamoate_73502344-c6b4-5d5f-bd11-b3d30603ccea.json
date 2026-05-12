@@ -1,0 +1,32 @@
+{
+  "drug_name": "PYRANTEL PAMOATE",
+  "generic_name": [
+    "PYRANTEL PAMOATE",
+    "PYRANTEL"
+  ],
+  "active_ingredients": [
+    "Pyrantel pamoate 144 mg of pamoate per chewable tablet (equivalent to 50 mg pyrantel base); 50 mg/mL oral suspension; 180 mg/mL liquid (e.g., Reese's Pinworm Medicine) - OTC for pinworms"
+  ],
+  "indications_and_usage": [
+    "Uses: for the treatment of pinworms (enterobiasis) - the most common worm infection in school-aged children in the US, causing nighttime anal itching. The medicine paralyzes the worms so they pass out of the bowel in the stool. The whole household is usually treated, with a repeat dose 2 weeks later because eggs can persist in the environment. The OTC product is for pinworm only - other intestinal worms (roundworm, hookworm) need a clinician's evaluation."
+  ],
+  "contraindications": [
+    "Pregnancy (ask a doctor); liver disease (ask a doctor); hypersensitivity to pyrantel; not labeled for children under 2 without a doctor's advice."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Ask a doctor before use if you are pregnant or breastfeeding, have liver disease, or for a child under 2. Wash hands often with soap and water, especially before eating and after using the bathroom; wash all bed linens, underwear, and pajamas in hot water after each treatment; keep fingernails short and avoid nail biting and finger sucking; the household contacts may also need treatment because pinworm is easily passed between family members. Mild GI symptoms may occur."
+  ],
+  "adverse_reactions": [
+    "Nausea, vomiting, diarrhea, abdominal cramps; less commonly headache, dizziness, drowsiness, rash, transient elevation of liver enzymes."
+  ],
+  "drug_interactions": [
+    "Theoretical antagonism with piperazine (do not combine - piperazine is no longer common in the US)."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 2 years and over: 11 mg/kg (5 mg base/kg) as a single oral dose, up to a maximum of 1 g (1000 mg); shake the liquid before use. Practical dosing by the package (50 mg pyrantel base per chewable or 50 mg/mL suspension): roughly 1 dose per 22 lb body weight - follow the label table. Repeat in 2 weeks to catch any pinworms that hatched after the first dose. Take all at once, with or without food, with or without juice/milk. Children under 2: ask a doctor."
+  ],
+  "overdosage": [
+    "Overdose is unlikely to be serious; symptoms are GI and brief CNS effects (drowsiness, dizziness); supportive care. Contact Poison Control (1-800-222-1222)."
+  ]
+}

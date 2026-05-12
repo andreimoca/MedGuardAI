@@ -1,0 +1,32 @@
+{
+  "drug_name": "ALENDRONATE SODIUM",
+  "generic_name": [
+    "ALENDRONATE",
+    "ALENDRONATE SODIUM"
+  ],
+  "active_ingredients": [
+    "Alendronate sodium 5 mg, 10 mg, 35 mg, 40 mg, 70 mg tablets; 70 mg oral solution (e.g., Fosamax) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment and prevention of osteoporosis in postmenopausal women, treatment to increase bone mass in men with osteoporosis, treatment of glucocorticoid-induced osteoporosis, and treatment of Paget's disease of bone in men and women. It is a bisphosphonate that inhibits osteoclast-mediated bone resorption. Prescription only."
+  ],
+  "contraindications": [
+    "Abnormalities of the esophagus that delay esophageal emptying (such as stricture or achalasia); inability to stand or sit upright for at least 30 minutes; hypocalcemia (correct first); known hypersensitivity to alendronate."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Upper GI adverse events - esophagitis, erosions, ulcers, esophageal stricture; instruct patients on the strict administration directions and to discontinue and seek care for new or worsening retrosternal pain, dysphagia, odynophagia, or heartburn. Mineral metabolism - correct hypocalcemia and vitamin D deficiency before starting and ensure adequate calcium and vitamin D intake during therapy. Severe musculoskeletal pain (rare). Osteonecrosis of the jaw (ONJ), especially with concurrent dental procedures, poor oral hygiene, or with bisphosphonate use in cancer at higher doses - good dental care and avoidance of invasive dental work where possible. Atypical low-trauma femur fractures with long-term use - consider a 'drug holiday' after 3-5 years in low-risk patients. Renal impairment - not recommended for CrCl <35 mL/min."
+  ],
+  "adverse_reactions": [
+    "Abdominal pain, dyspepsia, acid regurgitation, esophageal pain/ulcer, constipation/diarrhea, musculoskeletal pain; rare but important - osteonecrosis of the jaw, atypical femur fractures, severe hypocalcemia, ocular inflammation."
+  ],
+  "drug_interactions": [
+    "Calcium supplements, antacids, oral magnesium, iron, and other oral medications interfere with absorption - wait at least 30 minutes (1 hour for the oral solution) after the alendronate dose before taking anything else by mouth. NSAIDs may add to GI risk."
+  ],
+  "dosage_and_administration": [
+    "Treatment of osteoporosis (postmenopausal women, men): 70 mg once weekly OR 10 mg once daily. Prevention of osteoporosis: 35 mg once weekly OR 5 mg once daily. Glucocorticoid-induced osteoporosis: 5 mg once daily (10 mg in postmenopausal women not on estrogen). Paget's disease: 40 mg once daily for 6 months. Administration: take in the morning on an empty stomach with 6-8 ounces of plain water (not coffee, juice, mineral water); do not lie down for at least 30 minutes after the dose and until after the first food of the day; do not chew or suck on the tablet; if you miss a weekly dose, take the next morning you remember and resume the schedule. Continue calcium and vitamin D."
+  ],
+  "overdosage": [
+    "Overdose can cause hypocalcemia, hypophosphatemia, and upper GI adverse events; give milk or antacids to bind the drug, do not induce vomiting (esophageal injury), keep upright; supportive care. Contact Poison Control (1-800-222-1222)."
+  ]
+}

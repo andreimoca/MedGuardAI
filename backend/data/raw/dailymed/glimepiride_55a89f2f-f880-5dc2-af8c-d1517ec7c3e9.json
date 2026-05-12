@@ -1,0 +1,31 @@
+{
+  "drug_name": "GLIMEPIRIDE",
+  "generic_name": [
+    "GLIMEPIRIDE"
+  ],
+  "active_ingredients": [
+    "Glimepiride 1 mg, 2 mg, 4 mg tablets (e.g., Amaryl) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus; may be used alone or combined with metformin or insulin. It is a second-generation sulfonylurea. Prescription only."
+  ],
+  "contraindications": [
+    "Glimepiride is contraindicated in patients with hypersensitivity to glimepiride or any of the product's ingredients, and in patients with a history of allergic reaction to sulfonamide derivatives - cross-sensitivity is possible; type 1 diabetes; diabetic ketoacidosis."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Hypoglycemia - higher risk in the elderly, debilitated/malnourished patients, adrenal/pituitary insufficiency, renal or hepatic impairment, missed meals, alcohol, strenuous exercise, combined antidiabetic therapy; symptoms can be masked by beta-blockers. Sulfonamide cross-allergy as above. Hemolytic anemia in G6PD deficiency. Weight gain. Reduced effectiveness over time. Macrovascular outcomes - inform patients."
+  ],
+  "adverse_reactions": [
+    "Hypoglycemia, headache, dizziness, nausea, weakness, weight gain, rash; rarely jaundice, hyponatremia, hematologic abnormalities."
+  ],
+  "drug_interactions": [
+    "Drugs increasing hypoglycemic effect - other antidiabetic agents, NSAIDs, sulfonamides, fluconazole, fibrates, MAO inhibitors, beta-blockers (mask symptoms), salicylates, alcohol. Drugs decreasing effect - thiazides, corticosteroids, sympathomimetics, phenytoin, niacin, oral contraceptives. CYP2C9 inhibitors/inducers (gemfibrozil increases AUC; rifampin lowers it)."
+  ],
+  "dosage_and_administration": [
+    "Adults: start 1-2 mg once daily with the first main meal (typically breakfast); titrate every 1-2 weeks by 1-2 mg increments based on glucose response and tolerability; usual maintenance 1-4 mg once daily; maximum 8 mg once daily. In elderly, debilitated/malnourished, or renal/hepatic impairment, start at 1 mg daily and titrate cautiously. Always take with a meal to reduce hypoglycemia risk."
+  ],
+  "overdosage": [
+    "Severe prolonged hypoglycemia (sometimes lasting days); treat with IV dextrose and close glucose monitoring; carbohydrate intake; admit if needed. Seek emergency care; call Poison Control (1-800-222-1222)."
+  ]
+}

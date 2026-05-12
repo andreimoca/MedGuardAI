@@ -1,0 +1,21 @@
+{
+    "drug_name": "Stay Awake",
+    "generic_name": [
+        "CAFFEINE"
+    ],
+    "active_ingredients": [
+        "Active ingredient (in each tablet) Caffeine 200 mg"
+    ],
+    "indications_and_usage": [
+        "Use helps restore mental alertness or wakefulness when experiencing fatigue or drowsiness"
+    ],
+    "contraindications": [],
+    "boxed_warning": [],
+    "warnings_and_cautions": [],
+    "adverse_reactions": [],
+    "drug_interactions": [],
+    "dosage_and_administration": [
+        "Directions adults and children 12 years and over: take 1 tablet not more often than every 3 to 4 hours children under 12 years: do not use"
+    ],
+    "overdosage": []
+}

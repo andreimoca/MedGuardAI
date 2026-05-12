@@ -1,0 +1,32 @@
+{
+  "drug_name": "MICONAZOLE NITRATE",
+  "generic_name": [
+    "MICONAZOLE",
+    "MICONAZOLE NITRATE"
+  ],
+  "active_ingredients": [
+    "Miconazole nitrate 2% topical cream, powder, or spray; 1200 mg, 200 mg, or 100 mg vaginal ovules/cream (e.g., Monistat); 4% cream for vulvar/external use"
+  ],
+  "indications_and_usage": [
+    "Uses: cures most athlete's foot, jock itch, and ringworm and relieves their itching, burning, cracking, and scaling; the powder also helps absorb moisture and prevent the recurrence of athlete's foot; the vaginal products treat vaginal yeast (Candida) infections. It is an azole antifungal."
+  ],
+  "contraindications": [
+    "Skin products - hypersensitivity to miconazole or other azoles; do not use on nails or scalp. Vaginal products - do not use for a first-ever episode without a doctor's diagnosis; do not use if you have abdominal pain, fever, or a foul-smelling discharge (may be a different infection)."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only (skin) or vaginal use only (vaginal forms); avoid the eyes. Stop use and ask a doctor if irritation occurs or there is no improvement within 2-4 weeks (skin) or 3 days (vaginal symptoms not improving) or symptoms last more than 7 days; see a doctor for recurrent yeast infections. Vaginal miconazole can damage latex condoms and diaphragms (use additional contraception during and for 3 days after treatment). Mild increases in warfarin effect have been reported with vaginal miconazole."
+  ],
+  "adverse_reactions": [
+    "Local burning, itching, irritation; vaginal forms - vulvovaginal burning, itching, cramping, headache."
+  ],
+  "drug_interactions": [
+    "Vaginal miconazole can enhance the effect of warfarin (monitor INR if on warfarin). Topical/vaginal absorption is otherwise low; high-dose oral azoles (not these products) have many CYP interactions. Vaginal forms weaken latex barrier contraceptives."
+  ],
+  "dosage_and_administration": [
+    "Skin: clean and dry the area, apply a thin layer twice daily (morning and night) - 2 weeks for jock itch and ringworm, 4 weeks for athlete's foot; use the powder in shoes/socks to help prevent recurrence. Children under 2: ask a doctor. Vaginal: use the 1-day (1200 mg), 3-day (200 mg), or 7-day (100 mg) regimen at bedtime per the package, with the external cream applied to the vulva for itch."
+  ],
+  "overdosage": [
+    "Overdose by the topical or vaginal route is not expected to be hazardous; ingestion may cause GI upset. Contact Poison Control (1-800-222-1222)."
+  ]
+}

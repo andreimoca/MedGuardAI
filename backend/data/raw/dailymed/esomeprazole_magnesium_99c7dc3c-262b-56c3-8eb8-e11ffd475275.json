@@ -1,0 +1,32 @@
+{
+  "drug_name": "ESOMEPRAZOLE MAGNESIUM",
+  "generic_name": [
+    "ESOMEPRAZOLE",
+    "ESOMEPRAZOLE MAGNESIUM"
+  ],
+  "active_ingredients": [
+    "Esomeprazole magnesium 20 mg delayed-release capsule/tablet (OTC, e.g., Nexium 24HR); 20 mg and 40 mg by prescription"
+  ],
+  "indications_and_usage": [
+    "Uses (OTC): treats frequent heartburn (2 or more days a week). It is a proton pump inhibitor closely related to omeprazole; not for immediate relief and may take 1-4 days for full effect. By prescription it is used for GERD with erosive esophagitis, NSAID-associated ulcer risk reduction, H. pylori eradication, and hypersecretory conditions."
+  ],
+  "contraindications": [
+    "Known hypersensitivity to esomeprazole or substituted benzimidazole PPIs; do not use with rilpivirine-containing products; do not use with nelfinavir."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Same PPI cautions as omeprazole: not for immediate relief; see a doctor for alarm symptoms (trouble swallowing, GI bleeding, weight loss, chest pain); long-term use risks - fractures, low magnesium, B12 deficiency, C. difficile, acute interstitial nephritis, lupus erythematosus. Use the lowest dose for the shortest time."
+  ],
+  "adverse_reactions": [
+    "Headache, diarrhea, nausea, flatulence, abdominal pain, constipation, dry mouth; long-term metabolic and infection risks as with other PPIs."
+  ],
+  "drug_interactions": [
+    "Like omeprazole, may reduce clopidogrel activation (use caution / prefer an alternative). Reduces absorption of acid-dependent drugs (ketoconazole, itraconazole, atazanavir, erlotinib, iron). May raise methotrexate, tacrolimus, citalopram, and digoxin levels. Contraindicated with rilpivirine and nelfinavir; reduces nelfinavir/atazanavir exposure."
+  ],
+  "dosage_and_administration": [
+    "Adults 18 years and over (OTC): one 20 mg capsule/tablet daily, in the morning before eating, for 14 days; do not use for more than 14 days or more often than every 4 months unless directed by a doctor. By prescription, GERD is 20-40 mg once daily. Children under 18: ask a doctor."
+  ],
+  "overdosage": [
+    "Overdose symptoms have been mild (drowsiness, confusion, blurred vision, tachycardia, nausea, headache, dry mouth); supportive care. Contact Poison Control (1-800-222-1222)."
+  ]
+}

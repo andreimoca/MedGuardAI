@@ -1,0 +1,31 @@
+{
+  "drug_name": "GLIPIZIDE",
+  "generic_name": [
+    "GLIPIZIDE"
+  ],
+  "active_ingredients": [
+    "Glipizide 5 mg, 10 mg immediate-release tablets; 2.5 mg, 5 mg, 10 mg extended-release tablets (e.g., Glucotrol, Glucotrol XL) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus. It is a sulfonylurea that stimulates the pancreas to release more insulin. Prescription only."
+  ],
+  "contraindications": [
+    "Type 1 diabetes mellitus; diabetic ketoacidosis; known hypersensitivity to glipizide."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Hypoglycemia - especially in the elderly, debilitated or malnourished patients, with renal or hepatic impairment, with adrenal or pituitary insufficiency, with strenuous exercise, missed meals, or alcohol use; may be more frequent with long-acting sulfonylureas. Sulfa allergy - sulfonylureas share a sulfonamide moiety; cross-reactivity with sulfa antibiotics is uncommon but caution is advised. Increased cardiovascular mortality has been suggested with some sulfonylureas; counsel patients. Reduced effectiveness over time may occur. Hemolytic anemia in G6PD deficiency."
+  ],
+  "adverse_reactions": [
+    "Hypoglycemia, weight gain, GI upset (nausea, diarrhea), dizziness, headache, drowsiness, rash; rarely cholestatic jaundice, hyponatremia/SIADH, hemolytic anemia."
+  ],
+  "drug_interactions": [
+    "Drugs that increase hypoglycemia risk - other antidiabetic drugs (especially insulin), NSAIDs, sulfonamide antibiotics, fluconazole, MAO inhibitors, beta-blockers (which can also mask hypoglycemia), salicylates, alcohol. Drugs that may raise blood sugar and reduce effect - thiazides, corticosteroids, sympathomimetics, phenytoin, niacin, oral contraceptives. CYP2C9 inhibitors/inducers can affect levels."
+  ],
+  "dosage_and_administration": [
+    "Immediate-release (adults): start 5 mg once daily with breakfast (2.5 mg in the elderly or with hepatic disease); titrate by 2.5-5 mg as needed based on glucose response; doses above 15 mg/day should be divided; maximum 40 mg/day total, 15 mg per dose. Extended-release: 5 mg once daily with breakfast, may increase to 10 mg/day; maximum 20 mg/day. Take 30 minutes before a meal (immediate-release). Skip a dose if you skip a meal to lower hypoglycemia risk."
+  ],
+  "overdosage": [
+    "Overdose causes severe and prolonged hypoglycemia - a medical emergency, especially in children; symptoms may recur after initial treatment because of the long half-life. Give carbohydrates if the patient can swallow; otherwise IV dextrose and close glucose monitoring for 24-48 hours. Seek emergency care; call Poison Control (1-800-222-1222)."
+  ]
+}

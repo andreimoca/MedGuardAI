@@ -1,0 +1,31 @@
+{
+  "drug_name": "COLCHICINE",
+  "generic_name": [
+    "COLCHICINE"
+  ],
+  "active_ingredients": [
+    "Colchicine 0.6 mg tablets and capsules; 0.5 mg tablets; oral solution (e.g., Colcrys, Mitigare) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the prophylaxis and treatment of acute gout flares, and for the treatment of familial Mediterranean fever (FMF). It is also used in pericarditis under cardiologist guidance. It is NOT a general analgesic and has a narrow therapeutic window. Prescription only - dosing is precise and interactions are clinically important."
+  ],
+  "contraindications": [
+    "Concomitant use of P-gp or strong CYP3A4 inhibitors in patients with renal or hepatic impairment - life-threatening or fatal colchicine toxicity has been reported; known hypersensitivity to colchicine."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Fatal overdoses have been reported in adults and children, including with as little as 0.5 mg/kg total - this is a very dangerous drug to take in excess. Neuromuscular toxicity and rhabdomyolysis have been reported, especially with concomitant statins, gemfibrozil, or in renal impairment. Bone marrow suppression (leukopenia, granulocytopenia, thrombocytopenia, pancytopenia) - especially with long-term use. Renal impairment dose adjustment is required, and avoid combination with strong P-gp/CYP3A4 inhibitors in renal/hepatic impairment. Diarrhea is an early sign of toxicity and dose-limiting - stop at the first sign of GI symptoms in flares."
+  ],
+  "adverse_reactions": [
+    "Diarrhea, nausea, vomiting, abdominal pain (very common at higher doses), pharyngolaryngeal pain; rare but serious - myopathy/rhabdomyolysis, bone marrow suppression, neuropathy, hepatotoxicity, fatal overdose."
+  ],
+  "drug_interactions": [
+    "Strong CYP3A4 inhibitors - clarithromycin, ketoconazole, itraconazole, ritonavir/HIV protease inhibitors, nefazodone; P-gp inhibitors - cyclosporine, ranolazine, verapamil, diltiazem (require dose reduction; AVOID in renal/hepatic impairment); statins, fibrates - myopathy risk (additive); grapefruit juice. CYP3A4 inducers (rifampin) lower levels."
+  ],
+  "dosage_and_administration": [
+    "Acute gout flare: 1.2 mg at the first sign, then 0.6 mg one hour later (total 1.8 mg over 1 hour); do not repeat for 12 hours, then 0.6 mg once or twice daily until the flare resolves. Prophylaxis of gout: 0.6 mg once or twice daily (maximum 1.2 mg/day). FMF: 1.2-2.4 mg daily in 1-2 divided doses (per age and tolerability). Dose reductions with interacting drugs and in renal/hepatic impairment - consult the label carefully. Do not crush or chew long-term suspension forms outside the label."
+  ],
+  "overdosage": [
+    "Colchicine overdose is a medical emergency - even modest overdoses can be fatal. Symptoms in stages: GI (severe vomiting, diarrhea, dehydration) within hours; multiorgan failure (cardiac, renal, hepatic, bone marrow, neuromuscular) over 24-72 hours; possible recovery or death. No specific antidote (a colchicine-specific Fab antibody is investigational); supportive intensive care with cardiac and hemodynamic monitoring. Activated charcoal early. Call 911 and Poison Control (1-800-222-1222) immediately."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "drug_name": "TAMSULOSIN HYDROCHLORIDE",
+  "generic_name": [
+    "TAMSULOSIN",
+    "TAMSULOSIN HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Tamsulosin hydrochloride 0.4 mg modified-release capsule (e.g., Flomax) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of the signs and symptoms of benign prostatic hyperplasia (BPH) in men - it relaxes muscle tone in the prostate and bladder neck to improve urinary flow and reduce symptoms such as hesitancy, weak stream, frequency, and nighttime urination. It is an alpha-1A-adrenergic blocker. It is not approved for use in women and is not a treatment for prostate cancer."
+  ],
+  "contraindications": [
+    "Hypersensitivity to tamsulosin or any component of the capsule."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Orthostatic hypotension and first-dose syncope: tamsulosin can cause a sudden drop in blood pressure, especially with the first dose (or after a missed dose, or with a dose increase) - sit or lie down at the first sign of dizziness or lightheadedness, and be careful when driving or operating machinery for 12 hours after the first dose. Intraoperative Floppy Iris Syndrome (IFIS): if you have or are planning cataract or glaucoma surgery, tell your eye surgeon you are taking, or have taken, tamsulosin - the iris can behave abnormally during surgery, and special techniques are needed. Priapism (prolonged painful erection > 4 hours) is a rare emergency. Use caution combining with PDE5 inhibitors (sildenafil/tadalafil) - additive hypotension. Rule out prostate cancer (PSA, exam) before starting long-term therapy. Reduce or avoid with strong CYP3A4 and/or CYP2D6 inhibitors. Sulfa allergy is not a contraindication."
+  ],
+  "adverse_reactions": [
+    "Dizziness, abnormal ejaculation (reduced or retrograde), headache, rhinitis/nasal congestion, asthenia, back pain, somnolence, orthostatic hypotension; rarely priapism, IFIS, allergic reactions."
+  ],
+  "drug_interactions": [
+    "Strong CYP3A4 inhibitors - ketoconazole, itraconazole, ritonavir, clarithromycin (significantly raise tamsulosin levels - avoid the combination); strong CYP2D6 inhibitors - paroxetine, fluoxetine, bupropion (raise levels); combined CYP3A4/2D6 inhibition has the largest effect; other alpha-blockers (additive hypotension - avoid); PDE5 inhibitors such as sildenafil and tadalafil (additive blood-pressure lowering); cimetidine (raises levels); warfarin interaction has been reported - monitor INR."
+  ],
+  "dosage_and_administration": [
+    "Adults: take one 0.4 mg capsule by mouth once daily, approximately 30 minutes after the same meal each day; swallow whole - do not crush, chew, or open. If the response is inadequate after 2-4 weeks, the dose may be increased to 0.8 mg once daily by the prescriber. If treatment is interrupted for several days, restart at 0.4 mg once daily. Continue for symptom control - stopping returns symptoms."
+  ],
+  "overdosage": [
+    "Overdose can cause severe hypotension, vomiting, and diarrhea; manage by lying flat with legs elevated, supportive care, IV fluids, vasopressors; dialysis is not useful. Seek emergency care; call Poison Control (1-800-222-1222)."
+  ]
+}

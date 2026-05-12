@@ -1,0 +1,32 @@
+{
+  "drug_name": "MUPIROCIN OINTMENT",
+  "generic_name": [
+    "MUPIROCIN",
+    "MUPIROCIN CALCIUM"
+  ],
+  "active_ingredients": [
+    "Mupirocin 2% ointment or cream (e.g., Bactroban); also a 2% nasal ointment for MRSA decolonization - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the topical treatment of impetigo due to Staphylococcus aureus and Streptococcus pyogenes, and for secondarily infected traumatic skin lesions (small superficial cuts, abrasions, sutured wounds) due to susceptible staphylococci and streptococci. The nasal ointment is used to eradicate nasal carriage of MRSA in adults and healthcare workers as part of an infection-control program. It is a prescription topical antibiotic - it is not the same as OTC first-aid ointments and should be used only as a doctor directs to limit resistance."
+  ],
+  "contraindications": [
+    "Hypersensitivity to mupirocin or to polyethylene glycol (the ointment vehicle); the ointment vehicle is not for use on large open wounds or burns or in patients with moderate or severe renal impairment because absorbed polyethylene glycol can accumulate."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For dermatologic (or intranasal) use only - not for the eyes, and the skin ointment is not for intranasal use (and vice versa). Avoid contact with the eyes. Superinfection with non-susceptible organisms, including fungi, may occur with prolonged use. Severe allergic reactions and Clostridioides difficile-associated diarrhea have rarely been reported. Discontinue if a sensitization reaction or severe local irritation occurs. Reevaluate if no clinical response within 3-5 days. Use only for the prescribed course."
+  ],
+  "adverse_reactions": [
+    "Burning, stinging, itching, or pain at the application site; rash, dryness, contact dermatitis; nasal forms - headache, rhinitis, taste disturbance, pharyngitis."
+  ],
+  "drug_interactions": [
+    "No clinically significant systemic drug interactions reported with topical use; do not apply other topical products to the same site at the same time unless directed."
+  ],
+  "dosage_and_administration": [
+    "Impetigo: apply a small amount to the affected area three times daily; the area may be covered with a gauze dressing; reevaluate in 3-5 days if no response; usual course about 5-10 days as prescribed. Secondarily infected traumatic lesions: apply three times daily for 10 days. Nasal decolonization: apply about half the contents of a single-use tube into each nostril twice daily for 5 days, pressing the nose to spread it. Children: the cream is approved from 3 months of age for impetigo; follow the prescriber's instructions."
+  ],
+  "overdosage": [
+    "No information on overdose; ingestion of a tube is not expected to cause serious harm beyond GI upset (but the polyethylene glycol vehicle could be a concern in renal impairment). Contact Poison Control (1-800-222-1222)."
+  ]
+}

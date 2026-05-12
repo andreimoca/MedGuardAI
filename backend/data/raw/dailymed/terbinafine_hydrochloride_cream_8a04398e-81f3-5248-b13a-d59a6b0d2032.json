@@ -1,0 +1,32 @@
+{
+  "drug_name": "TERBINAFINE HYDROCHLORIDE CREAM",
+  "generic_name": [
+    "TERBINAFINE",
+    "TERBINAFINE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Terbinafine hydrochloride 1% topical cream, gel, or spray (e.g., Lamisil AT); also 250 mg oral tablets by prescription for nail and scalp fungus"
+  ],
+  "indications_and_usage": [
+    "Uses (topical): cures most athlete's foot (tinea pedis) between the toes, and most jock itch (tinea cruris) and ringworm (tinea corporis); relieves the itching, burning, cracking, and scaling that accompany these conditions. It is an allylamine antifungal and is fungicidal, so courses are often shorter than for azoles. The oral tablets (prescription) treat fungal infections of the toenails/fingernails (onychomycosis) and the scalp."
+  ],
+  "contraindications": [
+    "Topical: hypersensitivity to terbinafine; do not use on the nails or scalp (use the oral form for those, under a doctor). Oral: chronic or active liver disease; hypersensitivity to terbinafine."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Topical - for external use only; avoid the eyes, nose, mouth, and other mucous membranes; stop use and ask a doctor if irritation occurs or there is no improvement within 2 weeks (jock itch/ringworm) or 4 weeks (athlete's foot). Oral terbinafine - rare cases of serious liver injury (some fatal or needing transplant), so check liver tests before and during treatment and stop for any signs of hepatotoxicity (nausea, dark urine, jaundice, right-upper-abdominal pain); taste and smell disturbance (sometimes prolonged or permanent); serious skin reactions (Stevens-Johnson syndrome, DRESS); depressive symptoms; lupus-like reactions; blood dyscrasias - monitor accordingly."
+  ],
+  "adverse_reactions": [
+    "Topical - burning, itching, dryness, redness, irritation at the site. Oral - headache, diarrhea, rash, dyspepsia, taste/smell disturbance, liver enzyme elevations; rarely serious hepatic, hematologic, or skin reactions."
+  ],
+  "drug_interactions": [
+    "Topical - negligible. Oral - terbinafine is a potent CYP2D6 inhibitor: it can raise levels of drugs metabolized by CYP2D6 (certain tricyclic and SSRI antidepressants, beta-blockers such as metoprolol, antiarrhythmics, some antipsychotics) - dose adjustments may be needed; rifampin lowers terbinafine levels and cimetidine raises them."
+  ],
+  "dosage_and_administration": [
+    "Topical: adults and children 12 years and over - clean and dry the area, then apply a thin layer once or twice daily; for athlete's foot between the toes, apply twice daily for 1 week; for jock itch or ringworm, apply once daily for 1 week; symptoms may keep improving for up to 4 weeks after stopping. Children under 12: ask a doctor. Oral (prescription): typically 250 mg once daily for 6 weeks (fingernails) or 12 weeks (toenails), with liver monitoring."
+  ],
+  "overdosage": [
+    "Topical overdose is not a concern. Oral overdose may cause headache, nausea, epigastric pain, and dizziness; supportive care, not removed by dialysis. Contact Poison Control (1-800-222-1222)."
+  ]
+}

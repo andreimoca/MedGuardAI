@@ -1,0 +1,32 @@
+{
+  "drug_name": "EPINEPHRINE AUTO-INJECTOR",
+  "generic_name": [
+    "EPINEPHRINE",
+    "ADRENALINE"
+  ],
+  "active_ingredients": [
+    "Epinephrine 0.3 mg per 0.3 mL (adult) and 0.15 mg per 0.3 mL (pediatric) prefilled single-dose auto-injectors (e.g., EpiPen, Auvi-Q, Adrenaclick) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the emergency treatment of type I allergic (anaphylactic) reactions, including those that are life-threatening, due to insect stings or bites, foods, drugs, exercise, or other allergens, as well as idiopathic anaphylaxis. It is the first-line, life-saving treatment for anaphylaxis - it works by tightening blood vessels (raising blood pressure), opening the airways, and stopping the cascade of allergic mediators. Anaphylaxis can be fatal within minutes; immediate use of epinephrine is essential, followed by calling 911. The auto-injector is intended for self-injection or injection by a caregiver. Prescription only - patients prescribed an auto-injector should also have an action plan and ideally carry two devices because some reactions need a second dose."
+  ],
+  "contraindications": [
+    "There are no absolute contraindications to the use of epinephrine in a life-threatening allergic reaction."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Cardiovascular effects - epinephrine can cause raised heart rate, palpitations, rise in blood pressure, anxiety, tremor, headache, dizziness, pallor, and nausea; in patients with heart disease, hypertension, hyperthyroidism, or diabetes these effects may be more pronounced but the drug is still indicated because untreated anaphylaxis is far more dangerous. Inject into the outer thigh; do NOT inject into a vein, buttock, hands, feet, fingers, or toes (risk of severe tissue ischemia - if accidentally injected into a finger, seek emergency care immediately). After use, call 911 and go to the nearest emergency department for monitoring - a 'biphasic' reaction can occur hours later. A second dose can be given after 5-15 minutes if symptoms do not improve. Do not delay using epinephrine while taking an antihistamine, inhaler, or oral steroid - they are NOT substitutes."
+  ],
+  "adverse_reactions": [
+    "Anxiety, tremor, palpitations, fast heartbeat, sweating, nausea, vomiting, headache, dizziness, pallor; rare cardiac arrhythmias, ischemia, intense local vasoconstriction at the site, hypertensive crisis at high doses; tissue necrosis if accidentally injected into a digit."
+  ],
+  "drug_interactions": [
+    "Non-selective beta-blockers can blunt the response and require higher doses; tricyclic antidepressants and MAO inhibitors potentiate the cardiovascular effects (but do not withhold epinephrine in anaphylaxis); chlorpromazine and other alpha-blockers may reverse the pressor effect; thyroid hormones, digitalis, diuretics, sympathomimetics (additive). Use caution but never withhold in true anaphylaxis."
+  ],
+  "dosage_and_administration": [
+    "Adults and children weighing 30 kg or more: one 0.3 mg dose injected intramuscularly into the middle of the outer thigh (through clothing if needed); hold in place for 3 seconds (per the device instructions - newer devices may differ). Children 15-30 kg: 0.15 mg auto-injector; under 15 kg per a clinician (consider 0.1 mg device or weight-based vial dosing). After use, call 911. A second dose may be given 5-15 minutes later if symptoms persist or recur. Check the expiry date and the inspection window for clarity regularly; replace when expired. Train patients and family members on use; do not practice on a person with a live auto-injector."
+  ],
+  "overdosage": [
+    "Overdose causes severe hypertension, arrhythmias, pulmonary edema, hemorrhagic stroke, and can be fatal. Treat with vasodilators (e.g., phentolamine for hypertension), beta-blockers for arrhythmias, supportive care. Seek emergency care; call 911 and Poison Control (1-800-222-1222)."
+  ]
+}

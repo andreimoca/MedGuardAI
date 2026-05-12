@@ -1,0 +1,34 @@
+{
+  "drug_name": "PHENYLEPHRINE AND PRAMOXINE HEMORRHOIDAL",
+  "generic_name": [
+    "PHENYLEPHRINE",
+    "PRAMOXINE",
+    "PHENYLEPHRINE HYDROCHLORIDE",
+    "PRAMOXINE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Phenylephrine HCl 0.25% (vasoconstrictor) and pramoxine HCl 1% (local anesthetic), with skin protectants such as mineral oil, petrolatum, or shark liver oil, in hemorrhoidal cream/ointment/suppositories (e.g., Preparation H type products)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves the local itching, burning, discomfort, and irritation associated with hemorrhoids; the vasoconstrictor helps shrink swollen hemorrhoidal tissue, the anesthetic numbs pain and itching, and the protectant forms a soothing barrier and helps relieve the burning of bowel movements."
+  ],
+  "contraindications": [
+    "Do not use if you have heart disease, high blood pressure, thyroid disease, diabetes, or trouble urinating due to an enlarged prostate, unless a doctor approves (the phenylephrine vasoconstrictor can be absorbed and affect these conditions). Do not use if allergic to pramoxine or other 'caine'/'-oxine' anesthetics."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use and rectal use only; do not exceed the recommended daily dosage unless directed by a doctor. Do not put the product into the rectum with any device unless the package provides one. Stop use and ask a doctor if bleeding occurs, the condition worsens or does not improve within 7 days, or if you have rectal bleeding - this could be a sign of a serious condition. Do not use if you are taking an MAO inhibitor or for 2 weeks after stopping one."
+  ],
+  "adverse_reactions": [
+    "Local stinging, burning, or itching; rarely systemic effects from absorbed phenylephrine (nervousness, raised blood pressure, palpitations); allergic reactions to the anesthetic."
+  ],
+  "drug_interactions": [
+    "MAO inhibitors (hypertensive reaction with absorbed phenylephrine); other sympathomimetics, beta-blockers, and certain antidepressants (altered cardiovascular effects)."
+  ],
+  "dosage_and_administration": [
+    "Adults: when practical, cleanse the area with mild soap and warm water and rinse thoroughly; apply the cream/ointment externally to the affected area up to 4 times daily, especially at night, in the morning, and after each bowel movement; for suppositories, insert one rectally up to 4 times daily; do not use for more than 7 days unless directed by a doctor. Children under 12: ask a doctor."
+  ],
+  "overdosage": [
+    "Ingestion or excessive use can cause phenylephrine toxicity (hypertension, headache, slow or irregular heartbeat) and local anesthetic effects; seek medical help and contact Poison Control (1-800-222-1222)."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "drug_name": "METFORMIN HYDROCHLORIDE",
+  "generic_name": [
+    "METFORMIN",
+    "METFORMIN HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Metformin hydrochloride 500 mg, 850 mg, 1000 mg immediate-release tablets; 500 mg, 750 mg, 1000 mg extended-release tablets (e.g., Glucophage, Glucophage XR) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Metformin is indicated as an adjunct to diet and exercise to improve glycemic control in adults and children 10 years and older with type 2 diabetes mellitus. It is the first-line oral medicine for type 2 diabetes. It is not used for type 1 diabetes (it does not replace insulin) and is sometimes used off-label by clinicians for polycystic ovary syndrome and prediabetes; it is not FDA-approved for weight loss or anti-aging in non-diabetic adults - using it for those purposes should be discussed with a clinician."
+  ],
+  "contraindications": [
+    "Severe renal impairment (eGFR less than 30 mL/min/1.73 m^2); acute or chronic metabolic acidosis, including diabetic ketoacidosis (with or without coma); hypersensitivity to metformin."
+  ],
+  "boxed_warning": [
+    "Lactic acidosis is a rare but serious metabolic complication that can occur due to metformin accumulation; the risk increases with renal impairment, concomitant use of certain drugs (some carbonic anhydrase inhibitors), age 65 or older, having a radiological study with iodinated contrast in the setting of renal impairment, surgery and other procedures, hypoxic states (acute congestive heart failure, recent MI), excessive alcohol intake, and hepatic impairment. If lactic acidosis is suspected (malaise, myalgias, respiratory distress, somnolence, nonspecific abdominal pain), discontinue metformin and treat promptly. Lactic acidosis is fatal in about half of cases."
+  ],
+  "warnings_and_cautions": [
+    "Assess kidney function before starting and at least yearly. Vitamin B12 deficiency can occur, especially with long-term use - check periodically. Hypoglycemia is uncommon with metformin alone but can occur with insulin or sulfonylureas, especially in starvation, alcohol use, or hepatic/renal impairment. Withhold metformin around iodinated contrast procedures if eGFR <60 or with arterial injection - restart 48 hours later after renal function rechecked. Temporarily stop in dehydration, severe infection, or acute heart/respiratory failure. Avoid heavy alcohol use."
+  ],
+  "adverse_reactions": [
+    "GI: diarrhea, nausea, abdominal discomfort, flatulence, metallic taste, decreased appetite - usually transient and reduced by taking with food, slow titration, or switching to extended-release. Vitamin B12 deficiency. Rarely lactic acidosis."
+  ],
+  "drug_interactions": [
+    "Iodinated contrast (lactic acidosis - withhold around procedures if at risk in renal impairment); carbonic anhydrase inhibitors (topiramate, acetazolamide - acidosis); cationic drugs (cimetidine, dolutegravir, ranolazine) can raise metformin levels; alcohol (lactic acidosis, hypoglycemia); insulin and insulin secretagogues such as glipizide and glimepiride (additive hypoglycemia - reduce their dose if combining).",
+    "NSAIDs (ibuprofen, naproxen, aspirin, meloxicam, diclofenac), ACE inhibitors (such as lisinopril), and ARBs (such as losartan): can reduce kidney function, particularly in dehydration or older adults, and metformin should be held in significant acute kidney injury - this combination is generally safe at low doses but watch hydration and renal function.",
+    "Glucocorticoids (such as prednisone), thiazide diuretics (hydrochlorothiazide), and sympathomimetics can raise blood sugar and may require an upward dose adjustment of metformin or addition of another agent; conversely, beta-blockers can mask hypoglycemia from a sulfonylurea added to metformin."
+  ],
+  "dosage_and_administration": [
+    "Adults (immediate-release): start 500 mg twice daily or 850 mg once daily with meals; increase by 500 mg/week or 850 mg every 2 weeks as tolerated to a usual maintenance of 1500-2000 mg/day in divided doses; maximum 2550 mg/day. Extended-release: start 500-1000 mg once daily with the evening meal, titrate up to a maximum of 2000-2500 mg/day. Children 10-16 years: start 500 mg twice daily, titrate to a maximum of 2000 mg/day. Take with food to reduce GI side effects. Adjust or stop for kidney function changes per the prescriber."
+  ],
+  "overdosage": [
+    "Metformin overdose can cause severe lactic acidosis - a medical emergency; hypoglycemia is uncommon unless taken with insulin or a sulfonylurea. Hemodialysis can remove metformin and correct acidosis. Seek emergency care; call Poison Control (1-800-222-1222)."
+  ]
+}

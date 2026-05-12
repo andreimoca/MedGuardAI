@@ -1,0 +1,32 @@
+{
+  "drug_name": "PHENAZOPYRIDINE HYDROCHLORIDE",
+  "generic_name": [
+    "PHENAZOPYRIDINE",
+    "PHENAZOPYRIDINE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Phenazopyridine hydrochloride 95 mg or 97.5 mg tablets (OTC, e.g., AZO Urinary Pain Relief, Uristat); 100 mg and 200 mg tablets by prescription"
+  ],
+  "indications_and_usage": [
+    "Uses: relief of urinary pain, burning, urgency, and frequency associated with urinary tract infections (UTIs) and other irritation of the lower urinary tract. It is a urinary tract analgesic - it numbs the bladder lining but does not treat the infection. If you have a urinary tract infection, you still need an antibiotic from a doctor; phenazopyridine is for symptom relief only and is generally used for no more than 2 days alongside the antibiotic."
+  ],
+  "contraindications": [
+    "Do not use if you have kidney disease or have ever had an allergic reaction to phenazopyridine; do not use in patients with G6PD deficiency (risk of hemolytic anemia)."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For symptom relief only - it does not replace antibiotics for a UTI. See a doctor if you have UTI symptoms; do not use for more than 2 days without seeing a doctor (it can mask worsening infection). It turns the urine red-orange (and can permanently stain clothing and soft contact lenses - remove contact lenses while using). Can also discolor sweat and tears. Ask a doctor before use if you have liver or kidney problems. Stop use and ask a doctor if your skin or eyes turn yellow (a sign of liver toxicity or methemoglobinemia)."
+  ],
+  "adverse_reactions": [
+    "Red-orange discoloration of urine and other body fluids, headache, dizziness, GI upset; rarely methemoglobinemia, hemolytic anemia (especially in G6PD deficiency), kidney or liver toxicity, allergic reactions."
+  ],
+  "drug_interactions": [
+    "May interfere with urinalysis (color-based tests); no major systemic drug interactions, but caution with other oxidative drugs in G6PD-deficient patients."
+  ],
+  "dosage_and_administration": [
+    "Adults: 95-200 mg (one tablet of the OTC product or 100-200 mg of the prescription tablet) three times a day, after meals, for not more than 2 days. Children under 12: ask a doctor."
+  ],
+  "overdosage": [
+    "Overdose can cause methemoglobinemia (cyanosis, shortness of breath, blue lips/nails), hemolysis, kidney/liver injury; methylene blue is the antidote for severe methemoglobinemia (avoid in G6PD deficiency). Seek emergency care; call Poison Control (1-800-222-1222)."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "drug_name": "POLYETHYLENE GLYCOL 3350",
+  "generic_name": [
+    "POLYETHYLENE GLYCOL 3350",
+    "PEG 3350"
+  ],
+  "active_ingredients": [
+    "Polyethylene glycol 3350, 17 g per dose (one heaping tablespoon of powder), e.g., MiraLAX"
+  ],
+  "indications_and_usage": [
+    "Uses: relieves occasional constipation (irregularity); usually produces a bowel movement in 1 to 3 days. It is an osmotic laxative that holds water in the stool to soften it and increase the frequency of bowel movements; it is not a stimulant and is generally gentle."
+  ],
+  "contraindications": [
+    "Do not use if you have a known allergy to polyethylene glycol or if you have or may have a bowel blockage (intestinal obstruction)."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Ask a doctor before use if you have nausea, vomiting, or abdominal pain, or if you have kidney disease. Do not use for more than 7 days unless directed by a doctor. Stop use and ask a doctor if you have rectal bleeding or no bowel movement after use - these may indicate a serious condition. Loose, watery, or more frequent stools may occur; if so, reduce the dose."
+  ],
+  "adverse_reactions": [
+    "Bloating, gas, cramping, nausea; with overuse or in dehydration - diarrhea and electrolyte disturbances."
+  ],
+  "drug_interactions": [
+    "No clinically significant drug interactions known; it is minimally absorbed."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 17 years and over: dissolve 17 g of powder (measured to the top of the cap on the bottle, or one packet) in 4 to 8 ounces of any beverage and drink once a day; use no more than 7 days unless directed by a doctor. Children 16 years and under: ask a doctor (pediatricians do commonly direct weight-based use for childhood constipation - follow their instructions)."
+  ],
+  "overdosage": [
+    "Excess use causes watery diarrhea and possible dehydration/electrolyte imbalance, especially in children and the elderly; replace fluids. Contact Poison Control (1-800-222-1222) for large ingestions."
+  ]
+}

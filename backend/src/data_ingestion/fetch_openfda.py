@@ -9,27 +9,56 @@ from typing import List, Dict
 API_BASE_URL = "https://api.fda.gov/drug/label.json"
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'raw', 'dailymed')
 
+# OpenFDA hard limits: the `limit` query parameter is capped at 1000, and the
+# total addressable window via `skip` is capped at 26,000.
+PER_REQUEST_MAX = 1000
+TOTAL_MAX = 26000
+
 def ensure_output_dir():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-def fetch_drug_labels(limit: int = 20) -> List[Dict]:
+def fetch_drug_labels(limit: int = PER_REQUEST_MAX) -> List[Dict]:
     """
-    Fetches raw labeling data from the openFDA API representing DailyMed info.
-    We are particularly interested in warnings, contraindications, and dosage.
+    Fetch up to `limit` drug labels with boxed warnings, contraindications, or
+    dosage instructions, paginated in 1000-record pages.
+
+    Args:
+        limit: total records to fetch across all pages (capped at TOTAL_MAX).
     """
-    print(f"Fetching {limit} drug labels from openFDA...")
-    
-    # We query records that have boxed warnings, contraindications, or dosage instructions
-    params = {
-        'search': '_exists_:boxed_warning OR _exists_:contraindications OR _exists_:dosage_and_administration',
-        'limit': limit
-    }
-    
-    response = requests.get(API_BASE_URL, params=params)
-    response.raise_for_status()
-    
-    data = response.json()
-    return data.get('results', [])
+    target = min(max(limit, 1), TOTAL_MAX)
+    print(f"Fetching up to {target} drug labels from openFDA "
+          f"(paginating in pages of {PER_REQUEST_MAX})...")
+
+    search = (
+        "_exists_:boxed_warning OR _exists_:contraindications "
+        "OR _exists_:dosage_and_administration"
+    )
+    results: List[Dict] = []
+    skip = 0
+    while len(results) < target:
+        page_size = min(PER_REQUEST_MAX, target - len(results))
+        params = {"search": search, "limit": page_size, "skip": skip}
+        try:
+            response = requests.get(API_BASE_URL, params=params, timeout=30)
+        except requests.RequestException as exc:
+            print(f"  page skip={skip} failed: {exc}; stopping pagination")
+            break
+        if response.status_code == 404:
+            # OpenFDA returns 404 once you exhaust the result window.
+            print(f"  page skip={skip} returned 404 (end of results)")
+            break
+        response.raise_for_status()
+        page = response.json().get("results", []) or []
+        if not page:
+            print(f"  page skip={skip} empty; stopping pagination")
+            break
+        results.extend(page)
+        print(f"  page skip={skip} -> +{len(page)} records (total {len(results)})")
+        skip += len(page)
+        # Be nice to the API even though we're well under the rate limit.
+        time.sleep(0.2)
+
+    return results
 
 def filter_and_save_labels(records: List[Dict]):
     """
@@ -80,9 +109,11 @@ def filter_and_save_labels(records: List[Dict]):
     print(f"\nSuccessfully saved {saved_count} drug label files to {OUTPUT_DIR}")
 
 if __name__ == "__main__":
+    import sys
+    # Allow override via CLI: `python fetch_openfda.py 5000`
+    requested = int(sys.argv[1]) if len(sys.argv) > 1 else TOTAL_MAX
     try:
-        # Fetching a small batch initially for demonstration and schema validation
-        records = fetch_drug_labels(limit=50)
+        records = fetch_drug_labels(limit=requested)
         filter_and_save_labels(records)
     except Exception as e:
         print(f"Failed to execute ingestion pipeline: {e}")

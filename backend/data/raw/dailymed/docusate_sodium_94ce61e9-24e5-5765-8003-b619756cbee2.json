@@ -1,0 +1,32 @@
+{
+  "drug_name": "DOCUSATE SODIUM",
+  "generic_name": [
+    "DOCUSATE SODIUM",
+    "DOCUSATE"
+  ],
+  "active_ingredients": [
+    "Docusate sodium 50 mg to 250 mg per capsule/tablet or per dose of syrup (stool softener, e.g., Colace)"
+  ],
+  "indications_and_usage": [
+    "Uses: relieves occasional constipation (irregularity); generally produces a bowel movement in 12 to 72 hours. It is a stool softener (emollient laxative) that lets more water and fat mix into the stool, making it easier and more comfortable to pass - useful when straining should be avoided (after surgery, childbirth, with hemorrhoids)."
+  ],
+  "contraindications": [
+    "Do not use if you have stomach pain, nausea, or vomiting, or if you notice a sudden change in bowel habits lasting more than 2 weeks, without asking a doctor."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Do not use for more than 1 week unless directed by a doctor; laxative dependence can occur with prolonged overuse. Do not take within 2 hours of mineral oil unless directed by a doctor (increases mineral oil absorption). Stop use and ask a doctor if you have rectal bleeding or fail to have a bowel movement - these could indicate a serious condition."
+  ],
+  "adverse_reactions": [
+    "Mild abdominal cramping, diarrhea; throat irritation with the liquid; rarely rash."
+  ],
+  "drug_interactions": [
+    "May increase the absorption of mineral oil (avoid combining). Generally minimal interactions."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: 50-300 mg daily in one or more divided doses until bowel movements are normal; take with a full glass of water. Children 2-11 years: 50-150 mg daily as directed. Children under 2 years: ask a doctor. The syrup can be mixed with milk or juice to improve taste."
+  ],
+  "overdosage": [
+    "Overdose may cause abdominal cramping and diarrhea with fluid/electrolyte loss; supportive fluids. Contact Poison Control (1-800-222-1222)."
+  ]
+}

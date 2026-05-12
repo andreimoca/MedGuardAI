@@ -1,0 +1,25 @@
+{
+    "drug_name": "Sodium Chloride",
+    "generic_name": [
+        "SODIUM CHLORIDE"
+    ],
+    "active_ingredients": [],
+    "indications_and_usage": [
+        "INDICATIONS AND USAGE This sterile, nonpyrogenic electrolyte solution is indicated for all general irrigation, washing, rinsing and dilution purposes including blood cell washing (when used in conjunction with automated intraoperative blood salvaging equipment)."
+    ],
+    "contraindications": [
+        "CONTRAINDICATIONS NOT FOR INJECTION BY USUAL PARENTERAL ROUTES. An electrolyte solution should not be used for irrigation during electrosurgical procedures."
+    ],
+    "boxed_warning": [],
+    "warnings_and_cautions": [],
+    "adverse_reactions": [
+        "ADVERSE REACTIONS Possible adverse effects arising from the irrigation of body cavities, tissues, cells or indwelling catheters and tubes are usually avoidable when proper procedures are followed. Displaced catheters or drainage tubes can lead to irrigation or infiltration of unintended structures or cavities. Excessive volume or pressure during irrigation of closed cavities may cause undue distension or disruption of tissues. Accidental contamination from careless technique may transmit infection. Should any adverse reaction occur, discontinue the irrigant, evaluate the patient, institute appropriate therapeutic countermeasures and save the remainder of the fluid for examination if deemed necessary."
+    ],
+    "drug_interactions": [],
+    "dosage_and_administration": [
+        "DOSAGE AND ADMINISTRATION The dose is dependent upon the capacity or surface area of the structure to be irrigated and the nature of the procedure. When used as a diluent or vehicle for other drugs, the manufacturer's recommendations should be followed. For use in cell washing, the manufacturer's recommendations for blood salvaging and red cell processing should be followed. Drug Interactions Additives may be incompatible. Consult with pharmacist, if available. When introducing additives, use aseptic technique, mix thoroughly and do not store. Parenteral drug products should be inspected visually for particulate matter and discoloration prior to administration, whenever solution container permits. See PRECAUTIONS ."
+    ],
+    "overdosage": [
+        "OVERDOSAGE In the event of overhydration or solute overload, re-evaluate the patient and institute appropriate corrective measures. See WARNINGS , PRECAUTIONS and ADVERSE REACTIONS ."
+    ]
+}

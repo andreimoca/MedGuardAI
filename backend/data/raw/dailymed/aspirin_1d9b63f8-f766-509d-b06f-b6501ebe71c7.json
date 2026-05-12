@@ -1,0 +1,36 @@
+{
+  "drug_name": "ASPIRIN",
+  "generic_name": [
+    "ACETYLSALICYLIC ACID",
+    "ASPIRIN"
+  ],
+  "active_ingredients": [
+    "Aspirin 325 mg or 500 mg per tablet (pain relief); 81 mg per tablet (low-dose 'baby aspirin' for cardiovascular use)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves minor aches and pains due to headache, muscular aches, toothache, menstrual cramps, the common cold, and minor pain of arthritis; temporarily reduces fever. Low-dose aspirin (81 mg) is used, only when recommended by a doctor, to reduce the risk of heart attack and clot-related (ischemic) stroke in people at risk, and is given at the onset of a suspected heart attack while waiting for emergency help if a clinician has advised it."
+  ],
+  "contraindications": [
+    "Do not use if you have ever had an allergic reaction to aspirin or other NSAIDs, if you have a bleeding disorder or active stomach/intestinal ulcer, or in children and teenagers with a viral illness (chickenpox, flu) because of the risk of Reye's syndrome."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Reye's syndrome: children and teenagers who have or are recovering from chickenpox or flu-like symptoms should not use aspirin; Reye's syndrome is a rare but serious illness. Aspirin-sensitive asthma: some people with asthma (especially with nasal polyps) can develop severe bronchospasm from aspirin and other NSAIDs - ask a doctor before use if you have asthma. Stomach-bleeding warning as for other NSAIDs (higher risk with age over 60, ulcer history, blood thinners, steroids, alcohol). Stop use and ask a doctor if you have ringing in the ears or loss of hearing."
+  ],
+  "adverse_reactions": [
+    "Stomach upset, heartburn, nausea, GI bleeding/ulcer, easy bruising/bleeding, tinnitus at high doses, hypersensitivity reactions."
+  ],
+  "drug_interactions": [
+    "Warfarin and other anticoagulants/antiplatelets: markedly increased bleeding risk.",
+    "Ibuprofen and other NSAIDs: regular use of ibuprofen can block the heart-protective antiplatelet effect of low-dose aspirin; separate the doses and ask a clinician.",
+    "ACE inhibitors / diuretics: NSAIDs including aspirin can reduce their effect and stress the kidneys.",
+    "Alcohol: increases the risk of stomach bleeding."
+  ],
+  "dosage_and_administration": [
+    "Pain/fever (adults and children 12 and over): 325 mg to 650 mg every 4 hours, or 325 mg to 500 mg every 3 hours, not exceeding about 4000 mg in 24 hours; take with food or a full glass of water.",
+    "Cardiovascular prevention: 81 mg once daily, only if your doctor has told you to take it; do not start daily aspirin on your own. Suspected heart attack: chew one 162-325 mg non-enteric aspirin if advised, and call emergency services."
+  ],
+  "overdosage": [
+    "Aspirin (salicylate) overdose can cause ringing in the ears, rapid breathing, vomiting, confusion, and in severe cases metabolic acidosis, seizures, and coma; it can be life-threatening. Contact a Poison Control Center (1-800-222-1222) or seek emergency care immediately."
+  ]
+}

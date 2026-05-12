@@ -1,0 +1,32 @@
+{
+  "drug_name": "ONDANSETRON",
+  "generic_name": [
+    "ONDANSETRON",
+    "ONDANSETRON HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Ondansetron 4 mg and 8 mg tablets and orally disintegrating tablets; 4 mg/5 mL oral solution; injection (prescription only)"
+  ],
+  "indications_and_usage": [
+    "Indicated for the prevention of nausea and vomiting associated with highly and moderately emetogenic cancer chemotherapy, radiotherapy, and the prevention of postoperative nausea and vomiting. It is a serotonin 5-HT3 receptor antagonist. It is prescription only; it is sometimes prescribed off-label for severe nausea/gastroenteritis but should be used under medical direction."
+  ],
+  "contraindications": [
+    "Concomitant use with apomorphine (profound hypotension and loss of consciousness); known hypersensitivity to ondansetron or other 5-HT3 antagonists (cross-reactivity reported)."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "QT-interval prolongation, which can lead to torsades de pointes - avoid in congenital long QT syndrome and correct hypokalemia/hypomagnesemia; ECG monitoring in at-risk patients; the 32 mg single IV dose is no longer recommended. Serotonin syndrome (especially with other serotonergic drugs). Hypersensitivity including anaphylaxis. May mask a progressive ileus or gastric distension after abdominal surgery."
+  ],
+  "adverse_reactions": [
+    "Headache, constipation, fatigue, malaise, diarrhea; less commonly QT prolongation, dizziness, transient liver enzyme elevations."
+  ],
+  "drug_interactions": [
+    "Apomorphine (contraindicated); drugs that prolong the QT interval or cause electrolyte abnormalities; serotonergic drugs - SSRIs, SNRIs, MAOIs, tramadol, triptans (serotonin syndrome); strong CYP3A4 inducers (rifampin, phenytoin, carbamazepine) can reduce ondansetron levels; tramadol's analgesic effect may be reduced."
+  ],
+  "dosage_and_administration": [
+    "Chemotherapy-induced nausea (adults): commonly 8 mg twice daily or per the regimen; postoperative: 4-8 mg; pediatric and renal/hepatic dosing per the prescriber. Orally disintegrating tablets: place on the tongue to dissolve, then swallow with saliva. Use exactly as prescribed - do not exceed 16 mg in a single dose due to QT risk."
+  ],
+  "overdosage": [
+    "Overdose has caused 'sudden blindness' (transient), severe constipation, low blood pressure, fainting, and QT prolongation/arrhythmia. There is no specific antidote; supportive care with ECG monitoring. Seek emergency care; contact Poison Control (1-800-222-1222)."
+  ]
+}

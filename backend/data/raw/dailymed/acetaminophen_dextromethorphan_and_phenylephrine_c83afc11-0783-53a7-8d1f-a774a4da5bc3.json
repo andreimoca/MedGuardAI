@@ -1,0 +1,33 @@
+{
+  "drug_name": "ACETAMINOPHEN, DEXTROMETHORPHAN, AND PHENYLEPHRINE",
+  "generic_name": [
+    "ACETAMINOPHEN",
+    "DEXTROMETHORPHAN HYDROBROMIDE",
+    "PHENYLEPHRINE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Per dose (typical 'daytime cold & flu' product, e.g., DayQuil): Acetaminophen 325-650 mg, Dextromethorphan HBr 10-20 mg, Phenylephrine HCl 5-10 mg (a 'NyQuil'-type nighttime version adds the antihistamine doxylamine)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves common cold and flu symptoms - minor aches and pains, headache, sore throat, cough, nasal and sinus congestion, and fever. The acetaminophen treats pain and fever, the dextromethorphan suppresses cough, and the phenylephrine relieves congestion."
+  ],
+  "contraindications": [
+    "Do not use with any other product containing acetaminophen; do not use with an MAO inhibitor or within 2 weeks of stopping one; do not use if allergic to any ingredient; do not give to children under the age stated on the label."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Liver warning - contains acetaminophen; do not exceed the maximum daily acetaminophen dose from all sources; risk increases with other acetaminophen products and heavy alcohol use. Ask a doctor before use if you have liver disease, heart disease, high blood pressure, thyroid disease, diabetes, an enlarged prostate, glaucoma, a chronic cough, or a cough with too much mucus. Stop use and ask a doctor if symptoms do not improve in 7 days (or 3 days for fever), get worse, or are accompanied by rash or persistent headache, or if you become nervous, dizzy, or sleepless."
+  ],
+  "adverse_reactions": [
+    "Nervousness, dizziness, sleeplessness (from phenylephrine), drowsiness (from dextromethorphan), nausea; liver injury from acetaminophen overdose."
+  ],
+  "drug_interactions": [
+    "MAO inhibitors and serotonergic drugs (serotonin syndrome from dextromethorphan; hypertensive reactions from phenylephrine); other acetaminophen products (liver toxicity); warfarin (acetaminophen may raise INR with regular use); other sympathomimetics (additive cardiovascular effects); alcohol (liver risk plus additive sedation)."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: take the labeled dose (commonly 2 caplets or 30 mL) every 4 hours while symptoms last; do not exceed the number of doses on the label in 24 hours (typically 4) and do not exceed the maximum acetaminophen amount. Children under 12: use a pediatric cold product and dose by age/weight per that label or a doctor; do not use adult products."
+  ],
+  "overdosage": [
+    "Overdose is dominated by the acetaminophen (liver failure - may be delayed and initially asymptomatic) with additional dextromethorphan (agitation, dissociation, serotonin toxicity) and phenylephrine (hypertension) effects. Seek emergency care and call Poison Control (1-800-222-1222) right away - N-acetylcysteine for the acetaminophen is most effective early."
+  ]
+}

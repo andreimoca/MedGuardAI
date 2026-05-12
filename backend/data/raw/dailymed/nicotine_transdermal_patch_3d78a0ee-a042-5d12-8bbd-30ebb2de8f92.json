@@ -1,0 +1,32 @@
+{
+  "drug_name": "NICOTINE TRANSDERMAL PATCH",
+  "generic_name": [
+    "NICOTINE",
+    "NICOTINE TRANSDERMAL SYSTEM"
+  ],
+  "active_ingredients": [
+    "Nicotine transdermal patches delivering 21 mg, 14 mg, or 7 mg over 24 hours (e.g., NicoDerm CQ, OTC; some products are 16-hour)"
+  ],
+  "indications_and_usage": [
+    "Uses: reduces withdrawal symptoms, including nicotine craving, associated with quitting smoking; the patch provides a steady level of nicotine over 16 to 24 hours and is used as part of a complete quit-smoking program that includes behavioral support. Often combined with shorter-acting nicotine replacements (gum, lozenge) for sudden cravings."
+  ],
+  "contraindications": [
+    "Do not use if you continue to smoke or use other nicotine products; do not use if under 18 without a doctor's advice; hypersensitivity to nicotine or any adhesive component."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Ask a doctor before use if you have heart disease, recent heart attack, irregular heartbeat or stroke, uncontrolled high blood pressure, stomach ulcer, diabetes, or a skin condition that could be made worse by the patch. If you are pregnant or breastfeeding, only use on a doctor's advice. May cause vivid dreams or sleep disturbance (try the 16-hour version, or remove the 24-hour patch at bedtime). Do not cut the patch (uncontrolled nicotine release). Rotate the application site each day; do not apply to the same area for at least a week. Stop use and ask a doctor if irregular heartbeat or palpitations develop, you have skin redness that does not go away after 4 days or that becomes severe, or you have symptoms of nicotine overdose (nausea, vomiting, dizziness, weakness, rapid heartbeat). Keep used and unused patches out of reach of children and pets - even a used patch contains enough nicotine to seriously poison a child."
+  ],
+  "adverse_reactions": [
+    "Local skin redness, itching, or burning at the patch site; headache, dizziness, sleep disturbance, vivid dreams, nausea; nicotine-related effects - palpitations, increased heart rate."
+  ],
+  "drug_interactions": [
+    "Smoking cessation reduces the metabolism of theophylline, caffeine, clozapine, olanzapine, fluvoxamine, and others - prescribers may need to adjust doses. Concomitant short-acting nicotine replacement is acceptable for breakthrough cravings under guidance."
+  ],
+  "dosage_and_administration": [
+    "Stop smoking completely before starting. If you smoke >10 cigarettes/day: start with the 21 mg/24-hour patch for 4-6 weeks, then 14 mg/24-hour for 2 weeks, then 7 mg/24-hour for 2 weeks. If you smoke <=10 cigarettes/day: start with the 14 mg patch for 6 weeks, then 7 mg for 2 weeks. Apply one patch in the morning to a clean, dry, hairless area of skin on the upper arm, chest, or back; remove after 24 hours and apply a new patch to a different site. Do not use more than one patch at a time. Use for a total of 8-10 weeks; if you still feel the need beyond that, talk to a clinician. Children under 18: ask a doctor."
+  ],
+  "overdosage": [
+    "Symptoms of nicotine overdose: pale skin, cold sweat, salivation, nausea, vomiting, abdominal pain, diarrhea, headache, dizziness, sensory disturbance, mental confusion, weakness; in severe cases hypotension, irregular pulse, breathing difficulty, seizures. Remove the patch immediately and wash the skin with water (avoid soap, which can increase absorption); call 911 / Poison Control (1-800-222-1222) right away, especially if a child or pet has been exposed."
+  ]
+}

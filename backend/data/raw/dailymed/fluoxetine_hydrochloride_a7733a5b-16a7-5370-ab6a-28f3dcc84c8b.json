@@ -1,0 +1,34 @@
+{
+  "drug_name": "FLUOXETINE HYDROCHLORIDE",
+  "generic_name": [
+    "FLUOXETINE",
+    "FLUOXETINE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Fluoxetine hydrochloride 10 mg, 20 mg, 40 mg capsules; 60 mg tablet; 90 mg delayed-release weekly capsule; 20 mg/5 mL oral solution (e.g., Prozac; with olanzapine as Symbyax) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for major depressive disorder (adults and children >=8 years), obsessive-compulsive disorder (adults and children >=7 years), bulimia nervosa, panic disorder, premenstrual dysphoric disorder, and, in combination with olanzapine, treatment-resistant depression and bipolar I depression. It is an SSRI with a long half-life (so it 'self-tapers' somewhat on stopping). Prescription only."
+  ],
+  "contraindications": [
+    "Concomitant use of MAO inhibitors (or within 14 days; and wait at least 5 weeks after stopping fluoxetine before starting an MAOI because of its long half-life); use with pimozide or thioridazine (QT prolongation - and thioridazine should not be started for at least 5 weeks after stopping fluoxetine); known hypersensitivity."
+  ],
+  "boxed_warning": [
+    "Antidepressants increased the risk of suicidal thinking and behavior in children, adolescents, and young adults; monitor for worsening and suicidality, especially early in treatment and after dose changes. When used with olanzapine, also refer to the boxed warning for olanzapine (increased mortality in elderly patients with dementia-related psychosis)."
+  ],
+  "warnings_and_cautions": [
+    "Serotonin syndrome; allergic reactions and rash (sometimes serious - discontinue if a rash or other allergic phenomena appear); activation of mania/hypomania; seizures; QT prolongation (with high doses or risk factors); increased bleeding risk with NSAIDs/aspirin/anticoagulants; angle-closure glaucoma; hyponatremia/SIADH; long-elimination half-life means changes (including drug interactions and discontinuation effects) can persist for weeks; weight loss and anxiety/insomnia early on; sexual dysfunction; possible neonatal effects with late-pregnancy use. Several weeks may be needed for full benefit."
+  ],
+  "adverse_reactions": [
+    "Nausea, headache, insomnia, anxiety/nervousness, drowsiness, tremor, decreased appetite/weight loss, dry mouth, sweating, diarrhea, sexual dysfunction; less commonly rash, hyponatremia, bleeding, activation of mania."
+  ],
+  "drug_interactions": [
+    "MAO inhibitors, pimozide, thioridazine (contraindicated); strong CYP2D6 inhibition by fluoxetine raises levels of many drugs (some tricyclic antidepressants, certain antiarrhythmics, atomoxetine, some antipsychotics, metoprolol, tamoxifen - reduces tamoxifen's active metabolite); other serotonergic drugs - SSRIs/SNRIs, triptans, tramadol, lithium, St. John's wort (serotonin syndrome); NSAIDs/aspirin/warfarin (bleeding); benzodiazepines (levels increased); QT-prolonging drugs; phenytoin and carbamazepine levels can change."
+  ],
+  "dosage_and_administration": [
+    "Adults: depression and OCD - start 20 mg once daily in the morning, titrate as needed, usual range 20-60 mg/day (up to 80 mg); bulimia - 60 mg/day; panic disorder - start 10 mg/day, then 20 mg/day; PMDD - 20 mg/day continuously or only in the luteal phase. Children: OCD - start 10 mg/day; depression - start 10-20 mg/day. Doses above 20 mg/day may be given once daily (morning) or split (morning and noon) to limit insomnia. The 90 mg delayed-release capsule is taken once weekly for maintenance of depression. Reduce dose in significant hepatic impairment and the elderly."
+  ],
+  "overdosage": [
+    "Overdose (alone) is often relatively benign but can cause seizures, somnolence, tremor, nausea/vomiting, tachycardia, QT prolongation/torsades, and serotonin syndrome; fatalities are more likely with co-ingestants. No specific antidote; supportive care with cardiac monitoring. Seek emergency care and call Poison Control (1-800-222-1222)."
+  ]
+}

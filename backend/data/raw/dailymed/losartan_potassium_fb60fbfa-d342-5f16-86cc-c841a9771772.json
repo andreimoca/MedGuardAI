@@ -1,0 +1,34 @@
+{
+  "drug_name": "LOSARTAN POTASSIUM",
+  "generic_name": [
+    "LOSARTAN",
+    "LOSARTAN POTASSIUM"
+  ],
+  "active_ingredients": [
+    "Losartan potassium 25 mg, 50 mg, 100 mg tablets (e.g., Cozaar) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of hypertension (adults and children >=6 years), for the treatment of diabetic nephropathy in adults with type 2 diabetes and a history of hypertension to reduce progression and proteinuria, and for the reduction of the risk of stroke in adults with hypertension and left ventricular hypertrophy. It is an angiotensin II receptor blocker (ARB) and is often used as an alternative to an ACE inhibitor in patients who develop cough or angioedema from one."
+  ],
+  "contraindications": [
+    "Concomitant use with aliskiren in patients with diabetes; known hypersensitivity to losartan."
+  ],
+  "boxed_warning": [
+    "When pregnancy is detected, discontinue losartan as soon as possible. Drugs that act directly on the renin-angiotensin system can cause injury and death to the developing fetus."
+  ],
+  "warnings_and_cautions": [
+    "Hypotension in volume- or salt-depleted patients; impaired renal function and acute renal failure (especially in bilateral renal artery stenosis or with NSAIDs); hyperkalemia (similar precautions as for ACE inhibitors); angioedema (much less common than with ACE inhibitors, but use caution if a patient had ACE-inhibitor angioedema); avoid combining different RAS blockers. Hepatic impairment - start at a lower dose."
+  ],
+  "adverse_reactions": [
+    "Dizziness, upper respiratory infection, nasal congestion, back pain, fatigue, cough (less common than with ACE inhibitors), hyperkalemia; rarely angioedema, renal failure, hepatic dysfunction."
+  ],
+  "drug_interactions": [
+    "NSAIDs (reduce effect, raise renal and hyperkalemia risk); other RAS blockers (ACE inhibitors, aliskiren - avoid combinations); potassium supplements and potassium-sparing diuretics (hyperkalemia); lithium (raised levels); rifampin (decreases levels of the active metabolite)."
+  ],
+  "dosage_and_administration": [
+    "Hypertension (adults): start 50 mg once daily (25 mg if on a diuretic, volume-depleted, or hepatic impairment); usual range 25-100 mg once daily, may be given as a single dose or split twice daily. Children 6-16: start 0.7 mg/kg once daily (up to 50 mg); titrate as needed. Diabetic nephropathy: 50 mg once daily, may be increased to 100 mg/day. Stroke risk reduction with LVH: 50 mg once daily plus diuretic, may increase to 100 mg/day."
+  ],
+  "overdosage": [
+    "Manifestations of overdose include hypotension and tachycardia or bradycardia (from vagal stimulation); supportive care, IV fluids, vasopressors as needed; not effectively removed by hemodialysis. Seek emergency care; call Poison Control (1-800-222-1222)."
+  ]
+}

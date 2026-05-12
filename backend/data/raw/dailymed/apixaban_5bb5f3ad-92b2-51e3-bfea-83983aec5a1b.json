@@ -1,0 +1,33 @@
+{
+  "drug_name": "APIXABAN",
+  "generic_name": [
+    "APIXABAN"
+  ],
+  "active_ingredients": [
+    "Apixaban 2.5 mg and 5 mg tablets (e.g., Eliquis) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated to reduce the risk of stroke and systemic embolism in adults with nonvalvular atrial fibrillation, for the prophylaxis of deep vein thrombosis (which may lead to pulmonary embolism) in patients who have undergone hip or knee replacement surgery, and for the treatment of DVT and PE and to reduce the risk of recurrent DVT/PE after initial therapy. It is a direct oral factor Xa inhibitor (DOAC). Prescription only."
+  ],
+  "contraindications": [
+    "Active pathological bleeding; severe hypersensitivity reaction to apixaban."
+  ],
+  "boxed_warning": [
+    "Premature discontinuation of any oral anticoagulant, including apixaban, increases the risk of thrombotic events. To reduce this risk, consider coverage with another anticoagulant if apixaban is discontinued for a reason other than pathological bleeding or completion of a course of therapy. Spinal/epidural hematoma can occur with neuraxial anesthesia or spinal puncture in patients anticoagulated with factor Xa inhibitors - can result in long-term or permanent paralysis; monitor for signs and symptoms of neurological impairment."
+  ],
+  "warnings_and_cautions": [
+    "Increased risk of bleeding - particularly in patients with bleeding diatheses, recent surgery, ulcer disease, or who take other antithrombotic drugs (antiplatelets, NSAIDs, SSRIs, other anticoagulants). Prosthetic heart valves - not for use. Use cautiously in patients with hepatic impairment (avoid in severe). Renal impairment - lower the dose for atrial fibrillation if specific criteria are met (age >=80, weight <=60 kg, serum creatinine >=1.5 mg/dL - if 2 of these 3 are met, reduce to 2.5 mg twice daily). Andexanet alfa is a specific reversal agent."
+  ],
+  "adverse_reactions": [
+    "Bleeding (GI, intracranial, urinary, intramuscular, nasal, etc.), bruising, anemia; rarely hypersensitivity reactions including anaphylaxis."
+  ],
+  "drug_interactions": [
+    "Strong dual CYP3A4 and P-gp inhibitors - ketoconazole, itraconazole, ritonavir, clarithromycin (significantly raise apixaban levels - reduce dose to 2.5 mg twice daily, or avoid if already at that dose); strong inducers - rifampin, carbamazepine, phenytoin, St. John's wort (significantly lower levels - avoid). Other antithrombotics, NSAIDs, SSRIs, and aspirin (additive bleeding)."
+  ],
+  "dosage_and_administration": [
+    "Atrial fibrillation: 5 mg twice daily (2.5 mg twice daily if any 2 of: age >=80, weight <=60 kg, creatinine >=1.5). DVT/PE treatment: 10 mg twice daily for 7 days, then 5 mg twice daily for at least 3 months. DVT/PE secondary prevention after the initial 6 months: 2.5 mg twice daily. Hip/knee replacement prophylaxis: 2.5 mg twice daily, starting 12-24 hours after surgery, continued 12 days (knee) or 35 days (hip). Take with or without food at the same times each day. Do not stop without consulting the prescriber. For missed dose - take as soon as remembered on the same day; do not double up."
+  ],
+  "overdosage": [
+    "Overdose increases bleeding risk; activated charcoal may reduce absorption within 2-6 hours; andexanet alfa is approved as a reversal agent for life-threatening bleeding; otherwise consider prothrombin complex concentrates. Seek emergency care; call Poison Control (1-800-222-1222)."
+  ]
+}

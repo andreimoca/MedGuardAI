@@ -1,0 +1,35 @@
+{
+  "drug_name": "FLUTICASONE PROPIONATE AND SALMETEROL INHALATION",
+  "generic_name": [
+    "FLUTICASONE PROPIONATE",
+    "SALMETEROL",
+    "SALMETEROL XINAFOATE"
+  ],
+  "active_ingredients": [
+    "Fluticasone propionate (an inhaled corticosteroid) with salmeterol (a long-acting beta-2 agonist), e.g., 100/50, 250/50, 500/50 mcg dry-powder inhaler or HFA aerosol (Advair) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of asthma in patients 4 years and older not adequately controlled on an inhaled corticosteroid alone, and for the maintenance treatment of airflow obstruction and reducing exacerbations in COPD. It is a daily controller (maintenance) inhaler, NOT a rescue inhaler - it will not relieve a sudden asthma attack. Prescription only."
+  ],
+  "contraindications": [
+    "Primary treatment of status asthmaticus or other acute episodes of asthma or COPD requiring intensive measures; severe hypersensitivity to milk proteins (the dry-powder form) or to any ingredient."
+  ],
+  "boxed_warning": [
+    "Long-acting beta-2 adrenergic agonists (LABAs) such as salmeterol increase the risk of asthma-related death when used alone; when combined with an inhaled corticosteroid (as in this product), this risk does not appear to be significantly increased. Use only as additional therapy for patients not adequately controlled on an inhaled corticosteroid, or whose disease severity clearly warrants combination therapy; do not use a LABA alone for asthma. Once asthma is controlled, step down to an inhaled corticosteroid alone if possible."
+  ],
+  "warnings_and_cautions": [
+    "Not for acute symptoms - always have a separate rescue inhaler. Deterioration of asthma; do not exceed the prescribed dose. Localized Candida infection of the mouth and throat (rinse mouth after use); immunosuppression and increased infection risk; hypercorticism and adrenal suppression; reduced bone mineral density; growth slowing in children; glaucoma and cataracts; paradoxical bronchospasm; cardiovascular and CNS effects from salmeterol; low potassium and high blood sugar; eosinophilic conditions / Churg-Strauss may emerge as oral steroids are withdrawn."
+  ],
+  "adverse_reactions": [
+    "Upper respiratory infection, throat irritation, hoarseness/dysphonia, oral thrush, headache, cough; in COPD - pneumonia (increased incidence). Cardiovascular and tremor effects from the LABA component."
+  ],
+  "drug_interactions": [
+    "Strong CYP3A4 inhibitors (ritonavir, ketoconazole, clarithromycin, itraconazole) markedly raise fluticasone and salmeterol exposure - avoid; beta-blockers (block effect, may provoke bronchospasm); diuretics (additive hypokalemia/ECG changes); MAO inhibitors and tricyclics (cardiovascular effects of salmeterol); other LABAs (do not combine)."
+  ],
+  "dosage_and_administration": [
+    "Asthma (adults and children 12 and over): 1 inhalation of the prescribed strength twice daily, about 12 hours apart; children 4-11: the 100/50 dry-powder strength, 1 inhalation twice daily. COPD: 250/50 dry-powder, 1 inhalation twice daily. Rinse the mouth with water without swallowing after each dose. Do not use more than twice in 24 hours. Carry a separate fast-acting rescue inhaler for attacks. Use exactly as prescribed."
+  ],
+  "overdosage": [
+    "Overdose can cause systemic corticosteroid effects (with chronic overuse - adrenal suppression) and excessive beta-agonist effects (tremor, tachycardia, arrhythmias, hypertension/hypotension, hypokalemia, seizures). Seek medical care; contact Poison Control (1-800-222-1222)."
+  ]
+}

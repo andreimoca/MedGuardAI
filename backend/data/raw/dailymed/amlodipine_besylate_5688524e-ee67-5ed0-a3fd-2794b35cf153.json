@@ -1,0 +1,32 @@
+{
+  "drug_name": "AMLODIPINE BESYLATE",
+  "generic_name": [
+    "AMLODIPINE",
+    "AMLODIPINE BESYLATE"
+  ],
+  "active_ingredients": [
+    "Amlodipine besylate 2.5 mg, 5 mg, 10 mg tablets (e.g., Norvasc) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of hypertension (adults and children >=6 years) to lower blood pressure, and for the symptomatic treatment of chronic stable angina and confirmed or suspected vasospastic (Prinzmetal's) angina, alone or in combination with other antianginals. It is a long-acting dihydropyridine calcium channel blocker. Prescription only."
+  ],
+  "contraindications": [
+    "Known hypersensitivity to amlodipine; severe hypotension. Use with caution in severe aortic stenosis."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Symptomatic hypotension is possible, particularly with severe aortic stenosis or with concomitant use of other blood-pressure-lowering medications. Increased angina or myocardial infarction may rarely occur, particularly in severe obstructive coronary artery disease, when starting or up-titrating. Use lower starting doses in hepatic impairment and the elderly. Peripheral edema is common and dose-related. Worsening heart failure has been reported in patients with significant heart failure (NYHA III-IV)."
+  ],
+  "adverse_reactions": [
+    "Peripheral edema (especially of the ankles), flushing, palpitations, dizziness, fatigue, headache, gingival hyperplasia; rarely hypotension, exacerbation of angina, hepatic enzyme elevations."
+  ],
+  "drug_interactions": [
+    "Simvastatin - limit simvastatin to 20 mg/day when given with amlodipine (increased simvastatin exposure and rhabdomyolysis risk); strong CYP3A4 inhibitors (clarithromycin, itraconazole, ritonavir) raise amlodipine levels - consider lower dose; CYP3A4 inducers (rifampin, St. John's wort) lower levels; cyclosporine and tacrolimus levels may rise; other antihypertensives (additive); grapefruit juice (mild)."
+  ],
+  "dosage_and_administration": [
+    "Hypertension and angina (adults): start 5 mg once daily (2.5 mg in small, fragile, or elderly patients, hepatic impairment, or when adding to other antihypertensives); titrate after 7-14 days up to 10 mg/day as needed. Children 6-17: 2.5-5 mg once daily. Take at about the same time each day, with or without food."
+  ],
+  "overdosage": [
+    "Overdose causes marked, prolonged hypotension and reflex tachycardia, occasionally bradycardia (in severe overdose); treat with IV fluids, vasopressors, calcium, glucagon, high-dose insulin-euglycemia therapy, and cardiac monitoring. Seek emergency care; call Poison Control (1-800-222-1222)."
+  ]
+}

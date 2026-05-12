@@ -1,0 +1,32 @@
+{
+  "drug_name": "KETOTIFEN FUMARATE OPHTHALMIC SOLUTION",
+  "generic_name": [
+    "KETOTIFEN",
+    "KETOTIFEN FUMARATE"
+  ],
+  "active_ingredients": [
+    "Ketotifen 0.025% (0.035% fumarate) ophthalmic solution - eye drops (e.g., Zaditor, Alaway)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves itchy eyes due to pollen, ragweed, grass, animal hair, and dander (allergic conjunctivitis); it is both an antihistamine and a mast-cell stabilizer, so it works within minutes and lasts up to 12 hours. It does not relieve eye redness caused by anything other than allergy and is not for irritation from contact lenses."
+  ],
+  "contraindications": [
+    "Do not use if you are allergic to ketotifen or any ingredient; do not use to treat contact-lens-related irritation or eye redness not due to allergy."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For ophthalmic use only - not to be taken by mouth. Remove contact lenses before use and wait at least 10 minutes before reinserting them; do not wear lenses if your eyes are red. Do not touch the dropper tip to any surface (to avoid contamination). Stop use and ask a doctor if you experience eye pain, changes in vision, redness of the eyes, or if the itching worsens or lasts more than 72 hours. Replace the cap after each use."
+  ],
+  "adverse_reactions": [
+    "Headache, brief eye burning or stinging, dry eyes, eyelid disorder, conjunctival redness; rarely sensitivity to light."
+  ],
+  "drug_interactions": [
+    "No clinically significant systemic interactions at ophthalmic doses; if you use other eye drops, separate them by at least 5 minutes."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 3 years and over: put 1 drop in the affected eye(s) twice a day, every 8 to 12 hours, no more than twice per day. May be used as needed during allergy season. Children under 3 years: ask a doctor."
+  ],
+  "overdosage": [
+    "Ingestion of the bottle could cause drowsiness (oral antihistamine effect) - more concerning in small children; ocular overdose is not expected to be harmful. Contact Poison Control (1-800-222-1222)."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "drug_name": "FERROUS SULFATE",
+  "generic_name": [
+    "FERROUS SULFATE",
+    "IRON"
+  ],
+  "active_ingredients": [
+    "Ferrous sulfate 325 mg tablet (equivalent to 65 mg elemental iron), 220 mg/5 mL liquid; ferrous sulfate dried 200 mg tablet (~65 mg elemental iron); also available as ferrous gluconate and ferrous fumarate"
+  ],
+  "indications_and_usage": [
+    "Uses: for the treatment and prevention of iron-deficiency anemia (low red blood cells from low iron). Iron deficiency commonly causes fatigue, pallor, shortness of breath on exertion, restless legs, brittle nails, and pica. Diagnosis with a CBC and iron studies (ferritin, transferrin) is helpful before long-term iron treatment - chronic unexplained iron deficiency in adults can signal occult GI bleeding and should be evaluated by a clinician."
+  ],
+  "contraindications": [
+    "Hemochromatosis or other iron-overload disorders; known hypersensitivity to iron salts; certain hemolytic anemias unless an absolute iron deficiency has been confirmed."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Accidental overdose of iron-containing products is a leading cause of fatal poisoning in children under 6 - keep out of reach and call Poison Control immediately on suspicion of overdose. Take with food if it upsets the stomach (this reduces absorption modestly but improves tolerability). Constipation is common; stool softeners or polyethylene glycol may help. Black stool is expected and harmless (but it can mask GI bleeding - tell your doctor). Use caution in inflammatory bowel disease, peptic ulcer disease, and recurrent diverticulitis."
+  ],
+  "adverse_reactions": [
+    "Constipation, dark/black stool, nausea, abdominal cramping, heartburn, diarrhea or constipation, metallic taste; rare allergic reactions."
+  ],
+  "drug_interactions": [
+    "Reduces absorption of - tetracyclines and doxycycline, fluoroquinolones (ciprofloxacin), levothyroxine, methyldopa, levodopa, bisphosphonates (alendronate), penicillamine, integrase inhibitors (dolutegravir), mycophenolate; separate by at least 2 hours (4 hours for levothyroxine, fluoroquinolones, and bisphosphonates). Antacids, calcium, dairy, tea, coffee, eggs, and whole-grain foods reduce iron absorption - take iron between meals when possible. Vitamin C (ascorbic acid) increases absorption."
+  ],
+  "dosage_and_administration": [
+    "Adults with iron-deficiency anemia: 65 mg of elemental iron 1-3 times daily as tolerated (e.g., 325 mg ferrous sulfate, which is ~65 mg elemental iron); alternate-day dosing is also effective and often better tolerated. Children: weight-based dosing per a clinician; for prevention in at-risk infants, dosing is per pediatric guidelines. Take with water (and a small dose of vitamin C if possible) on an empty stomach when tolerated; otherwise with food. Treat until anemia is corrected and continue for 3 months thereafter to replete iron stores. Recheck CBC and iron studies as your clinician directs."
+  ],
+  "overdosage": [
+    "Iron overdose, especially in children, is a medical emergency: an early phase of GI symptoms (vomiting, bloody diarrhea) and metabolic acidosis may be followed by a deceptively quiet phase, then multi-organ failure (shock, liver and renal failure, coma). Call 911 and Poison Control (1-800-222-1222) immediately; deferoxamine is the antidote for serious poisoning."
+  ]
+}

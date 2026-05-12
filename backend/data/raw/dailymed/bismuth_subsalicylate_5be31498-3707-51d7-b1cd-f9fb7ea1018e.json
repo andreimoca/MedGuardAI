@@ -1,0 +1,31 @@
+{
+  "drug_name": "BISMUTH SUBSALICYLATE",
+  "generic_name": [
+    "BISMUTH SUBSALICYLATE"
+  ],
+  "active_ingredients": [
+    "Bismuth subsalicylate 262 mg per tablet or per 15 mL liquid (e.g., Pepto-Bismol)"
+  ],
+  "indications_and_usage": [
+    "Uses: relieves upset stomach, indigestion, heartburn, and nausea; also controls diarrhea, including travelers' diarrhea, and helps relieve associated cramping. May also be used as part of a doctor-directed regimen to treat Helicobacter pylori-related ulcers."
+  ],
+  "contraindications": [
+    "Do not use if you are allergic to salicylates (including aspirin) or have an ulcer, a bleeding problem, or bloody/black stool that is not from this medicine. Do not give to children or teenagers who have or are recovering from chickenpox or flu-like symptoms (Reye's syndrome risk)."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Contains a salicylate - do not use with other salicylates (e.g., aspirin) or if you are taking a blood thinner, a diabetes drug, or have gout, without asking a doctor. May cause a temporary, harmless darkening of the stool and/or tongue. Ringing in the ears or loss of hearing means stop use and ask a doctor. Stop use and ask a doctor if diarrhea lasts more than 2 days, gets worse, or is accompanied by high fever or blood in the stool."
+  ],
+  "adverse_reactions": [
+    "Darkening of the tongue and stool (harmless), constipation; rarely tinnitus, salicylate toxicity with overuse, allergic reactions."
+  ],
+  "drug_interactions": [
+    "Other salicylates/aspirin (additive salicylate effect/toxicity); anticoagulants such as warfarin (bleeding risk); oral antidiabetic drugs (may enhance effect); tetracyclines and fluoroquinolones (reduced absorption - separate doses); methotrexate, probenecid (altered effect)."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: 30 mL (2 tablespoonfuls) or 2 tablets every 30 minutes to 1 hour as needed; do not exceed 8 doses (about 4200 mg) in 24 hours; do not use for more than 2 days for diarrhea. Shake the liquid well. Children under 12 years: ask a doctor."
+  ],
+  "overdosage": [
+    "Overdose causes salicylate toxicity (ringing in the ears, rapid breathing, vomiting, confusion); can be serious, especially in children. Contact Poison Control (1-800-222-1222) right away."
+  ]
+}

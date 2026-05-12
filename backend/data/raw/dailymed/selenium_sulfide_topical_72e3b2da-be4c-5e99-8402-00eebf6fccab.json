@@ -1,0 +1,31 @@
+{
+  "drug_name": "SELENIUM SULFIDE TOPICAL",
+  "generic_name": [
+    "SELENIUM SULFIDE"
+  ],
+  "active_ingredients": [
+    "Selenium sulfide 1% shampoo (OTC, e.g., Selsun Blue); 2.25%-2.5% lotion/shampoo by prescription (also pyrithione zinc 1-2% is a related OTC anti-dandruff active)"
+  ],
+  "indications_and_usage": [
+    "Uses: relieves the itching, irritation, flaking, and scaling of the scalp associated with dandruff and seborrheic dermatitis; the higher (prescription) strengths are also used to treat tinea versicolor (a common patchy skin discoloration caused by yeast). It is an antifungal/antiseborrheic agent that slows the turnover of skin cells and reduces yeast."
+  ],
+  "contraindications": [
+    "Do not use on broken, inflamed, or infected skin/scalp; hypersensitivity to selenium sulfide; avoid the eyes and genital area."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only; avoid the eyes and mucous membranes - rinse well if contact occurs. May leave an odor, may discolor blond, gray, or dyed hair (rinse thoroughly to minimize), and may damage jewelry (remove it before use). Skin or scalp irritation, increased hair loss, or oily/dry scalp can occur. Do not use more often than directed. Stop use and ask a doctor if the condition worsens or does not improve after regular use for the time on the label, or if irritation develops. Use the prescription strength for tinea versicolor only as directed."
+  ],
+  "adverse_reactions": [
+    "Scalp/skin irritation, dryness or oiliness, increased hair loss, discoloration of hair, unpleasant odor."
+  ],
+  "drug_interactions": [
+    "No clinically significant systemic interactions; minimal absorption from intact skin."
+  ],
+  "dosage_and_administration": [
+    "Dandruff/seborrheic dermatitis (1% OTC shampoo): wet the hair, massage in, leave on 2-3 minutes, rinse thoroughly; repeat; use twice a week until control is achieved, then once a week or less as needed; rinse hands and any treated skin well. Tinea versicolor (2.25-2.5%, by prescription): apply to the affected skin, leave on 10 minutes (or per the prescriber), then rinse; typically once daily for 7 days. Children under 2 years: ask a doctor."
+  ],
+  "overdosage": [
+    "Ingestion can cause GI upset and, in large amounts, selenium toxicity (garlic breath odor, tremor, fatigue); topical overdose causes irritation. Seek medical help; contact Poison Control (1-800-222-1222)."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "drug_name": "PERMETHRIN TOPICAL",
+  "generic_name": [
+    "PERMETHRIN"
+  ],
+  "active_ingredients": [
+    "Permethrin 1% creme rinse (for head lice, e.g., Nix - OTC); permethrin 5% cream (for scabies - prescription)"
+  ],
+  "indications_and_usage": [
+    "Uses: the 1% creme rinse treats head lice (pediculosis capitis) - it kills lice and their eggs (nits); the 5% cream treats scabies (infestation with the Sarcoptes scabiei mite) - it kills the mites and their eggs. It is a synthetic pyrethroid insecticide applied to the skin or hair."
+  ],
+  "contraindications": [
+    "Hypersensitivity to permethrin, other pyrethroids/pyrethrins, or chrysanthemums/ragweed; the 1% product is not for infants under 2 months; the 5% product is not for infants under 2 months without a doctor's direction."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only; avoid the eyes - if it gets in the eyes, flush with water. Itching, mild burning, stinging, redness, or rash of the scalp/skin may occur and, with scabies, itching may actually increase or persist for 1-2 weeks after successful treatment as the body reacts to dead mites - this does not necessarily mean treatment failed or needs repeating. For head lice: also comb out nits with a fine-tooth comb, wash bedding/clothing/hats in hot water or seal them for 2 weeks, and check and treat household members who are infested; a second application 7-10 days later is recommended to catch newly hatched lice. Avoid breathing the spray forms used on furniture. Stop use and ask a doctor if irritation is severe, the skin infection worsens, or lice/scabies persist."
+  ],
+  "adverse_reactions": [
+    "Pruritus, mild burning or stinging, erythema, rash, edema, numbness or tingling at the application site; transient worsening of itch after scabies treatment."
+  ],
+  "drug_interactions": [
+    "No clinically significant systemic drug interactions; minimal absorption."
+  ],
+  "dosage_and_administration": [
+    "Head lice (1% creme rinse): shampoo with a regular (non-conditioning) shampoo, rinse, towel-dry; apply enough creme rinse to saturate the hair and scalp (behind the ears, nape of the neck); leave on for 10 minutes, then rinse with warm water; comb out nits; repeat in 7-10 days if live lice are seen. Scabies (5% cream): massage into the skin from the neck down to the soles of the feet (in infants and the elderly, include the scalp, neck, and face, avoiding eyes/mouth); leave on for 8-14 hours, then wash off; usually one application, with a second application 1-2 weeks later if needed. Children under 2 months: use only as directed by a doctor."
+  ],
+  "overdosage": [
+    "Topical overdose is unlikely to be serious; ingestion can cause GI upset and, in large amounts, CNS effects (tremor, seizures). Seek medical help; contact Poison Control (1-800-222-1222)."
+  ]
+}

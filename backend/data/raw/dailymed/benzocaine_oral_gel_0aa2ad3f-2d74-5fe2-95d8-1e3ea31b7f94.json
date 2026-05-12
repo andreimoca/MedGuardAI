@@ -1,0 +1,31 @@
+{
+  "drug_name": "BENZOCAINE ORAL GEL",
+  "generic_name": [
+    "BENZOCAINE"
+  ],
+  "active_ingredients": [
+    "Benzocaine 10% to 20% (oral topical gel/liquid), e.g. Orajel-type oral pain products"
+  ],
+  "indications_and_usage": [
+    "Uses: for the temporary relief of pain associated with a toothache, sore or irritated gums, minor irritation of the mouth and gums from dentures or orthodontic appliances, canker sores, and pain from minor dental procedures. Works as a local anesthetic numbing the surface where applied."
+  ],
+  "contraindications": [
+    "Do not use if you have a history of allergy to benzocaine or other 'caine' local anesthetics, or to PABA."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Methemoglobinemia warning: use of benzocaine, especially in children under 2 years and in higher doses, has rarely caused methemoglobinemia, a serious blood condition (signs: pale, gray, or blue-colored skin, lips, or nail beds; shortness of breath; headache; fatigue) - seek immediate medical attention if these occur. Do not use in children under 2 years except on the advice of a dentist or doctor. For temporary relief only; see a dentist promptly for a toothache - it usually signals a problem (cavity, infection) that needs treatment. Do not use for more than 7 days unless directed by a dentist or doctor."
+  ],
+  "adverse_reactions": [
+    "Local stinging or burning, taste changes; rarely allergic contact reactions or methemoglobinemia."
+  ],
+  "drug_interactions": [
+    "No clinically important interactions at recommended topical doses."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 2 years and over: apply a small amount of gel to the affected area up to 4 times daily or as directed by a dentist or doctor; for canker sores, allow to remain in place at least 1 minute, then spit out. Children under 12 should be supervised. Children under 2 years: do not use unless directed by a dentist or doctor."
+  ],
+  "overdosage": [
+    "Swallowing large amounts can cause methemoglobinemia or local numbness of the throat; seek medical help or contact Poison Control (1-800-222-1222)."
+  ]
+}

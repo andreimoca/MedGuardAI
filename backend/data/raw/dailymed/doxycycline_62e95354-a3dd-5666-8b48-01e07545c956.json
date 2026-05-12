@@ -1,0 +1,33 @@
+{
+  "drug_name": "DOXYCYCLINE",
+  "generic_name": [
+    "DOXYCYCLINE",
+    "DOXYCYCLINE HYCLATE",
+    "DOXYCYCLINE MONOHYDRATE"
+  ],
+  "active_ingredients": [
+    "Doxycycline 50 mg, 75 mg, 100 mg, 150 mg capsules/tablets and delayed-release tablets; 25 mg/5 mL and 50 mg/5 mL suspensions; IV form (e.g., Vibramycin, Doryx) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of a wide range of infections including Rocky Mountain spotted fever and other rickettsial infections, typhus, Q fever, Lyme disease (early), respiratory tract infections (community-acquired pneumonia, atypical pathogens), sexually transmitted infections (Chlamydia, non-gonococcal urethritis, mycoplasma), acne and rosacea, anthrax (post-exposure and treatment), malaria prophylaxis, periodontitis (low-dose), and various skin/soft tissue infections; also used for cholera and brucellosis. It is a tetracycline antibiotic. Prescription only."
+  ],
+  "contraindications": [
+    "Hypersensitivity to doxycycline or any other tetracycline."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Pregnancy and children under 8 years: tetracycline-class antibiotics during tooth development (last half of pregnancy, infancy, and through age 8) can cause permanent yellow-gray-brown discoloration of the teeth and reversible inhibition of bone growth - avoid unless other drugs are not effective (e.g., serious rickettsial disease, anthrax). Photosensitivity - severe sunburn-like reactions; use sun protection. Esophageal ulceration - take with a full glass of water and remain upright for at least 30 minutes; do not take immediately before bed. Intracranial hypertension (pseudotumor cerebri) - especially in women of childbearing age, often with concomitant retinoids; report headache, blurred vision, double vision, vision loss. Clostridioides difficile colitis. Severe skin reactions, hepatotoxicity, autoimmune syndromes (lupus-like) rarely. Photo-onycholysis. Antianabolic effect raises BUN. Resistance development."
+  ],
+  "adverse_reactions": [
+    "Nausea, vomiting, diarrhea, abdominal pain, photosensitivity rash, dyspepsia, rash; rarely esophageal ulceration, intracranial hypertension, C. difficile colitis, severe skin reactions, hepatotoxicity, autoimmune phenomena, candida superinfection."
+  ],
+  "drug_interactions": [
+    "Antacids and supplements containing aluminum, calcium, magnesium, iron, zinc, bismuth, and dairy products reduce absorption - separate by at least 2 hours. Warfarin - INR may rise; oral contraceptives - theoretical reduced effectiveness, back-up barrier method may be considered; isotretinoin and other retinoids - intracranial hypertension risk; barbiturates, phenytoin, carbamazepine, rifampin reduce doxycycline levels; methotrexate (raised toxicity); penicillins (theoretical antagonism for some indications, usually not significant in practice)."
+  ],
+  "dosage_and_administration": [
+    "Adults and children >=8 years (>45 kg): usual dose 100 mg every 12 hours on day 1, then 100 mg once daily or 50-100 mg every 12 hours; severe infections - 100 mg every 12 hours. STIs (Chlamydia): 100 mg twice daily for 7 days. Lyme disease (early): 100 mg twice daily for 10-21 days, depending on stage. Malaria prophylaxis: 100 mg once daily starting 1-2 days before travel, during travel, and for 4 weeks after leaving. Acne (low-dose anti-inflammatory): 40 mg modified-release once daily. Take with a full glass of water, sitting upright; can be taken with food/milk to reduce GI upset (modestly reduces absorption); avoid simultaneous antacids, dairy, or iron."
+  ],
+  "overdosage": [
+    "Overdose may cause severe GI symptoms; supportive care; not effectively removed by dialysis. Contact Poison Control (1-800-222-1222)."
+  ]
+}

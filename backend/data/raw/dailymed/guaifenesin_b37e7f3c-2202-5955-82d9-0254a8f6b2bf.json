@@ -1,0 +1,31 @@
+{
+  "drug_name": "GUAIFENESIN",
+  "generic_name": [
+    "GUAIFENESIN"
+  ],
+  "active_ingredients": [
+    "Guaifenesin 200 mg or 400 mg immediate-release; 600 mg or 1200 mg extended-release tablets; 100 mg/5 mL liquid (e.g., Mucinex, Robitussin chest congestion)"
+  ],
+  "indications_and_usage": [
+    "Uses: helps loosen phlegm (mucus) and thin bronchial secretions to make coughs more productive and to rid the bronchial passageways of bothersome mucus; relieves chest congestion. It is an expectorant - it does not suppress the cough; it makes the cough more effective. Drinking extra water helps it work."
+  ],
+  "contraindications": [
+    "No specific contraindications; ask a doctor before use in persistent or chronic cough."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Ask a doctor before use if you have a persistent or chronic cough such as occurs with smoking, asthma, chronic bronchitis, or emphysema, or if your cough is accompanied by excessive phlegm. Stop use and ask a doctor if the cough lasts more than 7 days, comes back, or is accompanied by fever, rash, or persistent headache. Drink plenty of fluids. Swallow extended-release tablets whole - do not crush or chew."
+  ],
+  "adverse_reactions": [
+    "Nausea, vomiting (usually with large doses), dizziness, headache, rash; kidney stones have rarely been reported with very large doses."
+  ],
+  "drug_interactions": [
+    "No clinically significant interactions; can be combined with decongestants, antihistamines, cough suppressants, and analgesics in multi-symptom products (watch the total acetaminophen if present)."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: 200-400 mg every 4 hours, not more than 2400 mg in 24 hours; or 600-1200 mg extended-release every 12 hours, not more than 2400 mg/24 h. Children 6 to under 12: 100-200 mg every 4 hours, not more than 1200 mg/24 h. Children 4 to under 6: 50-100 mg every 4 hours, not more than 600 mg/24 h, as directed by a doctor. Children under 4: do not use."
+  ],
+  "overdosage": [
+    "Overdose may cause nausea, vomiting, and drowsiness; rarely renal stones; generally not dangerous. Contact Poison Control (1-800-222-1222)."
+  ]
+}

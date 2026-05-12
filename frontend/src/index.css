@@ -127,6 +127,126 @@ body {
   box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
 }
 
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  color: #e2e8f0;
+  border-radius: 100px;
+  padding: 0.2rem 0.4rem 0.2rem 0.7rem;
+  font-size: 0.8rem;
+}
+
+.chip button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.1rem;
+  border-radius: 50%;
+  transition: color 0.2s, background 0.2s;
+}
+
+.chip button:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.chip-input-row {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.chip-input-row input {
+  flex: 1;
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid var(--card-border);
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.chip-input-row input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.chip-add-btn {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  align-self: center;
+  border-radius: 9px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.chip-add-btn:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.35);
+}
+
+.chip-add-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  background: var(--text-muted);
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(15, 23, 42, 0.3);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.chat-header-title {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.new-chat-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--card-border);
+  color: var(--text-main);
+  border-radius: 100px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.new-chat-btn:hover {
+  border-color: var(--primary);
+  background: rgba(99, 102, 241, 0.12);
+}
+
 .chat-messages {
   flex: 1;
   padding: 2rem;
@@ -279,6 +399,47 @@ body {
   transform: scale(1);
   background: var(--text-muted);
   box-shadow: none;
+}
+
+/* Human-feedback row under assistant messages (RLHF data collection) */
+.feedback-row {
+  margin-top: 0.75rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--card-border);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feedback-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.feedback-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.feedback-btn:hover {
+  color: white;
+  border-color: var(--primary);
+  background: rgba(99, 102, 241, 0.15);
+}
+
+.feedback-thanks {
+  font-size: 0.78rem;
+  color: var(--secondary);
 }
 
 .typing-indicator {

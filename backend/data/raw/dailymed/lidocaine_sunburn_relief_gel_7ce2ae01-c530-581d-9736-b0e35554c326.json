@@ -1,0 +1,32 @@
+{
+  "drug_name": "LIDOCAINE SUNBURN RELIEF GEL",
+  "generic_name": [
+    "LIDOCAINE",
+    "ALOE VERA"
+  ],
+  "active_ingredients": [
+    "Lidocaine 0.5%-2% (a topical anesthetic), often with aloe vera and sometimes menthol, in after-sun gel/spray for sunburn relief"
+  ],
+  "indications_and_usage": [
+    "Uses: for the temporary relief of pain and itching associated with minor burns, sunburn, minor cuts, scrapes, insect bites, and minor skin irritations; the lidocaine numbs the surface of the skin and the aloe helps soothe and moisturize. For first-aid use on intact or minimally broken skin only."
+  ],
+  "contraindications": [
+    "Do not use on large areas of the body, on deep or puncture wounds, animal bites, or serious burns (a serious/blistering burn over a large area or with fever, chills, headache, or confusion needs medical care); do not use if allergic to lidocaine or other 'caine' anesthetics."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only; avoid the eyes. Do not bandage tightly. Do not use over large areas or for prolonged periods, especially in children - lidocaine can be absorbed and, if overused, cause serious effects (drowsiness, confusion, slow or irregular heartbeat, seizures, breathing problems). Stop use and ask a doctor if the condition worsens, symptoms last more than 7 days or clear up and come back, or you develop signs of infection. A severe sunburn (extensive blistering, fever, faintness, nausea) needs a doctor."
+  ],
+  "adverse_reactions": [
+    "Local stinging or burning on application, redness, itching; rarely allergic contact reactions or, with overuse over large areas, systemic lidocaine toxicity."
+  ],
+  "drug_interactions": [
+    "Generally none with normal use; caution if you also use other products containing lidocaine or other local anesthetics, or take class I antiarrhythmic drugs, because of additive effects with excessive use."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 2 years and over: apply a thin layer to the affected sunburned or irritated area not more than 3 to 4 times daily; for sprays, hold a short distance away and apply lightly; do not cover with a tight bandage. Children under 2 years: ask a doctor. Cool the skin first (cool compresses, a cool bath) and stay hydrated with a sunburn."
+  ],
+  "overdosage": [
+    "Overuse over large or broken areas can cause lidocaine toxicity: dizziness, drowsiness, confusion, tremor, slow or irregular heartbeat, seizures, respiratory depression; potentially serious in small children. Seek emergency care; contact Poison Control (1-800-222-1222)."
+  ]
+}

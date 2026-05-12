@@ -1,0 +1,32 @@
+{
+  "drug_name": "SUMATRIPTAN",
+  "generic_name": [
+    "SUMATRIPTAN",
+    "SUMATRIPTAN SUCCINATE"
+  ],
+  "active_ingredients": [
+    "Sumatriptan 25 mg, 50 mg, 100 mg tablets; 4 mg and 6 mg subcutaneous injection; 5 mg, 10 mg, 20 mg nasal spray (prescription only)"
+  ],
+  "indications_and_usage": [
+    "Indicated for the acute treatment of migraine, with or without aura, in adults; the injection is also indicated for the acute treatment of cluster headache. It is a serotonin 5-HT1B/1D receptor agonist ('triptan') and is not for prevention of migraine or for hemiplegic or basilar migraine. Prescription only - not available over the counter."
+  ],
+  "contraindications": [
+    "Contraindicated in ischemic coronary artery disease, coronary vasospasm (Prinzmetal's angina), a history of stroke, TIA, or hemiplegic/basilar migraine, peripheral vascular disease, ischemic bowel disease, uncontrolled hypertension, and within 24 hours of another triptan or an ergot-type drug; do not use within 2 weeks of an MAO-A inhibitor; do not use if you have severe hepatic impairment."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Risk of myocardial ischemia, infarction, and Prinzmetal's angina - do not use in patients with cardiac risk unless evaluated. Other serious vasospastic reactions (cerebrovascular, peripheral, GI ischemia) and a transient rise in blood pressure can occur. Medication-overuse headache can develop with frequent use. Serotonin syndrome is possible, especially with SSRIs/SNRIs. Seek care for chest, throat, neck, or jaw tightness/pain after dosing."
+  ],
+  "adverse_reactions": [
+    "Tingling/paresthesia, warm or hot sensations, flushing, chest or throat tightness or pressure, neck pain, dizziness, drowsiness; injection-site reactions; bad taste with the nasal spray."
+  ],
+  "drug_interactions": [
+    "Ergot-containing drugs and other triptans (separate by 24 hours - additive vasospasm); MAO-A inhibitors (do not combine); SSRIs/SNRIs and other serotonergic drugs (serotonin syndrome risk)."
+  ],
+  "dosage_and_administration": [
+    "Adults: tablets - a single dose of 25 mg, 50 mg, or 100 mg taken with water at the onset of a migraine; if some response occurs, a second dose may be taken at least 2 hours later; maximum 200 mg in 24 hours. Nasal spray - 5, 10, or 20 mg in one nostril, may repeat after 2 hours, maximum 40 mg/day. Injection - 1-6 mg subcutaneously, may repeat after 1 hour, maximum 12 mg/day. Use only exactly as your prescriber directs; limit use to no more than 2-3 headache days per week to avoid rebound headache."
+  ],
+  "overdosage": [
+    "Overdose may cause tremor, redness of extremities, convulsions, and cardiovascular ischemic effects; monitor for at least 10-12 hours. Contact Poison Control (1-800-222-1222) or seek emergency care."
+  ]
+}

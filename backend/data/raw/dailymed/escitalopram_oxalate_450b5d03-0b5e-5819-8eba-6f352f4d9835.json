@@ -1,0 +1,34 @@
+{
+  "drug_name": "ESCITALOPRAM OXALATE",
+  "generic_name": [
+    "ESCITALOPRAM",
+    "ESCITALOPRAM OXALATE"
+  ],
+  "active_ingredients": [
+    "Escitalopram oxalate 5 mg, 10 mg, 20 mg tablets; 1 mg/mL oral solution (e.g., Lexapro) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the acute and maintenance treatment of major depressive disorder in adults and adolescents 12 years and older, and for generalized anxiety disorder in adults and children 7 years and older. It is the active enantiomer of citalopram and is an SSRI. Prescription only - use, dose adjustments, and discontinuation should be guided by a clinician."
+  ],
+  "contraindications": [
+    "Concomitant use of MAO inhibitors (or within 14 days of an MAOI) - serotonin syndrome risk; concomitant use with pimozide (QT prolongation); known hypersensitivity to escitalopram or citalopram."
+  ],
+  "boxed_warning": [
+    "Antidepressants increased the risk of suicidal thoughts and behavior in pediatric and young-adult patients in short-term studies; monitor closely for clinical worsening and suicidality, especially when starting or changing the dose. Escitalopram is not approved for children under 12 (depression) or under 7 (generalized anxiety disorder)."
+  ],
+  "warnings_and_cautions": [
+    "Serotonin syndrome; QT-interval prolongation (dose-dependent - generally do not exceed 20 mg/day, and use a lower maximum of 10 mg/day in patients over 60, with hepatic impairment, who are poor CYP2C19 metabolizers, or who take a CYP2C19 inhibitor or cimetidine); increased bleeding risk with NSAIDs/aspirin/anticoagulants; activation of mania/hypomania; discontinuation syndrome (taper); seizures; angle-closure glaucoma; hyponatremia/SIADH; sexual dysfunction; possible effects on the newborn with late-pregnancy use. Full effect may take several weeks."
+  ],
+  "adverse_reactions": [
+    "Nausea, insomnia or somnolence, ejaculation disorder, decreased libido, fatigue, increased sweating, dry mouth, dizziness, constipation; less commonly hyponatremia, bleeding, QT prolongation."
+  ],
+  "drug_interactions": [
+    "MAO inhibitors (contraindicated); pimozide (contraindicated); other serotonergic drugs (serotonin syndrome); NSAIDs, aspirin, warfarin (bleeding); QT-prolonging drugs and CYP2C19 inhibitors such as omeprazole, fluconazole, cimetidine (limit escitalopram to 10 mg/day); triptans, tramadol, lithium, St. John's wort."
+  ],
+  "dosage_and_administration": [
+    "Adults: major depression and generalized anxiety disorder - 10 mg once daily, may increase to 20 mg/day after at least 1 week; maximum 20 mg/day (10 mg/day in the elderly, hepatic impairment, or with CYP2C19 inhibitors). Adolescents (>=12) with depression: 10 mg once daily, may increase to 20 mg/day after at least 3 weeks. Children (>=7) with GAD: 10 mg once daily, may increase to 20 mg/day. Take once daily, morning or evening, with or without food. Taper to discontinue."
+  ],
+  "overdosage": [
+    "Overdose may cause dizziness, sweating, nausea, vomiting, tremor, somnolence, tachycardia, QT prolongation/torsades de pointes, seizures, serotonin syndrome, and rarely coma; cardiac monitoring is advised. No specific antidote; supportive care. Seek emergency care and contact Poison Control (1-800-222-1222)."
+  ]
+}

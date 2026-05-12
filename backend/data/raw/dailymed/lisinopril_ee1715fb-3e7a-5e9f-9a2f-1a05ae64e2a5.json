@@ -1,0 +1,33 @@
+{
+  "drug_name": "LISINOPRIL",
+  "generic_name": [
+    "LISINOPRIL"
+  ],
+  "active_ingredients": [
+    "Lisinopril 2.5 mg, 5 mg, 10 mg, 20 mg, 30 mg, 40 mg tablets; oral solution (e.g., Zestril, Prinivil, Qbrelis) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of hypertension (adults and children 6 years and older), as adjunctive therapy for heart failure to reduce signs and symptoms, and to reduce mortality in hemodynamically stable patients within 24 hours of an acute myocardial infarction. It is an angiotensin-converting enzyme (ACE) inhibitor. Prescription only - dose is individualized."
+  ],
+  "contraindications": [
+    "History of angioedema (including ACE-inhibitor-associated or hereditary); concomitant use with aliskiren in patients with diabetes; concomitant use with a neprilysin inhibitor (e.g., sacubitril) - separate by at least 36 hours; known hypersensitivity to lisinopril."
+  ],
+  "boxed_warning": [
+    "When pregnancy is detected, discontinue lisinopril as soon as possible. Drugs that act on the renin-angiotensin system can cause injury and death to the developing fetus - it is contraindicated during pregnancy."
+  ],
+  "warnings_and_cautions": [
+    "Angioedema of the face, lips, tongue, glottis, or larynx (potentially fatal airway compromise) - more common in Black patients and with mTOR inhibitors or DPP-4 inhibitors; discontinue and seek emergency care immediately. Symptomatic hypotension, especially with first dose, in volume- or salt-depleted patients, or with concurrent diuretics - start at a lower dose. Impaired renal function and acute renal failure, especially in bilateral renal artery stenosis or with NSAIDs/diuretics ('triple whammy'); hyperkalemia, especially with potassium supplements, potassium-sparing diuretics, NSAIDs, ARBs, trimethoprim, or in diabetes/renal disease; hepatic failure (rare). Persistent dry cough is common."
+  ],
+  "adverse_reactions": [
+    "Dry cough, dizziness, headache, hypotension, hyperkalemia, increased creatinine, fatigue; rarely angioedema, renal failure, neutropenia, severe rash."
+  ],
+  "drug_interactions": [
+    "NSAIDs including ibuprofen and naproxen - reduce antihypertensive effect, raise the risk of kidney injury and hyperkalemia (the 'triple whammy' with a diuretic is especially risky in the elderly); other RAS blockers (ARBs, aliskiren - avoid combinations), neprilysin inhibitors (contraindicated); potassium supplements and potassium-sparing diuretics (hyperkalemia); lithium (raised lithium levels - monitor); gold injections (nitritoid reaction); diuretics (additive hypotension); trimethoprim (hyperkalemia)."
+  ],
+  "dosage_and_administration": [
+    "Hypertension (adults): start 10 mg once daily (5 mg if on a diuretic or renal impairment), usual range 20-40 mg once daily; maximum 80 mg/day. Children 6-16: 0.07 mg/kg once daily (up to 5 mg), titrated. Heart failure: start 2.5-5 mg once daily, titrate to 20-40 mg/day. After myocardial infarction: 5 mg within 24 hours, 5 mg after 24 hours, 10 mg after 48 hours, then 10 mg daily for 6 weeks. Renal impairment: lower starting dose. Do not stop abruptly without a clinician's guidance."
+  ],
+  "overdosage": [
+    "Overdose causes severe hypotension; treat with IV fluids, supportive care, and, if needed, vasopressors. Hemodialysis can remove lisinopril. Seek emergency care; call Poison Control (1-800-222-1222)."
+  ]
+}

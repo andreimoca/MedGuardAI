@@ -1,0 +1,33 @@
+{
+  "drug_name": "METOPROLOL SUCCINATE",
+  "generic_name": [
+    "METOPROLOL",
+    "METOPROLOL SUCCINATE",
+    "METOPROLOL TARTRATE"
+  ],
+  "active_ingredients": [
+    "Metoprolol succinate extended-release 25 mg, 50 mg, 100 mg, 200 mg tablets (e.g., Toprol-XL); metoprolol tartrate immediate-release 25 mg, 50 mg, 100 mg (e.g., Lopressor) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated (formulation-dependent) for the treatment of hypertension; long-term treatment of angina pectoris; and (extended-release succinate) for stable, symptomatic chronic heart failure of ischemic, hypertensive, or cardiomyopathic origin to reduce the need for hospitalization. The tartrate form is used in acute myocardial infarction to reduce mortality. It is a selective beta-1 adrenergic blocker. Prescription only."
+  ],
+  "contraindications": [
+    "Severe bradycardia, second- or third-degree heart block (without a pacemaker), sick sinus syndrome, decompensated heart failure, cardiogenic shock; in patients with severe peripheral arterial disease; pheochromocytoma not yet on an alpha-blocker; known hypersensitivity to metoprolol."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Do not stop abruptly - can precipitate exacerbation of angina, myocardial infarction, or arrhythmias; if discontinuation is needed, taper over 1-2 weeks. Use caution in bronchospastic disease (asthma, COPD) - selectivity is lost at higher doses; use the lowest effective dose. May worsen first-degree AV block and exacerbate Prinzmetal's angina. May mask hypoglycemia in diabetes and mask hyperthyroidism symptoms; abrupt withdrawal in hyperthyroidism can precipitate thyroid storm. Use cautiously in significant hepatic impairment - reduce dose. Use caution in pheochromocytoma (give an alpha-blocker first)."
+  ],
+  "adverse_reactions": [
+    "Fatigue, dizziness, depression, slow heart rate, hypotension, cold extremities, shortness of breath in those with airway disease, decreased exercise tolerance, sleep disturbance, sexual dysfunction; rarely worsening heart failure, heart block."
+  ],
+  "drug_interactions": [
+    "Other AV-nodal blockers - diltiazem, verapamil, digoxin, amiodarone (bradycardia, AV block); CYP2D6 inhibitors - bupropion, fluoxetine, paroxetine, propafenone, quinidine, terbinafine (markedly raise metoprolol levels); other antihypertensives (additive); clonidine - if both are stopped, stop the beta-blocker first to avoid rebound hypertension; epinephrine for anaphylaxis - beta-blockade can blunt response."
+  ],
+  "dosage_and_administration": [
+    "Hypertension (succinate ER): start 25-100 mg once daily; maximum 400 mg/day. Heart failure (succinate ER): start 12.5-25 mg once daily; double every 2 weeks as tolerated, target up to 200 mg/day. Angina: 100 mg/day (succinate) or 50-100 mg twice daily (tartrate). Acute MI: 5 mg IV every 5 min x3, then 50 mg oral tartrate every 6 hours x48 hours, then 100 mg twice daily. Take with or just after meals (tartrate). Do not stop abruptly."
+  ],
+  "overdosage": [
+    "Overdose causes bradycardia, hypotension, heart block, bronchospasm, hypoglycemia, heart failure; treat with IV fluids, atropine, glucagon, calcium, high-dose insulin-euglycemia therapy, and supportive measures including cardiac pacing. Seek emergency care; call Poison Control (1-800-222-1222)."
+  ]
+}

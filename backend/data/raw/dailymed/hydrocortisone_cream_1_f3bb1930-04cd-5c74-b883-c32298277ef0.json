@@ -1,0 +1,31 @@
+{
+  "drug_name": "HYDROCORTISONE CREAM 1%",
+  "generic_name": [
+    "HYDROCORTISONE"
+  ],
+  "active_ingredients": [
+    "Hydrocortisone 1% (and 0.5%) cream, ointment, lotion, or spray (OTC topical corticosteroid)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves itching and rash associated with minor skin irritations, eczema (atopic dermatitis), contact dermatitis (such as poison ivy, oak, or sumac, soaps, detergents, cosmetics, or jewelry), insect bites, minor burns, sunburn, and itching of the genital or anal area. It is a low-potency topical steroid that reduces inflammation, redness, and itch."
+  ],
+  "contraindications": [
+    "Do not use for the treatment of diaper rash, in the genital area of a child, or on a fungal infection (it can worsen ringworm/athlete's foot) unless directed by a doctor; do not use if allergic to hydrocortisone."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only; avoid contact with the eyes. Use sparingly and only briefly on the face, in skin folds (armpits, groin), and on broken or weeping skin - thin or occluded areas absorb more steroid and can develop thinning, stretch marks, or other changes. For the face, apply a thin layer and use for no more than about 7 days; do not use near the eyes for long periods (risk of raised eye pressure/glaucoma). Do not use more than directed or for longer than 7 days unless a doctor says so. Stop use and ask a doctor if the condition worsens, symptoms last more than 7 days, or they clear up and come back within a few days. For children under 2 years, ask a doctor."
+  ],
+  "adverse_reactions": [
+    "Burning, itching, irritation, dryness, redness at the application site; with prolonged or large-area use - skin thinning, telangiectasia, stretch marks, acne-like eruptions, folliculitis, and (rarely) systemic corticosteroid effects."
+  ],
+  "drug_interactions": [
+    "Minimal at low potency and small areas; absorption rises if used under occlusion, on large areas, or on broken skin - then systemic steroid cautions apply."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 2 years and over: apply a thin layer to the affected area not more than 3 to 4 times daily; rub in gently. Use the smallest amount that works for the shortest time. On the face, in skin folds, or in the genital/anal area, use only briefly and only if needed. Children under 2 years: ask a doctor. For anal/genital itching, do not exceed the labeled duration."
+  ],
+  "overdosage": [
+    "Acute overdose by skin application is unlikely to cause harm; chronic excessive use can produce systemic corticosteroid effects (adrenal suppression, Cushing-like changes). If swallowed in quantity, contact Poison Control (1-800-222-1222)."
+  ]
+}

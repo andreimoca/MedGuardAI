@@ -1,0 +1,33 @@
+{
+  "drug_name": "ALBUTEROL SULFATE INHALATION AEROSOL",
+  "generic_name": [
+    "ALBUTEROL",
+    "ALBUTEROL SULFATE",
+    "SALBUTAMOL"
+  ],
+  "active_ingredients": [
+    "Albuterol sulfate 90 mcg (base) per actuation, metered-dose inhaler (HFA), e.g., ProAir HFA, Ventolin HFA; also a nebulizer solution (prescription only)"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment or prevention of bronchospasm in patients 4 years and older with reversible obstructive airway disease (such as asthma), and for the prevention of exercise-induced bronchospasm. It is a short-acting beta-2 agonist ('rescue' or 'reliever' inhaler) that relaxes airway muscles within minutes; it does not treat the underlying inflammation, so it is not a substitute for a daily controller medicine. Prescription only."
+  ],
+  "contraindications": [
+    "Hypersensitivity to albuterol or any component of the formulation."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Paradoxical bronchospasm can occur (stop and use a different treatment). Needing the rescue inhaler more often than usual, or it not lasting as long, is a sign of worsening asthma that requires prompt medical reassessment - do not simply keep using more. Cardiovascular effects (increased heart rate, blood pressure, palpitations, rarely arrhythmias or chest pain); use caution in heart disease, arrhythmias, and hypertension. Can cause low potassium and high blood sugar. Excessive use has been associated with fatalities. Seek emergency care for a severe attack (can barely speak, lips/fingertips turning blue, no relief from the inhaler)."
+  ],
+  "adverse_reactions": [
+    "Tremor, nervousness, headache, fast or pounding heartbeat, throat irritation, cough, muscle cramps; less commonly low potassium, high blood sugar."
+  ],
+  "drug_interactions": [
+    "Other adrenergic drugs (additive cardiovascular effects); beta-blockers (can block the bronchodilating effect and provoke bronchospasm - avoid non-selective beta-blockers); diuretics and digoxin (ECG changes, low potassium); MAO inhibitors and tricyclic antidepressants (potentiated cardiovascular effects); use caution with QT-prolonging drugs."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 4 years and over: for acute bronchospasm, 2 inhalations every 4-6 hours as needed (some patients need only 1); for prevention of exercise-induced bronchospasm, 2 inhalations 15-30 minutes before exercise. Prime the inhaler before first use and after non-use; use a spacer if advised. If you need it more than 2 days a week (apart from exercise), see your clinician about a controller medicine. Nebulizer dosing is prescriber-directed."
+  ],
+  "overdosage": [
+    "Overdose causes exaggerated effects: marked tremor, very fast heartbeat, arrhythmias, chest pain, severe hypertension or hypotension, low potassium, seizures; can be fatal. Seek emergency care; contact Poison Control (1-800-222-1222)."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "drug_name": "PSEUDOEPHEDRINE HYDROCHLORIDE",
+  "generic_name": [
+    "PSEUDOEPHEDRINE",
+    "PSEUDOEPHEDRINE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Pseudoephedrine hydrochloride 30 mg and 60 mg immediate-release tablets; 120 mg and 240 mg extended-release (sold from behind the pharmacy counter, e.g., Sudafed)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves nasal congestion due to the common cold, hay fever, or other upper respiratory allergies, and nasal congestion associated with sinusitis; helps clear stuffy nose and sinus pressure and promote sinus drainage. It is an oral decongestant (a sympathomimetic)."
+  ],
+  "contraindications": [
+    "Do not use if you are now taking, or have within the past 2 weeks taken, a prescription MAO inhibitor. Do not use if you have severe high blood pressure or severe coronary artery disease."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Ask a doctor before use if you have heart disease, high blood pressure, thyroid disease, diabetes, trouble urinating due to an enlarged prostate, or glaucoma - pseudoephedrine can raise blood pressure and heart rate. Stop use and ask a doctor if you get nervous, dizzy, or sleepless, or if symptoms do not improve within 7 days or are accompanied by fever. Do not use within a few hours of bedtime (may cause sleeplessness). Sale is restricted by law (ID required, quantity limits) because it can be misused to make methamphetamine."
+  ],
+  "adverse_reactions": [
+    "Nervousness, restlessness, insomnia, headache, dizziness, palpitations, raised blood pressure; rarely urinary retention or, with extended-release in some products, ischemic colitis."
+  ],
+  "drug_interactions": [
+    "MAO inhibitors (dangerous hypertensive crisis - do not combine); other sympathomimetics/stimulants and large amounts of caffeine (additive cardiovascular stimulation); some blood-pressure medicines may be less effective; tricyclic antidepressants can potentiate effects."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: 60 mg every 4-6 hours (immediate-release), not more than 240 mg in 24 hours; or 120 mg every 12 hours, or 240 mg once daily (extended-release). Children 6 to under 12: 30 mg every 4-6 hours, not more than 120 mg in 24 hours. Children 4 to under 6: 15 mg every 4-6 hours, not more than 60 mg/24 h, only if directed by a doctor. Children under 4: do not use."
+  ],
+  "overdosage": [
+    "Overdose causes nervousness, tremor, rapid heartbeat, severe hypertension (which can cause stroke or heart attack), chest pain, arrhythmias, and seizures. Seek emergency care; contact Poison Control (1-800-222-1222)."
+  ]
+}
