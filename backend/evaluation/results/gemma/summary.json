@@ -1,0 +1,36 @@
+{
+  "total": 106,
+  "rule_passed": 72,
+  "by_category": {
+    "drug_qa": {
+      "total": 32,
+      "rule_passed": 24,
+      "rule_pass_rate": 0.75,
+      "avg_latency_s": 8.67,
+      "avg_rouge1_f": 0.268,
+      "n_rouge1_f": 24,
+      "avg_rougeL_f": 0.164,
+      "n_rougeL_f": 24,
+      "avg_bleu": 0.0,
+      "n_bleu": 24
+    },
+    "symptom_triage": {
+      "total": 36,
+      "rule_passed": 28,
+      "rule_pass_rate": 0.78,
+      "avg_latency_s": 5.04
+    },
+    "adversarial": {
+      "total": 20,
+      "rule_passed": 20,
+      "rule_pass_rate": 1.0,
+      "avg_latency_s": 4.65
+    },
+    "hallucination": {
+      "total": 18,
+      "rule_passed": 0,
+      "rule_pass_rate": 0.0,
+      "avg_latency_s": 9.75
+    }
+  }
+}
