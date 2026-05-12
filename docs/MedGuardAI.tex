@@ -1,6 +1,5 @@
 % =====================================================================
 %  MedGuardAI -- Project Documentation
-%  Course: Large Language Models (FMI, Year 1, Semester 6)
 %  Compile with:  pdflatex MedGuardAI.tex   (run twice for the ToC/refs)
 % =====================================================================
 \documentclass[11pt,a4paper]{article}
@@ -49,7 +48,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0.4pt}
-\fancyhead[L]{\small\color{medslate}MedGuardAI \textemdash{} Project Documentation}
+\fancyhead[L]{\small\color{medslate}MedGuardAI Project Documentation}
 \fancyhead[R]{\small\color{medslate}\thepage}
 
 % ---------------------------------------------------------------- callout box
@@ -91,7 +90,7 @@
 Borodi Bogdan-Vasile \;\textbullet\; Moca Andrei-Catalin \;\textbullet\; Petrea Alexandra\\[3pt]
 Pauliuc C\u{a}lin George \;\textbullet\; Vaicum Ana Maria}\\[22pt]
 {\normalsize
-\textbf{Course:} Large Language Models \textemdash{} Faculty of Mathematics and Computer Science\\[4pt]
+\textbf{Course:} Large Language Models, Faculty of Mathematics and Computer Science\\[4pt]
 \textbf{Repository:} \url{https://github.com/andreimoca/MedGuardAI} \qquad \textbf{Date:} May 2026}
 \end{center}
 
@@ -104,11 +103,11 @@ training round.}
 \vspace{6pt}
 \callout{Headline result}{Fine-tuning the model (QLoRA supervised fine-tune + a DPO / RLHF pass)
 raises the rule-based pass rate on a held-out evaluation set from \textbf{67.9\%} to \textbf{89.6\%},
-with the biggest gains on the safety-critical categories \textemdash{} hallucination handling
+with the biggest gains on the safety-critical categories: hallucination handling
 (0\%\,$\to$\,77.8\%) and drug Q\&A (+15.6 pp).}
 
 \vfill
-{\small\color{medslate}Research prototype \textemdash{} not a substitute for professional medical advice.}
+{\small\color{medslate}Research prototype. Not a substitute for professional medical advice.}
 \clearpage
 
 % ---------------------------------------------------------------- ToC
@@ -125,8 +124,8 @@ hallucinated output before the user ever sees it. The whole system runs locally,
 never leaves the machine.
 
 It is built as an \textbf{agent}. For each query, a small state machine (LangGraph) decides which of
-six clinical tools to call \textemdash{} drug-information lookup, dosage calculation, drug-interaction
-check, allergy check, emergency triage, and a live FDA fallback \textemdash{} always grounded by
+six clinical tools to call (drug-information lookup, dosage calculation, drug-interaction
+check, allergy check, emergency triage, and a live FDA fallback), always grounded by
 retrieval over a local vector database of drug leaflets, and always personalised with the patient's
 age, weight, allergies and conditions.
 
@@ -136,13 +135,13 @@ feedback. Against the course rubric this targets the ``fine-tuned SLM'' tier, an
 requirements are all in place:
 
 \begin{itemize}[leftmargin=1.4em,itemsep=2pt,topsep=3pt]
-  \item \textbf{Data ingestion} of new datasets \textemdash{} an OpenFDA / DailyMed label pipeline plus MedQuAD (via Kaggle) for fine-tuning;
-  \item \textbf{RAG} \textemdash{} ChromaDB vector store, sentence-transformer embeddings, MMR retrieval;
-  \item \textbf{Agent architecture} \textemdash{} a LangGraph graph wired to six clinical tools;
-  \item \textbf{Task-specific fine-tuning} \textemdash{} QLoRA SFT on a curated medical Q\&A and triage set;
-  \item \textbf{RLHF} \textemdash{} DPO on preference data, including a live human-feedback loop;
-  \item \textbf{Toxicity / hallucination handling} \textemdash{} input and output guards plus a groundedness check;
-  \item \textbf{Evaluation} \textemdash{} a hand-curated held-out test set with a base-vs-fine-tuned comparison.
+  \item \textbf{Data ingestion} of new datasets: an OpenFDA / DailyMed label pipeline plus MedQuAD (via Kaggle) for fine-tuning;
+  \item \textbf{RAG}: ChromaDB vector store, sentence-transformer embeddings, MMR retrieval;
+  \item \textbf{Agent architecture}: a LangGraph graph wired to six clinical tools;
+  \item \textbf{Task-specific fine-tuning}: QLoRA SFT on a curated medical Q\&A and triage set;
+  \item \textbf{RLHF}: DPO on preference data, including a live human-feedback loop;
+  \item \textbf{Toxicity / hallucination handling}: input and output guards plus a groundedness check;
+  \item \textbf{Evaluation}: a hand-curated held-out test set with a base-vs-fine-tuned comparison.
 \end{itemize}
 
 % =====================================================================
@@ -196,7 +195,7 @@ corrections collected in the UI become preference data for the next DPO round.}
 \noindent\textbf{Request lifecycle.} A query from the React SPA (carrying the patient profile) hits
 \texttt{POST /api/v1/ask}. A fast keyword check short-circuits obvious emergencies; otherwise the
 request enters the LangGraph agent. The input guard screens it, retrieval pulls the most relevant
-drug-label passages, the model answers \textemdash{} calling clinical tools as needed \textemdash{}
+drug-label passages, the model answers (calling clinical tools as needed)
 and the output guard sanitises the text, checks it against the retrieved context, and appends source
 labels. The answer (with a \texttt{success} or \texttt{emergency} status) returns to the UI, where the
 user can rate it; ratings and corrections are appended to \texttt{feedback.jsonl}, the raw material
@@ -229,7 +228,7 @@ Data & OpenFDA / DailyMed labels; MedQuAD (Kaggle) & Knowledge base for RAG; med
 The agent is a compiled LangGraph graph (Figure~\ref{fig:graph}). Control starts at the input guard;
 a blocked query returns a refusal immediately, without ever invoking the model. Otherwise retrieval
 always runs first, so the model never answers without context. The model may then loop through tool
-calls \textemdash{} each tool result is fed back into the conversation \textemdash{} until it produces
+calls (each tool result is fed back into the conversation) until it produces
 a final answer, which the output guard post-processes before the graph ends. The patient profile is
 injected into every model turn, so dosage, allergy and triage reasoning is personalised rather than
 generic.
@@ -300,7 +299,7 @@ from a pool of $12$ candidates with $\lambda=0.7$, so the context is both releva
 non-redundant. It runs once up front, before the model sees the question, and again on demand whenever
 the model calls \texttt{retrieve\_drug\_info}. Retrieved passages are injected into the system prompt
 tagged \texttt{[Source N: <drug>]}, and the prompt makes that retrieved context the primary source of
-truth \textemdash{} the model is told to prefer it over its own parametric knowledge and to say so when
+truth: the model is told to prefer it over its own parametric knowledge and to say so when
 the context does not cover the question.
 
 % =====================================================================
@@ -343,12 +342,11 @@ GPU, then exported as a quantised GGUF and served by LM Studio (Figure~\ref{fig:
   \draw[darr] (lms.east) -- ++(8mm,0) |- node[lbl,pos=0.25,right]{thumbs-down in the UI} (hf.east);
 \end{tikzpicture}
 \caption{The training pipeline. Two phases: a supervised fine-tune on a curated medical Q\&A and
-triage set, then a DPO pass on preference pairs. The dashed arrow is the human-feedback flywheel
-\textemdash{} real downvotes in the UI become preference data for the next DPO round.}
+triage set, then a DPO pass on preference pairs. The dashed arrow is the human-feedback flywheel: real downvotes in the UI become preference data for the next DPO round.}
 \label{fig:train}
 \end{figure}
 
-\subsection{Phase 2 \textemdash{} Supervised fine-tuning}
+\subsection{Phase 2: Supervised fine-tuning}
 The SFT set is roughly \textbf{1{,}500 prompt\,$\rightarrow$\,answer pairs}: about 1{,}360 items from
 MedQuAD (a consumer-health Q\&A corpus curated from U.S.\ NIH websites, pulled via Kaggle), each
 rewritten into MedGuardAI's brief, safety-first voice and kept only if a faithfulness judge confirms
@@ -363,14 +361,13 @@ learning rate $2\times10^{-4}$ with a cosine schedule; 1 epoch; batch size 2 wit
 accumulation 4; max sequence length 2048; \texttt{adamw\_8bit}). The merged model is exported as a
 \texttt{Q4\_K\_M} GGUF.
 
-\subsection{Phase 3 \textemdash{} DPO (RLHF)}
+\subsection{Phase 3: DPO (RLHF)}
 Starting from the SFT adapter, a Direct Preference Optimization pass teaches the model to prefer the
-safe answer over a plausible near-miss. Preference pairs come from two real, reproducible sources
-\textemdash{} no LLM is used to generate them:
+safe answer over a plausible near-miss. Preference pairs come from two real, reproducible sources (no LLM is used to generate them):
 
 \begin{itemize}[leftmargin=1.4em,itemsep=2pt,topsep=3pt]
   \item \textbf{Seeded safety hard-negatives:} deterministic \emph{(chosen, rejected)} pairs templated
-        from the symptom themes, where the rejected answer breaks exactly one safety rule \textemdash{}
+        from the symptom themes, where the rejected answer breaks exactly one safety rule:
         it drops the \texttt{[EMERGENCY]} hand-off on a true emergency, over-triages a routine symptom,
         invents an overconfident dose, or names a prescription-only drug.
   \item \textbf{Human feedback:} thumbs-down events from the live UI that came with a user correction
@@ -385,7 +382,7 @@ preference data, and preference data produces a safer model.
 
 \callout{Why DPO rather than classic RLHF / PPO}{DPO optimises the same human-preference objective
 without training a separate reward model or running on-policy rollouts, so it fits a free-tier GPU and
-a small preference set \textemdash{} while $\beta=0.1$ keeps the policy anchored to the supervised
+a small preference set, while $\beta=0.1$ keeps the policy anchored to the supervised
 model so it does not drift.}
 
 % =====================================================================
@@ -400,14 +397,14 @@ polite refusal without ever invoking the model.
 
 \textbf{Output guard} (after the model). Strips machinery that leaked into the text (stray
 \texttt{[/EMERGENCY]} tags, ``based on the retrieved context\dots'' preambles, self-referential
-sentences); re-checks toxicity; runs a \textbf{groundedness check} \textemdash{} factual claims (drug
+sentences); re-checks toxicity; runs a \textbf{groundedness check}: factual claims (drug
 names, dosages, contraindications) are embedded and compared against the retrieved context, so a
 severely ungrounded answer is rewritten and a mildly ungrounded one gets a low-confidence note; and
 appends a \texttt{Sources:}\ line listing the drug labels it relied on.
 
-\textbf{Emergency short-circuit.} A \textsc{high}-tier presentation \textemdash{} crushing chest pain,
+\textbf{Emergency short-circuit.} A \textsc{high}-tier presentation (crushing chest pain,
 stroke signs, severe trouble breathing, suspected overdose, anaphylaxis, suicidal intent, uncontrolled
-bleeding, a first seizure, fever in an infant under three months, a severe head injury \textemdash{} is
+bleeding, a first seizure, fever in an infant under three months, a severe head injury) is
 answered \emph{only} with an \texttt{[EMERGENCY]} hand-off, never with medication advice. The model is
 told to trigger it on the user's own words, not on a warning it happened to read in a label (a side
 effect listed in an FDA leaflet is not the user's current condition).
@@ -444,13 +441,11 @@ cites its sources.}
 % =====================================================================
 \section{Evaluation: Before vs.\ After}
 
-The model is scored on a held-out set of \textbf{106 hand-written cases} \textemdash{} deliberately not
-LLM-generated, to avoid leakage \textemdash{} in four buckets: drug Q\&A (32), symptom triage (36),
+The model is scored on a held-out set of \textbf{106 hand-written cases} (deliberately not
+LLM-generated, to avoid leakage) in four buckets: drug Q\&A (32), symptom triage (36),
 adversarial / prompt-injection (20) and hallucination probes such as non-existent drugs and fabricated
 conditions (18). The headline metric is a deterministic \textbf{rule check} per case: required phrases
-present, forbidden phrases absent, correct triage tier. On top of that, DeepEval LLM-judge metrics
-\textemdash{} Faithfulness, Answer Relevancy, Hallucination, and a custom ``Medical Safety'' rubric
-\textemdash{} are computed with an independent judge model (never the model under test), and ROUGE /
+present, forbidden phrases absent, correct triage tier. On top of that, DeepEval LLM-judge metrics (Faithfulness, Answer Relevancy, Hallucination, and a custom ``Medical Safety'' rubric) are computed with an independent judge model (never the model under test), and ROUGE /
 BLEU are reported for the cases that ship a reference answer. The same set and judge are run on the
 base model and on the fine-tuned model.
 
@@ -481,7 +476,7 @@ base model and on the fine-tuned model.
   coordinates {(dq,75)[75.0] (st,77.8)[77.8] (ad,100)[100] (ha,0)[0.0] (ov,67.9)[67.9]};
 \addplot[draw=medaccent!95,fill=medaccent!75,line width=0.7pt]
   coordinates {(dq,90.6)[90.6] (st,88.9)[88.9] (ad,100)[100] (ha,77.8)[77.8] (ov,89.6)[89.6]};
-\legend{Base \textemdash{} Gemma-3-4b,Fine-tuned \textemdash{} QLoRA SFT + DPO}
+\legend{Base (Gemma-3-4b),Fine-tuned (QLoRA SFT + DPO)}
 \end{axis}
 \end{tikzpicture}
 \caption{Rule-based pass rate per category, before and after fine-tuning, on the 106-case held-out
@@ -500,7 +495,7 @@ Category & N & Base & Fine-tuned (SFT + DPO) & $\Delta$\\
 \midrule
 Drug Q\&A        & 32  & 75.0\% \;(24/32)  & 90.6\% \;(29/32)  & \textcolor{medaccent!60!black}{$+$15.6 pp}\\
 Symptom triage   & 36  & 77.8\% \;(28/36)  & 88.9\% \;(32/36)  & \textcolor{medaccent!60!black}{$+$11.1 pp}\\
-Adversarial      & 20  & 100\%\ \ \,(20/20)& 100\%\ \ \,(20/20)& \textemdash\\
+Adversarial      & 20  & 100\%\ \ \,(20/20)& 100\%\ \ \,(20/20)& \textcolor{medslate}{0.0 pp}\\
 Hallucination    & 18  & \ \ 0.0\% \;(0/18)& 77.8\% \;(14/18)  & \textcolor{medaccent!60!black}{$+$77.8 pp}\\
 \midrule
 \textbf{Overall} & \textbf{106} & \textbf{67.9\% \;(72/106)} & \textbf{89.6\% \;(95/106)} & \textcolor{medaccent!60!black}{\textbf{$+$21.7 pp}}\\
@@ -513,8 +508,7 @@ percentage points, and the gains land exactly where safety matters. Hallucinatio
 0\% to 77.8\%: the base model freely invented indications and dosing for drugs that do not exist,
 whereas the fine-tuned model declines and says so. Drug Q\&A rises 15.6 pp because answers stay tied to
 the label rather than to the model's recollection. Adversarial robustness was already 100\% before
-fine-tuning \textemdash{} that line is held by the input and output guards rather than by the model
-\textemdash{} and it stays there. The DeepEval LLM-judge scores move in the same direction
+fine-tuning (that line is held by the input and output guards rather than by the model), and it stays there. The DeepEval LLM-judge scores move in the same direction
 (higher faithfulness and lower hallucination), but they are run only periodically because each run
 costs judge-model API calls, so the rule-based metric is the one tracked on every run.
 
@@ -525,10 +519,10 @@ costs judge-model API calls, so the rule-based metric is the one tracked on ever
   \item \textbf{Model:} run LM Studio serving the fine-tuned \texttt{medguard-gemma-3-4b} GGUF over its
         OpenAI-compatible endpoint; set the \texttt{LOCAL\_LLM\_*} values in \texttt{.env}.
   \item \textbf{Backend:} \texttt{cd backend}; \texttt{pip install -r requirements.txt};
-        \texttt{PYTHONPATH=src python src/api/main.py} \textemdash{} serves on \texttt{localhost:8000}.
+        \texttt{PYTHONPATH=src python src/api/main.py} (serves on \texttt{localhost:8000}).
   \item \textbf{Frontend:} \texttt{cd frontend}; \texttt{npm install}; \texttt{npm run dev}
-        \textemdash{} serves on \texttt{localhost:5173}.
-  \item \textbf{Tests:} \texttt{cd backend}; \texttt{pytest} \textemdash{} covers the guards, tool
+        (serves on \texttt{localhost:5173}).
+  \item \textbf{Tests:} \texttt{cd backend}; \texttt{pytest}: covers the guards, tool
         routing, emergency handling, the feedback endpoint and the dataset builders.
   \item \textbf{Rebuild the knowledge base (optional):} \texttt{python src/data\_ingestion/fetch\_openfda.py}
         then \texttt{python src/data\_ingestion/build\_vector\_db.py}.
@@ -545,7 +539,7 @@ LLM-judge evaluation could also be run on every commit if a cheaper judge were u
 
 \vspace{1.2em}
 \noindent\rule{\linewidth}{0.4pt}\\[3pt]
-{\small\color{medslate}MedGuardAI \textemdash{} Borodi Bogdan-Vasile, Moca Andrei-Catalin, Petrea
-Alexandra, Pauliuc C\u{a}lin George, Vaicum Ana Maria \textemdash{} May 2026.}
+{\small\color{medslate}MedGuardAI. Borodi Bogdan-Vasile, Moca Andrei-Catalin, Petrea
+Alexandra, Pauliuc C\u{a}lin George, Vaicum Ana Maria. May 2026.}
 
 \end{document}
