@@ -1,0 +1,32 @@
+{
+  "drug_name": "OXYMETAZOLINE HYDROCHLORIDE NASAL SPRAY",
+  "generic_name": [
+    "OXYMETAZOLINE",
+    "OXYMETAZOLINE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Oxymetazoline hydrochloride 0.05% nasal spray/drops (e.g., Afrin, Vicks Sinex)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves nasal congestion due to a cold, hay fever, or other upper respiratory allergies and sinusitis; shrinks swollen nasal membranes so you can breathe more freely, with relief beginning within minutes and lasting up to 12 hours. It is a topical decongestant applied directly into the nose."
+  ],
+  "contraindications": [
+    "Do not use for more than 3 days; do not use if allergic to oxymetazoline; ask a doctor before use in heart disease, high blood pressure, thyroid disease, diabetes, or enlarged prostate."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Do not use this product for more than 3 days in a row - using a nasal decongestant spray longer can cause rebound congestion (rhinitis medicamentosa), where the nose becomes more stuffy and dependent on the spray. Temporary burning, stinging, sneezing, or an increase in nasal discharge may occur. Do not share the bottle (spread of infection). Stop use and ask a doctor if symptoms persist."
+  ],
+  "adverse_reactions": [
+    "Local burning, stinging, dryness, sneezing, rebound congestion with overuse; rarely systemic effects (headache, raised blood pressure, palpitations) - serious in young children who swallow it."
+  ],
+  "drug_interactions": [
+    "MAO inhibitors and tricyclic antidepressants (potential blood-pressure effects); generally minimal systemic interaction when used as directed."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 6 years and over: 2-3 sprays in each nostril not more often than every 10-12 hours; do not exceed 2 doses in 24 hours; do not use for more than 3 days. Children under 6 years: ask a doctor (accidental ingestion of imidazoline nasal sprays can be dangerous in small children - keep out of reach)."
+  ],
+  "overdosage": [
+    "Swallowing the spray, especially by a child, can cause serious effects: drowsiness, very slow heartbeat, low body temperature, low blood pressure, and even coma. Seek emergency care and contact Poison Control (1-800-222-1222) immediately."
+  ]
+}

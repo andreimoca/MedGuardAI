@@ -1,0 +1,31 @@
+{
+  "drug_name": "FAMOTIDINE",
+  "generic_name": [
+    "FAMOTIDINE"
+  ],
+  "active_ingredients": [
+    "Famotidine 10 mg or 20 mg per tablet (OTC, e.g., Pepcid AC); 20 mg and 40 mg tablets by prescription"
+  ],
+  "indications_and_usage": [
+    "Uses (OTC): relieves heartburn associated with acid indigestion and sour stomach, and, taken before eating, prevents heartburn brought on by eating or drinking certain foods and beverages. It is an H2 (histamine-2) blocker that reduces stomach acid production. By prescription it is also used for gastroesophageal reflux disease (GERD), stomach and duodenal ulcers, and hypersecretory conditions."
+  ],
+  "contraindications": [
+    "Do not use if you have ever had an allergic reaction to famotidine or other H2 blockers (cimetidine, ranitidine, nizatidine)."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Heartburn frequently accompanies other conditions - ask a doctor before use if you have trouble or pain swallowing food, vomiting with blood, bloody or black stools, chest/shoulder/jaw pain or shortness of breath with heartburn (these may signal something more serious), or frequent chest pain. Ask a doctor before use if you have kidney disease (dose reduction may be needed). Do not use the maximum daily dose for more than 14 days unless directed by a doctor."
+  ],
+  "adverse_reactions": [
+    "Headache, dizziness, constipation or diarrhea; rare confusion in the elderly or in kidney impairment; rare hypersensitivity reactions."
+  ],
+  "drug_interactions": [
+    "Reduced stomach acid can decrease absorption of drugs needing acid (e.g., certain antifungals such as ketoconazole/itraconazole, atazanavir, dasatinib). Fewer interactions than the PPI omeprazole; generally a good alternative for someone on clopidogrel."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over (OTC): to relieve heartburn, take 10-20 mg with a glass of water; to prevent heartburn, take 10-20 mg 15-60 minutes before eating food or drinking beverages that cause heartburn; do not take more than two tablets (up to 40 mg) in 24 hours; do not use for more than 14 days continuously unless a doctor directs. By prescription, GERD/ulcer dosing is typically 20-40 mg once or twice daily. Children under 12 years: ask a doctor."
+  ],
+  "overdosage": [
+    "Overdose is rarely serious; very large doses may cause confusion, agitation, or rapid heartbeat. Contact Poison Control (1-800-222-1222)."
+  ]
+}

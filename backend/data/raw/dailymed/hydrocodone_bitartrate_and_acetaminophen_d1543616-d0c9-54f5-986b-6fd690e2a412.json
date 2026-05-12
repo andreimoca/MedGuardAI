@@ -1,0 +1,35 @@
+{
+  "drug_name": "HYDROCODONE BITARTRATE AND ACETAMINOPHEN",
+  "generic_name": [
+    "HYDROCODONE BITARTRATE",
+    "ACETAMINOPHEN",
+    "HYDROCODONE BITARTRATE AND ACETAMINOPHEN"
+  ],
+  "active_ingredients": [
+    "Hydrocodone bitartrate 5 mg / 7.5 mg / 10 mg with acetaminophen 300 mg or 325 mg per tablet (e.g., Norco, Vicodin) - Schedule II controlled substance, prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate, in adults. It combines an opioid (hydrocodone) with acetaminophen. It is a strictly controlled prescription medicine - not available over the counter, and not safe to take from another person's prescription."
+  ],
+  "contraindications": [
+    "Significant respiratory depression; acute or severe bronchial asthma in an unmonitored setting; known or suspected GI obstruction/ileus; hypersensitivity to hydrocodone, acetaminophen, or any component."
+  ],
+  "boxed_warning": [
+    "Addiction, abuse, and misuse can lead to overdose and death. Life-threatening respiratory depression may occur. Accidental ingestion, especially by children, can be fatal. Prolonged use in pregnancy can cause neonatal opioid withdrawal syndrome. Concomitant use with benzodiazepines or other CNS depressants, including alcohol, can cause profound sedation, respiratory depression, coma, and death. The acetaminophen component carries a risk of severe, potentially fatal hepatotoxicity, especially with doses above the maximum, with other acetaminophen products, or with heavy alcohol use."
+  ],
+  "warnings_and_cautions": [
+    "Respiratory depression (worse in the elderly, debilitated, or those with lung disease); hypotension; risk in head injury; adrenal insufficiency; severe acetaminophen-related liver injury and serious skin reactions; do not exceed 4000 mg of acetaminophen from all sources per day; do not stop abruptly after prolonged use."
+  ],
+  "adverse_reactions": [
+    "Lightheadedness, dizziness, sedation, nausea, vomiting, constipation; serious - respiratory depression, dependence, hepatotoxicity from the acetaminophen component."
+  ],
+  "drug_interactions": [
+    "Benzodiazepines, alcohol, sedatives, other opioids, muscle relaxants (profound sedation/respiratory depression); MAO inhibitors; CYP3A4 inhibitors/inducers; serotonergic drugs (serotonin syndrome); other acetaminophen-containing products (liver toxicity)."
+  ],
+  "dosage_and_administration": [
+    "Adults: dose individualized; a common starting dose is one tablet every 4-6 hours as needed for pain; the total acetaminophen dose must not exceed 4000 mg per day (and stay well below if combining sources). Use the lowest effective dose for the shortest duration. Take exactly as prescribed; never crush/snort/inject."
+  ],
+  "overdosage": [
+    "Two overlapping emergencies: opioid overdose (pinpoint pupils, slow or stopped breathing, extreme drowsiness/coma) and acetaminophen overdose (delayed liver failure). Give naloxone for the opioid component and seek immediate emergency care; the acetaminophen component may need N-acetylcysteine. Call 911 and Poison Control (1-800-222-1222) right away."
+  ]
+}

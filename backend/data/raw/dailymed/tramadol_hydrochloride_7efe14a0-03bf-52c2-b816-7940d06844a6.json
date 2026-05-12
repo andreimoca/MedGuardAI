@@ -1,0 +1,34 @@
+{
+  "drug_name": "TRAMADOL HYDROCHLORIDE",
+  "generic_name": [
+    "TRAMADOL",
+    "TRAMADOL HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Tramadol hydrochloride 50 mg immediate-release tablets; 100 mg, 200 mg, 300 mg extended-release tablets (Schedule IV controlled substance, prescription only)"
+  ],
+  "indications_and_usage": [
+    "Indicated in adults for the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate; extended-release forms are for around-the-clock treatment of chronic pain. It is a controlled prescription medicine and is not available over the counter or appropriate to take from someone else's prescription."
+  ],
+  "contraindications": [
+    "Significant respiratory depression; acute or severe bronchial asthma in an unmonitored setting; known or suspected GI obstruction including paralytic ileus; concurrent use of or use within 14 days of MAO inhibitors; children younger than 12 years; post-tonsillectomy/adenoidectomy in patients under 18; known hypersensitivity to tramadol or opioids."
+  ],
+  "boxed_warning": [
+    "Addiction, abuse, and misuse can lead to overdose and death; assess risk before prescribing. Life-threatening respiratory depression may occur, especially when starting or increasing the dose. Ultra-rapid CYP2D6 metabolizers (including some children) can have life-threatening respiratory depression; contraindicated in children under 12 and after tonsillectomy/adenoidectomy in those under 18. Accidental ingestion by a child can be fatal. Prolonged use in pregnancy can cause neonatal opioid withdrawal syndrome. Concomitant use with benzodiazepines or other CNS depressants (including alcohol) may result in profound sedation, respiratory depression, coma, and death. Seizure risk and serotonin syndrome can occur, especially with serotonergic drugs."
+  ],
+  "warnings_and_cautions": [
+    "Seizures (risk increased with SSRIs/SNRIs, TCAs, other opioids, and at higher doses); serotonin syndrome; suicide risk in vulnerable patients; adrenal insufficiency with prolonged use; severe hypotension; use caution in head injury, hepatic or renal impairment, and the elderly; do not stop abruptly after prolonged use (withdrawal). Driving/operating machinery impairment."
+  ],
+  "adverse_reactions": [
+    "Dizziness, nausea, constipation, headache, somnolence, vomiting, dry mouth, sweating, itching; serious - respiratory depression, seizures, serotonin syndrome, dependence."
+  ],
+  "drug_interactions": [
+    "Benzodiazepines, alcohol, and other CNS depressants (profound sedation/respiratory depression); SSRIs, SNRIs, TCAs, MAOIs, triptans, linezolid (seizures, serotonin syndrome); CYP2D6/CYP3A4 inhibitors and inducers (altered levels); carbamazepine (reduced effect); warfarin (monitor INR)."
+  ],
+  "dosage_and_administration": [
+    "Adults (immediate-release): typically 50-100 mg every 4-6 hours as needed; titrate slowly; do not exceed 400 mg per day (300 mg/day in patients over 75). Extended-release: 100 mg once daily, titrated, not to exceed 300 mg/day. Use the lowest effective dose for the shortest time; exactly as prescribed only. Renal/hepatic impairment require dose reduction."
+  ],
+  "overdosage": [
+    "Overdose can cause respiratory depression, somnolence progressing to stupor or coma, miosis, seizures, cardiac arrest, and death; serotonin toxicity is possible. Naloxone may partially reverse respiratory depression (and can precipitate seizures). Call emergency services / Poison Control (1-800-222-1222) immediately - this is a medical emergency."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "drug_name": "ACETAMINOPHEN",
+  "generic_name": [
+    "ACETAMINOPHEN"
+  ],
+  "active_ingredients": [
+    "Acetaminophen 325 mg (regular strength) or 500 mg (extra strength) per tablet/caplet"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves minor aches and pains due to headache, toothache, muscular aches, backache, the common cold, premenstrual and menstrual cramps, and minor pain of arthritis. Temporarily reduces fever. Often used when an NSAID such as ibuprofen, naproxen, or aspirin should be avoided (for example in pregnancy, ulcer disease, kidney disease, or for children at risk of Reye's syndrome)."
+  ],
+  "contraindications": [
+    "Do not use if you have ever had an allergic reaction to acetaminophen or any of the inactive ingredients."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Liver warning: this product contains acetaminophen. Severe liver damage may occur if you take more than the maximum daily amount in 24 hours, take with other drugs containing acetaminophen (many cold, flu, and prescription pain products contain it), or have 3 or more alcoholic drinks every day. Ask a doctor before use if you have liver disease. Stop use and ask a doctor if pain or fever lasts more than 3 days, or new symptoms occur. Acetaminophen does not reduce inflammation."
+  ],
+  "adverse_reactions": [
+    "Generally well tolerated at recommended doses. Rarely: rash or hypersensitivity reactions. Overdose causes liver injury."
+  ],
+  "drug_interactions": [
+    "Ibuprofen and acetaminophen work by different mechanisms (NSAID vs. central analgesic/antipyretic) and may be taken together or alternated for better pain control, as long as each drug's own maximum daily dose is respected; combination acetaminophen + ibuprofen products exist. Watch for 'hidden' acetaminophen in cold/flu and prescription pain medicines so the daily total is not exceeded.",
+    "Warfarin: regular use of acetaminophen, especially higher doses for several days, can increase the anticoagulant effect of warfarin (raised INR / bleeding risk); monitor more closely.",
+    "Alcohol: chronic or heavy alcohol use increases the risk of acetaminophen-related liver injury; limit the dose and talk to a clinician."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: take 650 mg to 1000 mg every 4 to 6 hours while symptoms last; do not take more than 3000 mg in 24 hours unless directed by a doctor (some product labels permit up to 4000 mg in 24 hours under medical supervision). Do not use for more than 10 days for pain or 3 days for fever unless directed by a doctor.",
+    "Children under 12 years: use a pediatric acetaminophen product and dose by weight as directed on that product or by a doctor; do not use the adult product."
+  ],
+  "overdosage": [
+    "Acetaminophen overdose can cause serious, potentially fatal liver damage (hepatotoxicity); early symptoms (nausea, vomiting, loss of appetite) may be mild or absent before liver injury appears. In case of overdose, get medical help or contact a Poison Control Center (1-800-222-1222) right away even if there are no symptoms; the antidote N-acetylcysteine is most effective when given early."
+  ]
+}

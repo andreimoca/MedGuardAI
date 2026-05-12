@@ -1,0 +1,31 @@
+{
+  "drug_name": "SIMETHICONE",
+  "generic_name": [
+    "SIMETHICONE"
+  ],
+  "active_ingredients": [
+    "Simethicone 40 mg to 180 mg per chewable tablet, softgel, or per dose of drops/liquid (e.g., Gas-X, Mylicon infant drops)"
+  ],
+  "indications_and_usage": [
+    "Uses: relieves the bloating, pressure, fullness, and discomfort commonly referred to as gas. It is an anti-foaming agent that helps small gas bubbles in the stomach and intestines join into larger ones that are easier to pass. It is not absorbed and works only in the GI tract."
+  ],
+  "contraindications": [
+    "No known contraindications at recommended doses."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Considered very safe; if your symptoms continue or get worse, or you have severe or persistent abdominal pain, see a doctor - gas pain can occasionally mimic more serious conditions."
+  ],
+  "adverse_reactions": [
+    "Essentially none; rarely mild belching or loose stool."
+  ],
+  "drug_interactions": [
+    "No clinically significant drug interactions; simethicone is not absorbed."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: 40-250 mg as needed after meals and at bedtime, not exceeding about 500 mg in 24 hours (follow the specific product label); chewable tablets should be chewed thoroughly. Infant drops: dose by the dropper as directed on the package or by a doctor, usually with feedings. Children under 12: use the children's/infant product as directed."
+  ],
+  "overdosage": [
+    "Not toxic; no treatment needed beyond stopping the product. Contact Poison Control (1-800-222-1222) only if a very large amount is swallowed by a small child for reassurance."
+  ]
+}

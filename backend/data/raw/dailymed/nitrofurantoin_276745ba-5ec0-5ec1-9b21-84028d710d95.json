@@ -1,0 +1,33 @@
+{
+  "drug_name": "NITROFURANTOIN",
+  "generic_name": [
+    "NITROFURANTOIN",
+    "NITROFURANTOIN MONOHYDRATE",
+    "NITROFURANTOIN MACROCRYSTALS"
+  ],
+  "active_ingredients": [
+    "Nitrofurantoin macrocrystals 25 mg, 50 mg, 100 mg capsules; nitrofurantoin monohydrate/macrocrystals 100 mg capsules (e.g., Macrobid); 25 mg/5 mL oral suspension - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment and prophylaxis of uncomplicated urinary tract infections (acute cystitis) caused by susceptible strains of Escherichia coli, Enterococcus, Staphylococcus saprophyticus, and some other urinary pathogens. It is concentrated in the urine and is not effective for upper urinary tract infections (pyelonephritis) or systemic infections. Prescription only."
+  ],
+  "contraindications": [
+    "Significant renal impairment (CrCl <60 mL/min has been the historical threshold; many guidelines now accept down to CrCl 30 mL/min for short-course cystitis); pregnant women at term (38-42 weeks), during labor and delivery, and in neonates under 1 month (risk of hemolytic anemia); known cholestatic jaundice/hepatic dysfunction with prior nitrofurantoin; G6PD deficiency (hemolytic anemia); known hypersensitivity to nitrofurantoin."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Acute, subacute, and chronic pulmonary reactions (interstitial pneumonitis, pulmonary fibrosis) - can be fatal; report new cough, dyspnea, fever. Hepatotoxicity, including acute and chronic active hepatitis. Peripheral neuropathy, especially with prolonged therapy, renal impairment, anemia, diabetes, electrolyte imbalance, B-vitamin deficiency, or debilitating disease. Hemolytic anemia in G6PD deficiency. Optic neuritis, hemolysis in newborns. Brown discoloration of urine is harmless. Use only for uncomplicated UTI - it is not for pyelonephritis or systemic infections."
+  ],
+  "adverse_reactions": [
+    "Nausea, vomiting, diarrhea, headache, brown-yellow urine discoloration; rare but serious - pulmonary toxicity, hepatotoxicity, peripheral neuropathy, hemolytic anemia (G6PD), serious skin reactions, optic neuritis."
+  ],
+  "drug_interactions": [
+    "Magnesium-containing antacids reduce absorption (avoid); probenecid and sulfinpyrazone reduce urinary excretion (may decrease efficacy and increase toxicity); fluoroquinolones (quinolones) and norfloxacin may be antagonized in urinary infection; bacterial typhoid vaccine and BCG may be inactivated."
+  ],
+  "dosage_and_administration": [
+    "Acute cystitis (adults and children >=12): Macrobid 100 mg every 12 hours for 5 days, with food; or macrocrystals 50-100 mg every 6 hours for 7 days. Long-term prophylaxis: 50-100 mg at bedtime (under specialist guidance). Children 1 month and older: 5-7 mg/kg/day in 4 divided doses for acute infection. Take with food or milk to enhance absorption and reduce GI side effects. Maintain hydration. Do not use for pyelonephritis or systemic infection."
+  ],
+  "overdosage": [
+    "Overdose may cause vomiting; supportive care, induced emesis is generally not advised. Hemodialysis may remove the drug. Contact Poison Control (1-800-222-1222)."
+  ]
+}

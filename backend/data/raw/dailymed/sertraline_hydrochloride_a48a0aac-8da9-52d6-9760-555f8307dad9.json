@@ -1,0 +1,36 @@
+{
+  "drug_name": "SERTRALINE HYDROCHLORIDE",
+  "generic_name": [
+    "SERTRALINE",
+    "SERTRALINE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Sertraline hydrochloride 25 mg, 50 mg, 100 mg tablets; oral solution (e.g., Zoloft) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated in adults for major depressive disorder, obsessive-compulsive disorder (also in children >=6 years), panic disorder, posttraumatic stress disorder, social anxiety disorder, and premenstrual dysphoric disorder. It is a selective serotonin reuptake inhibitor (SSRI). It is a prescription medicine; treatment, dose changes, and stopping should be supervised by a clinician - do not start or stop it on your own."
+  ],
+  "contraindications": [
+    "Concomitant use of MAO inhibitors (or within 14 days of stopping an MAOI - and do not start an MAOI within 14 days of stopping sertraline) because of the risk of serotonin syndrome; concomitant use with pimozide (QT prolongation); the oral solution (which contains alcohol) with disulfiram; known hypersensitivity to sertraline."
+  ],
+  "boxed_warning": [
+    "Antidepressants increased the risk of suicidal thoughts and behavior in children, adolescents, and young adults (under 25) in short-term studies. Monitor all patients started on therapy for clinical worsening, suicidality, or unusual changes in behavior, especially during the first few months and after dose changes. Sertraline is not approved for use in pediatric patients except for obsessive-compulsive disorder."
+  ],
+  "warnings_and_cautions": [
+    "Serotonin syndrome (especially with other serotonergic drugs - other antidepressants, triptans, tramadol, linezolid, St. John's wort); increased bleeding risk, especially with NSAIDs, aspirin, or anticoagulants; activation of mania/hypomania in bipolar disorder (screen first); discontinuation syndrome if stopped abruptly (taper); seizures; angle-closure glaucoma; hyponatremia (especially in the elderly or with diuretics - SIADH); QT prolongation at high doses; sexual dysfunction; effects on the newborn if used in late pregnancy (poor adaptation, rarely PPHN). It can take 4-6 weeks for full antidepressant effect."
+  ],
+  "adverse_reactions": [
+    "Nausea, diarrhea, insomnia or somnolence, dry mouth, tremor, dizziness, fatigue, sweating, decreased libido, delayed ejaculation/anorgasmia, decreased appetite; less commonly bruising/bleeding, hyponatremia, agitation."
+  ],
+  "drug_interactions": [
+    "MAO inhibitors (contraindicated - serotonin syndrome); pimozide (contraindicated); other serotonergic drugs - other SSRIs/SNRIs (fluoxetine, escitalopram, venlafaxine, duloxetine), triptans such as sumatriptan, tramadol, fentanyl, lithium, St. John's wort, linezolid, methylene blue (serotonin syndrome).",
+    "Bleeding risk - NSAIDs (ibuprofen, naproxen, aspirin, ketorolac, meloxicam, diclofenac), low-dose aspirin, warfarin, apixaban, and clopidogrel: sertraline impairs platelet function and combined with these markedly raises the risk of GI and other bleeding. Use the lowest effective NSAID dose, consider a PPI such as pantoprazole or famotidine for gastroprotection if needed, and monitor warfarin INR closely after starting or stopping sertraline.",
+    "CYP2D6 substrates - some tricyclic antidepressants, certain antiarrhythmics, metoprolol, and tamoxifen (sertraline is a modest CYP2D6 inhibitor and can raise their levels or reduce tamoxifen's active metabolite); CYP3A4 considerations apply; drugs that prolong the QT interval; disulfiram with the alcohol-containing oral solution; alcohol (additive sedation)."
+  ],
+  "dosage_and_administration": [
+    "Adults: depression and OCD - start 50 mg once daily, titrate as needed up to 200 mg/day; panic disorder, PTSD, social anxiety - start 25 mg once daily for a week, then 50 mg/day, titrate up to 200 mg/day; PMDD - 50 mg/day either continuously or only during the luteal phase. Children 6-12 with OCD: start 25 mg/day; adolescents 13-17: start 50 mg/day. Take once daily, morning or evening, with or without food, at about the same time. Reduce gradually when discontinuing. Lower doses and slower titration in hepatic impairment and the elderly."
+  ],
+  "overdosage": [
+    "Overdose (especially with alcohol or other drugs) can cause serotonin syndrome, somnolence, vomiting, tachycardia, tremor, agitation, dizziness, and, less often, seizures, QT prolongation, and (rarely) fatal outcomes. There is no specific antidote; supportive care, activated charcoal if early. Seek emergency care and call Poison Control (1-800-222-1222)."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "drug_name": "CALAMINE LOTION",
+  "generic_name": [
+    "CALAMINE",
+    "ZINC OXIDE"
+  ],
+  "active_ingredients": [
+    "Calamine 8% (a mixture of zinc oxide with a small amount of ferric oxide) - sometimes combined with pramoxine 1% or diphenhydramine for added itch relief"
+  ],
+  "indications_and_usage": [
+    "Uses: dries the oozing and weeping of poison ivy, poison oak, and poison sumac; relieves itching and protects irritated skin from rashes due to insect bites, minor skin irritations, and minor cuts and scrapes; also soothes the rash of chickenpox. It is a skin protectant and mild astringent (drying) agent."
+  ],
+  "contraindications": [
+    "Do not use on large areas of broken skin; do not use if allergic to any ingredient; if combined with pramoxine or diphenhydramine, do not also use an oral product containing the same drug at the same time."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only; avoid the eyes. Shake well before use. Stop use and ask a doctor if the condition worsens or symptoms last more than 7 days or clear up and come back within a few days, or if a rash, redness, swelling, or other allergic reaction develops. For deep or puncture wounds, animal bites, or serious burns, see a doctor. Do not apply to blistered, raw, or oozing areas if it stings excessively."
+  ],
+  "adverse_reactions": [
+    "Drying or tightness of the skin; rarely irritation or allergic reaction (especially if it contains diphenhydramine, which can sensitize the skin)."
+  ],
+  "drug_interactions": [
+    "Plain calamine - none. If the product contains diphenhydramine, avoid using oral diphenhydramine at the same time (additive antihistamine effect, especially in children with chickenpox)."
+  ],
+  "dosage_and_administration": [
+    "Adults and children: shake the bottle, apply freely to the affected area with a cotton ball or pad as needed, 3 to 4 times a day; let it dry. Do not bandage. For poison ivy/oak/sumac, also wash the skin and clothing to remove the plant oil. Reapply after washing the area."
+  ],
+  "overdosage": [
+    "Not toxic by the topical route; if swallowed, the zinc oxide may cause mild GI upset. Contact Poison Control (1-800-222-1222) for large ingestions."
+  ]
+}

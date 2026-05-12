@@ -1,0 +1,32 @@
+{
+  "drug_name": "BENZOCAINE AND MENTHOL THROAT LOZENGE",
+  "generic_name": [
+    "BENZOCAINE",
+    "MENTHOL"
+  ],
+  "active_ingredients": [
+    "Benzocaine 6-15 mg and menthol 3.6-10 mg per lozenge (sore-throat lozenges, e.g., Cepacol; some products use only menthol or phenol)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves occasional minor irritation, pain, sore mouth, and sore throat, and suppresses cough due to a cold or inhaled irritants; benzocaine numbs the throat and menthol provides a cooling, soothing sensation and mild cough relief. For a sore throat associated with a fever, rash, headache, nausea, or vomiting, see a doctor (could be a more serious infection such as strep)."
+  ],
+  "contraindications": [
+    "Do not use if allergic to benzocaine or other 'caine' anesthetics or to PABA; do not use in children under the age on the label (often under 5 years) because of the choking hazard and methemoglobinemia risk."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Methemoglobinemia warning: benzocaine has rarely caused this serious blood condition (pale, gray, or blue skin/lips/nails; shortness of breath; headache; fatigue) - seek immediate medical attention if these signs appear; greatest risk in children under 2 and with frequent dosing. Sore-throat warning: if sore throat is severe, persists for more than 2 days, or is accompanied by high fever, headache, nausea, vomiting, or rash, see a doctor promptly. Stop use if irritation, pain, or redness persists or worsens, or if swelling, rash, or fever develops."
+  ],
+  "adverse_reactions": [
+    "Local numbness, stinging, or taste change; rarely allergic reactions or methemoglobinemia."
+  ],
+  "drug_interactions": [
+    "No clinically important interactions at recommended doses."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 5 years and over (follow the specific product): allow 1 lozenge to dissolve slowly in the mouth; may repeat every 2 hours as needed, not to exceed the number of lozenges on the label in 24 hours. Children under 5 years: do not use. Do not chew; supervise older children."
+  ],
+  "overdosage": [
+    "Swallowing many lozenges can cause benzocaine-related methemoglobinemia and local throat numbness (which can impair swallowing). Seek medical help; contact Poison Control (1-800-222-1222)."
+  ]
+}

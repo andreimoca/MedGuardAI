@@ -1,0 +1,31 @@
+{
+  "drug_name": "FINASTERIDE",
+  "generic_name": [
+    "FINASTERIDE"
+  ],
+  "active_ingredients": [
+    "Finasteride 1 mg tablet (for hair loss, e.g., Propecia); 5 mg tablet (for benign prostatic hyperplasia, e.g., Proscar) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Finasteride 1 mg is indicated for the treatment of male-pattern hair loss (androgenetic alopecia) in men only - it increases hair count and improves appearance of hair on the vertex and the anterior mid-scalp. Finasteride 5 mg is indicated for the treatment of symptomatic benign prostatic hyperplasia (BPH) to improve symptoms, reduce the risk of acute urinary retention, and reduce the need for prostate surgery. It is a 5-alpha-reductase inhibitor (it lowers DHT). It is a prescription medicine, so a doctor must evaluate you first; it is not appropriate to take from someone else. Like minoxidil, it does not permanently cure baldness - benefit is maintained only while taking it, and reverses within about 12 months of stopping. It is not approved for use in women."
+  ],
+  "contraindications": [
+    "Pregnancy and women who are or may become pregnant (a male fetus exposed to a 5-alpha-reductase inhibitor can have abnormalities of the external genitalia); hypersensitivity to finasteride."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Exposure of women - pregnant women or women who could become pregnant should not handle crushed or broken finasteride tablets; intact tablets are coated to prevent skin contact. Effects on PSA - finasteride lowers serum PSA by roughly 50%; account for this when screening for prostate cancer. There is a possible increased risk of high-grade prostate cancer. Before treating BPH, rule out other urological conditions and prostate cancer. Sexual adverse effects - decreased libido, erectile dysfunction, and ejaculation disorders can occur and, although uncommon, have in some men persisted after stopping the drug ('post-finasteride syndrome'); depression and suicidal thoughts have been reported. Male breast cancer has been reported rarely. Discuss benefits and risks with your doctor."
+  ],
+  "adverse_reactions": [
+    "Decreased libido, erectile dysfunction, ejaculation disorder, decreased ejaculate volume, breast tenderness or enlargement, testicular pain, depression, hypersensitivity reactions (rash, itching, hives, swelling of the lips/face); high-grade prostate cancer signal."
+  ],
+  "drug_interactions": [
+    "No clinically important drug interactions identified; minimal effect on the cytochrome P450 system. Note its effect on lowering PSA when interpreting lab results."
+  ],
+  "dosage_and_administration": [
+    "Male-pattern hair loss: one 1 mg tablet once daily, with or without food; daily use for at least 3 months is usually needed before benefit is seen, and continued use is required to keep it - if treatment is stopped, gains are lost within about 12 months. BPH: one 5 mg tablet once daily, alone or with an alpha-blocker. Not for use in women or children. Take only as prescribed by your doctor."
+  ],
+  "overdosage": [
+    "Single doses up to 400 mg and multiple doses up to 80 mg/day have been tolerated without specific adverse effects; no specific antidote, supportive care. Contact Poison Control (1-800-222-1222) for large ingestions, especially by children or pregnant women."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "drug_name": "LEVOCETIRIZINE DIHYDROCHLORIDE",
+  "generic_name": [
+    "LEVOCETIRIZINE",
+    "LEVOCETIRIZINE DIHYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Levocetirizine dihydrochloride 5 mg tablet; 2.5 mg/5 mL oral solution (e.g., Xyzal)"
+  ],
+  "indications_and_usage": [
+    "Uses: relieves the symptoms of hay fever (allergic rhinitis) such as runny nose, sneezing, and itchy/watery eyes, and the itching/hives of chronic idiopathic urticaria. It is the active enantiomer of cetirizine - a once-daily second-generation antihistamine, usually taken in the evening."
+  ],
+  "contraindications": [
+    "Do not use if you have ever had an allergic reaction to levocetirizine, cetirizine, or hydroxyzine. Do not use in patients with end-stage renal disease (creatinine clearance < 10 mL/min) or in children under 6 with impaired renal function."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "May cause drowsiness (similar to cetirizine) and impair driving/operating machinery - avoid alcohol and other sedatives. Reduce the dose in renal impairment (it is not effectively dialyzed). Stop use and seek care if a hypersensitivity reaction occurs. Urinary retention has been reported."
+  ],
+  "adverse_reactions": [
+    "Somnolence, fatigue, dry mouth, nasopharyngitis; in children - pyrexia, cough, somnolence."
+  ],
+  "drug_interactions": [
+    "Alcohol and CNS depressants (additive sedation); ritonavir (increased exposure); theophylline (minor). Avoid combining with cetirizine (same drug)."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: 5 mg once daily in the evening; some patients respond to 2.5 mg. Children 6-11 years: 2.5 mg once daily in the evening. Renal impairment: 2.5 mg once daily, or 2.5 mg 2-3 times a week depending on severity; not for end-stage renal disease. Children under 6 with renal impairment: do not use."
+  ],
+  "overdosage": [
+    "Overdose may cause drowsiness in adults and agitation/restlessness followed by drowsiness in children; supportive care, not removed by dialysis. Contact Poison Control (1-800-222-1222)."
+  ]
+}

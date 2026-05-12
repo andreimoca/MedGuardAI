@@ -1,0 +1,31 @@
+{
+  "drug_name": "PREDNISONE",
+  "generic_name": [
+    "PREDNISONE"
+  ],
+  "active_ingredients": [
+    "Prednisone 1 mg, 2.5 mg, 5 mg, 10 mg, 20 mg, 50 mg tablets; 1 mg/mL and 5 mg/5 mL oral solutions; 5 mg/5 mL oral concentrate (prednisone is converted to active prednisolone in the liver) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated as a systemic corticosteroid for a very wide range of conditions including allergic and immune disorders (severe allergic reactions, asthma exacerbations, atopic and contact dermatitis), rheumatologic disease (rheumatoid arthritis, lupus flares, polymyalgia rheumatica, giant cell arteritis, gout), inflammatory bowel disease flares, autoimmune cytopenias, ophthalmic and dermatologic inflammatory conditions, hematologic and oncologic indications, and as part of organ-transplant regimens. Prescription only - the right dose and length of course are individualized to the condition; do not start, stop, or change the dose without your prescriber."
+  ],
+  "contraindications": [
+    "Systemic fungal infections (except for some specific situations under specialist care); known hypersensitivity to prednisone or any component; concurrent administration of live or live-attenuated vaccines at immunosuppressive doses."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Many serious effects, especially with high doses or long courses: adrenal suppression (do not stop abruptly after more than 2-3 weeks - taper); infection risk (mask or worsen infections, reactivation of latent infections such as tuberculosis, hepatitis B, herpes zoster, strongyloides); hyperglycemia and unmasking/worsening diabetes; hypertension and fluid retention; osteoporosis and avascular necrosis with long-term use; cataracts and glaucoma; mood changes including euphoria, insomnia, irritability, mania, depression, psychosis; peptic ulcer (especially with NSAIDs); proximal myopathy; growth suppression in children; cardiovascular effects; thromboembolism risk; do not give live vaccines at immunosuppressive doses; cushingoid features with prolonged use. Use the lowest effective dose for the shortest time."
+  ],
+  "adverse_reactions": [
+    "Increased appetite, weight gain, fluid retention, insomnia, mood changes, raised blood sugar/blood pressure, GI upset/ulcer, easy bruising, acne, hyperglycemia, infection, cushingoid appearance, muscle weakness, osteoporosis, cataracts; with abrupt withdrawal - adrenal crisis."
+  ],
+  "drug_interactions": [
+    "NSAIDs (GI bleeding); anticoagulants (variable INR effect); strong CYP3A4 inhibitors (raise corticosteroid levels) and inducers (rifampin, phenytoin, phenobarbital, carbamazepine - lower levels); diabetes medicines (need adjustment for hyperglycemia); diuretics and amphotericin (hypokalemia); live vaccines (avoid at immunosuppressive doses); aspirin (salicylate levels can fall as steroid is tapered, causing toxicity)."
+  ],
+  "dosage_and_administration": [
+    "Highly individualized. Common short 'burst' regimens for asthma or acute inflammation: 40-60 mg once daily for 5-10 days with no taper if course <=10 days. Other regimens range from 5 mg/day for chronic maintenance to >60 mg/day for severe disease, with gradual tapers after extended use. Take with food in the morning to mimic the natural cortisol rhythm and reduce insomnia. Carry a steroid-use card or alert if on long-term therapy; tell every healthcare provider before procedures (a 'stress dose' may be needed). Do not stop abruptly after more than 2-3 weeks of use."
+  ],
+  "overdosage": [
+    "Acute overdose of a single dose is unlikely to cause serious harm; chronic overdose causes cushingoid features and increased risk of all the long-term effects. Treat by tapering and supportive care; abrupt withdrawal can precipitate adrenal crisis (give stress-dose hydrocortisone). Contact Poison Control (1-800-222-1222)."
+  ]
+}

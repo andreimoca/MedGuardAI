@@ -1,0 +1,32 @@
+{
+  "drug_name": "SILDENAFIL CITRATE",
+  "generic_name": [
+    "SILDENAFIL",
+    "SILDENAFIL CITRATE"
+  ],
+  "active_ingredients": [
+    "Sildenafil citrate 25 mg, 50 mg, 100 mg tablets (for erectile dysfunction, e.g., Viagra); 20 mg tablets and oral suspension (for pulmonary arterial hypertension, e.g., Revatio) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of erectile dysfunction (ED) in adult men, and (as Revatio) for pulmonary arterial hypertension to improve exercise ability and delay clinical worsening. It is a phosphodiesterase type 5 (PDE5) inhibitor. It is a prescription medicine - it requires a clinician's evaluation, and it is not safe to take from someone else's prescription or with certain heart medications. It does not protect against sexually transmitted infections, does not increase sexual desire, and does not work without sexual stimulation."
+  ],
+  "contraindications": [
+    "Concomitant use of organic nitrates in any form (regular or as-needed) - severe, potentially fatal drop in blood pressure; concomitant use with riociguat (a guanylate cyclase stimulator); known hypersensitivity to sildenafil. Generally avoid in significant hypotension, recent stroke or heart attack, and severe hepatic impairment without specialist guidance."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Cardiovascular risk - sexual activity itself stresses the heart; men with cardiovascular disease, especially active angina, recent myocardial infarction, severe heart failure, uncontrolled blood pressure, or significant aortic stenosis/HCM should be evaluated before use. Prolonged or painful erection (priapism) lasting longer than 4 hours is a medical emergency that can cause permanent damage - seek immediate care. Sudden vision loss (non-arteritic anterior ischemic optic neuropathy, NAION) and sudden hearing loss have been reported - discontinue and seek medical attention. Use with alpha-blockers, antihypertensives, alcohol, or recreational 'poppers' (amyl/butyl nitrite) can cause severe hypotension - the latter is the same as a nitrate and can be fatal. Adjust dose with strong CYP3A4 inhibitors and in severe renal/hepatic impairment."
+  ],
+  "adverse_reactions": [
+    "Headache, flushing, dyspepsia, nasal congestion, visual changes (color tinge, brightness), back pain, myalgia, dizziness, rash; rarely priapism, NAION, sudden hearing loss, severe hypotension, hypersensitivity reactions."
+  ],
+  "drug_interactions": [
+    "Nitrates and nitrate donors - contraindicated; riociguat - contraindicated; alpha-blockers (additive hypotension - separate dosing or start at the lowest sildenafil dose, do not exceed 25 mg in some situations); antihypertensives (mild additive); strong CYP3A4 inhibitors - ritonavir, ketoconazole, itraconazole, clarithromycin (use no more than 25 mg in 48 hours or per the prescriber) and inducers - rifampin, carbamazepine, St. John's wort (may reduce effect); grapefruit juice raises levels; alcohol (additive hypotension)."
+  ],
+  "dosage_and_administration": [
+    "Erectile dysfunction (adults): typically 50 mg taken about 1 hour before sexual activity (may be taken 30 minutes to 4 hours before); the dose may be adjusted by your prescriber to 25 mg or 100 mg based on response and tolerability; maximum 1 dose per day; a high-fat meal may delay onset. Start at 25 mg if you are over 65, have hepatic impairment, severe renal impairment, or take a strong CYP3A4 inhibitor or an alpha-blocker. Use only as prescribed and only by the person it was prescribed to. Pulmonary hypertension: 5 or 20 mg three times daily as prescribed (do not use ED-dose tablets for PAH)."
+  ],
+  "overdosage": [
+    "Single doses up to 800 mg have caused exaggerated typical adverse effects and significant hypotension; no specific antidote, supportive care - dialysis is not effective. Seek emergency care for severe hypotension, priapism, or visual/hearing changes; call Poison Control (1-800-222-1222)."
+  ]
+}

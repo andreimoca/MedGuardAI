@@ -28,6 +28,7 @@ import time
 from typing import Any
 
 sys.path.insert(0, os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "src")))
+sys.path.insert(0, os.path.normpath(os.path.join(os.path.dirname(__file__), "..")))
 
 from dotenv import load_dotenv
 

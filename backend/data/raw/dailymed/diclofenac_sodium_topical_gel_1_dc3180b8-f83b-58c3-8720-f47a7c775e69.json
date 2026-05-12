@@ -1,0 +1,32 @@
+{
+  "drug_name": "DICLOFENAC SODIUM TOPICAL GEL 1%",
+  "generic_name": [
+    "DICLOFENAC",
+    "DICLOFENAC SODIUM"
+  ],
+  "active_ingredients": [
+    "Diclofenac sodium 1% topical gel (e.g., Voltaren Arthritis Pain gel)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves arthritis pain in joints amenable to topical treatment, such as the hands, wrists, elbows, knees, ankles, and feet (osteoarthritis). It is a topical NSAID, so most of the drug stays in the joint area with less reaching the rest of the body than oral NSAIDs."
+  ],
+  "contraindications": [
+    "Do not use if you have ever had an allergic reaction to diclofenac, aspirin, or any other NSAID. Do not use right before or after heart bypass surgery."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Even applied to the skin, NSAIDs can cause stomach bleeding, cardiovascular events, kidney injury, and raised blood pressure - the same NSAID warnings apply, though risk is lower than with pills. Do not apply to open wounds, infected or irritated skin, or with heat or occlusive dressings. Wash hands after use; avoid eyes. Ask a doctor before use if you have heart disease, high blood pressure, kidney disease, asthma, or are pregnant (avoid in the last trimester). Do not use on more than 2 body areas at the same time, and not for more than 21 days for an area unless a doctor says so."
+  ],
+  "adverse_reactions": [
+    "Application-site dryness, redness, itching, or rash; rarely systemic NSAID effects (GI upset, edema)."
+  ],
+  "drug_interactions": [
+    "Avoid using together with oral NSAIDs (including ibuprofen, naproxen, aspirin) - additive GI, kidney, and cardiovascular risk. Same anticoagulant/ACE-inhibitor cautions as oral NSAIDs, to a lesser degree."
+  ],
+  "dosage_and_administration": [
+    "Adults 18 years and over: use the dosing card provided. Lower extremities (knee, ankle, foot): apply 4 g (about the 4 g line) to the affected area 4 times a day, no more than 16 g per day per joint. Upper extremities (hand, wrist, elbow): apply 2 g 4 times a day, no more than 8 g per day per joint. Total over all areas should not exceed 32 g per day. Gently massage into the skin; wash hands afterward (unless treating the hands - then wait at least 1 hour before washing). Children under 18: ask a doctor."
+  ],
+  "overdosage": [
+    "Excessive topical use or accidental ingestion can produce oral-NSAID-type toxicity (GI upset, drowsiness, kidney effects). Contact Poison Control (1-800-222-1222)."
+  ]
+}

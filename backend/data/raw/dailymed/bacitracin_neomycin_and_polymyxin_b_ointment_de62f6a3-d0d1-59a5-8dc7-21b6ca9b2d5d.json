@@ -1,0 +1,33 @@
+{
+  "drug_name": "BACITRACIN, NEOMYCIN, AND POLYMYXIN B OINTMENT",
+  "generic_name": [
+    "BACITRACIN ZINC",
+    "NEOMYCIN SULFATE",
+    "POLYMYXIN B SULFATE"
+  ],
+  "active_ingredients": [
+    "Per gram: Bacitracin zinc 400-500 units, Neomycin sulfate (equiv. 3.5 mg neomycin base), Polymyxin B sulfate 5000-10,000 units - 'triple antibiotic' first-aid ointment (e.g., Neosporin); 'double antibiotic' versions omit neomycin"
+  ],
+  "indications_and_usage": [
+    "Uses: first aid to help prevent infection in minor cuts, scrapes, and burns. It is a topical antibiotic ointment; it does not treat established infections - those need a doctor."
+  ],
+  "contraindications": [
+    "Do not use if you are allergic to any of the ingredients (neomycin in particular is a common cause of allergic contact dermatitis); do not use in or near the eyes; do not use over large areas of the body or on deep or puncture wounds, animal bites, or serious burns."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only. Stop use and ask a doctor if the condition persists or gets worse, a rash or other allergic reaction develops, or you need to use it for more than 1 week. Neomycin can rarely be absorbed from large raw areas and (very rarely) cause kidney or hearing toxicity, so do not apply to extensive wounds. Clean the wound first. If signs of infection appear (increasing redness, warmth, swelling, pus, red streaks, fever), see a doctor."
+  ],
+  "adverse_reactions": [
+    "Allergic contact dermatitis (itching, redness, rash - especially from neomycin), local irritation; rarely systemic toxicity from neomycin if applied to large denuded areas."
+  ],
+  "drug_interactions": [
+    "Negligible with normal topical use; on large raw areas, absorbed neomycin could add to the toxicity of other aminoglycosides or nephrotoxic drugs."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 2 years and over: clean the affected area, then apply a small amount (about the size of the tip of a finger) 1 to 3 times daily; the wound may be covered with a sterile bandage. Do not use for more than 1 week unless directed by a doctor. Children under 2: ask a doctor."
+  ],
+  "overdosage": [
+    "Overdose by the topical route is unlikely; ingestion may cause GI upset. Contact Poison Control (1-800-222-1222)."
+  ]
+}

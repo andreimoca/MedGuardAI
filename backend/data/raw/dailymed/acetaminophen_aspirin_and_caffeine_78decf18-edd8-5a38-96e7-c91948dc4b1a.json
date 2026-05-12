@@ -1,0 +1,33 @@
+{
+  "drug_name": "ACETAMINOPHEN, ASPIRIN, AND CAFFEINE",
+  "generic_name": [
+    "ACETAMINOPHEN",
+    "ASPIRIN",
+    "CAFFEINE"
+  ],
+  "active_ingredients": [
+    "Per caplet: Acetaminophen 250 mg, Aspirin 250 mg, Caffeine 65 mg (e.g., Excedrin / Excedrin Migraine)"
+  ],
+  "indications_and_usage": [
+    "Uses: treats migraine headaches and relieves their associated symptoms; also relieves other minor aches and pains such as tension headache, muscular aches, toothache, menstrual cramps, and minor arthritis pain. Caffeine is added because it enhances pain relief from acetaminophen and aspirin."
+  ],
+  "contraindications": [
+    "Do not use if you have ever had an allergic reaction to acetaminophen, aspirin, or any other NSAID; do not give to children or teenagers with a viral illness (Reye's syndrome risk); do not use with any other product containing acetaminophen or an NSAID."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Contains acetaminophen (liver-damage risk if too much is taken or combined with other acetaminophen products or heavy alcohol use) and aspirin (stomach-bleeding and Reye's-syndrome warnings). Limit caffeine from other sources (coffee, tea, energy drinks) to avoid nervousness, jitteriness, and fast heartbeat. Ask a doctor before use if you have asthma, ulcers, bleeding problems, kidney disease, or are in the last 3 months of pregnancy."
+  ],
+  "adverse_reactions": [
+    "Stomach upset, heartburn, nervousness or jitteriness from caffeine, sleeplessness, fast heartbeat; rarely GI bleeding or allergic reactions."
+  ],
+  "drug_interactions": [
+    "Warfarin/anticoagulants and other NSAIDs: increased bleeding risk (from the aspirin component). Other acetaminophen-containing products: risk of acetaminophen overdose. Stimulants/large amounts of dietary caffeine: additive nervous-system effects."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: take 2 caplets with water; do not take more than 2 caplets in 24 hours for migraine unless directed by a doctor (for non-migraine pain, follow the specific product label, typically 2 caplets every 6 hours, not more than 8 in 24 hours). Do not use for more than 10 days for pain unless directed by a doctor. Children under 12: do not use."
+  ],
+  "overdosage": [
+    "Overdose risk is dominated by the acetaminophen component (liver injury) and the aspirin component (salicylate toxicity). Seek emergency care or contact a Poison Control Center (1-800-222-1222) right away."
+  ]
+}

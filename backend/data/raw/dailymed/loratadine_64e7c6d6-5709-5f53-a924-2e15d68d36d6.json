@@ -1,0 +1,31 @@
+{
+  "drug_name": "LORATADINE",
+  "generic_name": [
+    "LORATADINE"
+  ],
+  "active_ingredients": [
+    "Loratadine 10 mg tablet, chewable tablet, or orally disintegrating tablet; 5 mg/5 mL syrup (e.g., Claritin)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves the symptoms of hay fever and other upper respiratory allergies - runny nose, sneezing, itchy/watery eyes, and itching of the nose or throat; also relieves the itching from hives (urticaria). It is a non-drowsy, long-acting (24-hour) second-generation antihistamine."
+  ],
+  "contraindications": [
+    "Do not use if you have ever had an allergic reaction to loratadine or desloratadine."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Ask a doctor before use if you have liver or kidney disease (the dose may need to be reduced, e.g., every other day). Among the second-generation antihistamines, loratadine is one of the least sedating - it causes drowsiness in fewer people than cetirizine - but it can still cause drowsiness in some; if so, do not drive or operate machinery. Stop use and ask a doctor if an allergic reaction to the medicine occurs or if hives last more than 6 weeks."
+  ],
+  "adverse_reactions": [
+    "Headache, drowsiness (uncommon), dry mouth, fatigue; in children - headache, nervousness."
+  ],
+  "drug_interactions": [
+    "Generally few; alcohol and other CNS depressants may add to any drowsiness. Unlike older antihistamines it does not have strong anticholinergic effects."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 6 years and over: 10 mg once daily; do not take more than 10 mg in 24 hours. Children 2 to under 6 years: 5 mg (1 teaspoonful of syrup) once daily. Children under 2 years: ask a doctor. Adults and children 6 and over with liver or kidney disease: ask a doctor (often 10 mg every other day)."
+  ],
+  "overdosage": [
+    "Overdose may cause headache, drowsiness, and rapid heartbeat; generally not dangerous. Contact Poison Control (1-800-222-1222)."
+  ]
+}

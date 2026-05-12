@@ -1,0 +1,34 @@
+{
+  "drug_name": "TRAZODONE HYDROCHLORIDE",
+  "generic_name": [
+    "TRAZODONE",
+    "TRAZODONE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Trazodone hydrochloride 50 mg, 100 mg, 150 mg, 300 mg tablets - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of major depressive disorder in adults. It is a serotonin antagonist and reuptake inhibitor (SARI); because it is strongly sedating, low doses (25-100 mg at bedtime) are also very commonly prescribed off-label as a sleep aid for insomnia, including in people who should avoid benzodiazepines or 'Z-drugs'. Prescription only - dosing should be guided by a clinician."
+  ],
+  "contraindications": [
+    "Concomitant use of MAO inhibitors (or within 14 days); known hypersensitivity to trazodone; initiation in a patient receiving linezolid or intravenous methylene blue."
+  ],
+  "boxed_warning": [
+    "Antidepressants increased the risk of suicidal thoughts and behavior in children, adolescents, and young adults; monitor for clinical worsening and suicidality, especially when starting or changing the dose. Trazodone is not approved for use in pediatric patients."
+  ],
+  "warnings_and_cautions": [
+    "Serotonin syndrome; orthostatic hypotension and syncope (rise slowly; a dose reduction may help); QT-interval prolongation/torsades de pointes (avoid in known QT prolongation, use caution with other QT-prolonging drugs); priapism - prolonged or painful erections are a medical emergency requiring immediate care and can cause permanent damage; activation of mania/hypomania (screen for bipolar disorder); increased bleeding risk with NSAIDs/aspirin/anticoagulants; CNS depression and impaired alertness (caution driving); abrupt discontinuation symptoms (taper); hyponatremia; cardiac arrhythmias - use caution after recent myocardial infarction."
+  ],
+  "adverse_reactions": [
+    "Drowsiness/sedation, dizziness, dry mouth, blurred vision, headache, nausea, fatigue, orthostatic hypotension, constipation; less commonly priapism, syncope, QT prolongation, hyponatremia."
+  ],
+  "drug_interactions": [
+    "MAO inhibitors (contraindicated); other serotonergic drugs - SSRIs/SNRIs, triptans, tramadol, lithium, St. John's wort (serotonin syndrome); strong CYP3A4 inhibitors (ritonavir, ketoconazole, itraconazole, clarithromycin) raise trazodone levels (use a lower dose) and inducers (carbamazepine) lower them; QT-prolonging drugs; other CNS depressants and alcohol (additive sedation); digoxin and phenytoin levels may rise; antihypertensives (additive hypotension)."
+  ],
+  "dosage_and_administration": [
+    "Depression (adults): start 150 mg/day in divided doses; may increase by 50 mg/day every 3-4 days up to 400 mg/day (outpatients) or 600 mg/day (inpatients) in divided doses; take after a meal to reduce dizziness/lightheadedness; reduce dose gradually to stop. Insomnia (common off-label use): 25-100 mg at bedtime as directed by the prescriber. Lower starting doses and slower titration in the elderly and in hepatic impairment."
+  ],
+  "overdosage": [
+    "Overdose can cause drowsiness, vomiting, priapism, respiratory arrest, seizures, QT prolongation and arrhythmias, and hypotension; coma can occur, and risk is greater with alcohol or other CNS depressants. No specific antidote; supportive care with cardiac monitoring. Seek emergency care and call Poison Control (1-800-222-1222)."
+  ]
+}

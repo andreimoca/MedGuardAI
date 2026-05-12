@@ -1,0 +1,31 @@
+{
+  "drug_name": "TOLNAFTATE",
+  "generic_name": [
+    "TOLNAFTATE"
+  ],
+  "active_ingredients": [
+    "Tolnaftate 1% topical cream, powder, spray, or solution (e.g., Tinactin)"
+  ],
+  "indications_and_usage": [
+    "Uses: cures most athlete's foot (tinea pedis) and ringworm (tinea corporis), and relieves the accompanying itching, burning, and cracking; the powder and spray powder also help prevent athlete's foot when used daily. It is a thiocarbamate antifungal effective against the dermatophytes that cause these infections (it is generally not used for jock itch caused by yeast)."
+  ],
+  "contraindications": [
+    "Do not use on nails or the scalp; do not use if irritated; do not use for jock itch unless the label specifies it; hypersensitivity to tolnaftate."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only; avoid the eyes. Stop use and ask a doctor if irritation occurs or there is no improvement within 4 weeks (athlete's foot) or 2 weeks (ringworm). For athlete's foot, pay special attention to spaces between the toes, wear well-fitting ventilated shoes, and change socks at least once daily. Do not use on children under 2 years unless directed by a doctor."
+  ],
+  "adverse_reactions": [
+    "Mild local irritation, stinging, itching; rarely contact sensitization."
+  ],
+  "drug_interactions": [
+    "No clinically significant systemic interactions."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 2 years and over: clean and dry the affected area, then apply a thin layer twice daily (morning and evening) for 4 weeks for athlete's foot or 2 weeks for ringworm; if using a powder/spray for prevention, apply once or twice daily to the feet and footwear. Children under 2: ask a doctor."
+  ],
+  "overdosage": [
+    "Not expected to be dangerous by the topical route; ingestion may cause minor GI upset. Contact Poison Control (1-800-222-1222)."
+  ]
+}

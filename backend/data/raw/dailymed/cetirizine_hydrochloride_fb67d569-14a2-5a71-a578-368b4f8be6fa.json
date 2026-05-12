@@ -1,0 +1,32 @@
+{
+  "drug_name": "CETIRIZINE HYDROCHLORIDE",
+  "generic_name": [
+    "CETIRIZINE",
+    "CETIRIZINE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Cetirizine hydrochloride 5 mg and 10 mg tablets, chewables, capsules; 1 mg/mL oral solution (e.g., Zyrtec)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves the symptoms of hay fever and other upper respiratory allergies - runny nose, sneezing, itchy/watery eyes, itching of the nose or throat; also relieves itching due to hives. It is a once-daily second-generation antihistamine that often works a bit faster than loratadine."
+  ],
+  "contraindications": [
+    "Do not use if you have ever had an allergic reaction to cetirizine, levocetirizine, or hydroxyzine."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "May cause drowsiness - cetirizine causes drowsiness in more people than loratadine or fexofenadine (roughly 1 in 10); be careful when driving or operating machinery, and avoid alcohol and sedatives. Ask a doctor before use if you have liver or kidney disease (a lower dose, e.g., 5 mg daily, may be appropriate). Stop use and ask a doctor if an allergic reaction occurs or hives last more than 6 weeks. Abrupt discontinuation after long-term use has rarely caused severe itching (withdrawal pruritus)."
+  ],
+  "adverse_reactions": [
+    "Drowsiness, fatigue, dry mouth, pharyngitis, dizziness; in children - headache, abdominal pain."
+  ],
+  "drug_interactions": [
+    "Alcohol and other CNS depressants (additive drowsiness); theophylline (slightly reduced cetirizine clearance at high theophylline doses); ritonavir (increased cetirizine levels)."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 6 years and over: 10 mg once daily, or 5 mg once daily if you have lesser symptoms; do not take more than 10 mg in 24 hours. Adults 65 years and over: 5 mg once daily. Children 2 to under 6 years: 2.5 mg (half a teaspoonful) once daily, may increase to 5 mg/day max. Children under 2 years: ask a doctor. Liver or kidney disease: 5 mg once daily, or ask a doctor."
+  ],
+  "overdosage": [
+    "Overdose causes marked drowsiness, restlessness or irritability (especially in children), and rapid heartbeat; supportive care. Contact Poison Control (1-800-222-1222)."
+  ]
+}

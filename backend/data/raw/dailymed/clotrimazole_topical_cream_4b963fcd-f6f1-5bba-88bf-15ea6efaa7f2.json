@@ -1,0 +1,31 @@
+{
+  "drug_name": "CLOTRIMAZOLE TOPICAL CREAM",
+  "generic_name": [
+    "CLOTRIMAZOLE"
+  ],
+  "active_ingredients": [
+    "Clotrimazole 1% topical cream, lotion, or solution (e.g., Lotrimin AF); also available as a 1% or 2% vaginal cream and vaginal inserts"
+  ],
+  "indications_and_usage": [
+    "Uses: cures most athlete's foot (tinea pedis), jock itch (tinea cruris), and ringworm (tinea corporis); relieves the accompanying itching, scaling, cracking, burning, redness, soreness, irritation, and discomfort; the vaginal forms treat vaginal yeast (Candida) infections. It is an azole antifungal that kills the fungus/yeast."
+  ],
+  "contraindications": [
+    "Do not use on the nails or scalp (these need different treatment); do not use if allergic to clotrimazole or other azole antifungals; for vaginal use, do not use if you have never had a yeast infection diagnosed by a doctor."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only (skin products) or vaginal use only (vaginal products); avoid the eyes. Stop use and ask a doctor if there is no improvement within 2 weeks (jock itch, ringworm) or 4 weeks (athlete's foot), or if irritation occurs or the condition worsens. For vaginal use, if symptoms do not improve in 3 days or last more than 7 days, or you have fever, chills, lower abdominal/back pain, foul-smelling discharge, or nausea/vomiting, see a doctor - it may not be a yeast infection. Recurrent yeast infections (4 or more a year) need a doctor's evaluation."
+  ],
+  "adverse_reactions": [
+    "Mild burning, stinging, itching, redness, peeling at the application site; rarely allergic contact dermatitis; vaginal forms - local irritation, headache."
+  ],
+  "drug_interactions": [
+    "Topical/vaginal absorption is low - minimal systemic interactions. Vaginal products may weaken latex condoms and diaphragms (use another form of contraception during treatment); concurrent use with the topical may be needed for vulvar itch."
+  ],
+  "dosage_and_administration": [
+    "Skin: adults and children 2 years and over - cleanse and dry the affected area, then apply a thin layer twice daily (morning and evening); use daily for 2 weeks for jock itch and ringworm, 4 weeks for athlete's foot, even if symptoms clear sooner. Children under 2: ask a doctor. Vaginal: insert the cream or insert at bedtime for the number of days specified by the product (1, 3, or 7 days) and/or apply the external cream to the vulva twice daily for up to 7 days for itch."
+  ],
+  "overdosage": [
+    "Topical/vaginal overdose is not expected to be dangerous; ingestion of large amounts may cause GI upset. Contact Poison Control (1-800-222-1222)."
+  ]
+}

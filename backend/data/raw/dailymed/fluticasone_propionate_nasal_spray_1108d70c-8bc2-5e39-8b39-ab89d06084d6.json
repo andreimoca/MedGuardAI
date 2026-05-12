@@ -1,0 +1,32 @@
+{
+  "drug_name": "FLUTICASONE PROPIONATE NASAL SPRAY",
+  "generic_name": [
+    "FLUTICASONE PROPIONATE",
+    "FLUTICASONE"
+  ],
+  "active_ingredients": [
+    "Fluticasone propionate 50 mcg per spray, nasal suspension (e.g., Flonase Allergy Relief)"
+  ],
+  "indications_and_usage": [
+    "Uses: relieves these symptoms of hay fever or other upper respiratory allergies - nasal congestion, runny nose, sneezing, and itchy nose, plus itchy/watery eyes; it is a once-daily intranasal corticosteroid that reduces inflammation in the nose, so it works best with regular daily use and may take several days for full effect. It is one of the most effective treatments for ongoing nasal allergy symptoms."
+  ],
+  "contraindications": [
+    "Do not use if you have ever had an allergic reaction to fluticasone; do not use to treat asthma, eye problems, or sinus infections; do not use in children under 4 years."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Tell your doctor before use if you have or have had glaucoma or cataracts, persistent or worsening nosebleeds or nasal sores/ulcers (stop and see a doctor), recent nasal injury or surgery, or an immune-suppressing condition or are exposed to chickenpox/measles. In children, long-term intranasal steroids can slightly slow growth - use the lowest effective dose and have growth monitored. Rare: nasal septum perforation, Candida infection of the nose/throat, hypersensitivity reactions. The full effect builds over several days - it is not for instant relief."
+  ],
+  "adverse_reactions": [
+    "Nosebleeds, nasal burning/irritation/dryness, headache, sore throat, cough; rarely nasal ulcers or septal perforation, eye effects, or systemic corticosteroid effects with prolonged high use."
+  ],
+  "drug_interactions": [
+    "Strong CYP3A4 inhibitors (ritonavir, ketoconazole, itraconazole, clarithromycin) can raise systemic fluticasone levels and cause Cushing-like effects/adrenal suppression - avoid the combination. Otherwise minimal systemic interaction at recommended nasal doses."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: 2 sprays in each nostril once daily; once symptoms are controlled, 1 spray in each nostril per day may maintain relief; do not use more than 2 sprays in each nostril in 24 hours. Children 4 to 11 years: 1 spray in each nostril once daily (an adult should supervise). Children under 4: do not use. Shake gently before each use; use daily for best results. If no improvement within about a week, see a doctor."
+  ],
+  "overdosage": [
+    "Acute overdose by the nasal route is unlikely to cause harm; chronic excessive use can cause systemic corticosteroid effects (adrenal suppression). Contact Poison Control (1-800-222-1222) if swallowed in large amounts."
+  ]
+}

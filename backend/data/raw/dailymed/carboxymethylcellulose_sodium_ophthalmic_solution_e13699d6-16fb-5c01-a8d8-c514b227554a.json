@@ -1,0 +1,32 @@
+{
+  "drug_name": "CARBOXYMETHYLCELLULOSE SODIUM OPHTHALMIC SOLUTION",
+  "generic_name": [
+    "CARBOXYMETHYLCELLULOSE SODIUM",
+    "CARMELLOSE SODIUM"
+  ],
+  "active_ingredients": [
+    "Carboxymethylcellulose sodium 0.5% or 1% ophthalmic solution - lubricant eye drops / artificial tears (e.g., Refresh Tears, Optive); preservative-free single-use vials are available"
+  ],
+  "indications_and_usage": [
+    "Uses: for the temporary relief of burning, irritation, and discomfort due to dryness of the eye or exposure to wind or sun (dry-eye symptoms); may be used as a protectant against further irritation. It is a lubricant ('artificial tears') that coats and moistens the surface of the eye - there is no active medication, so it is safe for frequent use."
+  ],
+  "contraindications": [
+    "Do not use if you are allergic to any ingredient; do not use if the solution changes color or becomes cloudy."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For ophthalmic use only. To avoid contamination, do not touch the dropper tip to any surface and replace the cap after use; preservative-containing multi-dose bottles should generally not be used more than about 4 times a day - if you need drops more often than that, use preservative-free single-use vials. Remove contact lenses before use unless the product is labeled safe for use with lenses; if labeled for lens use, you may apply it while wearing them. Stop use and ask a doctor if you experience eye pain, changes in vision, continued redness or irritation, or if the condition worsens or lasts more than 72 hours - persistent dry eye should be evaluated."
+  ],
+  "adverse_reactions": [
+    "Brief blurring of vision after instillation, mild stinging; rarely irritation or allergy to a preservative."
+  ],
+  "drug_interactions": [
+    "None; if you use medicated eye drops, instill the lubricant last and separate by at least 5 minutes."
+  ],
+  "dosage_and_administration": [
+    "Adults and children: put 1-2 drops in the affected eye(s) as needed; with preservative-free vials, discard the vial after a single use. May be used as often as needed for symptom relief; for nighttime dryness, a lubricant ointment may be used instead."
+  ],
+  "overdosage": [
+    "Not applicable; swallowing small amounts is harmless."
+  ]
+}

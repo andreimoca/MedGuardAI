@@ -1,0 +1,32 @@
+{
+  "drug_name": "BETAMETHASONE DIPROPIONATE CREAM",
+  "generic_name": [
+    "BETAMETHASONE",
+    "BETAMETHASONE DIPROPIONATE"
+  ],
+  "active_ingredients": [
+    "Betamethasone dipropionate 0.05% cream, ointment, lotion, or gel (a high-potency prescription topical corticosteroid; an augmented 0.05% formulation is even more potent)"
+  ],
+  "indications_and_usage": [
+    "Indicated for the relief of the inflammatory and pruritic manifestations of corticosteroid-responsive dermatoses such as psoriasis, severe eczema/atopic dermatitis, lichen planus, and contact dermatitis that have not responded to milder topical steroids. It is a strong (Class I-III) topical steroid for use on tougher, thicker skin areas (e.g., elbows, knees, palms, soles, scalp), not for routine use on delicate skin. Prescription only."
+  ],
+  "contraindications": [
+    "Hypersensitivity to betamethasone or any component; not for use on the face, groin, or axillae; not recommended in patients younger than 12-13 years (depending on the formulation)."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Do not use on the face, groin, or underarms - these thin-skinned areas are at high risk of skin thinning (atrophy), striae, telangiectasia, and steroid-induced rosacea/perioral dermatitis with a potent steroid like this. Reversible hypothalamic-pituitary-adrenal (HPA) axis suppression, Cushing's syndrome, hyperglycemia, and glucosuria can occur, especially with large areas, prolonged use, occlusive dressings, broken skin, or in children (who absorb proportionally more). Limit total amount and duration (generally no more than 45-50 g/week and not beyond 2-4 weeks without reassessment); do not bandage or wrap unless directed. Local infections may be masked or worsened. Discontinue if irritation develops; avoid the eyes (risk of glaucoma/cataract). Periodically check for HPA suppression with prolonged use."
+  ],
+  "adverse_reactions": [
+    "Burning, stinging, itching, dryness, folliculitis, acneiform eruptions, hypopigmentation, perioral dermatitis, skin atrophy, striae, telangiectasia, secondary infection; with extensive use - systemic corticosteroid effects."
+  ],
+  "drug_interactions": [
+    "Other corticosteroids (additive systemic effects); CYP3A4 inhibitors (ritonavir, itraconazole) can raise systemic exposure if absorption is significant; concurrent immunosuppressants may compound infection risk."
+  ],
+  "dosage_and_administration": [
+    "Apply a thin film to the affected skin once or twice daily as directed by the prescriber; rub in gently; do not use on the face, groin, or underarms; do not use occlusive dressings unless directed; limit treatment to the shortest effective course (typically up to 2 weeks for the dipropionate cream, with reassessment) and the smallest area; do not exceed about 45-50 g per week. Not for children under 12-13 years. Wash hands after application."
+  ],
+  "overdosage": [
+    "Topically applied corticosteroids can be absorbed in amounts sufficient to produce systemic effects (HPA suppression, hyperglycemia) if overused; manage by tapering use. If swallowed, contact Poison Control (1-800-222-1222)."
+  ]
+}

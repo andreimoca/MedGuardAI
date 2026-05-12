@@ -1,0 +1,32 @@
+{
+  "drug_name": "FEXOFENADINE HYDROCHLORIDE",
+  "generic_name": [
+    "FEXOFENADINE",
+    "FEXOFENADINE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Fexofenadine hydrochloride 30 mg, 60 mg, 180 mg tablets; 6 mg/mL oral suspension (e.g., Allegra)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves the symptoms of hay fever and other upper respiratory allergies - runny nose, sneezing, itchy/watery eyes, itching of the nose or throat; also relieves itching due to hives. It is a non-drowsy second-generation antihistamine and is one of the least sedating."
+  ],
+  "contraindications": [
+    "Do not use if you have ever had an allergic reaction to fexofenadine."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Ask a doctor before use if you have kidney disease (a lower dose may be needed). Do not take with fruit juices (apple, orange, grapefruit) - they can reduce how much fexofenadine is absorbed; take with water. Stop use and ask a doctor if an allergic reaction occurs or hives last more than 6 weeks. Causes drowsiness in very few people, but if it does, do not drive or operate machinery."
+  ],
+  "adverse_reactions": [
+    "Headache, drowsiness (uncommon), dizziness, nausea; in children - cough, upper respiratory infection symptoms."
+  ],
+  "drug_interactions": [
+    "Antacids containing aluminum and magnesium reduce absorption - separate by 2 hours. Fruit juices reduce absorption - take with water. Erythromycin and ketoconazole raise fexofenadine levels modestly (usually not significant). P-glycoprotein inhibitors/inducers can alter levels."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: 60 mg twice daily, or 180 mg once daily, with water; do not exceed 180 mg in 24 hours. Children 2 to under 12 years: 30 mg twice daily (suspension or 30 mg tablet). Children 6 months to under 2 years (for hives): 15 mg twice daily. Children under 6 months: ask a doctor. Kidney disease: reduce frequency or ask a doctor."
+  ],
+  "overdosage": [
+    "Overdose has caused dizziness, drowsiness, and dry mouth; generally not dangerous. Contact Poison Control (1-800-222-1222)."
+  ]
+}

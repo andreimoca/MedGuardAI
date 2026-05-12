@@ -1,0 +1,32 @@
+{
+  "drug_name": "ROSUVASTATIN CALCIUM",
+  "generic_name": [
+    "ROSUVASTATIN",
+    "ROSUVASTATIN CALCIUM"
+  ],
+  "active_ingredients": [
+    "Rosuvastatin calcium 5 mg, 10 mg, 20 mg, 40 mg tablets (e.g., Crestor) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated as adjunct therapy to diet to reduce elevated total cholesterol, LDL-C, ApoB, non-HDL, and triglycerides and increase HDL-C in adults and pediatric patients (>=8 years) with primary hyperlipidemia or mixed dyslipidemia; to slow the progression of atherosclerosis; and to reduce the risk of cardiovascular events in patients with multiple risk factors. It is a high-potency statin. Prescription only."
+  ],
+  "contraindications": [
+    "Pregnancy and breastfeeding (per the 2021 FDA update, statins are generally still discontinued in pregnancy and breastfeeding); acute liver failure or decompensated cirrhosis; known hypersensitivity to rosuvastatin."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Myopathy and rhabdomyolysis - dose-related; risk higher in patients of Asian descent (start at 5 mg) and with cyclosporine (do not exceed 5 mg/day) or with gemfibrozil (do not exceed 10 mg/day); persistent hematuria/proteinuria; small increase in HbA1c; immune-mediated necrotizing myopathy. Liver enzyme elevations. Avoid concomitant antacids within 2 hours of dosing."
+  ],
+  "adverse_reactions": [
+    "Headache, myalgia, abdominal pain, nausea, weakness, urinary tract infection; rarely myopathy/rhabdomyolysis, hepatic dysfunction, proteinuria/hematuria, new-onset diabetes."
+  ],
+  "drug_interactions": [
+    "Cyclosporine (limit to 5 mg/day); gemfibrozil (limit to 10 mg/day); HIV protease inhibitors with ritonavir (limit doses per label); warfarin (monitor INR); antacids containing aluminum/magnesium (separate by 2 hours); fenofibrate, niacin (high dose), colchicine (myopathy risk)."
+  ],
+  "dosage_and_administration": [
+    "Adults: start 10-20 mg once daily; range 5-40 mg/day; the 40 mg dose is reserved for patients who do not reach LDL goals at 20 mg. Adults of Asian descent: start 5 mg once daily. Children 8-17 with HeFH: 5-20 mg/day per age and treatment goal. Take any time of day, with or without food. Continue diet and exercise."
+  ],
+  "overdosage": [
+    "No specific antidote; supportive care; monitor for muscle and hepatic effects. Hemodialysis is not useful. Contact Poison Control (1-800-222-1222)."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "drug_name": "ACYCLOVIR",
+  "generic_name": [
+    "ACYCLOVIR"
+  ],
+  "active_ingredients": [
+    "Acyclovir 200 mg, 400 mg, 800 mg tablets and capsules; 200 mg/5 mL oral suspension; 5% topical cream/ointment; IV form (e.g., Zovirax) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of initial and recurrent episodes of genital herpes (Herpes simplex virus types 1 and 2), suppression of recurrent genital herpes, treatment of acute herpes zoster (shingles) and chickenpox (varicella) in immunocompetent and immunocompromised patients, and (IV form) for severe herpes infections including encephalitis and neonatal herpes. It is a nucleoside analog antiviral that inhibits viral DNA polymerase. It controls outbreaks and reduces severity/duration but does not cure herpes simplex infection (the virus remains latent in nerve cells) - this should be discussed openly with the patient. Prescription only."
+  ],
+  "contraindications": [
+    "Hypersensitivity to acyclovir or valacyclovir."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Renal injury (especially with rapid IV infusion or dehydration) - maintain adequate hydration and adjust dose for renal impairment; thrombotic thrombocytopenic purpura/hemolytic uremic syndrome (TTP/HUS) reported in immunocompromised patients with high doses (e.g., transplant, HIV); neurologic toxicity (encephalopathy, tremor, hallucinations) especially with renal impairment or high doses; CNS effects in elderly. Genital herpes - use additional safer-sex precautions; episodic treatment works best if started at the first prodromal symptoms."
+  ],
+  "adverse_reactions": [
+    "Nausea, vomiting, diarrhea, headache, malaise, rash; with IV - inflammation at the infusion site, transient renal function impairment, neurologic effects; rarely thrombocytopenia, hepatitis, anaphylaxis."
+  ],
+  "drug_interactions": [
+    "Probenecid prolongs the half-life. Concomitant nephrotoxic drugs increase the risk of kidney injury. Mycophenolate, theophylline, and zidovudine levels may rise. Live varicella or zoster vaccines should not be given during or shortly after antiviral therapy."
+  ],
+  "dosage_and_administration": [
+    "Genital herpes - first episode (adults): 200 mg five times daily for 10 days, or 400 mg three times daily for 7-10 days. Recurrent: 200 mg five times daily for 5 days, or 400 mg three times daily for 5 days, or 800 mg twice daily for 5 days, starting at the first prodrome. Suppression: 400 mg twice daily for up to 12 months, then reassess. Herpes zoster (shingles): 800 mg five times daily for 7-10 days, starting within 72 hours of rash onset. Chickenpox (immunocompetent >=2 years, weight >=40 kg): 800 mg four times daily for 5 days. Pediatric weight-based dosing per indication. Renal impairment - adjust per CrCl. Take with adequate fluids. The topical cream is for recurrent herpes labialis (cold sores)."
+  ],
+  "overdosage": [
+    "Overdose may cause acute kidney injury, neurologic symptoms (lethargy, confusion, hallucinations, seizures, coma); supportive care, hydration; hemodialysis significantly removes acyclovir and is used in severe cases. Seek emergency care; call Poison Control (1-800-222-1222)."
+  ]
+}

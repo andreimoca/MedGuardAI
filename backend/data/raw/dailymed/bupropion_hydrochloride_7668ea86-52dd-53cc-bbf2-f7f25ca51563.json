@@ -1,0 +1,34 @@
+{
+  "drug_name": "BUPROPION HYDROCHLORIDE",
+  "generic_name": [
+    "BUPROPION",
+    "BUPROPION HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Bupropion hydrochloride 75 mg, 100 mg immediate-release; 100 mg, 150 mg, 200 mg sustained-release (SR); 150 mg, 300 mg, 450 mg extended-release (XL); also 150 mg SR marketed as Zyban for smoking cessation (e.g., Wellbutrin) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for major depressive disorder (immediate-release, SR, and XL), prevention of seasonal affective disorder (XL), and, as a separate brand, as an aid to smoking cessation. It is an aminoketone antidepressant (a norepinephrine-dopamine reuptake inhibitor); it has a low risk of sexual side effects and tends not to cause weight gain, but it carries a dose-related seizure risk. Prescription only."
+  ],
+  "contraindications": [
+    "Seizure disorder; current or prior diagnosis of bulimia or anorexia nervosa (higher seizure risk); abrupt discontinuation of alcohol, benzodiazepines, barbiturates, or antiepileptic drugs (seizure risk); concomitant use of MAO inhibitors (or within 14 days; do not start an MAOI within 14 days of stopping bupropion) - hypertensive reactions; concomitant use of other bupropion-containing products; known hypersensitivity to bupropion."
+  ],
+  "boxed_warning": [
+    "Antidepressants increased the risk of suicidal thoughts and behavior in children, adolescents, and young adults; monitor for clinical worsening and suicidality, especially early in treatment and after dose changes. (Note: bupropion is not approved for pediatric use.) Neuropsychiatric symptoms and suicide risk were also previously highlighted for the smoking-cessation use - watch for changes in mood and behavior whether or not the patient is quitting smoking."
+  ],
+  "warnings_and_cautions": [
+    "Dose-related risk of seizures - keep within recommended doses and intervals, avoid in patients predisposed to seizures (head trauma, CNS tumor, other lowering of the seizure threshold); hypertension (can be marked, especially combined with nicotine replacement); activation of mania/hypomania (screen for bipolar disorder); psychosis, hallucinations, paranoia, confusion; angle-closure glaucoma; insomnia; weight loss; allergic and serum-sickness-like reactions; false-positive urine amphetamine screens. Bupropion is a potent CYP2D6 inhibitor. Avoid alcohol."
+  ],
+  "adverse_reactions": [
+    "Dry mouth, insomnia, headache, nausea, agitation/anxiety, tremor, dizziness, constipation, sweating, weight loss, tachycardia, raised blood pressure; seizures (dose-related); rarely psychiatric disturbances, allergic reactions."
+  ],
+  "drug_interactions": [
+    "MAO inhibitors (contraindicated); other bupropion products (contraindicated - cumulative seizure risk); drugs that lower the seizure threshold (other antidepressants, antipsychotics, theophylline, systemic steroids, tramadol) - use caution; CYP2D6 substrates (some tricyclics and SSRIs, certain antiarrhythmics, beta-blockers such as metoprolol, atomoxetine, antipsychotics, tamoxifen) - bupropion raises their levels; CYP2B6 inducers (ritonavir, efavirenz, carbamazepine) lower bupropion levels; nicotine patches plus bupropion can raise blood pressure; alcohol (rare neuropsychiatric events; avoid)."
+  ],
+  "dosage_and_administration": [
+    "Depression (XL): start 150 mg once daily in the morning; may increase to 300 mg/day after at least 4 days; maximum 450 mg/day. Depression (SR): start 150 mg once daily, then 150 mg twice daily (at least 8 hours apart); maximum 400 mg/day. Seasonal affective disorder (XL): 150 mg/day in autumn, increase to 300 mg/day, taper off in spring. Smoking cessation (SR 150 mg): start 150 mg once daily for 3 days, then 150 mg twice daily; begin 1-2 weeks before the quit date; treat for 7-12 weeks. Single doses should not exceed 150 mg (IR), 200 mg (SR), or 450 mg (XL). Reduce dose in hepatic or renal impairment. Do not take close to bedtime (insomnia)."
+  ],
+  "overdosage": [
+    "Overdose can cause seizures (sometimes delayed, with sustained-/extended-release forms), hallucinations, loss of consciousness, sinus tachycardia, ECG changes (including QRS/QT prolongation), and cardiac arrest; deaths have occurred with large overdoses. Cardiac and neurologic monitoring for at least 24 hours with modified-release products; no specific antidote, supportive care, benzodiazepines for seizures. Seek emergency care and call Poison Control (1-800-222-1222)."
+  ]
+}

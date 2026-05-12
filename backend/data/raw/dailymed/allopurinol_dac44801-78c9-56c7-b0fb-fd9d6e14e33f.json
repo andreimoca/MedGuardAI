@@ -1,0 +1,31 @@
+{
+  "drug_name": "ALLOPURINOL",
+  "generic_name": [
+    "ALLOPURINOL"
+  ],
+  "active_ingredients": [
+    "Allopurinol 100 mg and 300 mg tablets (e.g., Zyloprim) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the management of patients with signs and symptoms of primary or secondary gout (acute attacks, tophi, joint destruction, uric acid lithiasis, and/or nephropathy), for the management of patients with leukemia, lymphoma, and malignancies who are receiving cancer therapy that causes elevations of serum and urinary uric acid (tumor lysis syndrome), and for the management of recurrent calcium oxalate calculi in patients with hyperuricosuria. It is a xanthine oxidase inhibitor - it lowers uric acid production over weeks of regular use. It is NOT used to treat an acute gout attack (it can worsen one) - it is for long-term maintenance, often started after an attack has settled, with anti-inflammatory cover."
+  ],
+  "contraindications": [
+    "Known hypersensitivity to allopurinol."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Severe and sometimes fatal skin reactions (Stevens-Johnson syndrome, toxic epidermal necrolysis, DRESS, exfoliative dermatitis), most often in the first weeks; risk is higher in patients of Han Chinese, Thai, or Korean descent who carry the HLA-B*58:01 allele - testing may be considered before starting in these groups. Stop at the first sign of rash or hypersensitivity. Acute gouty attacks may be precipitated when starting or after dose changes - cover with low-dose colchicine or NSAID for 3-6 months. Hepatotoxicity (monitor LFTs especially in the first months). Bone marrow suppression (rare). Dose reduction in renal impairment; titrate slowly and use the lowest effective dose to reach a target serum urate (usually <6 mg/dL)."
+  ],
+  "adverse_reactions": [
+    "Rash, diarrhea, nausea, hepatic dysfunction, acute gout flare on starting therapy, headache; rare but serious - severe skin reactions, allopurinol hypersensitivity syndrome (DRESS), bone marrow suppression."
+  ],
+  "drug_interactions": [
+    "Azathioprine and 6-mercaptopurine (allopurinol blocks their metabolism - massive toxicity; reduce their dose by about 75% or avoid the combination); warfarin (variable INR); ampicillin/amoxicillin (increased rash); thiazides (allopurinol-related rash may be more common); cyclosporine (raised levels); didanosine (raised levels); theophylline (raised levels). Caution with iron and antacids."
+  ],
+  "dosage_and_administration": [
+    "Adults with gout: start 100 mg once daily (50 mg in moderate renal impairment), titrate by 100 mg every 2-5 weeks to a target serum urate, usually <6 mg/dL; most patients respond at 300-600 mg/day; maximum 800 mg/day. Higher doses in divided doses with meals. Prevention of tumor lysis: 600-800 mg/day starting 1-2 days before chemotherapy. Take after meals; maintain hydration (2-3 L/day for urate stone risk). Continue during gout flares but treat the flare with NSAID or colchicine separately."
+  ],
+  "overdosage": [
+    "Overdose has been associated with mild GI symptoms; supportive care and hydration to encourage renal excretion; hemodialysis can remove allopurinol. Contact Poison Control (1-800-222-1222)."
+  ]
+}

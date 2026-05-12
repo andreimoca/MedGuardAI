@@ -1,0 +1,31 @@
+{
+  "drug_name": "CEPHALEXIN",
+  "generic_name": [
+    "CEPHALEXIN"
+  ],
+  "active_ingredients": [
+    "Cephalexin 250 mg, 500 mg, 750 mg capsules/tablets; 125 mg/5 mL and 250 mg/5 mL oral suspensions (e.g., Keflex) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of respiratory tract infections, otitis media, skin and skin-structure infections, bone infections, and genitourinary tract infections caused by susceptible organisms. It is a first-generation cephalosporin (beta-lactam) antibiotic. Prescription only."
+  ],
+  "contraindications": [
+    "Known severe hypersensitivity to cephalosporins or to any of the inactive ingredients. Cross-reactivity with penicillins is possible (low but real, especially with first-generation cephalosporins) - use caution if the patient had a non-severe penicillin allergy, and avoid in penicillin-anaphylaxis history without specialist input."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Anaphylaxis and serious hypersensitivity reactions, including Stevens-Johnson syndrome, toxic epidermal necrolysis, and drug reaction with eosinophilia and systemic symptoms (DRESS). Clostridioides difficile-associated diarrhea. Direct Coombs' test can become positive during therapy. Patients with renal impairment need a dose adjustment. Use caution in seizure disorders (rare CNS toxicity with very high doses). Prolonged use may result in overgrowth of nonsusceptible organisms."
+  ],
+  "adverse_reactions": [
+    "Diarrhea, nausea, vomiting, abdominal pain, headache, rash; rarely anaphylaxis, Stevens-Johnson syndrome, DRESS, C. difficile colitis, interstitial nephritis, transient blood-count abnormalities."
+  ],
+  "drug_interactions": [
+    "Probenecid (raises levels); metformin (cephalexin can modestly raise metformin levels); warfarin (rare reports of altered INR); no oral contraceptive interaction of clinical significance."
+  ],
+  "dosage_and_administration": [
+    "Adults and children >=15 years: 250-500 mg orally every 6 hours, or 500 mg every 12 hours, depending on the indication (e.g., uncomplicated cystitis - 500 mg every 12 hours or 250 mg every 6 hours; skin/soft tissue - 500 mg every 6-12 hours). Children: 25-50 mg/kg/day in divided doses (every 6-12 hours), or up to 100 mg/kg/day for severe infections, max 4 g/day. Reduce dose in renal impairment. Take with or without food; complete the full course."
+  ],
+  "overdosage": [
+    "Overdose may cause nausea, vomiting, epigastric distress, diarrhea, and hematuria; serious toxicity is unusual. Hemodialysis can remove cephalexin. Contact Poison Control (1-800-222-1222)."
+  ]
+}

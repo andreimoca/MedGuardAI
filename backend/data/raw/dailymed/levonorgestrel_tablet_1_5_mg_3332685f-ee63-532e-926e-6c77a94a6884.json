@@ -1,0 +1,31 @@
+{
+  "drug_name": "LEVONORGESTREL TABLET 1.5 MG",
+  "generic_name": [
+    "LEVONORGESTREL"
+  ],
+  "active_ingredients": [
+    "Levonorgestrel 1.5 mg single-dose tablet, or two 0.75 mg tablets taken together (emergency contraception, e.g., Plan B One-Step) - OTC for all ages"
+  ],
+  "indications_and_usage": [
+    "Uses: emergency contraception - to help prevent pregnancy after unprotected sex or a known or suspected contraceptive failure (for example, a broken or slipped condom, missed birth-control pills, or no method used). It is more effective the sooner it is taken: use it as soon as possible and within 72 hours of unprotected sex. It is NOT a regular form of birth control and is less effective than ongoing methods; it does not protect against sexually transmitted infections and will not cause an abortion."
+  ],
+  "contraindications": [
+    "Known or suspected pregnancy (it will not work and is not needed - although taking it during an unknown early pregnancy is not known to harm the developing baby); known hypersensitivity to levonorgestrel."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "More effective the earlier it is taken. May be less effective in women weighing more than about 165 pounds (75 kg). Does not protect against HIV/AIDS or other sexually transmitted infections. Your next period may be earlier or later than expected and may be lighter or heavier; if your period is more than 7 days late or you have severe lower-abdominal pain 3-5 weeks after taking it, see a doctor (rule out ectopic pregnancy). If you vomit within 2 hours of taking the dose, contact a clinician about repeating it. It does not replace a regular contraceptive method - see a healthcare provider to start an effective ongoing method. There is no maximum lifetime use, but repeated use is less effective than an ongoing method."
+  ],
+  "adverse_reactions": [
+    "Heavier or lighter menstrual bleeding, change in cycle timing, nausea (rarely vomiting), lower-abdominal pain, fatigue, headache, dizziness, breast tenderness."
+  ],
+  "drug_interactions": [
+    "Drugs that strongly induce liver enzymes (rifampin, carbamazepine, phenytoin, barbiturates, St. John's wort, some HIV medicines such as efavirenz and ritonavir) can reduce its effectiveness - consider an alternative method (e.g., a copper IUD)."
+  ],
+  "dosage_and_administration": [
+    "Adults and adolescents of reproductive age: take one 1.5 mg tablet (or two 0.75 mg tablets together) by mouth, as soon as possible and within 72 hours after unprotected sex; it can be taken any time of day, with or without food. If vomiting occurs within 2 hours, contact a clinician about repeating the dose. No prescription needed; available OTC to all ages."
+  ],
+  "overdosage": [
+    "Overdose has not been associated with serious effects beyond nausea, vomiting, and breakthrough bleeding. Contact Poison Control (1-800-222-1222) for unusually large ingestions."
+  ]
+}

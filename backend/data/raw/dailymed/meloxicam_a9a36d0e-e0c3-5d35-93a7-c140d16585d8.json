@@ -1,0 +1,33 @@
+{
+  "drug_name": "MELOXICAM",
+  "generic_name": [
+    "MELOXICAM"
+  ],
+  "active_ingredients": [
+    "Meloxicam 7.5 mg and 15 mg tablets; 7.5 mg/5 mL oral suspension (prescription NSAID)"
+  ],
+  "indications_and_usage": [
+    "Indicated for the relief of the signs and symptoms of osteoarthritis and rheumatoid arthritis in adults, and for juvenile rheumatoid arthritis (pauciarticular and polyarticular course) in patients 2 years of age and older. It is a once-daily prescription NSAID; it is not available over the counter."
+  ],
+  "contraindications": [
+    "Known hypersensitivity to meloxicam; history of asthma, urticaria, or other allergic-type reaction after aspirin or other NSAIDs; in the setting of coronary artery bypass graft (CABG) surgery."
+  ],
+  "boxed_warning": [
+    "NSAIDs cause an increased risk of serious cardiovascular thrombotic events, including myocardial infarction and stroke, which can be fatal; risk increases with duration of use. Meloxicam is contraindicated around CABG surgery. NSAIDs also cause an increased risk of serious gastrointestinal bleeding, ulceration, and perforation of the stomach or intestines, which can be fatal and can occur at any time without warning symptoms; the elderly and those with prior GI bleeding are at greater risk."
+  ],
+  "warnings_and_cautions": [
+    "Hypertension and worsening heart failure/edema; renal injury including in volume-depleted patients; anaphylactic reactions; serious skin reactions (exfoliative dermatitis, Stevens-Johnson syndrome, toxic epidermal necrolysis); hepatotoxicity; avoid in pregnant women starting at 20 weeks' gestation. Use the lowest effective dose for the shortest duration."
+  ],
+  "adverse_reactions": [
+    "Diarrhea, upper respiratory infection, dyspepsia, nausea, abdominal pain, headache, dizziness, edema; serious GI, cardiovascular, renal, hepatic, and dermatologic events as above."
+  ],
+  "drug_interactions": [
+    "Other NSAIDs/aspirin (do not combine); anticoagulants such as warfarin (increased bleeding); ACE inhibitors, ARBs, and diuretics (reduced effect, kidney risk); lithium and methotrexate (increased levels/toxicity); SSRIs (bleeding risk)."
+  ],
+  "dosage_and_administration": [
+    "Adults: osteoarthritis or rheumatoid arthritis - 7.5 mg once daily; some patients may receive up to 15 mg once daily; the maximum recommended dose is 15 mg/day. Use the lowest effective dose. Children 2 years and older with JRA (>=60 kg): 7.5 mg once daily (do not exceed 7.5 mg/day in children). Take with or without food, at the same time each day, exactly as prescribed."
+  ],
+  "overdosage": [
+    "Symptoms include lethargy, drowsiness, nausea, vomiting, and epigastric pain; severe overdose may cause hypertension, acute renal failure, respiratory depression, GI bleeding, or coma. Seek emergency care; contact Poison Control (1-800-222-1222)."
+  ]
+}

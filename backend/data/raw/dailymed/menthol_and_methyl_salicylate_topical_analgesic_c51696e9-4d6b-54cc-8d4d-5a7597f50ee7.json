@@ -1,0 +1,32 @@
+{
+  "drug_name": "MENTHOL AND METHYL SALICYLATE TOPICAL ANALGESIC",
+  "generic_name": [
+    "MENTHOL",
+    "METHYL SALICYLATE"
+  ],
+  "active_ingredients": [
+    "Menthol 10% and Methyl salicylate 15-30% (topical cream/gel/patch), e.g. Bengay / Icy Hot style products"
+  ],
+  "indications_and_usage": [
+    "Uses: for the temporary relief of minor aches and pains of muscles and joints associated with backache, strains, sprains, bruises, arthritis, and simple muscle soreness; produces a warming and/or cooling counterirritant sensation over the painful area."
+  ],
+  "contraindications": [
+    "Do not use on a child under 12 with arthritis-like pain (could be a serious condition) without a doctor. Do not use if allergic to aspirin/salicylates."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only. Do not apply to wounds, damaged or irritated skin, or mucous membranes; do not bandage tightly or use with a heating pad (risk of serious burns); avoid the eyes. Rare reports of serious skin burns from menthol/methyl-salicylate products - stop use if you feel more than mild warmth or notice blistering. Methyl salicylate is absorbed - do not use over large areas, and use caution if you take warfarin or are aspirin-sensitive. Stop use and ask a doctor if pain lasts more than 7 days or worsens."
+  ],
+  "adverse_reactions": [
+    "Skin redness, warmth, irritation; rare blistering/chemical burns; allergic contact dermatitis."
+  ],
+  "drug_interactions": [
+    "Methyl salicylate (a salicylate) absorbed through the skin can add to the effect of warfarin and other anticoagulants in rare cases of heavy/large-area use."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: apply to the affected area not more than 3 to 4 times daily; rub in well and wash hands afterward; for patches, apply one patch to the affected area for up to 8-12 hours. Children under 12 years: ask a doctor."
+  ],
+  "overdosage": [
+    "Ingestion of methyl-salicylate products is dangerous (salicylate poisoning) - even small amounts can be serious in children. Contact Poison Control (1-800-222-1222) immediately."
+  ]
+}

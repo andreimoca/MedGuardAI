@@ -1,0 +1,32 @@
+{
+  "drug_name": "DIPHENHYDRAMINE HYDROCHLORIDE",
+  "generic_name": [
+    "DIPHENHYDRAMINE",
+    "DIPHENHYDRAMINE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Diphenhydramine hydrochloride 25 mg and 50 mg tablets/capsules/chewables; 12.5 mg/5 mL liquid; topical 1-2% (e.g., Benadryl; also the 'PM' ingredient in nighttime products)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves sneezing, runny nose, itchy/watery eyes, and itching of the nose or throat due to hay fever or other respiratory allergies; relieves itching and reduces redness from hives and minor skin irritations/insect bites (oral and topical forms); helps relieve a runny nose and sneezing of the common cold; and, as a nighttime sleep aid, relieves occasional sleeplessness. It is a first-generation (sedating) antihistamine."
+  ],
+  "contraindications": [
+    "Do not use to make a child sleepy; do not use in newborns or premature infants; do not use if allergic to diphenhydramine; do not use the oral product together with a topical diphenhydramine product (overdose risk)."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "May cause marked drowsiness - avoid alcohol, sedatives, and tranquilizers, and do not drive or operate machinery. Excitability may occur, especially in children. Older adults are particularly sensitive to confusion, falls, dry mouth, constipation, urinary retention, and blurred vision (it is on the Beers list of drugs to avoid in the elderly). Ask a doctor before use if you have glaucoma, breathing problems (emphysema, chronic bronchitis), or trouble urinating due to an enlarged prostate. For sleeplessness, if it lasts more than 2 weeks, see a doctor - this could be a sign of a serious underlying condition. Not for long-term use."
+  ],
+  "adverse_reactions": [
+    "Drowsiness, dry mouth/nose/throat, dizziness, blurred vision, constipation, urinary retention; paradoxical excitement in children; next-day grogginess when used as a sleep aid."
+  ],
+  "drug_interactions": [
+    "Alcohol, sleep aids, sedatives, opioids, muscle relaxants, and other CNS depressants (additive sedation/respiratory depression); MAO inhibitors (intensified and prolonged anticholinergic effects); other anticholinergic drugs (additive dry mouth, constipation, urinary retention, confusion)."
+  ],
+  "dosage_and_administration": [
+    "Allergy/cold (adults and children 12 and over): 25-50 mg every 4-6 hours, not more than 300 mg in 24 hours. Children 6 to under 12: 12.5-25 mg every 4-6 hours, not more than 150 mg in 24 hours. Children under 6: ask a doctor. Nighttime sleep aid (adults and children 12 and over): 25-50 mg at bedtime if needed; for the adult dose to help sleep, 25-50 mg about 30 minutes before bedtime. Topical: apply to affected skin not more than 3-4 times daily."
+  ],
+  "overdosage": [
+    "Overdose causes severe anticholinergic toxicity ('mad as a hatter, red as a beet, dry as a bone, hot as a hare, blind as a bat'): dilated pupils, flushing, fever, fast heartbeat, agitation, hallucinations, urinary retention, seizures, and, in large overdoses, wide-complex arrhythmias, coma, and death - especially dangerous in children. Seek emergency care; call Poison Control (1-800-222-1222) immediately."
+  ]
+}

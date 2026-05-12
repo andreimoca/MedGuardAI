@@ -1,0 +1,31 @@
+{
+  "drug_name": "ZINC OXIDE TOPICAL OINTMENT",
+  "generic_name": [
+    "ZINC OXIDE"
+  ],
+  "active_ingredients": [
+    "Zinc oxide 10%-40% ointment, cream, or paste (diaper-rash and skin-protectant products; e.g., Desitin); also a physical sunscreen ingredient"
+  ],
+  "indications_and_usage": [
+    "Uses: helps treat and prevent diaper rash; protects chafed skin or minor skin irritation associated with diaper rash and helps seal out wetness; also used as a skin protectant for minor cuts, scrapes, and burns and for irritation around the anal area. It forms a water-repellent barrier over the skin. As a sunscreen ingredient it provides broad-spectrum UVA/UVB protection."
+  ],
+  "contraindications": [
+    "Do not use on deep or puncture wounds, animal bites, serious burns, or signs of infection without a doctor; hypersensitivity to any component (uncommon)."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only; avoid the eyes. With diaper rash - change wet and soiled diapers promptly, cleanse the diaper area and allow it to dry, and apply the ointment liberally as often as necessary, especially at bedtime, when exposure to wet diapers may be prolonged. If the diaper rash does not improve within 7 days, or worsens, or there are signs of infection (pus, blisters, fever, a bright-red rash with satellite spots suggesting yeast), see a doctor. Stop use and ask a doctor if symptoms persist or worsen."
+  ],
+  "adverse_reactions": [
+    "Essentially none; rarely mild irritation or, very rarely, contact allergy."
+  ],
+  "drug_interactions": [
+    "None of clinical significance."
+  ],
+  "dosage_and_administration": [
+    "Adults and children: cleanse the skin and pat dry; apply a thick layer to the affected area as needed; for diaper rash, apply at each diaper change and especially at bedtime; reapply after bathing. As a skin protectant for minor wounds, apply a thin layer 1-3 times daily."
+  ],
+  "overdosage": [
+    "Not toxic topically; ingestion of large amounts of zinc oxide may cause nausea and vomiting. Contact Poison Control (1-800-222-1222) for large ingestions."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "drug_name": "ALPRAZOLAM",
+  "generic_name": [
+    "ALPRAZOLAM"
+  ],
+  "active_ingredients": [
+    "Alprazolam 0.25 mg, 0.5 mg, 1 mg, 2 mg immediate-release tablets and orally disintegrating tablets; 0.5 mg, 1 mg, 2 mg, 3 mg extended-release tablets (e.g., Xanax) - Schedule IV controlled substance, prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the management of anxiety disorder (generalized anxiety disorder) and the short-term relief of symptoms of anxiety in adults, and (extended-release and immediate-release as labeled) for panic disorder with or without agoraphobia. It is a benzodiazepine. It is a controlled prescription medicine with a high potential for misuse, dependence, and dangerous interactions; it should be used only under close medical supervision, at the lowest dose for the shortest time, and is not appropriate to take from someone else's prescription or for casual/recreational use."
+  ],
+  "contraindications": [
+    "Concomitant use with strong CYP3A4 inhibitors such as ketoconazole and itraconazole; known hypersensitivity to alprazolam or other benzodiazepines; acute narrow-angle glaucoma."
+  ],
+  "boxed_warning": [
+    "Concomitant use of benzodiazepines and opioids may result in profound sedation, respiratory depression, coma, and death - reserve such combination only when alternatives are inadequate, use the lowest doses, and monitor closely. The continued use of benzodiazepines may lead to clinically significant physical dependence; the risks are increased at higher doses and with longer use, and abrupt discontinuation or rapid dose reduction can precipitate acute withdrawal reactions, which can be life-threatening (seizures) - taper gradually. Abuse and misuse of benzodiazepines can lead to overdose and death, particularly when combined with other CNS depressants such as opioids or alcohol."
+  ],
+  "warnings_and_cautions": [
+    "Profound sedation and respiratory depression, especially with opioids, alcohol, or other CNS depressants; physical dependence and withdrawal (seizures, rebound anxiety, insomnia, perceptual disturbances) - do not stop abruptly; impaired driving and next-day psychomotor impairment; anterograde amnesia; paradoxical reactions (excitement, aggression); risk in the elderly (falls, confusion - generally avoid, Beers list); use caution in respiratory disease, hepatic impairment, depression (worsening, suicidality), and history of substance use disorder; not for use in pregnancy (neonatal sedation/withdrawal, possible malformations) or breastfeeding."
+  ],
+  "adverse_reactions": [
+    "Drowsiness, fatigue, sedation, memory impairment, ataxia/incoordination, slurred speech, dizziness, decreased concentration, dry mouth, constipation; with chronic use - dependence, tolerance; paradoxical disinhibition; on discontinuation - withdrawal symptoms including seizures."
+  ],
+  "drug_interactions": [
+    "Opioids, alcohol, other benzodiazepines, sedative-hypnotics, sedating antihistamines, muscle relaxants, gabapentinoids (additive CNS/respiratory depression - potentially fatal); strong CYP3A4 inhibitors - ketoconazole, itraconazole (contraindicated), and others such as ritonavir, clarithromycin, nefazodone, grapefruit juice (raise alprazolam levels markedly); CYP3A4 inducers - carbamazepine, phenytoin, rifampin, St. John's wort (lower levels); fluoxetine, fluvoxamine, oral contraceptives (increase levels)."
+  ],
+  "dosage_and_administration": [
+    "Use only exactly as a clinician prescribes. Anxiety (immediate-release, adults): start 0.25-0.5 mg three times daily; titrate cautiously, usual maximum about 4 mg/day in divided doses. Panic disorder (immediate-release): start 0.5 mg three times daily, titrate as needed (mean around 5-6 mg/day, maximum about 10 mg/day) - or extended-release once daily, started at 0.5-1 mg/day. Elderly or debilitated: start 0.25 mg two or three times daily. Use the lowest effective dose for the shortest duration; reassess the need for continued treatment regularly; taper slowly (e.g., reduce by no more than 0.5 mg every 3 days, often more slowly) when stopping. Do not abruptly discontinue."
+  ],
+  "overdosage": [
+    "Overdose causes somnolence, confusion, slurred speech, impaired coordination, diminished reflexes, and, especially when combined with opioids or alcohol, respiratory depression, hypotension, coma, and death. The benzodiazepine antagonist flumazenil may be used in selected cases but can precipitate seizures in dependent patients. This is a medical emergency - call 911 / emergency services and Poison Control (1-800-222-1222) immediately; give naloxone if an opioid co-ingestion is suspected."
+  ]
+}

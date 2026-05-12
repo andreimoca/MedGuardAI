@@ -1,0 +1,32 @@
+{
+  "drug_name": "BUSPIRONE HYDROCHLORIDE",
+  "generic_name": [
+    "BUSPIRONE",
+    "BUSPIRONE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Buspirone hydrochloride 5 mg, 7.5 mg, 10 mg, 15 mg, 30 mg tablets - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the management of anxiety disorders or the short-term relief of the symptoms of anxiety (generalized anxiety disorder) in adults. It is an azapirone (a serotonin 5-HT1A partial agonist); unlike benzodiazepines it is not sedating in most people, does not cause physical dependence, and has little abuse potential, but it must be taken regularly and takes 2-4 weeks to work - it is not useful 'as needed' for acute anxiety. Prescription only."
+  ],
+  "contraindications": [
+    "Concomitant use of an MAO inhibitor (or within 14 days of stopping one) - risk of hypertensive reactions; known hypersensitivity to buspirone."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Not for acute, situational anxiety - it has a delayed onset; do not switch a patient abruptly from a benzodiazepine to buspirone without an appropriate benzodiazepine taper (buspirone will not prevent benzodiazepine withdrawal). Serotonin syndrome (with other serotonergic drugs). May cause dizziness, lightheadedness, nervousness, or, in some, restlessness/akathisia; caution driving until you know how it affects you. Avoid large amounts of grapefruit juice (raises levels). Reduce the dose in significant hepatic or renal impairment; not recommended in severe impairment."
+  ],
+  "adverse_reactions": [
+    "Dizziness, nausea, headache, nervousness, lightheadedness, drowsiness (less than with benzodiazepines), excitement, fatigue; less commonly restlessness, blurred vision, dry mouth."
+  ],
+  "drug_interactions": [
+    "MAO inhibitors (contraindicated); strong CYP3A4 inhibitors - itraconazole, ketoconazole, ritonavir, clarithromycin, nefazodone, grapefruit juice (markedly raise buspirone levels - use a much lower dose) and inducers - rifampin, carbamazepine, phenytoin (lower levels - may need a higher dose); other serotonergic drugs (serotonin syndrome); other CNS depressants/alcohol (additive sedation); haloperidol and trazodone levels may rise; diltiazem and verapamil raise buspirone levels."
+  ],
+  "dosage_and_administration": [
+    "Adults: start 7.5 mg twice daily (15 mg/day); increase by 5 mg/day every 2-3 days as needed; usual effective range 20-30 mg/day in divided doses (twice or three times daily); maximum 60 mg/day. Take consistently either always with or always without food (food increases the amount absorbed). Allow 2-4 weeks for full effect. With a strong CYP3A4 inhibitor, use 2.5 mg once or twice daily and titrate cautiously."
+  ],
+  "overdosage": [
+    "Overdose may cause nausea, vomiting, dizziness, drowsiness, miosis (small pupils), and gastric distress; deaths from buspirone alone are rare. No specific antidote; supportive care, activated charcoal if early. Seek medical care and contact Poison Control (1-800-222-1222)."
+  ]
+}

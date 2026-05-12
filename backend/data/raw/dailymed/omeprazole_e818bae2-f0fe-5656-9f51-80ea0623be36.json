@@ -1,0 +1,32 @@
+{
+  "drug_name": "OMEPRAZOLE",
+  "generic_name": [
+    "OMEPRAZOLE"
+  ],
+  "active_ingredients": [
+    "Omeprazole 20 mg delayed-release tablet/capsule (OTC, e.g., Prilosec OTC); 10 mg, 20 mg, 40 mg by prescription"
+  ],
+  "indications_and_usage": [
+    "Uses (OTC): treats frequent heartburn (heartburn that occurs 2 or more days a week); it is a proton pump inhibitor (PPI) that strongly reduces stomach acid - it is not for immediate relief and may take 1 to 4 days for full effect. By prescription it is used for GERD with erosive esophagitis, gastric and duodenal ulcers, H. pylori eradication (with antibiotics), and hypersecretory conditions."
+  ],
+  "contraindications": [
+    "Do not use if you have a known hypersensitivity to omeprazole or other PPIs. Do not use with rilpivirine-containing products."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Not for immediate relief - use an antacid or H2 blocker for fast relief. Ask a doctor before use if you have trouble or pain swallowing, vomiting blood, bloody or black stools, heartburn with lightheadedness/sweating/dizziness, chest/shoulder/jaw pain or shortness of breath, frequent chest pain, or unexplained weight loss. Long-term or high-dose PPI use is associated with bone fractures, low magnesium, vitamin B12 deficiency, C. difficile diarrhea, and (rarely) acute interstitial nephritis or cutaneous/systemic lupus erythematosus. Stop and see a doctor if symptoms continue."
+  ],
+  "adverse_reactions": [
+    "Headache, abdominal pain, nausea, diarrhea, vomiting, flatulence; with long-term use - low magnesium, B12 deficiency, increased fracture and infection risk."
+  ],
+  "drug_interactions": [
+    "Clopidogrel: omeprazole inhibits CYP2C19 and can reduce the activation of clopidogrel, potentially lessening its antiplatelet effect - avoid this combination if possible (pantoprafole or famotidine are preferred alternatives) and check with the prescriber/pharmacist.",
+    "Drugs needing stomach acid for absorption (e.g., ketoconazole, itraconazole, atazanavir, erlotinib, certain iron salts): reduced absorption. Methotrexate: PPIs can raise methotrexate levels. Warfarin, phenytoin, diazepam, tacrolimus, citalopram: levels can be affected. Rilpivirine: contraindicated."
+  ],
+  "dosage_and_administration": [
+    "Adults 18 years and over (OTC): swallow one 20 mg tablet with a glass of water before eating in the morning, every day for 14 days; do not take for more than 14 days or more often than every 4 months unless directed by a doctor; it may take 1-4 days for full effect. By prescription, GERD/erosive esophagitis is typically 20-40 mg once daily for 4-8 weeks. Children under 18: ask a doctor (pediatric GERD dosing is weight-based and prescriber-directed)."
+  ],
+  "overdosage": [
+    "Overdose has caused confusion, drowsiness, blurred vision, rapid heartbeat, nausea, and headache, but is generally not life-threatening. Contact Poison Control (1-800-222-1222)."
+  ]
+}

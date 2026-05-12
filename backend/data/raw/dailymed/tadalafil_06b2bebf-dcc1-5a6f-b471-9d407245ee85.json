@@ -1,0 +1,31 @@
+{
+  "drug_name": "TADALAFIL",
+  "generic_name": [
+    "TADALAFIL"
+  ],
+  "active_ingredients": [
+    "Tadalafil 2.5 mg, 5 mg, 10 mg, 20 mg tablets (for erectile dysfunction and/or BPH, e.g., Cialis); 20 mg tablets for pulmonary arterial hypertension (Adcirca) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of erectile dysfunction (ED), the signs and symptoms of benign prostatic hyperplasia (BPH), ED and BPH together, and (as Adcirca) pulmonary arterial hypertension. It is a long-acting PDE5 inhibitor (effects last up to 36 hours), which is why it is sometimes called the 'weekend pill'; with daily low-dose (2.5-5 mg) dosing, sexual activity does not need to be planned around the dose. Prescription only - the same cardiovascular and drug-interaction cautions apply as for sildenafil."
+  ],
+  "contraindications": [
+    "Concomitant use of organic nitrates in any form; concomitant use with riociguat; known hypersensitivity to tadalafil."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Cardiovascular risk (as for other PDE5 inhibitors); priapism (>4-hour erection - emergency); NAION (sudden vision loss) and sudden hearing loss; severe hypotension with alpha-blockers, antihypertensives, alcohol, or 'poppers'/recreational nitrites; reduce dose in hepatic and renal impairment and with strong CYP3A4 inhibitors. Tadalafil's longer half-life means interactions and side effects can persist for a day or more."
+  ],
+  "adverse_reactions": [
+    "Headache, dyspepsia, back pain or myalgia (24-48 hours after dosing), nasal congestion, flushing, limb pain, nausea; rarely priapism, NAION, sudden hearing loss, severe hypotension, hypersensitivity reactions."
+  ],
+  "drug_interactions": [
+    "Nitrates and riociguat - contraindicated; strong CYP3A4 inhibitors (ritonavir, ketoconazole, itraconazole, clarithromycin) raise levels - reduce dose; CYP3A4 inducers (rifampin) lower effect; alpha-blockers and antihypertensives (additive hypotension); grapefruit juice; alcohol."
+  ],
+  "dosage_and_administration": [
+    "ED, on-demand (adults): 10 mg before anticipated sexual activity (range 5-20 mg), once per day. ED and/or BPH, once-daily: 2.5-5 mg at the same time each day, with or without sexual activity. Pulmonary arterial hypertension: 40 mg once daily. Start lower in renal/hepatic impairment and with strong CYP3A4 inhibitors. Use only as prescribed - do not combine with any other PDE5 inhibitor."
+  ],
+  "overdosage": [
+    "Doses up to 500 mg in healthy men and 100 mg in patients have been associated with adverse effects similar to those at lower doses; no specific antidote; supportive care - not removed by dialysis. Seek emergency care for severe hypotension, priapism, or vision/hearing changes; call Poison Control (1-800-222-1222)."
+  ]
+}

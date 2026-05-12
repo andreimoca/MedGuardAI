@@ -1,0 +1,34 @@
+{
+  "drug_name": "MONTELUKAST SODIUM",
+  "generic_name": [
+    "MONTELUKAST",
+    "MONTELUKAST SODIUM"
+  ],
+  "active_ingredients": [
+    "Montelukast sodium 10 mg film-coated tablets; 4 mg and 5 mg chewable tablets; 4 mg oral granules (e.g., Singulair) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the prophylaxis and chronic treatment of asthma in patients 12 months and older, prevention of exercise-induced bronchoconstriction in patients 6 years and older, and relief of symptoms of allergic rhinitis (seasonal in patients >=2 years, perennial in patients >=6 months). It is a leukotriene receptor antagonist taken as a daily controller; it is not for acute asthma attacks. Prescription only."
+  ],
+  "contraindications": [
+    "Hypersensitivity to montelukast or any component of the product."
+  ],
+  "boxed_warning": [
+    "Serious neuropsychiatric events have been reported with montelukast, including agitation, depression, sleep disturbances, suicidal thoughts and behavior, and completed suicide. Because of the risk of these events, the benefits may not outweigh the risks in some patients - particularly for allergic rhinitis with mild, episodic symptoms, where alternative therapies should be considered. Counsel patients and caregivers to watch for and report changes in mood, behavior, or sleep, including suicidal thoughts; discontinue if such symptoms occur."
+  ],
+  "warnings_and_cautions": [
+    "Not for acute asthma - keep a rescue inhaler. Neuropsychiatric events as above (can occur with or without prior psychiatric history; may persist after stopping). Do not abruptly substitute it for inhaled or oral corticosteroids. Eosinophilic conditions, sometimes presenting as Churg-Strauss (eosinophilic granulomatosis with polyangiitis), have occurred, often with steroid taper. The 4 mg chewable contains phenylalanine (caution in phenylketonuria). Systemic eosinophilia and vasculitis - monitor."
+  ],
+  "adverse_reactions": [
+    "Upper respiratory infection, headache, abdominal pain, cough, influenza, diarrhea; neuropsychiatric symptoms (sleep disturbance/nightmares, anxiety, depression, irritability, hostility, suicidal ideation); rarely hepatitis, severe allergic reactions, eosinophilic conditions."
+  ],
+  "drug_interactions": [
+    "Phenobarbital, rifampin, and other strong CYP enzyme inducers can lower montelukast levels; gemfibrozil may raise them. Generally well tolerated with other asthma and allergy medications. No dose adjustment needed for most co-medications."
+  ],
+  "dosage_and_administration": [
+    "Asthma and/or allergic rhinitis: adults and adolescents 15 years and over - one 10 mg tablet once daily; children 6-14 years - one 5 mg chewable once daily; children 2-5 years - one 4 mg chewable or one packet of 4 mg granules once daily; allergic rhinitis only in children 6-23 months - 4 mg granules once daily. For asthma, take in the evening; for exercise-induced bronchoconstriction prevention (>=6 years), take one dose at least 2 hours before exercise and not another within 24 hours. Take regularly, even when symptom-free."
+  ],
+  "overdosage": [
+    "Overdose reports describe abdominal pain, somnolence, thirst, headache, vomiting, and hyperactivity; no specific antidote, supportive care. Contact Poison Control (1-800-222-1222)."
+  ]
+}

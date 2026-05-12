@@ -1,0 +1,32 @@
+{
+  "drug_name": "TETRAHYDROZOLINE HYDROCHLORIDE OPHTHALMIC SOLUTION",
+  "generic_name": [
+    "TETRAHYDROZOLINE",
+    "TETRAHYDROZOLINE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Tetrahydrozoline hydrochloride 0.05% ophthalmic solution - 'redness reliever' eye drops (e.g., Visine Original)"
+  ],
+  "indications_and_usage": [
+    "Uses: relieves redness of the eye due to minor eye irritations; the medicine is a decongestant (vasoconstrictor) that narrows the small blood vessels on the surface of the eye to reduce the appearance of redness. It treats only the redness, not the underlying cause (allergy, dryness, infection, contact-lens irritation)."
+  ],
+  "contraindications": [
+    "Do not use if you have narrow-angle glaucoma without a doctor's advice; do not use if allergic to any ingredient."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For ophthalmic use only. Overuse can cause rebound redness - do not use for more than 72 hours in a row; if redness persists, see a doctor (it may be from an infection, inflammation, or other cause that needs treatment). Pupils may become temporarily enlarged. Remove contact lenses before use. Ask a doctor before use if you have heart disease, high blood pressure, or narrow-angle glaucoma. Stop use and ask a doctor if you have eye pain, vision changes, or continued/worsened redness or irritation. Do not touch the dropper tip to any surface, and do not use if the solution changes color or becomes cloudy. Keep out of reach of children - even small amounts swallowed can be very dangerous to a child."
+  ],
+  "adverse_reactions": [
+    "Transient stinging/burning, dilated pupils, blurred vision, rebound redness with overuse; rarely raised blood pressure or palpitations from absorption; serious CNS depression if a child ingests it."
+  ],
+  "drug_interactions": [
+    "MAO inhibitors and tricyclic antidepressants (possible pressor effect from absorbed drug)."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 6 years and over: put 1-2 drops in the affected eye(s) up to 4 times daily; do not use for more than 72 hours continuously. Children under 6 years: ask a doctor."
+  ],
+  "overdosage": [
+    "Ingestion, especially by a child, causes imidazoline toxicity: marked drowsiness, sweating, very slow heartbeat, low temperature, low blood pressure, and possibly coma - this is a medical emergency. Seek emergency care and call Poison Control (1-800-222-1222) immediately."
+  ]
+}

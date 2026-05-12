@@ -1,0 +1,32 @@
+{
+  "drug_name": "LOPERAMIDE HYDROCHLORIDE",
+  "generic_name": [
+    "LOPERAMIDE",
+    "LOPERAMIDE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Loperamide hydrochloride 2 mg per caplet/tablet/capsule or per 15 mL liquid (e.g., Imodium A-D)"
+  ],
+  "indications_and_usage": [
+    "Uses: controls the symptoms of diarrhea, including diarrhea associated with irritable bowel syndrome (when diagnosed by a doctor) and travelers' diarrhea; reduces stool frequency and helps firm the stool. It is an anti-motility (anti-diarrheal) agent."
+  ],
+  "contraindications": [
+    "Do not use if you have bloody or black stool, a high fever, or diarrhea caused by certain bacteria (which can be made worse by slowing the gut), or if you have had a rash or other allergic reaction to loperamide. Do not use in children under 6 unless directed by a doctor."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Do not use if you have abdominal pain without diarrhea. Heart warning: taking more than directed can cause serious, life-threatening heart rhythm problems (QT prolongation, torsades de pointes) - never exceed the labeled dose, and do not take with drugs that also affect the QT interval. Stop use and ask a doctor if symptoms get worse, diarrhea lasts more than 2 days, or you develop bloody/black stool or fever. Drink plenty of fluids to replace losses. Ask a doctor before use if you have liver disease or are taking antibiotics."
+  ],
+  "adverse_reactions": [
+    "Constipation, abdominal cramping, dizziness, dry mouth, drowsiness; with overuse - severe constipation, ileus, urinary retention, dangerous heart rhythm disturbances."
+  ],
+  "drug_interactions": [
+    "Drugs that prolong the QT interval (some antiarrhythmics, certain antibiotics/antifungals, antipsychotics) - increased risk of dangerous arrhythmia. P-glycoprotein/CYP3A4 inhibitors (quinidine, ritonavir, itraconazole, gemfibrozil) can raise loperamide levels. Avoid co-use with other CNS depressants in excess."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: take 4 mg (2 caplets) after the first loose stool, then 2 mg (1 caplet) after each subsequent loose stool, but no more than 8 mg (4 caplets) in 24 hours for OTC use (under a doctor's supervision the maximum is 16 mg/day); stop when stools are formed. Children 9-11 years (60-95 lb): 2 mg first dose then 1 mg after each loose stool, max 6 mg/day. Children 6-8 years (48-59 lb): 2 mg first dose then 1 mg after each loose stool, max 4 mg/day. Children under 6: do not use unless directed by a doctor. See a doctor if no improvement within 48 hours or if blood appears in the stool or a high fever develops."
+  ],
+  "overdosage": [
+    "Overdose can cause profound constipation, ileus, urinary retention, CNS depression, and serious cardiac arrhythmias (which can be fatal); naloxone may be used for CNS/respiratory depression. Seek emergency care; contact Poison Control (1-800-222-1222) immediately - do not 'megadose' loperamide."
+  ]
+}

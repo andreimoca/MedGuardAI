@@ -1,0 +1,31 @@
+{
+  "drug_name": "GABAPENTIN",
+  "generic_name": [
+    "GABAPENTIN"
+  ],
+  "active_ingredients": [
+    "Gabapentin 100 mg, 300 mg, 400 mg capsules; 600 mg, 800 mg tablets; 250 mg/5 mL oral solution (e.g., Neurontin) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the management of postherpetic neuralgia (nerve pain after shingles) in adults, and as adjunctive therapy in the treatment of partial-onset seizures in adults and children 3 years and older. It is also widely used off-label for diabetic peripheral neuropathy and other neuropathic pain - those uses should be guided by a clinician. It is not a controlled substance federally in the US but is controlled in some states because of misuse potential, especially with opioids. Prescription only - taper rather than stop abruptly after long use."
+  ],
+  "contraindications": [
+    "Known hypersensitivity to gabapentin or any of its components."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Respiratory depression can occur in patients with respiratory risk factors (COPD, advanced age) or when combined with opioids, benzodiazepines, or other CNS depressants - some severe events have been fatal. Suicidal behavior and ideation have been reported (class effect of antiepileptic drugs) - monitor mood and behavior. DRESS / multiorgan hypersensitivity. Anaphylaxis and angioedema. Driving impairment and somnolence - especially when starting. Neuropsychiatric symptoms in pediatric patients. Withdrawal-precipitated seizures - do not stop abruptly in patients with epilepsy. Dose adjustment in renal impairment. Misuse and dependence in patients with substance use disorders."
+  ],
+  "adverse_reactions": [
+    "Dizziness, somnolence, ataxia, peripheral edema, fatigue, weight gain, blurred vision; in children - emotional lability, hostility; rarely respiratory depression (with opioids), DRESS, severe rash, anaphylaxis."
+  ],
+  "drug_interactions": [
+    "Opioids (morphine - increased gabapentin exposure and CNS depression), benzodiazepines, alcohol, other CNS depressants - additive sedation/respiratory depression (potentially fatal); antacids containing aluminum/magnesium reduce absorption - separate by 2 hours; no significant interactions with most antiepileptics."
+  ],
+  "dosage_and_administration": [
+    "Postherpetic neuralgia: start 300 mg on day 1, 300 mg twice daily on day 2, 300 mg three times daily on day 3; titrate as needed up to 1800 mg/day in 3 divided doses (max 3600 mg/day). Partial-onset seizures (adults and children >=12): start 300 mg three times daily, titrate to 1800 mg/day; range 900-3600 mg/day in 3 divided doses. Children 3-12: 10-15 mg/kg/day in 3 divided doses, titrated. Renal impairment - adjust per CrCl. Take with or without food; maximum interval between doses should not exceed 12 hours. Do not stop suddenly - taper over at least 1 week."
+  ],
+  "overdosage": [
+    "Overdose can cause double vision, slurred speech, drowsiness, lethargy, diarrhea, and (in large overdoses with other CNS depressants) respiratory depression and coma. Supportive care; hemodialysis can remove gabapentin. Seek emergency care; call Poison Control (1-800-222-1222)."
+  ]
+}

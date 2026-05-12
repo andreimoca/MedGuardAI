@@ -1,0 +1,32 @@
+{
+  "drug_name": "ATORVASTATIN CALCIUM",
+  "generic_name": [
+    "ATORVASTATIN",
+    "ATORVASTATIN CALCIUM"
+  ],
+  "active_ingredients": [
+    "Atorvastatin calcium 10 mg, 20 mg, 40 mg, 80 mg tablets (e.g., Lipitor) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated as an adjunct to diet to reduce the risk of cardiovascular events (MI, stroke, revascularization) in adults with multiple risk factors or established cardiovascular disease, and to lower elevated total cholesterol, LDL-C, apolipoprotein B, triglycerides, and increase HDL-C in adults and pediatric patients (10 years and older) with primary hyperlipidemia, mixed dyslipidemia, hypertriglyceridemia, dysbetalipoproteinemia, or homozygous familial hypercholesterolemia. It is an HMG-CoA reductase inhibitor (statin). Prescription only."
+  ],
+  "contraindications": [
+    "Acute liver failure or decompensated cirrhosis; known hypersensitivity to atorvastatin; pregnancy and breastfeeding (the prior statin contraindication in pregnancy was updated by FDA in 2021 - statins are no longer contraindicated in all pregnancies but should generally be discontinued during pregnancy unless the cardiovascular risk warrants continuation; discuss with the prescriber)."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Myopathy and rhabdomyolysis (rare) - more likely with high doses, advanced age, female sex, low body weight, hypothyroidism, renal impairment, or concomitant CYP3A4 inhibitors/fibrates/niacin; muscle pain, tenderness, or weakness with dark urine should prompt evaluation. Liver enzyme elevations - check baseline LFTs and as clinically indicated; severe liver injury is rare. Slight increase in HbA1c/fasting glucose; benefit usually outweighs risk. Immune-mediated necrotizing myopathy (rare). Memory loss/confusion has been reported but is reversible and not consistently linked. Reduce statin dose with strong CYP3A4 inhibitors."
+  ],
+  "adverse_reactions": [
+    "Myalgia, arthralgia, diarrhea, urinary tract infection, nasopharyngitis, insomnia, headache, nausea; rarely myopathy/rhabdomyolysis, hepatic dysfunction, new-onset diabetes."
+  ],
+  "drug_interactions": [
+    "Strong CYP3A4 inhibitors - clarithromycin, itraconazole, ritonavir/HIV protease inhibitors, ketoconazole, cyclosporine (raise atorvastatin levels - reduce dose or avoid); cyclosporine - limit atorvastatin to 10 mg/day; fibrates (gemfibrozil - avoid, fenofibrate - cautious); niacin (high dose) - myopathy risk; colchicine, daptomycin (myopathy); rifampin (lower levels); grapefruit juice in large amounts (raises levels); digoxin levels rise slightly; warfarin - monitor INR initially."
+  ],
+  "dosage_and_administration": [
+    "Adults: start 10 or 20 mg once daily; or 40 mg in patients needing >45% LDL reduction; titrate at 2-4 week intervals; range 10-80 mg/day. After acute coronary syndrome or for high-intensity treatment, 40-80 mg/day is typical. Children 10-17 years with heterozygous familial hypercholesterolemia: start 10 mg/day, up to 20 mg/day. Take at any time of day, with or without food, at the same time each day. Adhere to a heart-healthy diet, exercise, and blood-test monitoring."
+  ],
+  "overdosage": [
+    "No specific antidote; supportive care - dialysis is not useful. Monitor for hepatic and muscle effects with very large overdoses. Seek medical care; call Poison Control (1-800-222-1222)."
+  ]
+}

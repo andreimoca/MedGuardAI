@@ -1,0 +1,31 @@
+{
+  "drug_name": "ADAPALENE GEL 0.1%",
+  "generic_name": [
+    "ADAPALENE"
+  ],
+  "active_ingredients": [
+    "Adapalene 0.1% topical gel (e.g., Differin Gel - the first OTC topical retinoid for acne); 0.3% gel by prescription"
+  ],
+  "indications_and_usage": [
+    "Uses: for the treatment of acne; it is a topical retinoid that normalizes the way skin cells shed inside the pore, which clears existing pimples, blackheads, and whiteheads and, importantly, prevents new ones - so it is used on the whole acne-prone area, not just on spots, and benefits build over 8-12 weeks of daily use."
+  ],
+  "contraindications": [
+    "Do not use if you are allergic to adapalene; do not use on skin with cuts, abrasions, eczema, or sunburn; do not use if you are pregnant or planning to become pregnant - ask a doctor first."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only; avoid the eyes, lips, and mucous membranes. Irritation (redness, dryness, scaling, stinging, burning) is common in the first 2-4 weeks and usually settles - if it is severe, use every other day and apply a non-comedogenic moisturizer. Acne may appear to worsen at first (a 'purge') before improving. It increases sun sensitivity - use sunscreen daily and minimize sun exposure; avoid waxing treated skin. Do not use more than one acne product at a time unless a doctor says so. Ask a doctor before use if you are pregnant or breastfeeding. Stop use and ask a doctor if irritation becomes severe or you have an allergic reaction."
+  ],
+  "adverse_reactions": [
+    "Dryness, scaling, redness, burning or stinging, itching, sunburn; transient acne flaring early in treatment."
+  ],
+  "drug_interactions": [
+    "Benzoyl peroxide, sulfur, salicylic acid, alpha/beta hydroxy acids, and alcohol-based or astringent products increase irritation if layered - introduce gradually or alternate; combination adapalene + benzoyl peroxide products are formulated to be used together. Avoid concurrent use of other topical retinoids."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: wash the face with a gentle cleanser and pat dry; apply a thin layer of gel (about a pea-sized amount for the whole face) once daily in the evening over the entire acne-prone area; a mild warming or slight stinging may occur. Use it every day - results take time (8-12 weeks). Children under 12: ask a doctor."
+  ],
+  "overdosage": [
+    "Excessive topical use causes marked local irritation, redness, and peeling but is not systemically toxic; ingestion is not expected to be harmful in small amounts. Contact Poison Control (1-800-222-1222) for large ingestions."
+  ]
+}

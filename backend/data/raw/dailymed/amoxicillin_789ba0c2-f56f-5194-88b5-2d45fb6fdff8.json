@@ -1,0 +1,31 @@
+{
+  "drug_name": "AMOXICILLIN",
+  "generic_name": [
+    "AMOXICILLIN"
+  ],
+  "active_ingredients": [
+    "Amoxicillin 250 mg, 500 mg, 875 mg capsules/tablets; 125, 200, 250, 400 mg/5 mL oral suspension; chewable tablets - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of infections due to susceptible strains of designated organisms - upper and lower respiratory tract infections (e.g., pharyngitis/tonsillitis from group A strep, otitis media, sinusitis, community-acquired pneumonia), genitourinary infections (uncomplicated UTI), skin and skin-structure infections, Helicobacter pylori eradication in combination regimens, and as endocarditis prophylaxis before dental procedures in selected patients. It is a penicillin-class (beta-lactam) antibiotic. Prescription only - take exactly as prescribed and complete the full course."
+  ],
+  "contraindications": [
+    "History of a serious hypersensitivity reaction (e.g., anaphylaxis or Stevens-Johnson syndrome) to amoxicillin or any other beta-lactam (penicillins, cephalosporins). Patients allergic to penicillin should not take amoxicillin - amoxicillin is itself a penicillin and full cross-reactivity exists."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Anaphylactic and other serious hypersensitivity reactions, sometimes fatal, have been reported in patients on penicillins - take an allergy history carefully; cross-reactivity with other beta-lactams. Clostridioides difficile-associated diarrhea, ranging from mild diarrhea to fatal colitis, may occur during or after treatment - report severe, watery, or bloody diarrhea. Rash, including a non-allergic rash in infectious mononucleosis (almost universal). Hepatic dysfunction. Selecting for resistant organisms with inappropriate use. Phenylketonuric patients - chewables may contain phenylalanine. Risk of crystalluria - maintain hydration."
+  ],
+  "adverse_reactions": [
+    "Diarrhea, nausea, vomiting, abdominal pain, rash (including non-allergic morbilliform rash, especially in mononucleosis), vaginal candidiasis (yeast infection); rarely anaphylaxis, Stevens-Johnson syndrome, hepatic injury, C. difficile colitis, hemolytic anemia, interstitial nephritis."
+  ],
+  "drug_interactions": [
+    "Allopurinol (increased risk of rash); probenecid (raises and prolongs amoxicillin levels - sometimes intentional); oral typhoid vaccine and BCG (may be inactivated); methotrexate (raised levels); warfarin (some reports of altered INR - monitor); oral contraceptives (theoretical reduction in effectiveness - generally clinically insignificant for amoxicillin, but back-up barrier method is sometimes recommended)."
+  ],
+  "dosage_and_administration": [
+    "Adults and children >40 kg: typical 250-500 mg every 8 hours, or 500-875 mg every 12 hours, depending on the indication. Children <=40 kg: 20-90 mg/kg/day in divided doses (every 8 or every 12 hours), per indication. Streptococcal pharyngitis: 50 mg/kg once daily (max 1 g) or divided dosing for 10 days. H. pylori: as part of a combination regimen, 1 g twice daily for 10-14 days. Adjust dose in severe renal impairment. Take with or without food; complete the full prescribed course even if you feel better."
+  ],
+  "overdosage": [
+    "Overdose may cause GI symptoms and crystalluria with renal injury at very high doses; supportive care, hydration; hemodialysis can remove amoxicillin. Seek medical care; call Poison Control (1-800-222-1222)."
+  ]
+}

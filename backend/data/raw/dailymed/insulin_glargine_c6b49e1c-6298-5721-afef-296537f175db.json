@@ -1,0 +1,31 @@
+{
+  "drug_name": "INSULIN GLARGINE",
+  "generic_name": [
+    "INSULIN GLARGINE"
+  ],
+  "active_ingredients": [
+    "Insulin glargine 100 units/mL, vial or prefilled pen (e.g., Lantus, Basaglar); 300 units/mL (Toujeo) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated to improve glycemic control in adults and pediatric patients with type 1 diabetes mellitus, and in adults with type 2 diabetes mellitus. It is a long-acting basal insulin analog given once (or sometimes twice) daily to provide background insulin coverage. It must be used along with attention to diet, exercise, and (in type 1, or in advanced type 2) mealtime insulin or other glucose-lowering medicines. Prescription only - dosing is highly individualized and must be guided by a clinician."
+  ],
+  "contraindications": [
+    "During episodes of hypoglycemia; in patients with hypersensitivity to insulin glargine or any of its excipients."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Never share insulin pens, cartridges, or needles between patients - risk of transmitting bloodborne pathogens. Hypoglycemia is the most common serious adverse effect - timing, dose, missed meals, alcohol, kidney/liver disease, and concomitant drugs all affect risk. Severe hypoglycemia can cause seizures, coma, and death. Hypokalemia - use caution with drugs sensitive to potassium changes. Never inject intravenously or in an insulin pump. Do not mix insulin glargine with other insulins in the same syringe. Lipodystrophy and local injection reactions - rotate injection sites. Increased risk of fluid retention/heart failure with thiazolidinediones. Always counter-check the dose carefully; do not switch between glargine 100 and 300 unit/mL strengths without dose adjustment. Glucose monitoring is essential."
+  ],
+  "adverse_reactions": [
+    "Hypoglycemia, weight gain, injection-site reactions (redness, itching, lipodystrophy), fluid retention; rarely hypersensitivity reactions including anaphylaxis."
+  ],
+  "drug_interactions": [
+    "Drugs that may increase the blood-glucose-lowering effect and hypoglycemia risk - antidiabetic medicines, ACE inhibitors, ARBs, fibrates, fluoxetine, MAO inhibitors, pentoxifylline, propoxyphene, salicylates, sulfonamide antibiotics. Drugs that may decrease the effect - atypical antipsychotics, corticosteroids, danazol, diuretics, glucagon, isoniazid, niacin (high dose), estrogens/progestogens, phenothiazines, somatropin, sympathomimetics, thyroid hormones. Beta-blockers, clonidine, lithium, and alcohol may increase or decrease the effect and mask symptoms of hypoglycemia."
+  ],
+  "dosage_and_administration": [
+    "Highly individualized. Adults with type 2 diabetes, insulin-naive: typically start 0.2 units/kg or 10 units once daily and titrate to fasting glucose targets. Type 1: dose makes up part of total daily insulin (often about 50% as basal); always use with mealtime insulin. Subcutaneous injection into the abdomen, thigh, or upper arm; rotate sites within the region. Administer at about the same time each day. Do not dilute or mix. Glucose monitoring multiple times daily."
+  ],
+  "overdosage": [
+    "Overdose causes hypoglycemia and possible hypokalemia. Mild hypoglycemia: take 15-20 g fast-acting carbohydrate, recheck glucose in 15 minutes, repeat as needed. Severe (unable to take by mouth, unconscious): glucagon by injection or IV dextrose; call 911. Episodes can recur or be delayed because of the long action of glargine - extended monitoring (24+ hours) is required."
+  ]
+}

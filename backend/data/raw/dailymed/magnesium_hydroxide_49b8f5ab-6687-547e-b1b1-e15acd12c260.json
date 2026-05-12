@@ -1,0 +1,31 @@
+{
+  "drug_name": "MAGNESIUM HYDROXIDE",
+  "generic_name": [
+    "MAGNESIUM HYDROXIDE"
+  ],
+  "active_ingredients": [
+    "Magnesium hydroxide 1200 mg per 15 mL (Milk of Magnesia); also available as chewable tablets"
+  ],
+  "indications_and_usage": [
+    "Uses: relieves occasional constipation (irregularity), generally producing a bowel movement in 30 minutes to 6 hours; at lower doses it also works as an antacid to relieve heartburn, sour stomach, and acid indigestion. It is a saline (osmotic) laxative."
+  ],
+  "contraindications": [
+    "Do not use if you have kidney disease, a magnesium-restricted diet, stomach pain, nausea, or vomiting, or a sudden change in bowel habits lasting more than 2 weeks, without asking a doctor."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Ask a doctor before use if you have kidney disease (risk of high blood magnesium - hypermagnesemia, which can cause weakness, low blood pressure, slow heartbeat, and breathing trouble). Do not use as a laxative for more than 1 week unless directed by a doctor. Stop use and ask a doctor if you have rectal bleeding or no bowel movement after use. Drink a full glass of water with each dose."
+  ],
+  "adverse_reactions": [
+    "Loose stools, abdominal cramping, diarrhea; with kidney impairment or overuse - hypermagnesemia."
+  ],
+  "drug_interactions": [
+    "As an antacid it reduces absorption of tetracyclines, fluoroquinolones (e.g., ciprofloxacin), iron, and certain other drugs - separate by 2-4 hours. Avoid in patients on magnesium-containing supplements with kidney disease."
+  ],
+  "dosage_and_administration": [
+    "Laxative (adults and children 12 and over): 30-60 mL of the standard liquid once daily (preferably at bedtime), with a full glass of water; children 6-11 years: 15-30 mL. As an antacid: 5-15 mL as needed, up to the labeled daily maximum. Children under 6: ask a doctor."
+  ],
+  "overdosage": [
+    "Overdose, especially in renal impairment, causes hypermagnesemia: nausea, vomiting, flushing, low blood pressure, muscle weakness, slow or irregular heartbeat, and respiratory depression - potentially life-threatening. Seek emergency care; contact Poison Control (1-800-222-1222)."
+  ]
+}

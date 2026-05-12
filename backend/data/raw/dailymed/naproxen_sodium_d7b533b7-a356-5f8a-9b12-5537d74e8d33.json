@@ -1,0 +1,41 @@
+{
+  "drug_name": "NAPROXEN SODIUM",
+  "generic_name": [
+    "NAPROXEN",
+    "NAPROXEN SODIUM"
+  ],
+  "active_ingredients": [
+    "Naproxen sodium 220 mg per tablet (OTC, equals 200 mg naproxen base); naproxen 250 mg, 375 mg, 500 mg tablets by prescription"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves minor aches and pains due to headache, muscular aches, backache, minor pain of arthritis, menstrual cramps, toothache, and the common cold; temporarily reduces fever. It is a long-acting NSAID, so doses last about 8-12 hours. By prescription it is also used to treat rheumatoid arthritis, osteoarthritis, ankylosing spondylitis, tendinitis, bursitis, gout attacks, and acute pain."
+  ],
+  "contraindications": [
+    "Do not use if you have ever had an allergic reaction to naproxen, aspirin, or any other NSAID. Do not use right before or after heart bypass surgery. Avoid in active GI ulcer/bleeding."
+  ],
+  "boxed_warning": [
+    "NSAIDs increase the risk of serious cardiovascular thrombotic events (heart attack, stroke) and serious GI bleeding, ulceration, and perforation; the risk increases with dose and duration."
+  ],
+  "warnings_and_cautions": [
+    "Stomach-bleeding warning as for other NSAIDs (higher risk if age 60 or older, ulcer/bleeding history, blood thinner or steroid use, taking more/longer than directed, or 3+ alcoholic drinks daily). May cause kidney injury and raise blood pressure; use caution in heart failure, hypertension, kidney disease, and the elderly. Ask a doctor before use if you have asthma (risk of NSAID-triggered bronchospasm). Not recommended after about 20 weeks of pregnancy. Do people with a history of GI bleeding take naproxen only with a clinician's advice and gastroprotection."
+  ],
+  "adverse_reactions": [
+    "Common side effects of naproxen: heartburn, stomach pain, nausea, dyspepsia, constipation or diarrhea, headache, dizziness, drowsiness, and fluid retention. Serious (less common): GI ulcer/bleeding, kidney impairment, raised blood pressure, edema, and allergic reactions."
+  ],
+  "drug_interactions": [
+    "Warfarin and other anticoagulants/antiplatelets: combining naproxen with warfarin substantially increases the risk of serious GI and other bleeding - this combination should generally be avoided or used only with close monitoring.",
+    "Low-dose aspirin: naproxen can interfere with aspirin's antiplatelet (heart-protective) effect and adds GI risk.",
+    "Lithium: NSAIDs including naproxen can raise serum lithium concentrations and precipitate lithium toxicity; avoid or monitor levels closely.",
+    "ACE inhibitors (e.g., lisinopril), ARBs, and diuretics: naproxen can blunt their blood-pressure effect and increase the risk of kidney injury, especially in the elderly or dehydrated.",
+    "Methotrexate and cyclosporine: increased toxicity (raised methotrexate levels, additive nephrotoxicity with cyclosporine).",
+    "Other NSAIDs (ibuprofen, aspirin, ketorolac, meloxicam, diclofenac) and corticosteroids (such as prednisone): do not combine naproxen with another NSAID - adds GI ulcer, kidney, and cardiovascular risk without extra pain relief; combining with oral steroids markedly raises GI bleeding risk.",
+    "SSRIs and SNRIs - sertraline, escitalopram, fluoxetine, citalopram, venlafaxine, duloxetine: combined with naproxen these antidepressants raise the risk of GI bleeding and bruising; use the lowest effective NSAID dose, with food, and consider gastroprotection with a PPI if regular use is needed."
+  ],
+  "dosage_and_administration": [
+    "OTC (adults and children 12 and over): take 1 tablet (220 mg) every 8 to 12 hours; for the first dose 2 tablets (440 mg) may be taken within the first hour. Do not exceed 660 mg (3 tablets) in 24 hours. Take with food or milk if it upsets your stomach. Adults over 65: do not take more than 1 tablet every 12 hours unless directed by a doctor.",
+    "Prescription dosing - rheumatoid arthritis and osteoarthritis: the FDA label specifies naproxen 250 mg, 375 mg, or 500 mg twice daily; a common regimen is naproxen 500 mg twice daily, or 250 mg twice daily as a lower starting dose, adjusted to clinical response (maximum about 1000-1500 mg/day short term under supervision). Acute gout: 750 mg once, then 250 mg every 8 hours until the attack subsides."
+  ],
+  "overdosage": [
+    "Overdose may cause drowsiness, heartburn, nausea, vomiting, abdominal pain, and occasionally GI bleeding, seizures, or kidney failure. Contact a Poison Control Center (1-800-222-1222) or seek emergency care."
+  ]
+}

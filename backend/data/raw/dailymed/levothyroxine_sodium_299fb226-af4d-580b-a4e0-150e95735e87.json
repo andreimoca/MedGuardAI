@@ -1,0 +1,35 @@
+{
+  "drug_name": "LEVOTHYROXINE SODIUM",
+  "generic_name": [
+    "LEVOTHYROXINE",
+    "LEVOTHYROXINE SODIUM",
+    "L-THYROXINE"
+  ],
+  "active_ingredients": [
+    "Levothyroxine sodium 25, 50, 75, 88, 100, 112, 125, 137, 150, 175, 200, 300 mcg tablets (e.g., Synthroid, Levoxyl, Tirosint, Euthyrox) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated as replacement therapy in primary, secondary, and tertiary congenital or acquired hypothyroidism; as a pituitary thyroid-stimulating hormone (TSH) suppressant in the treatment or prevention of various types of euthyroid goiters, including thyroid nodules, subacute or chronic lymphocytic thyroiditis (Hashimoto's), multinodular goiter; and as adjunct to surgery and radioiodine therapy in the management of thyroid cancer. It is a synthetic form of the thyroid hormone T4. Prescription only - dosing must be individualized and monitored with TSH and free T4 by a clinician."
+  ],
+  "contraindications": [
+    "Untreated subclinical or overt thyrotoxicosis of any etiology; known hypersensitivity to levothyroxine; uncorrected adrenal insufficiency (treat that first to avoid acute adrenal crisis)."
+  ],
+  "boxed_warning": [
+    "Thyroid hormones, including levothyroxine, should not be used either alone or with other therapeutic agents for the treatment of obesity or for weight loss. In euthyroid patients, doses within the range of daily hormonal requirements are ineffective for weight reduction; larger doses may produce serious or even life-threatening manifestations of toxicity, particularly when given with sympathomimetic amines such as those used for their anorectic effects."
+  ],
+  "warnings_and_cautions": [
+    "Cardiac risk - in patients with cardiovascular disease, the elderly, or those with known or suspected adrenal insufficiency, initiate at lower doses and increase slowly to avoid precipitating angina, myocardial infarction, atrial fibrillation. Worsening of diabetes or anticoagulant effect (warfarin) when thyroid status changes. Decreased bone mineral density with long-term over-replacement (especially in postmenopausal women) - aim for the lowest dose that achieves the target TSH. Myxedema coma in severe hypothyroidism requires IV therapy. Monitor TSH every 6-8 weeks until stable, then every 6-12 months and with any dose change. Take consistently regarding food and other medicines (see administration)."
+  ],
+  "adverse_reactions": [
+    "Symptoms of over- or under-replacement - palpitations, tremor, sweating, nervousness, insomnia, weight loss, heat intolerance, diarrhea (overdose); fatigue, cold intolerance, weight gain, constipation (under-dose); hair loss can occur transiently. Allergic reactions to inactive ingredients in some products. Long-term over-replacement: arrhythmias, bone loss."
+  ],
+  "drug_interactions": [
+    "Drugs that reduce absorption (take levothyroxine at least 4 hours apart) - calcium, iron, aluminum/magnesium antacids, sucralfate, bile acid sequestrants (cholestyramine, colestipol), proton pump inhibitors (modestly), sevelamer, ferrous sulfate. Drugs that alter thyroid hormone requirements - estrogens (increase needed dose), androgens, glucocorticoids; phenytoin, carbamazepine, rifampin, phenobarbital increase clearance; amiodarone alters thyroid function. Levothyroxine enhances the effect of warfarin (monitor INR) and may increase insulin/oral antidiabetic needs."
+  ],
+  "dosage_and_administration": [
+    "Adults under 50 years without cardiovascular disease: usually 1.6 mcg/kg/day starting close to full replacement. Older adults or those with cardiovascular disease: start 25-50 mcg/day, increase by 12.5-25 mcg every 6-8 weeks. Children: weight- and age-based per the pediatric label/specialist guidance. Take orally on an empty stomach, with water, at the same time each day - typically 30-60 minutes before breakfast, or at least 3-4 hours after the evening meal; avoid taking with coffee, calcium, iron, or antacids; separate from other interacting medicines by 4 hours. Adjust dose based on TSH/free T4. Brand-to-brand and generic-to-brand switches can change the absorbed dose - recheck TSH about 6 weeks after any change."
+  ],
+  "overdosage": [
+    "Acute overdose causes signs of thyrotoxicosis - tachycardia, hypertension, arrhythmias, tremor, agitation, hyperthermia, seizures; effects may be delayed by hours to days. Treat with beta-blockers (propranolol), supportive care, charcoal if early; cardiac monitoring as needed. Seek emergency care; call Poison Control (1-800-222-1222)."
+  ]
+}

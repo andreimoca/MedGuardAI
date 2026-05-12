@@ -1,0 +1,32 @@
+{
+  "drug_name": "PHENYLEPHRINE HYDROCHLORIDE NASAL DECONGESTANT",
+  "generic_name": [
+    "PHENYLEPHRINE",
+    "PHENYLEPHRINE HYDROCHLORIDE"
+  ],
+  "active_ingredients": [
+    "Phenylephrine hydrochloride 10 mg per oral tablet (the 'PE' in many cold/sinus products, e.g., Sudafed PE)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves nasal and sinus congestion due to the common cold, hay fever, or other upper respiratory allergies; reduces swelling of the nasal passages and shrinks swollen membranes so you can breathe more easily. It is an oral decongestant available on the open shelf (no pharmacy-counter restriction), though oral phenylephrine's effectiveness as a decongestant has been questioned by an FDA advisory committee."
+  ],
+  "contraindications": [
+    "Do not use if you are now taking, or have within the past 2 weeks taken, a prescription MAO inhibitor."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Ask a doctor before use if you have heart disease, high blood pressure, thyroid disease, diabetes, or trouble urinating due to an enlarged prostate. Stop use and ask a doctor if you get nervous, dizzy, or sleepless, symptoms do not improve within 7 days or are accompanied by fever. Do not exceed the recommended dose - this can raise blood pressure."
+  ],
+  "adverse_reactions": [
+    "Nervousness, dizziness, headache, sleeplessness, raised blood pressure, palpitations."
+  ],
+  "drug_interactions": [
+    "MAO inhibitors (hypertensive crisis); other sympathomimetics and stimulants (additive cardiovascular effects); beta-blockers (may unmask the pressor effect); some antihypertensives may be less effective."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: 10 mg every 4 hours, not more than 60 mg in 24 hours. Children 6 to under 12: 5 mg every 4 hours, not more than 30 mg in 24 hours. Children under 6: do not use."
+  ],
+  "overdosage": [
+    "Overdose causes hypertension, headache, slow or irregular heartbeat (reflex), and palpitations; severe cases can cause stroke. Seek medical help; contact Poison Control (1-800-222-1222)."
+  ]
+}

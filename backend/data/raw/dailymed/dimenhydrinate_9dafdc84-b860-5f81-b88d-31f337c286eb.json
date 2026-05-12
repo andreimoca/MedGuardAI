@@ -1,0 +1,31 @@
+{
+  "drug_name": "DIMENHYDRINATE",
+  "generic_name": [
+    "DIMENHYDRINATE"
+  ],
+  "active_ingredients": [
+    "Dimenhydrinate 50 mg per tablet/chewable (OTC for motion sickness, e.g., Dramamine Original)"
+  ],
+  "indications_and_usage": [
+    "Uses: for the prevention and treatment of the nausea, vomiting, and dizziness associated with motion sickness (cars, boats, planes, amusement rides). It is an antihistamine antiemetic; it works best taken before travel begins."
+  ],
+  "contraindications": [
+    "Do not use if allergic to dimenhydrinate or diphenhydramine; do not give to children under 2 years except under a doctor's advice."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "May cause marked drowsiness; alcohol, sedatives, and tranquilizers may increase the drowsiness. Do not drive or operate machinery. Ask a doctor before use if you have glaucoma, breathing problems (emphysema, chronic bronchitis), or trouble urinating due to an enlarged prostate. May cause excitability, especially in children. Use caution in the elderly (anticholinergic effects, confusion, falls)."
+  ],
+  "adverse_reactions": [
+    "Drowsiness, dry mouth/nose/throat, blurred vision, constipation, dizziness; excitement in children; urinary retention in older men."
+  ],
+  "drug_interactions": [
+    "Alcohol and other CNS depressants (additive sedation); other antihistamines and anticholinergics (additive anticholinergic effects); may mask ototoxicity of aminoglycoside antibiotics."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: 50-100 mg every 4-6 hours; do not exceed 400 mg in 24 hours; take 30-60 minutes before activity for prevention. Children 6-11 years: 25-50 mg every 6-8 hours, not more than 150 mg in 24 hours. Children 2-5 years: 12.5-25 mg every 6-8 hours, not more than 75 mg in 24 hours, only if directed by a doctor. Children under 2: ask a doctor."
+  ],
+  "overdosage": [
+    "Overdose causes anticholinergic toxicity (dry mouth, flushed skin, dilated pupils, fever, fast heartbeat), drowsiness or excitation, hallucinations, and seizures - dangerous in children. Seek emergency care; contact Poison Control (1-800-222-1222)."
+  ]
+}

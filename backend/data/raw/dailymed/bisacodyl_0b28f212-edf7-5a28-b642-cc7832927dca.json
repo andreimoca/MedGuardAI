@@ -1,0 +1,31 @@
+{
+  "drug_name": "BISACODYL",
+  "generic_name": [
+    "BISACODYL"
+  ],
+  "active_ingredients": [
+    "Bisacodyl 5 mg delayed-release tablet or 10 mg rectal suppository (stimulant laxative, e.g., Dulcolax)"
+  ],
+  "indications_and_usage": [
+    "Uses: relieves occasional constipation and irregularity; the tablet generally produces a bowel movement in 6 to 12 hours, and the suppository within 15 minutes to 1 hour. It is a stimulant laxative that increases the muscle contractions of the intestines. Also used to clean the bowel before certain procedures, as directed."
+  ],
+  "contraindications": [
+    "Do not use if you have stomach pain, nausea, or vomiting, or signs of appendicitis or a bowel obstruction; do not chew or crush the tablets, and do not take within 1 hour of milk or antacids (the coating breaks down too early, causing stomach cramps)."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Do not use laxative products for more than 1 week unless directed by a doctor; long-term overuse can cause laxative dependence and loss of normal bowel function. Stop use and ask a doctor if you have rectal bleeding or fail to have a bowel movement after use, or if you need to use a laxative for more than 1 week. The suppository may cause rectal burning or irritation."
+  ],
+  "adverse_reactions": [
+    "Abdominal cramping, faintness, diarrhea, nausea; rectal burning with the suppository; electrolyte loss with overuse."
+  ],
+  "drug_interactions": [
+    "Antacids, milk, and acid reducers (H2 blockers, PPIs) can dissolve the enteric coating prematurely - separate by at least 1 hour. Diuretics and corticosteroids increase the risk of electrolyte imbalance with overuse."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: 1 to 3 tablets (5-15 mg) in a single daily dose, swallowed whole with water; or 1 suppository (10 mg) once daily, removing the foil and inserting rectally. Children 6-11 years: 1 tablet (5 mg) once daily, or one-half of a 10 mg suppository. Children under 6: ask a doctor."
+  ],
+  "overdosage": [
+    "Overdose causes abdominal cramping, severe diarrhea, dehydration, and electrolyte imbalance (low potassium); replace fluids and electrolytes. Contact Poison Control (1-800-222-1222)."
+  ]
+}

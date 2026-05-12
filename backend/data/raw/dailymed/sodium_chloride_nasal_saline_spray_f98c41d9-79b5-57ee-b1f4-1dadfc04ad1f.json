@@ -1,0 +1,31 @@
+{
+  "drug_name": "SODIUM CHLORIDE NASAL SALINE SPRAY",
+  "generic_name": [
+    "SODIUM CHLORIDE"
+  ],
+  "active_ingredients": [
+    "Sodium chloride 0.65% (isotonic) or 2.0%-3.0% (hypertonic) nasal spray/drops/rinse - a drug-free saline product"
+  ],
+  "indications_and_usage": [
+    "Uses: relieves dryness and congestion of the nose and nasal passages caused by colds, allergies, low humidity, overuse of decongestant nasal sprays, minor nosebleeds, sinusitis, rhinitis of pregnancy, and other nasal irritation; moisturizes and helps wash away mucus, dust, pollen, and other irritants. Safe for frequent use, including in infants and pregnancy, because it contains no medication."
+  ],
+  "contraindications": [
+    "None; for nasal use only."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For nasal use only. Use only with sterile, distilled, or previously boiled-and-cooled water if mixing your own rinse (tap water has rarely transmitted dangerous amoebae through nasal rinsing). Do not share the device. Stop use and ask a doctor if symptoms do not improve or worsen, or if you develop a fever."
+  ],
+  "adverse_reactions": [
+    "Mild transient stinging or burning, especially with hypertonic solutions; otherwise none."
+  ],
+  "drug_interactions": [
+    "None. Can be used safely alongside any other nasal or oral medication, and can help wash out the nose before using a steroid nasal spray."
+  ],
+  "dosage_and_administration": [
+    "Adults and children: 1-3 sprays (or several drops) in each nostril as often as needed; for rinses/irrigation, use as directed on the device, typically once or twice daily. Suitable for all ages including infants (use the saline drops and a bulb syringe for babies)."
+  ],
+  "overdosage": [
+    "Not applicable; swallowing small amounts is harmless."
+  ]
+}

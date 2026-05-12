@@ -1,0 +1,32 @@
+{
+  "drug_name": "DEXTROMETHORPHAN HYDROBROMIDE",
+  "generic_name": [
+    "DEXTROMETHORPHAN",
+    "DEXTROMETHORPHAN HYDROBROMIDE"
+  ],
+  "active_ingredients": [
+    "Dextromethorphan hydrobromide 10-20 mg per dose (immediate-release liquids/lozenges); 30 mg extended-release suspension (e.g., Delsym, Robitussin DM/Maximum Strength Cough)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves cough due to minor throat and bronchial irritation as may occur with the common cold or inhaled irritants; calms the cough reflex (it is a cough suppressant / antitussive). It is not for a cough that produces a lot of phlegm (productive cough), a chronic cough (e.g., from smoking, asthma, emphysema), or a cough with too much mucus, unless directed by a doctor."
+  ],
+  "contraindications": [
+    "Do not use if you are now taking, or have within the past 2 weeks taken, a prescription MAO inhibitor (risk of serotonin syndrome / serious reactions)."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Ask a doctor before use if you have a cough that lasts or is chronic (smoking, asthma, chronic bronchitis, emphysema), or a cough with excessive mucus. Stop use and ask a doctor if the cough lasts more than 7 days, comes back, or is accompanied by fever, rash, or persistent headache - these could indicate a serious condition. Misuse of high doses ('robotripping') can cause hallucinations, dissociation, dangerous heart rhythm changes, and serotonin syndrome - use only at the labeled dose."
+  ],
+  "adverse_reactions": [
+    "Drowsiness or dizziness, nausea, restlessness; at high/abused doses - confusion, hallucinations, fast heartbeat, raised blood pressure."
+  ],
+  "drug_interactions": [
+    "MAO inhibitors and other serotonergic drugs - SSRIs, SNRIs, tramadol, linezolid (serotonin syndrome risk); CYP2D6 inhibitors (fluoxetine, paroxetine, quinidine, bupropion) raise dextromethorphan levels; alcohol and sedatives (additive drowsiness)."
+  ],
+  "dosage_and_administration": [
+    "Immediate-release (adults and children 12 and over): 10-20 mg every 4 hours, or 30 mg every 6-8 hours, not more than about 120 mg in 24 hours. Children 6 to under 12: 5-10 mg every 4 hours, or 15 mg every 6-8 hours, not more than 60 mg/24 h. Children 4 to under 6: 2.5-7.5 mg every 4-8 hours, not more than 30 mg/24 h, only as directed by a doctor. Children under 4: do not use. Extended-release suspension lasts about 12 hours - dose accordingly per the label."
+  ],
+  "overdosage": [
+    "Overdose causes ataxia, slurred speech, agitation, hallucinations, dissociation, rapid heartbeat, high blood pressure, and at very high doses respiratory depression, seizures, and serotonin syndrome. Seek emergency care; contact Poison Control (1-800-222-1222) immediately."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "drug_name": "HYDROCHLOROTHIAZIDE",
+  "generic_name": [
+    "HYDROCHLOROTHIAZIDE"
+  ],
+  "active_ingredients": [
+    "Hydrochlorothiazide 12.5 mg, 25 mg, 50 mg tablets and capsules (e.g., Microzide; also widely used in combination products) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the treatment of hypertension (alone or in combination), and for the treatment of edema due to congestive heart failure, hepatic cirrhosis, corticosteroid and estrogen therapy, and various renal disorders. It is a thiazide diuretic that acts on the distal tubule to increase the excretion of sodium and water. Prescription only."
+  ],
+  "contraindications": [
+    "Anuria; known hypersensitivity to hydrochlorothiazide or other sulfonamide-derived drugs. Caution in patients with sulfa allergy - cross-reactivity with sulfa antibiotics is rare but possible."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "Hypotension and electrolyte imbalances - hypokalemia (especially with concurrent loop diuretics, corticosteroids, or in low-potassium diet), hyponatremia, hypomagnesemia, hypercalcemia; thiazide-induced hyperglycemia/new-onset diabetes; hyperuricemia and gout flares; photosensitivity; rare acute transient myopia and acute angle-closure glaucoma - discontinue at once; acute non-cardiogenic pulmonary edema (rare hypersensitivity); thiazides can worsen renal function in severe renal impairment; non-melanoma skin cancer risk has been reported with long-term, high-dose thiazide use - use sun protection. Worsening of lupus."
+  ],
+  "adverse_reactions": [
+    "Dizziness, lightheadedness, headache, weakness, electrolyte disturbance (low K/Na/Mg, high Ca/uric acid/glucose), gout flare, photosensitivity rash, erectile dysfunction; rarely pancreatitis, hyponatremia with severe symptoms, blood dyscrasias, pulmonary edema."
+  ],
+  "drug_interactions": [
+    "NSAIDs (reduce diuretic effect, kidney risk); lithium (raises levels markedly - avoid or monitor closely); digoxin (hypokalemia can precipitate toxicity); other antihypertensives (additive hypotension); other potassium-wasting drugs (corticosteroids); diabetes medicines (glucose-raising effect may need dose adjustments); cholestyramine/colestipol reduce absorption (separate dosing); calcium and vitamin D (hypercalcemia)."
+  ],
+  "dosage_and_administration": [
+    "Hypertension (adults): typically 12.5-25 mg once daily (in the morning to reduce night-time urination), maximum 50 mg/day; lower doses (12.5-25 mg) provide most of the antihypertensive effect with fewer metabolic side effects. Edema: 25-100 mg daily in 1-2 divided doses. Monitor blood pressure, electrolytes, glucose, and renal function periodically."
+  ],
+  "overdosage": [
+    "Overdose causes dehydration, electrolyte imbalance, hypotension, dizziness, nausea, and weakness; treat with fluid and electrolyte replacement, supportive care. Seek emergency care; call Poison Control (1-800-222-1222)."
+  ]
+}

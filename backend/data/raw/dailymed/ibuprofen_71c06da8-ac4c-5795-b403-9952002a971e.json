@@ -1,0 +1,42 @@
+{
+  "drug_name": "IBUPROFEN",
+  "generic_name": [
+    "IBUPROFEN"
+  ],
+  "active_ingredients": [
+    "Ibuprofen 200 mg per tablet/caplet (OTC); 400 mg, 600 mg, 800 mg tablets by prescription"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves minor aches and pains due to headache, toothache, backache, muscular aches, the common cold, minor pain of arthritis, and menstrual cramps. Temporarily reduces fever. It is a nonsteroidal anti-inflammatory drug (NSAID), so it also reduces inflammation/swelling (e.g., a sprained ankle, sore joints)."
+  ],
+  "contraindications": [
+    "Do not use if you have ever had an allergic reaction to ibuprofen, aspirin, or any other NSAID (symptoms such as hives, facial swelling, asthma/wheezing, shock). Do not use right before or after heart bypass surgery."
+  ],
+  "boxed_warning": [
+    "NSAIDs can cause an increased risk of serious cardiovascular thrombotic events (heart attack, stroke) and serious gastrointestinal bleeding, ulceration, and perforation of the stomach or intestines, which can be fatal; risk rises with dose and duration of use."
+  ],
+  "warnings_and_cautions": [
+    "Stomach bleeding warning: this product contains an NSAID, which may cause severe stomach bleeding; risk is higher in people age 60 or older, with a history of ulcers or bleeding, who take a blood thinner or steroid, who take more or longer than directed, or who have 3 or more alcoholic drinks a day. May also cause kidney injury and raise blood pressure. Ask a doctor before use if you have heart disease, high blood pressure, kidney disease, asthma, or are in the last 3 months of pregnancy (NSAIDs are not recommended after about 20 weeks of pregnancy). Take with food or milk if it upsets your stomach."
+  ],
+  "adverse_reactions": [
+    "Common: heartburn, nausea, stomach pain, dyspepsia, diarrhea or constipation, dizziness, headache. Serious (uncommon): GI ulcer/bleeding, kidney impairment, fluid retention/edema, raised blood pressure, allergic reactions."
+  ],
+  "drug_interactions": [
+    "Acetaminophen: ibuprofen (an NSAID) and acetaminophen act by different mechanisms and can generally be taken together or alternated for better pain/fever control, as long as each drug's own maximum daily dose is not exceeded; some combination ibuprofen + acetaminophen products exist. Don't double up on acetaminophen hidden in cold/flu products.",
+    "Warfarin and other anticoagulants/antiplatelets: increased risk of serious GI and other bleeding when combined with ibuprofen.",
+    "Low-dose aspirin (for heart/stroke protection): ibuprofen can interfere with aspirin's antiplatelet effect if taken close together; if both are needed, take aspirin at least 30 minutes before or 8 hours after ibuprofen, and discuss with a clinician.",
+    "Lithium: NSAIDs including ibuprofen can raise serum lithium levels and cause lithium toxicity; avoid the combination or have levels monitored by the prescriber.",
+    "ACE inhibitors (e.g., lisinopril), ARBs, and diuretics: ibuprofen can blunt their blood-pressure-lowering effect and, especially in older adults or dehydration, increase the risk of acute kidney injury (the 'triple whammy').",
+    "Other NSAIDs (naproxen, aspirin, ketorolac, meloxicam, diclofenac) and corticosteroids (such as prednisone): do not combine ibuprofen with another NSAID - it adds GI ulcer, kidney, and cardiovascular risk without extra pain relief; combining ibuprofen with oral steroids markedly increases GI bleeding risk.",
+    "SSRIs and SNRIs - sertraline, escitalopram, fluoxetine, citalopram, venlafaxine, duloxetine: ibuprofen and other NSAIDs combined with these antidepressants raise the risk of GI bleeding and bruising; use the lowest effective dose, with food, and consider gastroprotection with a PPI if regular use is needed.",
+    "Methotrexate: ibuprofen can raise methotrexate blood levels - avoid the combination at high methotrexate doses and use caution with weekly low-dose methotrexate for rheumatoid arthritis."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over (OTC): take 200 mg every 4 to 6 hours; if pain or fever does not respond, 400 mg may be used. Do not exceed 1200 mg in 24 hours unless directed by a doctor. Use the smallest effective dose for the shortest time. Take with food or milk if it upsets your stomach.",
+    "By prescription, under medical supervision, the maximum is 3200 mg per day in divided doses (e.g., for rheumatoid arthritis or osteoarthritis).",
+    "Children under 12 years: use a children's ibuprofen product and dose by weight (about 5-10 mg/kg per dose every 6-8 hours) as directed by a doctor; do not use in infants under 6 months without a doctor's advice."
+  ],
+  "overdosage": [
+    "Symptoms of overdose can include nausea, vomiting, abdominal pain, drowsiness, dizziness, ringing in the ears, and, in large overdoses, low blood pressure, kidney failure, GI bleeding, or seizures. Contact a Poison Control Center (1-800-222-1222) or seek emergency care."
+  ]
+}

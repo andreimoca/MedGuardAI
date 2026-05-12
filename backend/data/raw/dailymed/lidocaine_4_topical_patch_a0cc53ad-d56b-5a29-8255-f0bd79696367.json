@@ -1,0 +1,31 @@
+{
+  "drug_name": "LIDOCAINE 4% TOPICAL PATCH",
+  "generic_name": [
+    "LIDOCAINE"
+  ],
+  "active_ingredients": [
+    "Lidocaine 4% topical patch / cream (e.g., for back, neck, shoulder, and joint pain)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves minor pain, soreness, and aching of muscles and joints associated with backache, strains, sprains, bruises, arthritis, and simple muscle soreness. Works as a topical local anesthetic that numbs the area where it is applied."
+  ],
+  "contraindications": [
+    "Do not use if allergic to lidocaine or other 'caine' anesthetics. Do not use on damaged or broken skin or over large areas."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For external use only. Do not apply to wounds, cuts, or irritated/infected skin; do not bandage tightly or apply heat (heating pad) over the patch - this can increase absorption and the risk of serious side effects (irregular heartbeat, seizures, breathing problems). Use only one patch at a time and remove after up to 8-12 hours; do not use more than 3 patches in 24 hours. Wash hands after handling. Stop use if irritation occurs. Ask a doctor before use if you have liver disease."
+  ],
+  "adverse_reactions": [
+    "Mild redness, itching, or burning at the application site; rarely systemic effects if overused."
+  ],
+  "drug_interactions": [
+    "Generally none at recommended topical doses; use caution if you take other local anesthetics or class I antiarrhythmic drugs."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: clean and dry the affected area, apply one patch to intact skin for up to 8-12 hours within a 24-hour period; do not use more than 3 patches at once or in 24 hours; do not reuse a patch. For cream: apply a thin layer up to 3-4 times a day. Children under 12: ask a doctor."
+  ],
+  "overdosage": [
+    "Overuse, large areas, or heat can cause lidocaine toxicity: dizziness, drowsiness, confusion, tremor, slow or irregular heartbeat, seizures. Seek emergency care; contact Poison Control (1-800-222-1222)."
+  ]
+}

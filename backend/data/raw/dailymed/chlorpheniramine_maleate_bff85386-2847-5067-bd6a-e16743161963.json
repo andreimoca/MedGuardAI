@@ -1,0 +1,32 @@
+{
+  "drug_name": "CHLORPHENIRAMINE MALEATE",
+  "generic_name": [
+    "CHLORPHENIRAMINE",
+    "CHLORPHENIRAMINE MALEATE"
+  ],
+  "active_ingredients": [
+    "Chlorpheniramine maleate 4 mg tablets; 12 mg extended-release; 2 mg/5 mL liquid (often combined in cold/allergy products)"
+  ],
+  "indications_and_usage": [
+    "Uses: temporarily relieves these symptoms due to hay fever or other upper respiratory allergies and the common cold - runny nose, sneezing, itchy/watery eyes, itching of the nose or throat. It is a first-generation antihistamine, somewhat less sedating than diphenhydramine but still drowsy."
+  ],
+  "contraindications": [
+    "Do not use if allergic to chlorpheniramine; do not use in newborns; use caution in narrow-angle glaucoma, urinary retention/enlarged prostate, and severe asthma."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "May cause drowsiness; alcohol, sedatives, and tranquilizers may increase the drowsiness; excitability may occur, especially in children. Be careful driving or operating machinery. Ask a doctor before use if you have glaucoma, breathing problems (emphysema, chronic bronchitis), or trouble urinating due to an enlarged prostate. Use caution in the elderly (anticholinergic effects, confusion, falls)."
+  ],
+  "adverse_reactions": [
+    "Drowsiness, dry mouth/nose/throat, dizziness, blurred vision, constipation, urinary hesitancy; excitement in children."
+  ],
+  "drug_interactions": [
+    "Alcohol and CNS depressants (additive sedation); MAO inhibitors (prolonged/intensified anticholinergic effects); other anticholinergics (additive effects)."
+  ],
+  "dosage_and_administration": [
+    "Adults and children 12 years and over: 4 mg every 4-6 hours, not more than 24 mg in 24 hours (or one 12 mg extended-release tablet every 12 hours). Children 6 to under 12: 2 mg every 4-6 hours, not more than 12 mg in 24 hours. Children under 6: ask a doctor."
+  ],
+  "overdosage": [
+    "Overdose causes anticholinergic toxicity and CNS depression or, in children, excitation, hallucinations, and seizures. Seek emergency care; contact Poison Control (1-800-222-1222)."
+  ]
+}

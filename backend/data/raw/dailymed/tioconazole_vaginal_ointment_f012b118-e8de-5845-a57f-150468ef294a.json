@@ -1,0 +1,31 @@
+{
+  "drug_name": "TIOCONAZOLE VAGINAL OINTMENT",
+  "generic_name": [
+    "TIOCONAZOLE"
+  ],
+  "active_ingredients": [
+    "Tioconazole 6.5% vaginal ointment, single-dose prefilled applicator (e.g., Monistat 1 / Vagistat-1, OTC)"
+  ],
+  "indications_and_usage": [
+    "Uses: for the treatment of vaginal yeast (Candida) infections; relieves the associated external itching and irritation. It is an azole antifungal, used as a single bedtime dose. For previously diagnosed recurrent vaginal yeast infections - if it is your first-ever episode, see a doctor first, because UTIs, bacterial vaginosis, and STIs can mimic a yeast infection."
+  ],
+  "contraindications": [
+    "First-ever episode without a doctor's diagnosis; hypersensitivity to tioconazole or other imidazole antifungals; do not use if you have abdominal/pelvic pain, fever, foul-smelling discharge, or back/shoulder pain (may signal a different problem); do not use during menstruation."
+  ],
+  "boxed_warning": [],
+  "warnings_and_cautions": [
+    "For vaginal use only - not for use in the eyes or for oral ingestion; do not use a tampon, douche, or spermicide while using this product (effectiveness and irritation). Latex condoms and diaphragms may be weakened by the oil base - use an additional non-latex form of contraception during and for 3 days after treatment. If symptoms do not improve within 3 days or last more than 7 days, see a doctor (it may not be a yeast infection or may need a different treatment). Recurrent infections (4 or more in a year) should be evaluated. Mild local burning, itching, or irritation may occur."
+  ],
+  "adverse_reactions": [
+    "Vulvovaginal burning, itching, irritation, pain or discharge; headache; rarely allergic reactions."
+  ],
+  "drug_interactions": [
+    "May weaken latex condoms/diaphragms; vaginal azole antifungals may modestly enhance warfarin's effect (monitor INR in patients on warfarin)."
+  ],
+  "dosage_and_administration": [
+    "Adults and adolescents 12 years and over: insert the entire contents of one applicator into the vagina at bedtime as a single dose; effects continue working for several days; wash hands before and after; use sanitary pads (not tampons) for any drainage. Children under 12: ask a doctor."
+  ],
+  "overdosage": [
+    "Vaginal overdose is not expected to be harmful; ingestion can cause GI upset. Contact Poison Control (1-800-222-1222) for unusually large ingestions."
+  ]
+}

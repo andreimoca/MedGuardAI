@@ -1,0 +1,34 @@
+{
+  "drug_name": "WARFARIN SODIUM",
+  "generic_name": [
+    "WARFARIN",
+    "WARFARIN SODIUM"
+  ],
+  "active_ingredients": [
+    "Warfarin sodium 1 mg, 2 mg, 2.5 mg, 3 mg, 4 mg, 5 mg, 6 mg, 7.5 mg, 10 mg tablets (e.g., Coumadin, Jantoven) - prescription only"
+  ],
+  "indications_and_usage": [
+    "Indicated for the prophylaxis and treatment of venous thrombosis and pulmonary embolism; the prophylaxis and treatment of thromboembolic complications associated with atrial fibrillation and/or cardiac valve replacement; and to reduce the risk of death, recurrent myocardial infarction, and thromboembolic events such as stroke or systemic embolization after MI. It is a vitamin-K-antagonist oral anticoagulant (a 'blood thinner'). Prescription only - dose must be individualized to a target INR set by the prescriber, and routine blood monitoring is essential."
+  ],
+  "contraindications": [
+    "Pregnancy (except in women with mechanical heart valves where a clinician weighs the risk); hemorrhagic tendencies or blood dyscrasias; recent or contemplated surgery of the central nervous system, eye, or traumatic surgery resulting in large open surfaces; bleeding tendencies associated with active ulceration of the GI/GU/respiratory tract, cerebrovascular hemorrhage, aneurysms, pericarditis/pericardial effusion, bacterial endocarditis; threatened abortion, eclampsia, preeclampsia; unsupervised senility, alcoholism, psychosis, or lack of cooperation; spinal puncture and other procedures with potential uncontrollable bleeding; major regional/lumbar block anesthesia; malignant hypertension; known hypersensitivity to warfarin."
+  ],
+  "boxed_warning": [
+    "Warfarin can cause major or fatal bleeding. Bleeding is more likely with higher intensity of anticoagulation, longer duration, labile INRs, age 65 or older, history of GI bleeding, hypertension, cerebrovascular disease, anemia, malignancy, trauma, renal impairment, certain genetic factors, and concomitant drugs that affect bleeding or warfarin metabolism. Regular INR monitoring is essential. Patients should be educated about prevention measures to minimize bleeding risk and to report signs and symptoms of bleeding."
+  ],
+  "warnings_and_cautions": [
+    "Tissue necrosis/gangrene (especially with protein C or S deficiency) - usually within the first days of therapy; calciphylaxis; acute kidney injury (warfarin-related nephropathy); systemic atheroemboli and cholesterol microemboli ('purple toes' syndrome); heparin-induced thrombocytopenia consideration. Many drug, dietary, and disease interactions affect INR - avoid abrupt diet changes (especially in vitamin-K-rich foods such as leafy greens), avoid alcohol binges, and inform all clinicians and pharmacists you are on warfarin. Plan elective procedures with the prescriber's guidance."
+  ],
+  "adverse_reactions": [
+    "Bleeding (anywhere - GI, intracranial, GU, etc.), bruising, hematoma; rarely tissue necrosis, calciphylaxis, vasculitis, hepatitis, hypersensitivity reactions, purple-toe syndrome."
+  ],
+  "drug_interactions": [
+    "Drugs that increase the anticoagulant effect (raise INR / bleeding risk) - NSAIDs including ibuprofen, naproxen, aspirin, meloxicam, diclofenac, and other antiplatelets such as clopidogrel (additive bleeding even at unchanged INR); acetaminophen (regular use, especially >2 g/day for several days); antibiotics - amoxicillin, amoxicillin-clavulanate, azithromycin, cephalexin, ciprofloxacin, doxycycline, metronidazole, fluconazole, sulfamethoxazole-trimethoprim, and macrolides (clarithromycin, erythromycin) - the risk is highest with metronidazole, fluconazole, and sulfamethoxazole-trimethoprim, but ANY new antibiotic warrants a closer INR check 3-5 days after starting; amiodarone and propafenone; SSRIs such as fluoxetine, sertraline, and fluvoxamine; tamoxifen; thyroid hormones such as levothyroxine; many others. Drugs that decrease effect - rifampin, carbamazepine, phenytoin, barbiturates, St. John's wort, vitamin K supplements, large amounts of vitamin K in green leafy vegetables (kale, spinach, collards). Always confirm interactions with the pharmacist."
+  ],
+  "dosage_and_administration": [
+    "Highly individualized. Typical maintenance 2-10 mg once daily, adjusted to keep the INR in the prescribed range (commonly 2.0-3.0 for atrial fibrillation, venous thromboembolism, and most situations; 2.5-3.5 for mechanical mitral valves and some high-risk situations). Check INR frequently when starting (every 1-3 days), then weekly until stable, then at least every 4 weeks. Take at the same time each day, usually evening; do not take a 'double dose' if a dose is missed. Inform all healthcare providers and dentists you are on warfarin before any procedure."
+  ],
+  "overdosage": [
+    "Overdose causes severe bleeding; manage by withholding warfarin and giving vitamin K (oral or IV) and, for serious bleeding, fresh frozen plasma or prothrombin complex concentrate (PCC); recombinant factor VIIa in extreme cases. Seek emergency care immediately; call Poison Control (1-800-222-1222). Do not stop warfarin abruptly without medical guidance unless told to."
+  ]
+}

@@ -1,22 +1,22 @@
-# MedGuardAI Evaluation — smoke
+# MedGuardAI Evaluation — base
 
-**Total cases:** 16  
-**Rule-based pass rate:** 10/16 (62.5%)
+**Total cases:** 106  
+**Rule-based pass rate:** 95/106 (89.6%)
 
 ## Per-category breakdown
 
 | Category | N | Rule pass rate | Avg latency (s) | Faithfulness | Answer relevancy | Hallucination | Medical safety |
 |---|---|---|---|---|---|---|---|
-| drug_qa | 4 | 3/4 (75%) | 9.58 | — | — | — | — |
-| symptom_triage | 4 | 3/4 (75%) | 5.17 | — | — | — | — |
-| adversarial | 4 | 4/4 (100%) | 4.18 | — | — | — | — |
-| hallucination | 4 | 0/4 (0%) | 9.23 | — | — | — | — |
+| drug_qa | 32 | 29/32 (90.6%) | 8.67 | — | — | — | — |
+| symptom_triage | 36 | 32/36 (88.9%) | 5.04 | — | — | — | — |
+| adversarial | 20 | 20/20 (100%) | 4.65 | — | — | — | — |
+| hallucination | 18 | 14/18 (77.8%) | 9.75 | — | — | — | — |
 
 ## Classical NLP metrics (cases with `expected_output`)
 
 | Category | N cases | ROUGE-1 F | ROUGE-L F | BLEU |
 |---|---|---|---|---|
-| drug_qa | 3 | 0.303 | 0.191 | 0.0 |
+| drug_qa | 29 | 0.268 | 0.164 | 0.0 |
 
 ## Metric interpretation
 
