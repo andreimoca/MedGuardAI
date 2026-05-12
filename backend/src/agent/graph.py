@@ -224,6 +224,22 @@ def _build_llm() -> ChatOpenAI:
     return ChatOpenAI(base_url=base_url, api_key="not-needed", model=model, temperature=0.0)
 
 
+# Hard cap on how many tools the agent may invoke per query. Once this many
+# tool calls have been executed, the agent is re-prompted WITHOUT any tools
+# bound, so it is forced to answer with what it already has. Override with the
+# MEDGUARD_MAX_TOOL_CALLS env var.
+MAX_TOOL_CALLS = int(os.environ.get("MEDGUARD_MAX_TOOL_CALLS", "4"))
+
+
+def _tool_calls_used(messages: list[BaseMessage]) -> int:
+    """Count tool calls the agent has already issued in this run."""
+    return sum(
+        len(m.tool_calls)
+        for m in messages
+        if isinstance(m, AIMessage) and m.tool_calls
+    )
+
+
 def build_agent_app(llm: ChatOpenAI | None = None):
     """Compile the LangGraph state graph. `llm` is injectable for testing."""
     llm = llm or _build_llm()
@@ -279,12 +295,37 @@ def build_agent_app(llm: ChatOpenAI | None = None):
         messages = state["messages"]
         profile = _format_patient_profile(state.get("patient_context") or {})
         context = state.get("retrieved_context") or "(none)"
-        system_msg = SystemMessage(
-            content=SYSTEM_PROMPT.format(
-                patient_profile=profile, retrieved_context=context
+
+        budget_left = MAX_TOOL_CALLS - _tool_calls_used(messages)
+        prompt = SYSTEM_PROMPT.format(patient_profile=profile, retrieved_context=context)
+        if budget_left <= 0:
+            # Tool budget spent — strip tools so the model MUST answer now.
+            logger.info(f"tool budget exhausted ({MAX_TOOL_CALLS}); answering without tools")
+            prompt += (
+                "\n\nNOTE: You have used your tool budget for this question. "
+                "Do NOT request any more tools. Answer now using only the "
+                "retrieved context and the tool results already gathered."
             )
-        )
-        response = llm_with_tools.invoke([system_msg, *messages])
+            model = llm
+        else:
+            model = llm_with_tools
+
+        response = model.invoke([SystemMessage(content=prompt), *messages])
+
+        # Defensive trim: if the model asked for more tool calls than the
+        # remaining budget allows (e.g. several in one turn), keep only as
+        # many as the budget permits — never drop to zero, since an empty
+        # tool_calls list with empty content would yield no answer.
+        if (
+            isinstance(response, AIMessage)
+            and response.tool_calls
+            and len(response.tool_calls) > max(budget_left, 0)
+        ):
+            keep = max(budget_left, 1)
+            logger.info(
+                f"trimming tool calls {len(response.tool_calls)} -> {keep} (budget {budget_left})"
+            )
+            response.tool_calls = response.tool_calls[:keep]
         return {"messages": [response]}
 
     def output_guard_node(state: AgentState) -> dict:
