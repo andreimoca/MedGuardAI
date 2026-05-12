@@ -574,6 +574,34 @@ input {
   gap: 0.3rem;
 }
 
+/* Tool-call activity (shown while the agent works) */
+
+.tool-steps {
+  list-style: none;
+  margin: 0 0 0.15rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.32rem;
+}
+.tool-steps li {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--muted);
+}
+.tool-steps li span { min-width: 0; }
+.tool-steps li svg { flex-shrink: 0; }
+.tool-steps li.done { color: var(--ink-soft); }
+.tool-steps li.done svg { color: var(--ok); }
+.tool-steps li.active { color: var(--primary-700); font-weight: 600; }
+.tool-steps li.active svg { color: var(--primary); }
+.tool-steps .spin { animation: spin 0.85s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
 /* Typing indicator */
 
 .typing {

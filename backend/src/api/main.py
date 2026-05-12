@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 from typing import List, Optional, Literal
 import os
@@ -98,6 +99,46 @@ async def ask_agent(request: QueryRequest):
     except Exception as e:
         logger.error(f"Error processing context: {e}")
         raise HTTPException(status_code=500, detail="Internal server error during Agent execution.")
+
+@app.post("/api/v1/ask/stream")
+def ask_agent_stream(request: QueryRequest):
+    """Streaming variant of /api/v1/ask.
+
+    Returns newline-delimited JSON (application/x-ndjson). Each line is either:
+      {"type": "tool", "name": "...", "args": {...}}   — a tool the agent invoked
+      {"type": "answer", "answer": "...", "status": "..."} — the final reply (last line)
+
+    The frontend uses the tool events to show transient "checking …" status
+    while the agent works, then renders the final answer.
+
+    Note: defined as a sync `def` so Starlette runs it (and the underlying
+    blocking LangGraph generator) in a worker thread rather than on the event loop.
+    """
+    if not agent:
+        raise HTTPException(status_code=503, detail="Agent system not initialized.")
+
+    def event_stream():
+        try:
+            logger.info(f"Streaming query: {request.query}")
+            for event in agent.stream_query(request.query, request.patient_context.dict()):
+                yield json.dumps(event, ensure_ascii=False) + "\n"
+        except Exception as e:  # pragma: no cover - defensive
+            logger.error(f"Error streaming agent response: {e}")
+            yield json.dumps(
+                {
+                    "type": "answer",
+                    "answer": "Internal server error during Agent execution.",
+                    "status": "error",
+                },
+                ensure_ascii=False,
+            ) + "\n"
+
+    return StreamingResponse(
+        event_stream(),
+        media_type="application/x-ndjson",
+        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+    )
+
 
 @app.get("/health")
 async def health_check():

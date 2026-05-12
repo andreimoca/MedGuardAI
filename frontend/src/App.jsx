@@ -3,11 +3,33 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Send, User, Bot, AlertTriangle, HeartPulse, Plus, X, RefreshCw,
   ThumbsUp, ThumbsDown, ShieldCheck, ClipboardList, CheckCircle2, Stethoscope,
+  Loader2,
 } from 'lucide-react';
 import axios from 'axios';
 import './index.css';
 
 const API_BASE = 'http://localhost:8000';
+
+/* Human-readable label for a tool the agent just invoked, e.g.
+   "Checking interaction between ibuprofen and warfarin…" */
+function toolLabel(name, args = {}) {
+  switch (name) {
+    case 'retrieve_drug_info':
+      return `Searching FDA leaflets${args.query ? ` for “${args.query}”` : ''}…`;
+    case 'check_drug_interactions':
+      return `Checking interaction between ${args.drug_a || 'drug A'} and ${args.drug_b || 'drug B'}…`;
+    case 'dosage_calculator':
+      return `Looking up the dosage for ${args.drug || 'the medication'}…`;
+    case 'check_allergies':
+      return `Checking allergy conflicts for ${args.drug || 'the medication'}…`;
+    case 'emergency_classifier':
+      return 'Assessing how urgent this is…';
+    case 'fetch_openfda_live':
+      return `Fetching FDA drug info for ${args.drug_name || 'the medication'}…`;
+    default:
+      return `Running ${String(name).replace(/_/g, ' ')}…`;
+  }
+}
 
 const WELCOME_MESSAGE = {
   role: 'assistant',
@@ -31,6 +53,7 @@ export default function App() {
   const [messages, setMessages] = useState([WELCOME_MESSAGE]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
+  const [steps, setSteps] = useState([]); // tool-call activity shown while loading
   const messagesEndRef = useRef(null);
 
   const [profile, setProfile] = useState({
@@ -69,38 +92,83 @@ export default function App() {
     setMessages([WELCOME_MESSAGE]);
     setInput('');
     setLoading(false);
+    setSteps([]);
   };
 
   const handleSend = async (e) => {
     e.preventDefault();
-    if (!input.trim()) return;
+    if (!input.trim() || loading) return;
 
     const userMsg = input.trim();
     setInput('');
     setMessages(prev => [...prev, { role: 'user', content: userMsg }]);
     setLoading(true);
+    setSteps([]);
+
+    const payload = {
+      query: userMsg,
+      patient_context: {
+        age: parseInt(profile.age) || 0,
+        weight: parseFloat(profile.weight) || 0,
+        allergies: profile.allergies,
+        conditions: profile.conditions
+      }
+    };
 
     try {
-      const payload = {
-        query: userMsg,
-        patient_context: {
-          age: parseInt(profile.age) || 0,
-          weight: parseFloat(profile.weight) || 0,
-          allergies: profile.allergies,
-          conditions: profile.conditions
+      const res = await fetch(`${API_BASE}/api/v1/ask/stream`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok || !res.body) throw new Error(`HTTP ${res.status}`);
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = '';
+      let answered = false;
+
+      // Stream is newline-delimited JSON: tool events arrive first, then one
+      // final 'answer' event. Tool events build the transient activity list;
+      // the answer event clears it and appends the assistant message.
+      for (;;) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+
+        let nl;
+        while ((nl = buffer.indexOf('\n')) >= 0) {
+          const line = buffer.slice(0, nl).trim();
+          buffer = buffer.slice(nl + 1);
+          if (!line) continue;
+
+          let ev;
+          try { ev = JSON.parse(line); } catch { continue; }
+
+          if (ev.type === 'tool') {
+            setSteps(prev => [...prev, { name: ev.name, label: toolLabel(ev.name, ev.args) }]);
+          } else if (ev.type === 'answer') {
+            answered = true;
+            setSteps([]);
+            setMessages(prev => [...prev, {
+              role: 'assistant',
+              content: ev.answer,
+              status: ev.status, // 'success' | 'emergency' | 'error'
+              forQuery: userMsg,
+              forContext: payload.patient_context,
+              feedback: null // null | 'sent'
+            }]);
+          }
         }
-      };
+      }
 
-      const res = await axios.post(`${API_BASE}/api/v1/ask`, payload);
-
-      setMessages(prev => [...prev, {
-        role: 'assistant',
-        content: res.data.answer,
-        status: res.data.status, // 'success' or 'emergency'
-        forQuery: userMsg,
-        forContext: payload.patient_context,
-        feedback: null // null | 'sent'
-      }]);
+      if (!answered) {
+        setMessages(prev => [...prev, {
+          role: 'assistant',
+          content: 'No response generated.',
+          status: 'error'
+        }]);
+      }
     } catch (err) {
       setMessages(prev => [...prev, {
         role: 'assistant',
@@ -109,6 +177,7 @@ export default function App() {
       }]);
     } finally {
       setLoading(false);
+      setSteps([]);
     }
   };
 
@@ -316,6 +385,28 @@ export default function App() {
                 >
                   <div className="msg-avatar"><Bot size={18} strokeWidth={2.2} /></div>
                   <div className="bubble">
+                    {steps.length > 0 && (
+                      <ul className="tool-steps">
+                        <AnimatePresence initial={false}>
+                          {steps.map((s, i) => {
+                            const active = i === steps.length - 1;
+                            return (
+                              <motion.li
+                                key={`${i}-${s.name}`}
+                                initial={{ opacity: 0, x: -6 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                className={active ? 'active' : 'done'}
+                              >
+                                {active
+                                  ? <Loader2 size={13} strokeWidth={2.6} className="spin" />
+                                  : <CheckCircle2 size={13} strokeWidth={2.6} />}
+                                <span>{s.label}</span>
+                              </motion.li>
+                            );
+                          })}
+                        </AnimatePresence>
+                      </ul>
+                    )}
                     <div className="typing"><span /><span /><span /></div>
                   </div>
                 </motion.div>
